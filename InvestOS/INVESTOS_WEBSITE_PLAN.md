@@ -1,19 +1,20 @@
-# InvestOS Website: Complete Implementation Plan
+# Light Brands Consulting Website: Complete Implementation Plan
 
-**Document Version:** 2.0
+**Document Version:** 3.0
 **Date:** February 10, 2026
-**Purpose:** Comprehensive plan for building the InvestOS marketing website (Updated with InvestOS rebrand)
+**Purpose:** Comprehensive plan for building the Light Brands Consulting website showcasing InvestOS™
 **For Review By:** Team
 
 ---
 
 ## Executive Summary
 
-This document outlines the complete plan for building the InvestOS website - a high-converting B2B marketing site that positions InvestOS as a credible alternative to Big 4 consulting firms for founders raising institutional capital.
+This document outlines the complete plan for building the Light Brands Consulting website - a high-converting B2B marketing site that positions our firm and our flagship offering, InvestOS™, as a credible alternative to Big 4 consulting firms for founders raising institutional capital.
 
 **Key Decisions:**
-- **Brand:** InvestOS is the flagship product of Light Brands Consulting
-- **Domain:** investos.com or lightbrandsconsulting.com/investos
+- **Brand:** Light Brands Consulting (InvestOS™ as flagship service offering)
+- **Domain:** lightbrandsconsulting.com (recommended) or investos.com
+- **Positioning:** Consulting firm website, not product platform
 - **Scope:** Full comprehensive build with all interactive features
 - **Design:** Professional botanical/luxury design system
 - **Content:** All content derived from INVESTOS_COMPLETE_OFFERING.md
@@ -48,7 +49,9 @@ This document outlines the complete plan for building the InvestOS website - a h
 
 ### What We're Building
 
-The Light Brands Consulting website showcasing InvestOS - our flagship fundraising infrastructure platform that delivers in 14-30 days what traditionally costs $3.35M-$7.7M and takes 6-12 months. The website must:
+A professional consulting firm website for Light Brands Consulting. The site showcases our flagship service offering, InvestOS™ - a comprehensive fundraising infrastructure service that delivers in 14-30 days what traditionally costs $3.35M-$7.7M and takes 6-12 months.
+
+This is a **consulting services website**, not a SaaS platform or product site. The website must:
 
 1. **Sell and wow** visitors immediately with compelling value proposition
 2. **Build credibility** through detailed service descriptions and proof points
@@ -69,9 +72,9 @@ The Light Brands Consulting website showcasing InvestOS - our flagship fundraisi
 
 1. **Speed:** 14-30 days vs. 6-12 months
 2. **Cost:** $75K-$750K vs. $3.35M-$7.7M
-3. **Integration:** 1 vendor vs. 8 fragmented consultants
-4. **Quality:** Institutional-grade output through AI + senior review
-5. **Proof:** Interactive platform demo, sample deliverables
+3. **Integration:** 1 consulting firm vs. 8 fragmented vendors
+4. **Quality:** Institutional-grade output through AI-augmented senior consultants
+5. **Proof:** Sample deliverables, case studies, transparent methodology
 
 ---
 
@@ -79,18 +82,20 @@ The Light Brands Consulting website showcasing InvestOS - our flagship fundraisi
 
 ### Recommended Structure: Next.js Application
 
-**Website Structure for Light Brands Consulting / InvestOS:**
-- Represents Light Brands Consulting with InvestOS as the core product offering
-- Clean, professional brand identity showcasing our flagship platform
-- Integrated analytics, forms, and conversion tracking
-- Domain options: investos.com (product-led) or lightbrandsconsulting.com (company-led)
+**Website Structure for Light Brands Consulting:**
+- Professional consulting firm website (not a product platform)
+- Light Brands Consulting as the primary brand
+- InvestOS™ as the service offering/methodology
+- Clean, professional identity positioning us as a consulting firm
+- Integrated analytics, forms, and conversion tracking for service inquiries
+- Primary domain: lightbrandsconsulting.com (or investos.com as alternative)
 
 ### Directory Structure
 
 ```
 light-brands-consulting/
 │
-└── investos/                        # Light Brands Consulting website
+└── website/                         # Light Brands Consulting website
     ├── package.json
     ├── next.config.js
     ├── tailwind.config.ts
@@ -100,23 +105,23 @@ light-brands-consulting/
     │   ├── layout.tsx               # Root layout
     │   ├── page.tsx                 # Homepage
     │   │
-    │   ├── tiers/
-    │   │   ├── page.tsx             # Tier comparison
-    │   │   ├── foundation/page.tsx
-    │   │   ├── scale/page.tsx
-    │   │   ├── partner/page.tsx
-    │   │   └── calculator/page.tsx
-    │   │
     │   ├── services/
-    │   │   ├── page.tsx             # All services overview
-    │   │   └── [id]/page.tsx        # Dynamic A-J pages
+    │   │   ├── page.tsx             # Services overview
+    │   │   ├── packages/            # Package tiers
+    │   │   │   ├── page.tsx         # Tier comparison
+    │   │   │   ├── foundation/page.tsx
+    │   │   │   ├── scale/page.tsx
+    │   │   │   └── partner/page.tsx
+    │   │   └── [category]/page.tsx  # Dynamic service categories (A-J)
     │   │
-    │   ├── how-it-works/page.tsx
-    │   ├── why-investos/page.tsx
+    │   ├── approach/page.tsx        # Our approach (the InvestOS methodology)
+    │   ├── why-us/page.tsx          # Why Light Brands Consulting
     │   ├── case-studies/page.tsx
-    │   ├── faq/page.tsx
-    │   ├── contact/page.tsx
-    │   └── demo/page.tsx
+    │   ├── resources/
+    │   │   ├── calculator/page.tsx
+    │   │   └── faq/page.tsx
+    │   ├── about/page.tsx
+    │   └── contact/page.tsx
     │
     ├── components/
     │   ├── layout/                  # Header, Footer
@@ -220,16 +225,15 @@ export default {
 
 ```
 Homepage (/)
-├── Tiers
-│   ├── Comparison (/tiers)
-│   ├── Foundation (/tiers/foundation)
-│   ├── Scale (/tiers/scale)
-│   ├── Partner (/tiers/partner)
-│   └── Calculator (/tiers/calculator)
 │
-├── Services
-│   ├── Overview (/services)
-│   └── [Category A-J] (/services/[id])
+├── Services (/services)
+│   ├── Overview of what we deliver
+│   ├── Service Packages (/services/packages)
+│   │   ├── Comparison page
+│   │   ├── Foundation (/services/packages/foundation)
+│   │   ├── Scale (/services/packages/scale)
+│   │   └── Partner (/services/packages/partner)
+│   └── [Service Categories] (/services/[category])
 │       ├── strategic-foundation
 │       ├── market-research
 │       ├── financial-models
@@ -241,15 +245,27 @@ Homepage (/)
 │       ├── data-room
 │       └── investor-platform
 │
-├── Supporting Pages
-│   ├── How It Works (/how-it-works)
-│   ├── Why InvestOS (/why-investos)
-│   ├── Case Studies (/case-studies)
-│   ├── FAQ (/faq)
-│   ├── Contact (/contact)
-│   └── Demo (/demo)
+├── Our Approach (/approach)
+│   └── The InvestOS™ methodology
 │
-└── Utility Pages
+├── Why Us (/why-us)
+│   └── Why choose Light Brands Consulting
+│
+├── Case Studies (/case-studies)
+│   └── Client success stories
+│
+├── Resources (/resources)
+│   ├── ROI Calculator (/resources/calculator)
+│   ├── FAQ (/resources/faq)
+│   └── Pricing Guide (gated download)
+│
+├── About (/about)
+│   └── Our firm, team, mission
+│
+├── Contact (/contact)
+│   └── Get in touch, book consultation
+│
+└── Legal
     ├── Privacy Policy
     ├── Terms of Service
     └── Thank You (post-submission)
@@ -258,71 +274,74 @@ Homepage (/)
 ### Homepage Structure (11 Sections)
 
 **Section 1: Hero**
-- Company: "Light Brands Consulting" (subtle header/badge)
+- Company: "Light Brands Consulting" (prominent brand)
 - Headline: "14-30 days. Not 6-12 months."
-- Subheadline: "InvestOS™ - Turn $3M+ of scattered consultants into one unified operating system"
-- CTAs: "See How It Works", "View Live Example"
-- Trust indicators: $75K-$750K | 150+ Docs | 30-Day Delivery
+- Subheadline: "We deliver complete fundraising infrastructure through our InvestOS™ methodology"
+- Value prop: "Turn $3M+ of scattered consultants into one unified engagement"
+- CTAs: "Explore Our Services", "Book Consultation"
+- Trust indicators: 14-30 Day Delivery | $75K-$750K Investment | 150+ Deliverables
 
 **Section 2: The Problem**
 - "The $3M Problem Nobody Talks About"
-- Split-screen comparison: Traditional (8 vendors, $3.35M-$7.7M, 6-12 months) vs InvestOS (1 system, $355K-$710K, 14-30 days)
-- Visual: Fragmented nodes vs unified hub-and-spoke
+- Split-screen comparison: Traditional approach (8 vendors, $3.35M-$7.7M, 6-12 months) vs Our approach (1 firm, $75K-$750K, 14-30 days)
+- Visual: Fragmented consultants vs unified engagement
 
-**Section 3: The Solution**
-- "What Is InvestOS?"
-- Light Brands Consulting's flagship platform
-- Vertical operating system explanation
-- What it replaces (8 vendors → 1 system)
-- Stack collapse narrative
+**Section 3: Our Solution**
+- "How We Work: The InvestOS™ Methodology"
+- Light Brands Consulting's integrated approach
+- What we replace (8 separate vendors → 1 consulting engagement)
+- Complete, cross-referenced infrastructure delivered as a unified service
+- Why consulting, not software
 
-**Section 4: Deliverables**
-- Platform inventory visualization
-- 150+ strategic documents
-- 30-page interactive web platform
-- 12-tab financial model
-- 20+ document data room
+**Section 4: What You Get**
+- Comprehensive deliverables overview
+- 150+ strategic documents, cross-referenced
+- Interactive investor platform (custom-built web application)
+- 12-tab variable-driven financial model
+- Complete data room with 20+ documents
+- Everything you need to raise institutional capital
 
-**Section 5: Service Categories**
-- 10-category grid (A-J)
-- Each with icon, name, traditional cost vs InvestOS price
-- Expandable cards with deliverables
-- Links to detail pages
+**Section 5: Our Services**
+- 9 service categories we deliver (A-J)
+- Each with icon, name, traditional cost vs our integrated pricing
+- What's included in each category
+- Links to detailed service pages
 
-**Section 6: Tiers**
-- Three pricing cards: Foundation, Scale, Partner
-- Price ranges, delivery timelines, included services
-- Buyer persona indicators
-- Interactive tier selector tool
+**Section 6: Service Packages**
+- Three engagement packages: Foundation, Scale, Partner
+- Investment ranges, delivery timelines, services included
+- Who each package is designed for
+- Interactive package selector tool
 
-**Section 7: Buyer Personas**
-- Who buys each tier
-- Persona cards with quotes and journey maps
-- Self-identification mechanism
-- Social proof (when available)
+**Section 7: Who We Serve**
+- Client profiles by package tier
+- Persona cards with quotes and scenarios
+- Industry examples and use cases
+- Success stories (when available)
 
-**Section 8: Why We Win**
-- Head-to-head comparison table
-- Big 4 vs Boutique IB vs Light Brands Consulting (InvestOS)
-- Dimensions: Cost, timeline, quality, vendors, hidden costs
-- Unique capabilities we offer through InvestOS
+**Section 8: Why Light Brands Consulting**
+- Comparison: Big 4 vs Boutique IB vs Light Brands Consulting
+- Dimensions: Cost, timeline, quality, integration, hidden costs
+- What makes our approach different
+- The consulting firm that operates like a product company
 
-**Section 9: AI Advantage**
-- "96-98% cost reduction without cutting corners"
-- How AI handles volume, humans handle judgment
-- Structural efficiency explanation
-- Quality validation approach
+**Section 9: Our Approach**
+- "How we deliver institutional quality at startup speed"
+- AI-augmented consulting methodology
+- Senior expertise + intelligent automation
+- Quality without compromise, speed without shortcuts
 
-**Section 10: Engagement Model**
-- Visual timeline: 14/21/30 day process
-- Phase breakdown: Discovery → Content → Platform → Review
-- Client touchpoints and checkpoints
+**Section 10: How We Work**
+- Engagement timeline: 14/21/30 day process
+- Phase breakdown: Discovery → Development → Delivery → Support
+- Client touchpoints and milestones
+- What to expect when you work with us
 
-**Section 11: Final CTA**
-- Three conversion paths:
-  - Book Scoping Call (high intent)
-  - Request Demo (medium intent)
-  - Download Guide (low intent)
+**Section 11: Get Started**
+- Three paths to engagement:
+  - Book Strategy Call (high intent)
+  - Download Service Guide (medium intent)
+  - Calculate Your Investment (low intent)
 
 ---
 
@@ -466,11 +485,11 @@ export const SERVICES = {
 - Results page with personalized recommendations
 - Email capture for follow-up
 
-**PlatformDemo (Future)**
-- Embedded live platform demo
-- Option 1: Public sanitized demo
-- Option 2: Gated access with email
-- Watermarked, time-limited viewing
+**SampleDeliverables (Future)**
+- Showcase example deliverables from past engagements
+- Option 1: Public sample documents (anonymized)
+- Option 2: Gated portfolio access with email
+- Watermarked, redacted versions showing quality and depth
 
 ---
 
@@ -484,23 +503,23 @@ export const SERVICES = {
 - Validation: Required fields, email format, message min length
 - Submission: API route → Email → CRM
 
-**2. Tier Selection Form**
-- Select tier + add-ons, submit for custom quote
-- Fields: Tier (dropdown), Add-ons (checkboxes), Contact info
-- Pre-populated from tier page if linked
-- Generates custom proposal email
+**2. Package Inquiry Form**
+- Select service package + custom needs, submit for proposal
+- Fields: Package (dropdown), Additional services (checkboxes), Contact info
+- Pre-populated from package page if linked
+- Generates custom consultation request
 
-**3. Demo Request Form**
-- Request access to gated platform demo
-- Fields: Name, Email, Company, Raise amount
-- Generates magic link for time-limited access
-- Tracks demo engagement
+**3. Consultation Request Form**
+- Request strategy call with our team
+- Fields: Name, Email, Company, Raise amount, Timeline, Specific needs
+- Generates Calendly link or direct booking
+- Tracks consultation requests and outcomes
 
-**4. Newsletter/Guide Download**
-- Email capture for lead generation
-- Fields: Email, Company stage
+**4. Resource Download Form**
+- Email capture for service guide, case studies, or resources
+- Fields: Email, Company, Raise stage
 - Triggers automated email with PDF download
-- Adds to nurture sequence
+- Adds to consulting services nurture sequence
 
 ### Form Technology Stack
 
@@ -760,9 +779,10 @@ export const metadata = {
 - Zero critical accessibility violations
 
 **SEO:**
-- Top 10 for "fundraising infrastructure"
-- Top 20 for "investor platform builder"
-- Featured snippets for tier comparison queries
+- Top 10 for "fundraising consulting services"
+- Top 20 for "capital raise advisory firms"
+- Featured snippets for service package comparisons
+- Ranking for "alternative to Big 4 consulting"
 
 ### Business Metrics (Revenue Impact)
 
