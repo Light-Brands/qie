@@ -1,0 +1,95 @@
+<task id="_bmad/core/tasks/session-save.xml"
+  name="Session Save"
+  description="Save current session context for later resumption">
+
+  <objective>Capture the current session state including decisions made, progress completed, and outstanding work, then save it to a structured file for resumption in a future session</objective>
+
+  <inputs>
+    <input name="session-name" required="true" desc="Short descriptive name for the session (used in output filename)" />
+  </inputs>
+
+  <llm critical="true">
+    <i>MANDATORY: Execute ALL steps in the flow section IN EXACT ORDER</i>
+    <i>DO NOT skip steps or change the sequence</i>
+    <i>HALT immediately when halt-conditions are met</i>
+    <i>Each action xml tag within step xml tag is a REQUIRED action to complete that step</i>
+
+    <i>You are a meticulous session recorder who captures context with enough detail that a fresh session can resume without loss of momentum</i>
+    <i>Prioritize decisions and rationale over implementation details - code diffs are in version control</i>
+    <i>Be specific about what is done, what is in progress, and what remains</i>
+  </llm>
+
+  <flow>
+    <step n="1" title="Load Configuration">
+      <action>Load config from {project-root}/_bmad/core/config.yaml</action>
+      <action>Resolve output_folder, user_name, and date (system-generated current datetime)</action>
+      <action>Set output path: {output_folder}/sessions/session-{session-name}-{date}.md</action>
+    </step>
+
+    <step n="2" title="Capture Decisions">
+      <action>Review the current conversation for all decisions made during this session</action>
+      <action>For each decision, record: what was decided, why it was decided, and any alternatives that were considered and rejected</action>
+      <action>Note any assumptions that were made and whether they were validated</action>
+    </step>
+
+    <step n="3" title="Capture Progress">
+      <action>List all files created or modified during this session</action>
+      <action>For each change, note the purpose and current state (complete, partial, placeholder)</action>
+      <action>Record any commands run and their outcomes (especially configuration, installation, or environment setup)</action>
+      <action>Note the current working state: does the project build? do tests pass? are there known broken states?</action>
+    </step>
+
+    <step n="4" title="Capture Outstanding Work">
+      <action>List all TODO items identified during the session that have not been completed</action>
+      <action>For each item, note priority (must-do-next vs. can-defer) and any dependencies</action>
+      <action>Record any blockers or open questions that need resolution</action>
+      <action>Note any research findings that should inform next steps</action>
+    </step>
+
+    <step n="5" title="Save Session File">
+      <action>Assemble the session file using the following structure:</action>
+
+      <output-format>
+# Session: {session-name}
+**Date:** {date}
+**User:** {user_name}
+
+## Decisions Made
+{decisions from step 2}
+
+## Progress
+{progress from step 3}
+
+### Files Changed
+{file list with status}
+
+### Current State
+{build/test/known issues status}
+
+## Outstanding Work
+
+### Must Do Next
+{priority items}
+
+### Can Defer
+{lower priority items}
+
+## Blockers and Open Questions
+{blockers from step 4}
+
+## Context for Resumption
+{any additional context a fresh session would need to continue effectively}
+      </output-format>
+
+      <action>Write the assembled content to the output path</action>
+      <action>Confirm the file was saved and report the path to the user</action>
+    </step>
+  </flow>
+
+  <halt-conditions>
+    <condition>HALT with error if session-name is empty or not provided</condition>
+    <condition>HALT with error if the output folder cannot be written to</condition>
+    <condition>If the conversation contains no meaningful decisions or progress, output a minimal session file noting that no significant work was captured</condition>
+  </halt-conditions>
+
+</task>

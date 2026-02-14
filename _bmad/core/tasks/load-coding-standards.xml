@@ -1,0 +1,90 @@
+<task id="_bmad/core/tasks/load-coding-standards.xml"
+  name="Load Coding Standards"
+  description="Load relevant coding standards from memory based on the project technology stack">
+
+  <objective>Detect the project technology stack and load the corresponding coding standards from the _memory/coding-standards/ directory so they are active in the current session</objective>
+
+  <inputs>
+    <input name="technology-stack" required="false" desc="Explicit technology stack override (e.g., 'typescript-react', 'python-fastapi'). When not provided, the task will auto-detect from the project." />
+  </inputs>
+
+  <llm critical="true">
+    <i>MANDATORY: Execute ALL steps in the flow section IN EXACT ORDER</i>
+    <i>DO NOT skip steps or change the sequence</i>
+    <i>HALT immediately when halt-conditions are met</i>
+    <i>Each action xml tag within step xml tag is a REQUIRED action to complete that step</i>
+
+    <i>You are loading standards to inform code quality during this session</i>
+    <i>Standards loaded here should influence all subsequent code generation and review</i>
+    <i>If standards conflict, the project-specific standard takes precedence over general standards</i>
+  </llm>
+
+  <flow>
+    <step n="1" title="Load Configuration">
+      <action>Load config from {project-root}/_bmad/core/config.yaml</action>
+      <action>Resolve project root path</action>
+      <action>Set standards_path: {project-root}/_memory/coding-standards/</action>
+    </step>
+
+    <step n="2" title="Detect Technology Stack">
+      <action if="technology-stack input provided">Use the provided technology-stack value and skip auto-detection</action>
+      <action if="technology-stack input not provided">Auto-detect by examining project files:</action>
+      <action>Check for package.json (Node.js/JavaScript/TypeScript ecosystem)</action>
+      <action>Check for tsconfig.json (TypeScript)</action>
+      <action>Check for requirements.txt, pyproject.toml, setup.py (Python ecosystem)</action>
+      <action>Check for go.mod (Go ecosystem)</action>
+      <action>Check for Cargo.toml (Rust ecosystem)</action>
+      <action>Check for pom.xml, build.gradle (Java/JVM ecosystem)</action>
+      <action>Check for Gemfile (Ruby ecosystem)</action>
+      <action>Examine framework indicators: next.config.*, angular.json, vue.config.*, etc.</action>
+      <action>Compile a list of detected technologies and frameworks</action>
+    </step>
+
+    <step n="3" title="List Available Standards">
+      <action>Read the contents of {standards_path} directory</action>
+      <action>List all available standard files with their names and descriptions</action>
+      <action if="standards_path does not exist or is empty">Report that no coding standards are available in _memory/coding-standards/ and suggest creating them</action>
+    </step>
+
+    <step n="4" title="Match Standards to Stack">
+      <action>For each detected technology, identify matching standard files from the available standards</action>
+      <action>Include general/universal standards that apply regardless of stack (e.g., git conventions, documentation standards)</action>
+      <action>If no exact match exists for a detected technology, note the gap and continue with available standards</action>
+      <action>Present the matching plan to the user: which standards will be loaded and why</action>
+    </step>
+
+    <step n="5" title="Load Standards">
+      <action>Read each matched standard file in full</action>
+      <action>For each loaded standard, summarize its key rules in 2-3 bullet points</action>
+      <action>If any standards conflict with each other, note the conflict and state which takes precedence (project-specific over general)</action>
+      <action>Confirm to the user which standards are now active for this session</action>
+    </step>
+
+    <step n="6" title="Report">
+      <action>Present a summary to the user:</action>
+
+      <output-format>
+## Coding Standards Loaded
+
+**Detected stack:** {list of technologies}
+**Standards loaded:** {count}
+
+| Standard | Key Rules | Source |
+|----------|-----------|--------|
+| {name} | {2-3 bullet summary} | {file path} |
+
+**Gaps:** {technologies without matching standards, if any}
+**Conflicts:** {any resolved conflicts, or "None"}
+
+These standards are now active and will inform code generation and review for this session.
+      </output-format>
+    </step>
+  </flow>
+
+  <halt-conditions>
+    <condition>HALT with error if {standards_path} directory does not exist and technology-stack was not provided (cannot auto-detect without project context and no standards to load)</condition>
+    <condition>If no standards match the detected stack, complete with a report noting zero standards loaded and suggest creating relevant standards files</condition>
+    <condition>If technology-stack input is provided but no matching standard exists, complete with a report noting the gap</condition>
+  </halt-conditions>
+
+</task>

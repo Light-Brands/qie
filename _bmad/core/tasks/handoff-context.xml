@@ -1,0 +1,109 @@
+<task id="_bmad/core/tasks/handoff-context.xml"
+  name="Handoff Context"
+  description="Generate a context handoff document for new sessions or team members">
+
+  <objective>Produce a concise handoff document that summarizes the current state of work so that a new session or team member can pick up effectively without re-reading entire conversation histories</objective>
+
+  <inputs>
+    <input name="scope" required="true" desc="What to cover in the handoff: 'full' for entire project state, 'task' for a specific task or feature, or a custom description of what to include" />
+  </inputs>
+
+  <llm critical="true">
+    <i>MANDATORY: Execute ALL steps in the flow section IN EXACT ORDER</i>
+    <i>DO NOT skip steps or change the sequence</i>
+    <i>HALT immediately when halt-conditions are met</i>
+    <i>Each action xml tag within step xml tag is a REQUIRED action to complete that step</i>
+
+    <i>You are producing a document for someone with zero context about what has happened so far</i>
+    <i>Be explicit about state - do not assume the reader knows what "almost done" means</i>
+    <i>Prioritize what the reader needs to ACT on, not a complete history of everything that happened</i>
+    <i>Write in present tense for current state, past tense for completed work</i>
+  </llm>
+
+  <flow>
+    <step n="1" title="Load Configuration">
+      <action>Load config from {project-root}/_bmad/core/config.yaml</action>
+      <action>Resolve output_folder, user_name, project_name, and date (system-generated current datetime)</action>
+      <action>Set output path: {output_folder}/handoffs/handoff-{date}.md</action>
+    </step>
+
+    <step n="2" title="Determine Scope">
+      <action>Interpret the scope input to determine what the handoff should cover</action>
+      <action if="scope='full'">Cover the entire project: architecture, key decisions, current state of all major components</action>
+      <action if="scope='task'">Focus on the specific task or feature being worked on: what it is, why it matters, where it stands</action>
+      <action if="scope is custom description">Use the description to determine which areas to cover</action>
+    </step>
+
+    <step n="3" title="Summarize Key Decisions">
+      <action>Identify the most important decisions made that affect ongoing work</action>
+      <action>For each decision, state: what was decided, the rationale, and any constraints it creates</action>
+      <action>Omit decisions that are fully implemented and no longer affect future work</action>
+    </step>
+
+    <step n="4" title="Document Current Progress">
+      <action>Describe what has been completed and its current state (working, tested, deployed, etc.)</action>
+      <action>Describe what is in progress and its completion percentage or remaining effort</action>
+      <action>List key files and their roles if the reader needs to navigate the codebase</action>
+    </step>
+
+    <step n="5" title="Identify Blockers">
+      <action>List any blockers that are preventing progress</action>
+      <action>For each blocker, note: what is blocked, what is needed to unblock, and who or what can resolve it</action>
+      <action>If there are no blockers, state that explicitly</action>
+    </step>
+
+    <step n="6" title="Define Next Steps">
+      <action>List the immediate next steps in priority order</action>
+      <action>For each step, provide enough context that the reader can begin work without additional research</action>
+      <action>Note any dependencies between steps</action>
+      <action>Flag any steps that require user decisions or external input</action>
+    </step>
+
+    <step n="7" title="Assemble and Save">
+      <action>Assemble the handoff document using the following structure:</action>
+
+      <output-format>
+# Handoff: {project_name or task name}
+**Date:** {date}
+**Prepared by:** {user_name}
+**Scope:** {scope}
+
+## Summary
+{1-2 sentence overview of what this handoff covers}
+
+## Key Decisions
+{decisions from step 3, as a numbered list}
+
+## Current State
+
+### Completed
+{completed work from step 4}
+
+### In Progress
+{in-progress work from step 4}
+
+### Key Files
+{file map from step 4, if applicable}
+
+## Blockers
+{blockers from step 5}
+
+## Next Steps
+{prioritized next steps from step 6}
+
+## Additional Context
+{anything else the reader needs to know that does not fit above}
+      </output-format>
+
+      <action>Write the assembled content to the output path</action>
+      <action>Confirm the file was saved and report the path to the user</action>
+    </step>
+  </flow>
+
+  <halt-conditions>
+    <condition>HALT with error if scope is empty or not provided</condition>
+    <condition>HALT with error if there is insufficient context in the conversation to produce a meaningful handoff</condition>
+    <condition>If the scope is 'full' but the project state is minimal, produce a brief handoff noting the early stage</condition>
+  </halt-conditions>
+
+</task>

@@ -9,3 +9,20 @@ user_name: Lawless
 communication_language: English
 document_output_language: English
 output_folder: _bmad-output
+
+# Reference Memory Directories
+# These contain indexed reference materials from the project's coding standards,
+# prompt engineering guides, and communication style configurations.
+memory_directories:
+  coding-standards:
+    path: coding-standards/
+    description: Index of all 33 coding standards grouped by category
+    entry_point: index.md
+  prompt-engineering:
+    path: prompt-engineering/
+    description: Comprehensive guide for LLM-to-LLM prompt communication
+    entry_point: guide.md
+  communication-styles:
+    path: communication-styles/
+    description: Seven AI personality configurations with traits and example phrases
+    entry_point: index.md
