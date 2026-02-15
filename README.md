@@ -15,8 +15,8 @@ QIE is built on the **BMAD Framework** (Build-Measure-Amplify-Deliver) and power
 ```mermaid
 graph TB
     QI["<b>Layer 4: Quantum Intelligence</b><br/>Learning + Morality + Scoring"]
-    SoulOS["<b>Layer 3: SoulOS</b><br/>50 Sacred Laws · 7 Values · 7 Ethics · 7 Morals"]
-    CORE["<b>Layer 2: BMAD Core</b><br/>Brainstorming · Debugging · Research · Party Mode"]
+    SoulOS["<b>Layer 3: SoulOS</b><br/>50 Sacred Laws<br/>7 Values · 7 Ethics · 7 Morals"]
+    CORE["<b>Layer 2: BMAD Core</b><br/>Brainstorming · Debugging<br/>Research · Party Mode"]
 
     subgraph Layer1["Layer 1: Operational Modules"]
         BuildOS["<b>BuildOS</b><br/>Build & Ship<br/>27 agents · 26 workflows"]
@@ -57,11 +57,11 @@ InvestOS is QIE's sole commercial offering — a complete operating system for c
 
 ```mermaid
 flowchart TD
-    INV["<b>InvestOS</b><br/><i>The Operating System for Capital Formation</i>"]
+    INV["<b>InvestOS</b><br/><i>Capital Formation OS</i>"]
 
-    INV --> CL["<b>InvestOS Clarity</b><br/>Discovery · $10,000 · 7-10 days"]
-    INV --> CI["<b>InvestOS Capital</b><br/>Fundraising · $75K-$750K · 14-30 days"]
-    INV --> CD["<b>InvestOS Deployment</b><br/>Execution · $100K-$5M · 90-180 days"]
+    INV --> CL["<b>InvestOS Clarity</b><br/>Discovery · $10K<br/>7-10 days"]
+    INV --> CI["<b>InvestOS Capital</b><br/>Fundraising<br/>$75K-$750K · 14-30 days"]
+    INV --> CD["<b>InvestOS Deployment</b><br/>Execution<br/>$100K-$5M · 90-180 days"]
 
     CL -->|"70% conversion"| CI
     CI -->|"80% conversion"| CD

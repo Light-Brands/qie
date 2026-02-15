@@ -194,11 +194,11 @@ InvestOS is **The Operating System for Capital Formation** — the only product 
 
 ```mermaid
 flowchart TD
-    INV["<b>InvestOS</b><br/><i>The Operating System for Capital Formation</i>"]
+    INV["<b>InvestOS</b><br/><i>Capital Formation OS</i>"]
 
-    INV --> IC["<b>InvestOS Clarity</b><br/>Discovery · $10K · 7-10 days"]
-    INV --> II["<b>InvestOS Capital</b><br/>Fundraising · $75K-$750K · 14-30 days"]
-    INV --> ID["<b>InvestOS Deployment</b><br/>Execution · $100K-$5M · 90-180 days"]
+    INV --> IC["<b>InvestOS Clarity</b><br/>Discovery · $10K<br/>7-10 days"]
+    INV --> II["<b>InvestOS Capital</b><br/>Fundraising<br/>$75K-$750K · 14-30 days"]
+    INV --> ID["<b>InvestOS Deployment</b><br/>Execution<br/>$100K-$5M · 90-180 days"]
 
     IC -->|"70% conversion"| II
     II -->|"80% conversion"| ID

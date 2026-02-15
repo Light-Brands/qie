@@ -10,8 +10,8 @@ InvestOS is QIE's **sole commercial offering** — a complete operating system f
 
 ```mermaid
 flowchart TD
-    QIE["<b>Quantum Intelligence Engine</b><br/><i>88 agents · 7 modules</i>"]
-    QIE --> INV["<b>InvestOS</b><br/><i>The Operating System for Capital Formation</i>"]
+    QIE["<b>QIE</b><br/><i>88 agents · 7 modules</i>"]
+    QIE --> INV["<b>InvestOS</b><br/><i>Capital Formation OS</i>"]
     INV --> IC["InvestOS Clarity<br/>Discovery · $10,000"]
     INV --> II["InvestOS Capital<br/>Fundraising · $75K - $750K"]
     INV --> ID["InvestOS Deployment<br/>Execution · $100K - $5M"]
@@ -68,9 +68,9 @@ Post-raise execution. Turns raised capital into operational growth.
 
 ```mermaid
 flowchart TD
-    IC["<b>InvestOS Clarity</b><br/>$10K · 7-10 days"]
-    II["<b>InvestOS Capital</b><br/>$75K-$750K · 14-30 days"]
-    ID["<b>InvestOS Deployment</b><br/>$100K-$5M · 90-180 days"]
+    IC["<b>InvestOS Clarity</b><br/>$10K<br/>7-10 days"]
+    II["<b>InvestOS Capital</b><br/>$75K-$750K<br/>14-30 days"]
+    ID["<b>InvestOS Deployment</b><br/>$100K-$5M<br/>90-180 days"]
     NR["<b>Next Round</b><br/><i>Repeat cycle</i>"]
 
     IC -->|"70% conversion"| II

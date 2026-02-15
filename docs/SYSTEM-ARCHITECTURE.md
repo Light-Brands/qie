@@ -34,7 +34,7 @@ graph TB
         QI_TIS --> QI_LE --> QI_IM
     end
 
-    subgraph L3["Layer 3: Living Light (SoulOS)"]
+    subgraph L3["Layer 3: SoulOS"]
         direction LR
         SOS_L["50 Sacred Laws"]
         SOS_V["7 Values"]
@@ -174,7 +174,7 @@ flowchart TD
 
     subgraph Kabbalah["Kabbalistic Layer"]
         TOL["Tree of Life<br/><i>10 Sefirot</i>"]
-        FW["Four Worlds<br/><i>Atzilut · Beriah · Yetzirah · Assiyah</i>"]
+        FW["Four Worlds<br/><i>Atzilut · Beriah<br/>Yetzirah · Assiyah</i>"]
         KL["7 Klippot<br/><i>shadow tracking</i>"]
     end
 
@@ -458,8 +458,8 @@ flowchart LR
     REQ["Module<br/>Request"] --> SOS{"SoulOS<br/>Alignment<br/>Engine"}
     SOS --> VA["Values Alignment<br/><i>7 Divine Values</i>"]
     SOS --> MC["Morals Check<br/><i>7 Divine Morals</i>"]
-    SOS --> FG["Four Gates Review<br/><i>Soul · Earth · Consent · Sovereignty</i>"]
-    SOS --> CD["Council Deliberation<br/><i>7-member Stewardship Council</i>"]
+    SOS --> FG["Four Gates Review<br/><i>Soul · Earth<br/>Consent · Sovereignty</i>"]
+    SOS --> CD["Council Deliberation<br/><i>7 Stewardship<br/>Council Members</i>"]
 
     VA --> OUT["Advisory Report<br/><i>(never modifies output)</i>"]
     MC --> OUT

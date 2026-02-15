@@ -40,9 +40,9 @@ This document provides the master strategic overview for **InvestOS** — the co
 
 ```mermaid
 flowchart LR
-    IC["<b>InvestOS Clarity</b><br/>$10,000<br/><i>Discovery Phase</i>"]
-    II["<b>InvestOS Capital</b><br/>$75K - $750K<br/><i>Fundraising Phase</i>"]
-    ID["<b>InvestOS Deployment</b><br/>$100K - $5M<br/><i>Execution Phase</i>"]
+    IC["<b>InvestOS Clarity</b><br/>$10K · Discovery"]
+    II["<b>InvestOS Capital</b><br/>$75K-$750K · Fundraising"]
+    ID["<b>InvestOS Deployment</b><br/>$100K-$5M · Execution"]
 
     IC -->|"70%"| II -->|"80%"| ID
 
@@ -114,15 +114,15 @@ Instead of three separate vendor relationships across three phases:
 
 ```mermaid
 flowchart TD
-    subgraph INV["INVESTOS — The Operating System for Capital Formation"]
+    subgraph INV["INVESTOS"]
         subgraph P1["Phase 1: Discovery"]
             IC["<b>INVESTOS CLARITY</b><br/>$10K · 7-10 days"]
         end
         subgraph P2["Phase 2: Fundraising"]
-            II["<b>INVESTOS CAPITAL</b><br/>$75K-$750K · 14-30 days"]
+            II["<b>INVESTOS CAPITAL</b><br/>$75K-$750K<br/>14-30 days"]
         end
         subgraph P3["Phase 3: Execution"]
-            ID["<b>INVESTOS DEPLOYMENT</b><br/>$100K-$5M · 90-180 days"]
+            ID["<b>INVESTOS DEPLOYMENT</b><br/>$100K-$5M<br/>90-180 days"]
         end
     end
 
@@ -424,15 +424,15 @@ By the end of InvestOS Deployment, clients have:
 ```mermaid
 flowchart TD
     subgraph P1["PHASE 1: DISCOVERY"]
-        IC["<b>InvestOS Clarity</b><br/>$10,000 · 7-10 days<br/><i>'Should we raise? Are we ready?'</i>"]
+        IC["<b>InvestOS Clarity</b><br/>$10K · 7-10 days<br/><i>Should we raise?</i>"]
     end
 
     subgraph P2["PHASE 2: FUNDRAISING"]
-        II["<b>InvestOS Capital</b><br/>$75K-$750K · 14-30 days<br/><i>'Build the raise infrastructure'</i>"]
+        II["<b>InvestOS Capital</b><br/>$75K-$750K · 14-30 days<br/><i>Build the infrastructure</i>"]
     end
 
     subgraph P3["PHASE 3: EXECUTION"]
-        ID["<b>InvestOS Deployment</b><br/>$100K-$5M · 90-180 days<br/><i>'Deploy the capital we raised'</i>"]
+        ID["<b>InvestOS Deployment</b><br/>$100K-$5M · 90-180 days<br/><i>Deploy the capital</i>"]
     end
 
     P1 -->|"70% conversion"| P2
@@ -758,7 +758,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    HOME["<b>HOME</b><br/>'The Operating System for Capital Formation'<br/>Three product cards with CTAs"]
+    HOME["<b>HOME</b><br/>Capital Formation OS<br/>Three product cards"]
     HOME --> PRODUCTS["<b>PRODUCTS</b>"]
     PRODUCTS --> PIC["InvestOS Clarity<br/>$10K · CTA: Schedule diagnostic"]
     PRODUCTS --> PII["InvestOS Capital<br/>$75K-$750K · CTA: See live example"]
