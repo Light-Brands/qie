@@ -1,12 +1,12 @@
-# Pricing — CapitalOS Pricing Structures & Matrices
+# Pricing — InvestOS Pricing Structures & Matrices
 
-**All pricing documentation for the CapitalOS product line.**
+**All pricing documentation for the InvestOS product line.**
 
 ---
 
 ## Context Within QIE
 
-This directory contains the pricing structures, payment options, and service matrices for the [CapitalOS](../CapitalOS) commercial products. These documents support both client-facing conversations and internal pricing logic.
+This directory contains the pricing structures, payment options, and service matrices for the [InvestOS](../InvestOS) commercial products. These documents support both client-facing conversations and internal pricing logic.
 
 ---
 
@@ -23,21 +23,21 @@ This directory contains the pricing structures, payment options, and service mat
 
 ## Quick Reference
 
-### CapitalOS Product Pricing
+### InvestOS Product Pricing
 
 | Product | Price Range | Timeline |
 |---------|-------------|----------|
-| Capital Clarity | $10,000 | 7-10 days |
-| Capital Investment (Essentials) | $75K - $150K | 14 days |
-| Capital Investment (Professional) | $150K - $300K | 21 days |
-| Capital Investment (Enterprise) | $350K - $750K | 30 days |
-| Capital Deployment | $100K - $5M | 90-180 days |
+| InvestOS Clarity | $10,000 | 7-10 days |
+| InvestOS Capital (Essentials) | $75K - $150K | 14 days |
+| InvestOS Capital (Professional) | $150K - $300K | 21 days |
+| InvestOS Capital (Enterprise) | $350K - $750K | 30 days |
+| InvestOS Deployment | $100K - $5M | 90-180 days |
 
 ---
 
 ## Related Resources
 
-- **Product strategy:** [CapitalOS Master Overview](../CapitalOS/CAPITALOS_MASTER_OVERVIEW.md)
+- **Product strategy:** [InvestOS Master Overview](../InvestOS/INVESTOS_MASTER_OVERVIEW.md)
 - **Product details:** [InvestOS/](../InvestOS)
 - **Regulatory compliance:** [Compliance/](../Compliance)
 

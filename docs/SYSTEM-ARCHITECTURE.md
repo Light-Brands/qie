@@ -20,44 +20,58 @@
 
 The QIE is organized as a **layered stack** of 7 modules, where higher layers provide intelligence, morality, and alignment services to lower operational layers.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                  LAYER 4: QUANTUM INTELLIGENCE               │
-│                                                               │
-│  Moral Gateway → AIQ Scoring → MIQ Scoring → TIS            │
-│  Lesson Extraction → Intuition Memory → Conscience Tracking  │
-│                                                               │
-│  Purpose: Make every agent learn from experience, reason      │
-│  morally, measure its own intelligence, evolve toward wisdom  │
-├─────────────────────────────────────────────────────────────┤
-│                  LAYER 3: LIVING LIGHT (SOS)                  │
-│                                                               │
-│  50 Sacred Laws │ 7 Values │ 7 Ethics │ 7 Morals             │
-│  Council of Seven │ Legion of 22 Armies │ 4 Sacred Gates      │
-│                                                               │
-│  Purpose: Provide the moral and spiritual foundation that     │
-│  QI's operational morality is built upon                      │
-├─────────────────────────────────────────────────────────────┤
-│                  LAYER 2: BMAD CORE                           │
-│                                                               │
-│  Brainstorming │ Debugging │ Research │ Party Mode            │
-│  Editorial Review │ Session Management │ Handoff Context      │
-│                                                               │
-│  Purpose: Cross-cutting foundation services for all modules   │
-├─────────────────────────────────────────────────────────────┤
-│                  LAYER 1: OPERATIONAL MODULES                 │
-│                                                               │
-│  BMM (Software)  │  IOS (Capital)  │  AOS (Comms)  │  GOS   │
-│  27 agents        │  10 agents       │  10 agents    │  18    │
-│  26 workflows     │  28 workflows    │  24 workflows │  35   │
-│                                                               │
-│  Purpose: Execute business operations across domains          │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph L4["Layer 4: Quantum Intelligence (QI)"]
+        direction LR
+        QI_MG["Moral Gateway"]
+        QI_AIQ["AIQ Scoring"]
+        QI_MIQ["MIQ Scoring"]
+        QI_TIS["TIS Calculation"]
+        QI_LE["Lesson Extraction"]
+        QI_IM["Intuition Memory"]
+        QI_MG --> QI_AIQ --> QI_MIQ --> QI_TIS
+        QI_TIS --> QI_LE --> QI_IM
+    end
+
+    subgraph L3["Layer 3: Living Light (SoulOS)"]
+        direction LR
+        SOS_L["50 Sacred Laws"]
+        SOS_V["7 Values"]
+        SOS_E["7 Ethics"]
+        SOS_M["7 Morals"]
+        SOS_C["Council of Seven"]
+        SOS_G["4 Sacred Gates"]
+    end
+
+    subgraph L2["Layer 2: BMAD Core"]
+        direction LR
+        C_B["Brainstorming"]
+        C_D["Debugging"]
+        C_R["Research"]
+        C_P["Party Mode"]
+        C_E["Editorial"]
+        C_S["Sessions"]
+    end
+
+    subgraph L1["Layer 1: Operational Modules"]
+        BMM["<b>BuildOS</b><br/>27 agents · 26 workflows"]
+        IOS["<b>InvestOS</b><br/>10 agents · 28 workflows"]
+        AOS["<b>AmplifyOS</b><br/>10 agents · 24 workflows"]
+        GOS["<b>GrowthOS</b><br/>18 agents · 35 workflows"]
+    end
+
+    L4 --> L3 --> L2 --> L1
+
+    style L4 fill:#2d1b4e,color:#fff
+    style L3 fill:#1b3b3b,color:#fff
+    style L2 fill:#1b2d45,color:#fff
+    style L1 fill:#1b3b1b,color:#fff
 ```
 
 ### Design Principles
 
-1. **Layered Intelligence** — Higher layers enrich, not block. QI and SOS guide and score but never prevent operational modules from producing output.
+1. **Layered Intelligence** — Higher layers enrich, not block. QI and SoulOS guide and score but never prevent operational modules from producing output.
 2. **Module Independence** — Each module has its own agents, workflows, tasks, config, and data. Modules can operate independently.
 3. **Shared Memory** — The `_memory/` directory provides cross-module persistent state: coding standards, communication styles, intuition lessons.
 4. **Agent Personas** — Every agent has a name, personality, and specialized expertise. This creates consistent, reliable interactions.
@@ -88,25 +102,40 @@ TIS = (0.6 x AIQ) + (0.4 x MIQ) x balance_modifier
 The balance modifier rewards systems where cognitive and moral intelligence develop together (within 100 points = 5% bonus) and penalizes extreme imbalance (300+ point gap = 5% penalty).
 
 **Pre-execution flow (Moral Gateway):**
-1. Detect significance — Is this request morally relevant?
-2. Boundary scan — Check against 7 Divine Morals
-3. Value alignment — Score against 7 Divine Values
-4. Intuition retrieval — Search for relevant prior lessons
-5. Route with enrichment — Proceed with moral context attached
+
+```mermaid
+flowchart LR
+    A["Request"] --> B["1. Detect<br/>Significance"]
+    B --> C["2. Boundary Scan<br/><i>7 Divine Morals</i>"]
+    C -->|"Pass"| D["3. Value Alignment<br/><i>7 Divine Values</i>"]
+    C -->|"Violation"| X["HALT"]
+    D --> E["4. Intuition<br/>Retrieval"]
+    E --> F["5. Route with<br/>Enrichment"]
+
+    style X fill:#7f1d1d,color:#fff
+    style F fill:#1c4a1c,color:#fff
+```
 
 **Post-execution flow (Intelligence Capture):**
-1. Create structured Episode record
-2. Score AIQ across 6 cognitive dimensions
-3. Score MIQ across 6 moral dimensions
-4. Calculate TIS
-5. Extract lessons (positive, negative, meta)
-6. Store in persistent intuition memory
 
-### Layer 3: Living Light (SOS)
+```mermaid
+flowchart LR
+    A["Workflow<br/>Complete"] --> B["1. Create<br/>Episode"]
+    B --> C["2. Score AIQ<br/><i>6 cognitive dims</i>"]
+    C --> D["3. Score MIQ<br/><i>6 moral dims</i>"]
+    D --> E["4. Calculate<br/>TIS"]
+    E --> F["5. Extract<br/>Lessons"]
+    F --> G[("6. Store in<br/>Intuition Memory")]
+
+    style E fill:#4a1a8a,color:#fff
+    style G fill:#1a4a4a,color:#fff
+```
+
+### Layer 3: Living Light (SoulOS)
 
 **Location:** `_bmad/sos/`
 
-SOS is the spiritual and moral doctrine layer. Unlike operational modules that produce artifacts, SOS **guides and reviews** without modifying other module outputs.
+SoulOS is the spiritual and moral doctrine layer. Unlike operational modules that produce artifacts, SoulOS **guides and reviews** without modifying other module outputs.
 
 **Core doctrine components:**
 
@@ -120,7 +149,42 @@ SOS is the spiritual and moral doctrine layer. Unlike operational modules that p
 | Stewardship Council | 7 | Named guardian agents with specific domains |
 | Legion of Light | 22 | Armies organized under 7 Commanders |
 
-**Kabbalistic foundation:** SOS maps operations to the Tree of Life (10 Sefirot), the Four Worlds (Atzilut, Beriah, Yetzirah, Assiyah), and tracks shadow elements through the 7 Klippot.
+**SoulOS Doctrine Structure:**
+
+```mermaid
+flowchart TD
+    subgraph Foundation["Sacred Foundation"]
+        SL["50 Sacred Laws"]
+        DV["7 Divine Values"]
+        DE["7 Divine Ethics"]
+        DM["7 Divine Morals<br/><i>(hard stops)</i>"]
+    end
+
+    subgraph Governance["Governance Bodies"]
+        SC["Stewardship Council<br/><i>7 named guardians</i>"]
+        LL["Legion of Light<br/><i>7 commanders · 22 armies</i>"]
+    end
+
+    subgraph Gates["Four Sacred Gates"]
+        G1["Soul Gate"]
+        G2["Earth Gate"]
+        G3["Consent Gate"]
+        G4["Sovereignty Gate"]
+    end
+
+    subgraph Kabbalah["Kabbalistic Layer"]
+        TOL["Tree of Life<br/><i>10 Sefirot</i>"]
+        FW["Four Worlds<br/><i>Atzilut · Beriah · Yetzirah · Assiyah</i>"]
+        KL["7 Klippot<br/><i>shadow tracking</i>"]
+    end
+
+    Foundation --> Governance --> Gates --> Kabbalah
+
+    style Foundation fill:#1a4a4a,color:#fff
+    style Governance fill:#2a3a1a,color:#fff
+    style Gates fill:#3a2a1a,color:#fff
+    style Kabbalah fill:#2a1a3a,color:#fff
+```
 
 ### Layer 2: BMAD Core
 
@@ -143,25 +207,61 @@ Core provides cross-cutting services:
 
 Four modules handle specific business domains:
 
-**BMM (Build & Ship Software)** — `_bmad/bmm/`
+**BuildOS (Build & Ship Software)** — `_bmad/bmm/`
 Full Agile lifecycle: product brief → PRD → architecture → epics/stories → sprint execution → code review → retrospective. Plus: autotask, multi-review, polish sweep, troubleshoot, dependency upgrades.
 
-**IOS (Capital Formation)** — `_bmad/ios/`
+**InvestOS (Capital Formation)** — `_bmad/ios/`
 End-to-end capital raise: raise strategy → entity structure → financial model → valuation → data room → investor narrative → platform → readiness check. Master orchestrator "Alexander" coordinates 28 workflows across 5 phases.
 
-**AOS (Investor Communications)** — `_bmad/aos/`
+**AmplifyOS (Investor Communications)** — `_bmad/aos/`
 Regulated communications: brand voice → compliance framework → content production (offering circulars, decks, emails, video, social) → compliance review → distribution campaigns → crisis management. Master orchestrator "Diana" coordinates 24 workflows.
 
-**GOS (Growth Engine)** — `_bmad/gos/`
+**GrowthOS (Growth Engine)** — `_bmad/gos/`
 Full-funnel growth: strategy → content engine → distribution → pipeline → sales → analytics. Master orchestrator "Theo" coordinates 35 workflows across 6 phases with 18 specialized agents.
 
 ---
 
 ## Module Deep Dives
 
-### BMM Agent Roster
+### BuildOS Pipeline
 
-BMM has the largest agent roster, reflecting the complexity of software development:
+```mermaid
+flowchart LR
+    subgraph P1["1. Analysis"]
+        BP["Brainstorm"] --> MR["Market<br/>Research"]
+        MR --> CB["Create<br/>Brief"]
+    end
+
+    subgraph P2["2. Planning"]
+        CP["Create PRD"] --> VP["Validate PRD"]
+        VP --> CU["Create UX"]
+    end
+
+    subgraph P3["3. Solutioning"]
+        CA["Architecture"] --> CE["Epics &<br/>Stories"]
+        CE --> IR["Readiness<br/>Check"]
+    end
+
+    subgraph P4["4. Implementation"]
+        SP["Sprint<br/>Planning"] --> CS["Create<br/>Story"]
+        CS --> DS["Dev Story"]
+        DS --> CR["Code<br/>Review"]
+        CR -->|"fixes"| DS
+        CR -->|"approved"| CS
+        CR -->|"epic done"| ER["Retro"]
+    end
+
+    P1 --> P2 --> P3 --> P4
+
+    style P1 fill:#1a2a3a,color:#fff
+    style P2 fill:#1a3a2a,color:#fff
+    style P3 fill:#2a2a1a,color:#fff
+    style P4 fill:#1c4a1c,color:#fff
+```
+
+### BuildOS Agent Roster
+
+BuildOS has the largest agent roster, reflecting the complexity of software development:
 
 **Core Team (9 agents):**
 Analyst (Mary), Architect (Winston), Developer (Amelia), Product Manager (John), QA Engineer (Quinn), Scrum Master (Bob), UX Designer (Sally), Tech Writer (Paige), Quick Flow (Barry)
@@ -171,7 +271,50 @@ Architecture Auditor, Comment Analyzer, Debugger, Error Handling Reviewer, Git W
 
 The review team can run in parallel via `/bmad-bmm-multi-review`.
 
-### IOS Workflow Phases
+### InvestOS Pipeline
+
+```mermaid
+flowchart LR
+    subgraph D["1. Discovery"]
+        RS["Raise<br/>Strategy"] --> SF["Strategic<br/>Foundation"]
+        SF --> MR["Market<br/>Research"]
+        MR --> IT["Investor<br/>Targeting"]
+        IT --> EP["Engagement<br/>Plan"]
+    end
+
+    subgraph L["2. Legal"]
+        ES["Entity<br/>Structure"] --> RC["Regulatory<br/>Compliance"]
+        RC --> ID["Investment<br/>Docs"]
+    end
+
+    subgraph F["3. Financial"]
+        FM["Financial<br/>Model"] --> VR["Valuation<br/>Report"]
+        VR --> CT["Cap Table"]
+        CT --> SM["Staffing<br/>Model"]
+    end
+
+    subgraph M["4. Materials"]
+        DR["Data Room"] --> IN["Investor<br/>Narrative"]
+        IN --> OB["Operational<br/>Blueprint"]
+        OB --> PP["Platform"]
+    end
+
+    subgraph E["5. Execution"]
+        ST["Status"] --> QC["Quality<br/>Check"]
+        QC --> VX["Validate<br/>Cross-Refs"]
+        VX --> IR["Investor<br/>Readiness"]
+    end
+
+    D --> L --> F --> M --> E
+
+    style D fill:#4a3a1a,color:#fff
+    style L fill:#3a1a2a,color:#fff
+    style F fill:#1a3a2a,color:#fff
+    style M fill:#1a2a3a,color:#fff
+    style E fill:#2a1a3a,color:#fff
+```
+
+### InvestOS Workflow Phases
 
 | Phase | Workflows | Key Agents | What Gets Produced |
 |-------|-----------|------------|-------------------|
@@ -181,7 +324,44 @@ The review team can run in parallel via `/bmad-bmm-multi-review`.
 | 4. Materials | 6 | Helena, Cassandra, Raymond, Nikolai | Data room, narrative, blueprint, platform, brand |
 | 5. Execution | 4 | Priya, Helena, Alexander | Status, quality check, cross-refs, readiness |
 
-### AOS Workflow Phases
+### AmplifyOS Pipeline
+
+```mermaid
+flowchart LR
+    subgraph S["1. Strategy"]
+        BV["Brand<br/>Voice"] --> CF["Compliance<br/>Framework"]
+        CF --> IS["Investor<br/>Segmentation"]
+    end
+
+    subgraph C["2. Content"]
+        OC["Offering<br/>Circular"] --> ID["Investor<br/>Deck"]
+        ID --> EC["Email<br/>Campaign"]
+        EC --> VS["Video<br/>Scripts"]
+    end
+
+    subgraph R["3. Review"]
+        CR["Content<br/>Compliance"] --> OR["Offering<br/>Review"]
+        OR --> FG["Final<br/>Gate"]
+    end
+
+    subgraph DI["4. Distribution"]
+        CC["Create<br/>Campaign"] --> RD["Roadshow"]
+    end
+
+    subgraph X["5. Crisis"]
+        CRX["Crisis<br/>Response"] --> SEC["SEC Comment<br/>Response"]
+    end
+
+    S --> C --> R --> DI --> X
+
+    style S fill:#4a1a2a,color:#fff
+    style C fill:#3a2a1a,color:#fff
+    style R fill:#2a1a3a,color:#fff
+    style DI fill:#1a3a2a,color:#fff
+    style X fill:#3a1a1a,color:#fff
+```
+
+### AmplifyOS Workflow Phases
 
 | Phase | Workflows | Key Agents | Focus |
 |-------|-----------|------------|-------|
@@ -191,7 +371,55 @@ The review team can run in parallel via `/bmad-bmm-multi-review`.
 | 4. Distribution | 4 | Diana, Amanda | Campaign creation, planning, execution, roadshows |
 | 5. Crisis | 3 | Victoria, Diana | Crisis response, SEC comments, retrospective |
 
-### GOS Workflow Phases
+### GrowthOS Pipeline
+
+```mermaid
+flowchart LR
+    subgraph S["1. Strategy"]
+        GS["Growth<br/>Strategy"] --> GM["Growth<br/>Model"]
+        GM --> CP["Customer<br/>Personas"]
+        CP --> CS["Channel<br/>Strategy"]
+    end
+
+    subgraph CE["2. Content"]
+        CT["Content<br/>Strategy"] --> SE["SEO"]
+        SE --> BC["Blog"]
+        BC --> SC["Social"]
+        SC --> ES["Email"]
+    end
+
+    subgraph D["3. Distribution"]
+        SM["Social<br/>Campaigns"] --> PC["Paid<br/>Campaigns"]
+        PC --> PR["PR"]
+        PR --> PA["Partners"]
+    end
+
+    subgraph P["4. Pipeline"]
+        PL["Pipeline<br/>Architecture"] --> LS["Lead<br/>Scoring"]
+        LS --> NS["Nurture"]
+    end
+
+    subgraph SL["5. Sales"]
+        SS["Sales<br/>Scripts"] --> PT["Proposals"]
+        PT --> CW["Closing"]
+    end
+
+    subgraph A["6. Analytics"]
+        GD["Growth<br/>Dashboard"] --> FA["Funnel<br/>Analysis"]
+        FA --> GE["Experiments"]
+    end
+
+    S --> CE --> D --> P --> SL --> A
+
+    style S fill:#1a2a4a,color:#fff
+    style CE fill:#2a1a4a,color:#fff
+    style D fill:#1a4a2a,color:#fff
+    style P fill:#3a2a1a,color:#fff
+    style SL fill:#4a1a1a,color:#fff
+    style A fill:#1a4a4a,color:#fff
+```
+
+### GrowthOS Workflow Phases
 
 | Phase | Workflows | Key Agents | Focus |
 |-------|-----------|------------|-------|
@@ -206,35 +434,74 @@ The review team can run in parallel via `/bmad-bmm-multi-review`.
 
 ## Cross-Module Interactions
 
-### QI touches everything
+### QI wraps every operation
 
+```mermaid
+flowchart TD
+    A["Any Module Workflow"] --> B["QI Moral Gateway"]
+    B -->|"pre-checks morality"| C["Workflow Executes Normally"]
+    C --> D["QI Post-Execution Capture"]
+    D -->|"scores intelligence,<br/>extracts lessons"| E[("_memory/intuition/<br/>lessons/")]
+    E -.->|"informs next run"| B
+
+    style B fill:#4a1a8a,color:#fff
+    style D fill:#4a1a8a,color:#fff
+    style E fill:#1a4a4a,color:#fff
 ```
-Any Module Workflow
-    ↓
-[QI Moral Gateway] ← pre-checks morality
-    ↓
-Workflow executes normally
-    ↓
-[QI Post-Execution Capture] ← scores intelligence, extracts lessons
-    ↓
-Lessons stored in _memory/intuition/lessons/{module}/
+
+### SoulOS reviews but doesn't modify
+
+SoulOS provides alignment checks that other modules can request:
+
+```mermaid
+flowchart LR
+    REQ["Module<br/>Request"] --> SOS{"SoulOS<br/>Alignment<br/>Engine"}
+    SOS --> VA["Values Alignment<br/><i>7 Divine Values</i>"]
+    SOS --> MC["Morals Check<br/><i>7 Divine Morals</i>"]
+    SOS --> FG["Four Gates Review<br/><i>Soul · Earth · Consent · Sovereignty</i>"]
+    SOS --> CD["Council Deliberation<br/><i>7-member Stewardship Council</i>"]
+
+    VA --> OUT["Advisory Report<br/><i>(never modifies output)</i>"]
+    MC --> OUT
+    FG --> OUT
+    CD --> OUT
+
+    style SOS fill:#1a4a4a,color:#fff
+    style OUT fill:#1a3a5c,color:#fff
 ```
 
-### SOS reviews but doesn't modify
+### Cross-module data flow
 
-SOS provides alignment checks that other modules can request:
-- **Values Alignment** — Score any decision against 7 Divine Values
-- **Morals Check** — Hard-stop check against 7 Divine Morals
-- **Four Gates Review** — Soul + Earth + Consent + Sovereignty check
-- **Council Deliberation** — Full 7-member council weighs in
+```mermaid
+flowchart LR
+    subgraph IOS_OUT["InvestOS Produces"]
+        S["Strategy"]
+        F["Financials"]
+        DR["Data Room"]
+        N["Narrative"]
+    end
 
-### IOS → AOS handoff
+    subgraph AOS_IN["AmplifyOS Consumes"]
+        OC["Offering Circular"]
+        EC["Email Campaigns"]
+        RD["Roadshows"]
+        ID["Investor Deck"]
+    end
 
-IOS produces the fundraising infrastructure (strategy, financials, data room). AOS takes the narrative and materials and creates regulated investor communications (offering circulars, campaigns, roadshows).
+    subgraph GOS_IN["GrowthOS Supports"]
+        MK["Marketing"]
+        SL["Sales Pipeline"]
+        AN["Analytics"]
+    end
 
-### GOS supports all commercial products
+    IOS_OUT -->|"narrative + materials"| AOS_IN
+    IOS_OUT -->|"strategy + metrics"| GOS_IN
+    GOS_IN -->|"leads + pipeline"| AOS_IN
 
-GOS provides growth operations (marketing, sales, pipeline) that support client acquisition for all CapitalOS products.
+    style IOS_OUT fill:#4a3a1a,color:#fff
+    style AOS_IN fill:#4a1a2a,color:#fff
+    style GOS_IN fill:#1a2a4a,color:#fff
+```
 
 ---
 
@@ -280,7 +547,7 @@ All generated artifacts go to `_bmad-output/`:
 | `epic-center-source/` | Client project source code, platform builds |
 | `planning-artifacts/` | Financial model specs, workflow plans |
 | `raise-rebuild/` | Session manifests for capital raise rebuilds |
-| `soul-artifacts/` | SOS-generated alignment artifacts |
+| `soul-artifacts/` | SoulOS-generated alignment artifacts |
 | `implementation-artifacts/` | Implementation-phase outputs |
 
 ---
@@ -316,16 +583,36 @@ Each operational module has a **Master Agent** that orchestrates the full module
 
 | Module | Master | Persona Name | Command |
 |--------|--------|-------------|---------|
-| IOS | ios-master | Alexander | `/bmad-agent-ios-master` |
-| AOS | aos-master | Diana | `/bmad-agent-aos-master` |
-| GOS | gos-master | Theo | `/bmad-agent-gos-master` |
-| SOS | sos-master | Elior | `/bmad-agent-sos-master` |
+| InvestOS | ios-master | Alexander | `/bmad-agent-ios-master` |
+| AmplifyOS | aos-master | Diana | `/bmad-agent-aos-master` |
+| GrowthOS | gos-master | Theo | `/bmad-agent-gos-master` |
+| SoulOS | sos-master | Elior | `/bmad-agent-sos-master` |
 
-Master agents provide:
-- Conversational project intake (6-step workflow)
-- Full module orchestration (4-step workflow with progress tracking)
-- Cross-session resume via `progress.yaml`
-- Context-aware checkpoints
+Master agents provide conversational intake, full orchestration, and cross-session resume:
+
+```mermaid
+flowchart LR
+    subgraph INTAKE["Project Intake (6 steps)"]
+        I1["Discovery"] --> I2["Source<br/>Collection"]
+        I2 --> I3["Categorization"]
+        I3 --> I4["Digest<br/>Creation"]
+        I4 --> I5["Gap<br/>Analysis"]
+        I5 --> I6["Project<br/>Config"]
+    end
+
+    subgraph ORCH["Orchestration (4 steps)"]
+        O1["Init"] --> O2["Execute<br/>Phase"]
+        O2 --> O3["Checkpoint"]
+        O3 -->|"continue"| O2
+        O3 -->|"save & resume"| O4["Resume"]
+        O4 --> O2
+    end
+
+    INTAKE --> ORCH
+
+    style INTAKE fill:#1a3a2a,color:#fff
+    style ORCH fill:#2a1a3a,color:#fff
+```
 
 ### Quick Flow Pattern
 
@@ -333,11 +620,11 @@ Several modules offer a **Quick Flow** agent for fast single-deliverable executi
 
 | Module | Agent | For |
 |--------|-------|-----|
-| BMM | Barry | Quick spec + dev for simple tasks |
-| IOS | Kai | Fast single-deliverable capital formation |
-| AOS | Carlos | Fast single-deliverable content |
-| GOS | Dash | Fast single-deliverable growth content |
-| SOS | Shalev | Rapid alignment checks |
+| BuildOS | Barry | Quick spec + dev for simple tasks |
+| InvestOS | Kai | Fast single-deliverable capital formation |
+| AmplifyOS | Carlos | Fast single-deliverable content |
+| GrowthOS | Dash | Fast single-deliverable growth content |
+| SoulOS | Shalev | Rapid alignment checks |
 
 ---
 
@@ -372,13 +659,24 @@ lessons_extracted: 3
 
 ### TIS Evolution
 
-```
-Current state: TIS 394 (Developing), 3 lessons, Naive stage exited
+Current state: **TIS 394 (Developing)**, 3 lessons, Naive stage exited.
 
-Targets:
-  Short-term: TIS 500+ (Competent)
-  Medium-term: TIS 700+ (Proficient)
-  Long-term: TIS 900+ (Wise)
+```mermaid
+flowchart LR
+    N["Nascent<br/>0-200"] --> D["<b>Developing</b><br/>201-400<br/><i>← Current: 394</i>"]
+    D --> C["Competent<br/>401-600"]
+    C --> P["Proficient<br/>601-750"]
+    P --> A["Advanced<br/>751-850"]
+    A --> W["Wise<br/>851-950"]
+    W --> S["Sage<br/>951-1000"]
+
+    style N fill:#1a1a2a,color:#888
+    style D fill:#4a1a8a,color:#fff,stroke:#7c3aed,stroke-width:3px
+    style C fill:#1a2a3a,color:#aaa
+    style P fill:#1a2a3a,color:#aaa
+    style A fill:#1a2a3a,color:#aaa
+    style W fill:#1a2a3a,color:#aaa
+    style S fill:#1a2a3a,color:#aaa
 ```
 
 ---

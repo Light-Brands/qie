@@ -8,12 +8,19 @@
 
 CapitalOS is the **commercial product umbrella** for the Quantum Intelligence Engine's capital formation capabilities. It packages the QIE's IOS, AOS, and GOS modules into three distinct products that serve the complete capital journey.
 
-```
-Quantum Intelligence Engine (QIE)
-└── CapitalOS (Commercial Products)
-    ├── Capital Clarity     → Discovery phase     → $10,000
-    ├── Capital Investment  → Fundraising phase   → $75K - $750K
-    └── Capital Deployment  → Execution phase     → $100K - $5M
+```mermaid
+flowchart TD
+    QIE["<b>Quantum Intelligence Engine</b><br/><i>88 agents · 7 modules</i>"]
+    QIE --> COS["<b>CapitalOS</b><br/><i>Commercial Products</i>"]
+    COS --> CC["Capital Clarity<br/>Discovery · $10,000"]
+    COS --> CI["Capital Investment<br/>Fundraising · $75K - $750K"]
+    COS --> CD["Capital Deployment<br/>Execution · $100K - $5M"]
+
+    style QIE fill:#4a1a8a,color:#fff
+    style COS fill:#4a3a1a,color:#fff,stroke:#f59e0b,stroke-width:2px
+    style CC fill:#1a3a2a,color:#fff
+    style CI fill:#1a2a4a,color:#fff
+    style CD fill:#2a1a3a,color:#fff
 ```
 
 ---
@@ -54,14 +61,22 @@ Post-raise execution. Turns raised capital into operational growth.
 
 ## The Capital Journey
 
-```
-Capital Clarity ($10K, 7-10 days)
-    ↓ 70% conversion
-Capital Investment ($75K-$750K, 14-30 days)
-    ↓ 80% conversion
-Capital Deployment ($100K-$5M, 90-180 days)
-    ↓ 60% next-round conversion
-Repeat cycle
+```mermaid
+flowchart TD
+    CC["<b>Capital Clarity</b><br/>$10K · 7-10 days"]
+    CI["<b>Capital Investment</b><br/>$75K-$750K · 14-30 days"]
+    CD["<b>Capital Deployment</b><br/>$100K-$5M · 90-180 days"]
+    NR["<b>Next Round</b><br/><i>Repeat cycle</i>"]
+
+    CC -->|"70% conversion"| CI
+    CI -->|"80% conversion"| CD
+    CD -->|"60% next-round"| NR
+    NR -->|"return client"| CI
+
+    style CC fill:#1a3a2a,color:#fff
+    style CI fill:#1a2a4a,color:#fff
+    style CD fill:#2a1a3a,color:#fff
+    style NR fill:#4a3a1a,color:#fff
 ```
 
 **Average client LTV:** $800K (base case) to $5.7M (enterprise multi-round)
@@ -69,6 +84,33 @@ Repeat cycle
 ---
 
 ## How QIE Powers CapitalOS
+
+```mermaid
+flowchart LR
+    subgraph Products["CapitalOS Products"]
+        CC["Capital<br/>Clarity"]
+        CI["Capital<br/>Investment"]
+        CD["Capital<br/>Deployment"]
+    end
+
+    subgraph Modules["QIE Modules"]
+        IOS["IOS<br/><i>Capital Formation</i>"]
+        AOS["AOS<br/><i>Investor Comms</i>"]
+        GOS["GOS<br/><i>Growth Engine</i>"]
+        BMM["BMM<br/><i>Build & Ship</i>"]
+    end
+
+    CC -->|"Phase 1"| IOS
+    CI -->|"Phases 1-5"| IOS
+    CI --> AOS
+    CI -->|"Platform"| BMM
+    CD --> GOS
+    CD --> AOS
+    CD -->|"select workflows"| IOS
+
+    style Products fill:#4a3a1a,color:#fff
+    style Modules fill:#1a2a4a,color:#fff
+```
 
 | CapitalOS Product | QIE Module(s) Used | Key Agents |
 |------------------|-------------------|------------|

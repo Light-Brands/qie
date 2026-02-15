@@ -19,10 +19,13 @@ It's a lot. This guide helps you navigate it without getting lost.
 **1. The BMAD Framework is the engine.**
 BMAD (Build-Measure-Amplify-Deliver) is an AI agent framework with 88 specialized agents organized into 7 modules. Each agent has a name, personality, and domain expertise. Agents execute workflows (multi-step guided processes) and tasks (single-shot operations).
 
-**2. The commercial products sit on top.**
-- **CapitalOS** is the product umbrella for capital formation services (3 products)
-- **InvestOS** is the detailed documentation for the fundraising infrastructure product
-- These are *what clients see*. The BMAD framework is *what powers them*.
+**2. InvestOS is the sole commercial offering.**
+InvestOS is **The Operating System for Capital Formation** — a three-stage product that covers the complete capital journey:
+- **InvestOS Clarity** ($10K) — Discovery and strategic diagnostic
+- **InvestOS Capital** ($75K-$750K) — Complete fundraising infrastructure
+- **InvestOS Deployment** ($100K-$5M) — Post-raise capital deployment
+
+Everything else (BuildOS, AmplifyOS, GrowthOS, SoulOS, QI) powers InvestOS behind the scenes.
 
 **3. Quantum Intelligence makes it learn.**
 QI is the layer that makes every agent interaction produce learning. It scores cognitive intelligence (AIQ), moral intelligence (MIQ), extracts lessons from experience, and evolves the system toward wisdom over time.
@@ -38,7 +41,7 @@ If you want to understand what QIE does commercially:
 | Step | Read | Time | What You'll Learn |
 |------|------|------|-------------------|
 | 1 | [Root README](../README.md) | 5 min | System overview, module inventory, navigation |
-| 2 | [CapitalOS Overview](../CapitalOS/CAPITALOS_MASTER_OVERVIEW.md) | 15 min | The three commercial products, pricing, journey |
+| 2 | [InvestOS Master Overview](../InvestOS/INVESTOS_MASTER_OVERVIEW.md) | 15 min | The three commercial products, pricing, journey |
 | 3 | [InvestOS Offering](../InvestOS/INVESTOS_COMPLETE_OFFERING.md) | 10 min | What the fundraising product delivers |
 | 4 | [Pricing Guide](../Pricing/CLIENT_PRICING_GUIDE.md) | 5 min | Package tiers and pricing |
 
@@ -60,9 +63,9 @@ If you want to start using agents and workflows:
 | Step | Action | What Happens |
 |------|--------|-------------|
 | 1 | Run `/bmad-help` | Get context-aware guidance on next steps |
-| 2 | Run `/bmad-agent-ios-master` | Start the IOS Master (capital formation orchestrator) |
+| 2 | Run `/bmad-agent-ios-master` | Start the InvestOS Master (capital formation orchestrator) |
 | 3 | Or run `/bmad-bmm-quick-spec` | Fast-track a software spec |
-| 4 | Or run `/bmad-agent-sos-master` | Start SOS Master (spiritual alignment) |
+| 4 | Or run `/bmad-agent-sos-master` | Start SoulOS Master (spiritual alignment) |
 
 ---
 
@@ -75,11 +78,11 @@ A **module** is a self-contained domain with its own agents, workflows, tasks, a
 | Module | Code | Domain |
 |--------|------|--------|
 | Core | CORE | Foundation services (brainstorming, debugging, research) |
-| Build & Ship | BMM | Software development lifecycle |
-| Capital Formation | IOS | Fundraising infrastructure |
-| Investor Communications | AOS | Regulated investor content |
-| Growth Engine | GOS | Marketing, sales, analytics |
-| Living Light | SOS | Spiritual alignment and morality |
+| BuildOS | BMM | Software development lifecycle |
+| InvestOS | IOS | Capital formation (also the sole commercial offering) |
+| AmplifyOS | AOS | Regulated investor content |
+| GrowthOS | GOS | Marketing, sales, analytics |
+| SoulOS | SOS | Spiritual alignment and morality |
 | Quantum Intelligence | QI | Learning, scoring, moral reasoning |
 
 ### Agents
@@ -87,21 +90,40 @@ A **module** is a self-contained domain with its own agents, workflows, tasks, a
 An **agent** is a specialized AI persona with a name, personality, and domain expertise. When you activate an agent, the AI adopts that persona's communication style, knowledge base, and operating principles.
 
 Examples:
-- **Alexander** (IOS Investment Strategist) — Capital formation, deal structure
-- **Winston** (BMM Architect) — Technical architecture and system design
-- **Elior** (SOS Master) — Living Light steward, alignment orchestrator
-- **Mary** (BMM Analyst) — Business analysis, market research
+- **Alexander** (InvestOS Investment Strategist) — Capital formation, deal structure
+- **Winston** (BuildOS Architect) — Technical architecture and system design
+- **Elior** (SoulOS Master) — Living Light steward, alignment orchestrator
+- **Mary** (BuildOS Analyst) — Business analysis, market research
 
 ### Workflows
 
 A **workflow** is a multi-step guided process. Each step has detailed instructions that the active agent follows. Workflows are the primary way work gets done.
 
-Example: IOS "Create Raise Strategy" workflow:
+Example: InvestOS "Create Raise Strategy" workflow:
 1. Gather client information
 2. Analyze market conditions
 3. Determine optimal raise structure
 4. Draft strategy document
 5. Review and refine
+
+### How agents, workflows, and tasks relate
+
+```mermaid
+flowchart TD
+    U["You"] -->|"command or request"| HR["Help Router<br/>/bmad-help"]
+    HR -->|"detects module + phase"| AG["Agent Persona<br/><i>name, expertise, style</i>"]
+    AG --> WF["Workflow<br/><i>multi-step guided process</i>"]
+    AG --> TK["Task<br/><i>single-shot operation</i>"]
+    WF -->|"step 1 → 2 → 3 → ..."| OUT["Artifacts"]
+    TK --> OUT
+    OUT --> MEM[("Memory<br/><i>lessons, episodes</i>")]
+
+    style HR fill:#1a2a4a,color:#fff
+    style AG fill:#1c4a1c,color:#fff
+    style WF fill:#2a1a3a,color:#fff
+    style TK fill:#3a2a1a,color:#fff
+    style MEM fill:#1a4a4a,color:#fff
+```
 
 ### Tasks
 
@@ -128,8 +150,7 @@ A **task** is a single-shot operation — simpler than a workflow. Tasks handle 
 │   ├── GETTING-STARTED.md ← You are here
 │   └── SYSTEM-ARCHITECTURE.md
 │
-├── CapitalOS/             ← Commercial product strategy (what clients see)
-├── InvestOS/              ← Fundraising product details
+├── InvestOS/              ← Commercial offering: strategy & product docs
 ├── Pricing/               ← Pricing structures
 ├── Compliance/            ← Regulatory documentation
 ├── Archive/               ← Superseded documents
@@ -137,11 +158,11 @@ A **task** is a single-shot operation — simpler than a workflow. Tasks handle 
 ├── _bmad/                 ← THE ENGINE (where the magic lives)
 │   ├── BMAD-FRAMEWORK.md  ← Complete framework reference
 │   ├── core/              ← Foundation services
-│   ├── bmm/               ← Software development
-│   ├── ios/               ← Capital formation
-│   ├── aos/               ← Investor communications
-│   ├── gos/               ← Growth operations
-│   ├── sos/               ← Spiritual alignment
+│   ├── bmm/               ← BuildOS: Software development
+│   ├── ios/               ← InvestOS: Capital formation
+│   ├── aos/               ← AmplifyOS: Investor communications
+│   ├── gos/               ← GrowthOS: Growth operations
+│   ├── sos/               ← SoulOS: Spiritual alignment
 │   ├── qi/                ← Quantum intelligence
 │   ├── _config/           ← Manifests & routing
 │   └── _memory/           ← Persistent memory & standards
@@ -153,7 +174,7 @@ A **task** is a single-shot operation — simpler than a workflow. Tasks handle 
 
 | I want to... | Look in |
 |-------------|---------|
-| Understand the business offering | `CapitalOS/`, `InvestOS/`, `Pricing/` |
+| Understand the business offering | `InvestOS/`, `Pricing/` |
 | Understand the AI framework | `_bmad/BMAD-FRAMEWORK.md` |
 | See all available agents | `_bmad/_config/agent-manifest.csv` |
 | See all available workflows | `_bmad/_config/workflow-manifest.csv` |
@@ -165,25 +186,68 @@ A **task** is a single-shot operation — simpler than a workflow. Tasks handle 
 
 ---
 
-## The Commercial Products in Context
+## The Commercial Product in Context
 
-### CapitalOS is the brand, IOS is the engine
+### InvestOS is the sole commercial offering
 
+InvestOS is **The Operating System for Capital Formation** — the only product QIE sells. It serves the complete capital journey through three stages:
+
+```mermaid
+flowchart TD
+    INV["<b>InvestOS</b><br/><i>The Operating System for Capital Formation</i>"]
+
+    INV --> IC["<b>InvestOS Clarity</b><br/>Discovery · $10K · 7-10 days"]
+    INV --> II["<b>InvestOS Capital</b><br/>Fundraising · $75K-$750K · 14-30 days"]
+    INV --> ID["<b>InvestOS Deployment</b><br/>Execution · $100K-$5M · 90-180 days"]
+
+    IC -->|"70% conversion"| II
+    II -->|"80% conversion"| ID
+    ID -->|"60% next-round"| II
+
+    style INV fill:#4a3a1a,color:#fff,stroke:#f59e0b,stroke-width:3px
+    style IC fill:#1a3a2a,color:#fff
+    style II fill:#1a2a4a,color:#fff
+    style ID fill:#2a1a3a,color:#fff
 ```
-CapitalOS (Brand)
-├── Capital Clarity ($10K)      → Uses IOS Phase 1 (Discovery)
-├── Capital Investment ($75K+)  → Uses IOS Phases 1-5 (Full Raise)
-└── Capital Deployment ($100K+) → Uses GOS + IOS post-raise workflows
+
+### How QIE modules power InvestOS
+
+```mermaid
+flowchart LR
+    subgraph Products["InvestOS Products"]
+        IC["InvestOS<br/>Clarity"]
+        II["InvestOS<br/>Capital"]
+        ID["InvestOS<br/>Deployment"]
+    end
+
+    subgraph Modules["QIE Modules"]
+        IOS["InvestOS Module<br/><i>Capital Formation</i>"]
+        AOS["AmplifyOS<br/><i>Investor Comms</i>"]
+        GOS["GrowthOS<br/><i>Growth Engine</i>"]
+        BMM["BuildOS<br/><i>Build & Ship</i>"]
+    end
+
+    IC -->|"Phase 1"| IOS
+    II -->|"Phases 1-5"| IOS
+    II --> AOS
+    II -->|"Platform"| BMM
+    ID --> GOS
+    ID --> AOS
+    ID -->|"select workflows"| IOS
+
+    style Products fill:#4a3a1a,color:#fff
+    style Modules fill:#1a2a4a,color:#fff
 ```
 
-### InvestOS is the IOS module's documentation
+### InvestOS document layer
 
-InvestOS was the original name for the fundraising product. It now lives as the detailed documentation layer for the IOS module:
+The `InvestOS/` directory contains the specifications of what gets delivered. The AI agents that *execute* those deliverables live in `_bmad/ios/`.
 
 | InvestOS Document | Maps To |
 |------------------|---------|
-| INVESTOS_COMPLETE_OFFERING.md | What Capital Investment delivers |
-| INVESTOS_STRATEGIC_ARCHITECTURE.md | How IOS technically works |
+| INVESTOS_MASTER_OVERVIEW.md | Complete strategic overview of the three products |
+| INVESTOS_COMPLETE_OFFERING.md | What InvestOS Capital delivers |
+| INVESTOS_STRATEGIC_ARCHITECTURE.md | How InvestOS technically works |
 | INVESTOS_BRAND_GUIDELINES.md | Brand voice for investor-facing materials |
 | InvestOS_Project_Plan.md | Delivery timeline and milestones |
 | INVESTOS_WEBSITE_PLAN.md | Website plan for the investor platform |
