@@ -1,159 +1,242 @@
-# InvestOS™ — The Operating System for High-Trust Investment Platforms
+# Quantum Intelligence Engine (QIE)
 
-**Turn complexity into clarity in 14-30 days, not 6-12 months — at a fraction of the cost.**
-
-## Executive Summary
-
-InvestOS is a complete fundraising operating system that delivers everything founders need to raise institutional capital — strategy, financials, legal architecture, market research, operations, an interactive investor platform, and a ready-to-go data room — in one integrated engagement.
-
-### The Problem
-
-Founders raising $3M-$10M+ face a brutal paradox: you need to spend money to raise money. The traditional infrastructure required costs **$1.5M-$3M+** assembled piecemeal across 8+ separate firms over 6-12 months:
-
-- Strategy consultancies for positioning ($150K-$300K)
-- Law firms for entity structuring ($75K-$200K)
-- Tax advisors for multi-jurisdiction optimization ($50K-$150K)
-- Financial modelers for projections ($30K-$75K)
-- Market researchers for competitive intelligence ($40K-$100K)
-- Data room builders and document assemblers ($20K-$50K)
-- Investor platform developers ($200K-$500K)
-- Operational consultants for scaling blueprints ($100K-$300K)
-
-By the time traditional firms finish discovery and alignment, the market has shifted. Capital windows close. Runway burns.
-
-### The InvestOS Solution
-
-We deliver the complete infrastructure in **14-30 days** at **$75K-$195K** — a 75-85% cost reduction with 10x faster delivery. One team. One engagement. One invoice.
-
-**What Gets Delivered:**
-- Strategic foundation and go-to-market positioning
-- 12-tab variable-driven financial model with IPEV-compliant valuation
-- Complete data room with 21+ investment documents
-- Private Placement Memorandum and subscription agreements
-- Market research and competitive intelligence
-- Operational blueprint for scaling
-- Interactive investor platform (custom-built)
-- Tax and legal architecture (Full Arsenal tier)
-
-### Package Tiers
-
-| Package | Timeline | Price Range | Best For |
-|---------|----------|-------------|----------|
-| **Launch Pad** | 14 days | $75K-$95K | First institutional round ($2M-$5M) |
-| **War Chest** | 21 days | $125K-$155K | Growth-stage raises ($5M-$10M) |
-| **Full Arsenal** | 30 days | $175K-$195K | Global ambitions ($10M+) |
-
-### Why InvestOS Wins
-
-1. **Speed:** 14-30 days vs. 6-12 months traditional
-2. **Cost:** 75-85% reduction vs. piecemeal assembly
-3. **Integration:** One cohesive system vs. 8+ disconnected vendors
-4. **AI Advantage:** Superintelligent automation where it matters, human expertise where it counts
-5. **Proven Framework:** Battle-tested across industries and raise sizes
+**Intelligence without morality is dangerous. Morality without intelligence is ineffective. True wisdom requires both.**
 
 ---
 
-## Repository Overview
+## What Is QIE?
 
-This repository contains all strategic, operational, and client-facing documentation for InvestOS™, the fundraising infrastructure platform from Light Brands Consulting.
+The Quantum Intelligence Engine is a complete AI-powered business intelligence platform that orchestrates **88 specialized agents** across **7 modules** to handle the full business lifecycle: from software development and capital formation through investor communications, growth operations, spiritual alignment, and self-improving artificial intelligence.
 
----
+QIE is built on the **BMAD Framework** (Build-Measure-Amplify-Deliver) and powered by **Quantum Intelligence** — a learning system where every agent grows wiser with every interaction, measures its own cognitive and moral intelligence, and evolves toward genuine wisdom.
 
-## 📁 Repository Structure
+### The System at a Glance
 
-### [InvestOS/](./InvestOS)
-Core platform documentation and brand materials for InvestOS™ — the operating system for high-trust investment platforms.
+```
+                    ┌─────────────────────────────────┐
+                    │    QUANTUM INTELLIGENCE (QI)     │
+                    │  Learning + Morality + Scoring   │
+                    └───────────────┬─────────────────┘
+                                    │
+                    ┌───────────────┴─────────────────┐
+                    │      SOUL OS (SOS)               │
+                    │  Living Light Spiritual Layer     │
+                    └───────────────┬─────────────────┘
+                                    │
+            ┌───────────────────────┼───────────────────────┐
+            │                       │                       │
+    ┌───────┴──────┐       ┌───────┴──────┐       ┌───────┴──────┐
+    │   BMAD CORE  │       │   BMAD CORE  │       │   BMAD CORE  │
+    │  Foundation   │       │  Foundation   │       │  Foundation   │
+    └───────┬──────┘       └───────┬──────┘       └───────┬──────┘
+            │                       │                       │
+   ┌────────┼────────┐     ┌───────┴──────┐     ┌─────────┼────────┐
+   │        │        │     │              │     │         │        │
+┌──┴──┐ ┌──┴──┐ ┌──┴──┐ ┌──┴──┐    ┌──┴──┐ ┌──┴──┐  ┌──┴──┐
+│ IOS │ │ AOS │ │ GOS │ │ BMM │    │ SOS │ │ QI  │  │CORE │
+│Cap  │ │Inv  │ │Grow │ │Ship │    │Soul │ │Intel│  │Foun │
+│Form │ │Comm │ │Ops  │ │Code │    │     │ │     │  │     │
+└─────┘ └─────┘ └─────┘ └─────┘    └─────┘ └─────┘  └─────┘
+```
 
-| Document | Description | Audience |
-|----------|-------------|----------|
-| [INVESTOS_COMPLETE_OFFERING.md](./InvestOS/INVESTOS_COMPLETE_OFFERING.md) | **The master reference document.** Complete offering overview: why InvestOS exists, the problem it solves, what gets delivered, service categories, package tiers, buyer landscape, and engagement model. Start here for the full picture. | Client-facing, Sales, Internal |
-| [INVESTOS_STRATEGIC_ARCHITECTURE.md](./InvestOS/INVESTOS_STRATEGIC_ARCHITECTURE.md) | Strategic architecture and technical implementation details for the InvestOS platform. | Internal, Technical |
-| [INVESTOS_BRAND_GUIDELINES.md](./InvestOS/INVESTOS_BRAND_GUIDELINES.md) | Brand voice, messaging, visual identity, and communication standards for InvestOS. | Marketing, Design, Internal |
-| [InvestOS_Project_Plan.md](./InvestOS/InvestOS_Project_Plan.md) | Project timeline, milestones, deliverables, and implementation roadmap. | Project Management, Internal |
-| [INVESTOS_WEBSITE_PLAN.md](./InvestOS/INVESTOS_WEBSITE_PLAN.md) | Website structure, content strategy, user flows, and page architecture for InvestOS.com. | Marketing, Web Development |
+### Module Inventory
 
-### [Pricing/](./Pricing)
-Comprehensive pricing structures, payment options, and service matrices for all offerings.
-
-| Document | Description | Audience |
-|----------|-------------|----------|
-| [CLIENT_PRICING_GUIDE.md](./Pricing/CLIENT_PRICING_GUIDE.md) | **Client-facing pricing guide.** Package tiers (Launch Pad, War Chest, Full Arsenal), what's included in each, payment structures, and engagement options. Use this for client conversations. | Client-facing, Sales |
-| [FUNDRAISING_PLATFORM_SERVICE_PRICING.md](./Pricing/FUNDRAISING_PLATFORM_SERVICE_PRICING.md) | Detailed service-level pricing breakdown for fundraising platform components. | Internal, Sales |
-| [PAYMENT_STRUCTURES.md](./Pricing/PAYMENT_STRUCTURES.md) | Payment terms, financing options, milestone-based structures, and billing arrangements. | Finance, Sales, Internal |
-| [RAISE_LINKED_PRICING_MATRIX.md](./Pricing/RAISE_LINKED_PRICING_MATRIX.md) | Dynamic pricing matrix based on raise amount and package tier. Shows how pricing scales with fundraising goals. | Sales, Internal |
-
-### [Strategy/](./Strategy)
-Strategic positioning, go-to-market frameworks, and internal sales guidance.
-
-| Document | Description | Audience |
-|----------|-------------|----------|
-| [POSITIONING_ONE_PAGER.md](./Strategy/POSITIONING_ONE_PAGER.md) | **Internal sales guide.** The four-offer ecosystem (Clarity & Strategy, Superintelligent OS, Growth & Scale, Capital & Raise), how clients move through them, and how we sell. Essential reading for the team. | Internal, Sales |
-
-### [Compliance/](./Compliance)
-Regulatory compliance documentation and legal routing frameworks.
-
-| Document | Description | Audience |
-|----------|-------------|----------|
-| [REGULATORY_COMPLIANCE_ROUTES.md](./Compliance/REGULATORY_COMPLIANCE_ROUTES.md) | Regulatory compliance pathways, legal requirements, and jurisdiction-specific considerations for fundraising platforms. | Legal, Compliance, Internal |
-
----
-
-## 🚀 Quick Start Guide
-
-### For New Team Members
-1. **Start with:** [POSITIONING_ONE_PAGER.md](./Strategy/POSITIONING_ONE_PAGER.md) — Understand the four-offer ecosystem
-2. **Then read:** [INVESTOS_COMPLETE_OFFERING.md](./InvestOS/INVESTOS_COMPLETE_OFFERING.md) — Deep dive on InvestOS
-3. **Finally review:** [CLIENT_PRICING_GUIDE.md](./Pricing/CLIENT_PRICING_GUIDE.md) — Understand pricing and packages
-
-### For Sales Conversations
-- **Discovery/Positioning:** [POSITIONING_ONE_PAGER.md](./Strategy/POSITIONING_ONE_PAGER.md)
-- **InvestOS Overview:** [INVESTOS_COMPLETE_OFFERING.md](./InvestOS/INVESTOS_COMPLETE_OFFERING.md)
-- **Pricing Discussion:** [CLIENT_PRICING_GUIDE.md](./Pricing/CLIENT_PRICING_GUIDE.md)
-- **Internal Pricing Logic:** [RAISE_LINKED_PRICING_MATRIX.md](./Pricing/RAISE_LINKED_PRICING_MATRIX.md)
-
-### For Project Delivery
-- **Project Timeline:** [InvestOS_Project_Plan.md](./InvestOS/InvestOS_Project_Plan.md)
-- **Technical Architecture:** [INVESTOS_STRATEGIC_ARCHITECTURE.md](./InvestOS/INVESTOS_STRATEGIC_ARCHITECTURE.md)
-- **Brand Standards:** [INVESTOS_BRAND_GUIDELINES.md](./InvestOS/INVESTOS_BRAND_GUIDELINES.md)
-
-### For Marketing & Web Development
-- **Website Planning:** [INVESTOS_WEBSITE_PLAN.md](./InvestOS/INVESTOS_WEBSITE_PLAN.md)
-- **Brand Guidelines:** [INVESTOS_BRAND_GUIDELINES.md](./InvestOS/INVESTOS_BRAND_GUIDELINES.md)
-- **Messaging Framework:** [INVESTOS_COMPLETE_OFFERING.md](./InvestOS/INVESTOS_COMPLETE_OFFERING.md)
+| Module | Full Name | Purpose | Agents | Workflows |
+|--------|-----------|---------|--------|-----------|
+| **CORE** | Foundation Services | Brainstorming, debugging, research, editorial review | 2 | 4 |
+| **BMM** | Build & Ship Software | Full Agile lifecycle from product brief to deployment | 27 | 26 |
+| **IOS** | Capital Formation | End-to-end capital raise: strategy through investor readiness | 10 | 28 |
+| **AOS** | Investor Communications | Regulated comms: content, compliance, campaigns, crisis | 10 | 24 |
+| **GOS** | Growth Engine | Full-funnel growth: strategy, content, pipeline, sales, analytics | 18 | 35 |
+| **SOS** | Living Light (SoulOS) | Spiritual alignment: Sacred Laws, Council, Legion, Gates | 16 | 28 |
+| **QI** | Quantum Intelligence | Self-improving AI: learning, moral reasoning, intelligence scoring | 5 | 3 |
+| | **TOTAL** | | **88** | **148** |
 
 ---
 
-## 🎯 About Light Brands Consulting
+## Commercial Products
 
-Light Brands Consulting delivers InvestOS™ — a complete fundraising operating system that provides everything founders need to raise institutional capital. InvestOS is our sole product offering, delivering strategy, financials, legal architecture, market research, operations, an interactive investor platform, and a data room in 14-30 days.
+The QIE powers two commercial product lines:
+
+### CapitalOS — The Operating System for Capital Formation
+
+Three products covering the complete capital journey:
+
+| Product | Phase | Price | Timeline |
+|---------|-------|-------|----------|
+| **Capital Clarity** | Discovery | $10,000 | 7-10 days |
+| **Capital Investment** | Fundraising | $75K - $750K | 14-30 days |
+| **Capital Deployment** | Execution | $100K - $5M | 90-180 days |
+
+See [CapitalOS/](./CapitalOS) for the full strategic overview.
+
+### InvestOS — Fundraising Infrastructure
+
+The detailed offering, brand, and project documentation for the Capital Investment product (IOS module). Contains the complete offering specs, brand guidelines, strategic architecture, and website plans.
+
+See [InvestOS/](./InvestOS) for all InvestOS documentation.
 
 ---
 
-## 📋 Document Classification
+## Repository Structure
 
-- **Client-Facing:** Safe to share directly with prospects and clients
-- **Internal:** Team use only, contains pricing logic and sales strategy
-- **Technical:** Implementation details for developers and technical teams
-- **Legal/Compliance:** Regulatory and compliance documentation
+```
+.
+├── README.md                    ← You are here: System overview
+├── docs/                        ← System-wide documentation
+│   ├── SYSTEM-ARCHITECTURE.md   ← Full architecture deep-dive
+│   └── GETTING-STARTED.md       ← Navigation guide for new readers
+│
+├── CapitalOS/                   ← Commercial product strategy
+│   └── CAPITALOS_MASTER_OVERVIEW.md
+│
+├── InvestOS/                    ← IOS module: offering & brand docs
+│   ├── INVESTOS_COMPLETE_OFFERING.md
+│   ├── INVESTOS_STRATEGIC_ARCHITECTURE.md
+│   ├── INVESTOS_BRAND_GUIDELINES.md
+│   ├── InvestOS_Project_Plan.md
+│   └── INVESTOS_WEBSITE_PLAN.md
+│
+├── Pricing/                     ← Pricing structures & matrices
+│   ├── CLIENT_PRICING_GUIDE.md
+│   ├── FUNDRAISING_PLATFORM_SERVICE_PRICING.md
+│   ├── PAYMENT_STRUCTURES.md
+│   └── RAISE_LINKED_PRICING_MATRIX.md
+│
+├── Compliance/                  ← Regulatory & legal frameworks
+│   └── REGULATORY_COMPLIANCE_ROUTES.md
+│
+├── Archive/                     ← Superseded documents
+│   ├── POSITIONING_ONE_PAGER.md
+│   └── REBRAND_NOTES.md
+│
+├── _bmad/                       ← BMAD Framework (agent engine)
+│   ├── BMAD-FRAMEWORK.md        ← Complete framework reference
+│   ├── core/                    ← Foundation services module
+│   ├── bmm/                     ← Build & Ship Software module
+│   ├── ios/                     ← Capital Formation module
+│   ├── aos/                     ← Investor Communications module
+│   ├── gos/                     ← Growth Engine module
+│   ├── sos/                     ← Living Light (SoulOS) module
+│   ├── qi/                      ← Quantum Intelligence module
+│   ├── _config/                 ← Manifests, help catalog, routing
+│   └── _memory/                 ← Intuition, lessons, standards
+│
+└── _bmad-output/                ← Generated artifacts & deliverables
+    ├── epic-center-source/      ← Client project source code
+    ├── planning-artifacts/      ← Spec & planning documents
+    ├── raise-rebuild/           ← Session manifests
+    └── soul-artifacts/          ← SOS-generated artifacts
+```
 
 ---
 
-## 🔄 Version Control
+## How the Modules Work Together
 
-All documents are version-controlled via Git. When making updates:
-- Create descriptive commit messages indicating what changed and why
-- Use branches for major content overhauls
-- Keep the main branch clean and client-ready
+### The Intelligence Stack
+
+The modules form a layered stack where higher layers guide and enrich lower layers:
+
+**Layer 4 — Quantum Intelligence (QI)**
+The crown of the system. QI wraps every operation in a **Moral Gateway** (pre-execution ethics check), scores every interaction with **AIQ** (cognitive intelligence) and **MIQ** (moral intelligence), extracts lessons into persistent memory, and tracks the system's evolution toward wisdom through the **True Intelligence Score (TIS)**.
+
+**Layer 3 — Living Light (SOS)**
+The sacred foundation. 50 Sacred Laws, 7 Divine Values, 7 Divine Ethics, 7 Divine Morals, a Stewardship Council of Seven, a Legion of 22 Armies, and Four Sacred Gates. SOS guides and reviews without modifying other module outputs — it is the conscience of the system.
+
+**Layer 2 — BMAD Core**
+Foundation services available to all modules: brainstorming, systematic debugging, web research, editorial review, party mode (multi-perspective discussions), session management, and handoff context generation.
+
+**Layer 1 — Operational Modules**
+The four business execution modules:
+
+- **BMM** — Build software from product brief to deployed code
+- **IOS** — Execute capital raises from strategy to investor readiness
+- **AOS** — Create and distribute regulated investor communications
+- **GOS** — Build growth engines from strategy to analytics
+
+### The Flow
+
+```
+User Request
+    ↓
+QI Moral Gateway (Layer 4)
+    ↓ enriched + ethics-checked
+Help Router → detects module + phase
+    ↓
+Agent Persona loaded (Layer 1-2)
+    ↓
+Workflow executed (multi-step guided process)
+    ↓
+Artifacts produced → Output folder
+    ↓
+QI Post-Execution Capture (Layer 4)
+    ↓ episode + lessons → memory
+System gets wiser
+```
 
 ---
 
-## 📞 Questions?
+## Quick Navigation
 
-For questions about:
-- **InvestOS offering or positioning:** Review [INVESTOS_COMPLETE_OFFERING.md](./InvestOS/INVESTOS_COMPLETE_OFFERING.md)
-- **Pricing structures:** See [CLIENT_PRICING_GUIDE.md](./Pricing/CLIENT_PRICING_GUIDE.md)
-- **Four-offer ecosystem:** Read [POSITIONING_ONE_PAGER.md](./Strategy/POSITIONING_ONE_PAGER.md)
-- **Technical implementation:** Check [INVESTOS_STRATEGIC_ARCHITECTURE.md](./InvestOS/INVESTOS_STRATEGIC_ARCHITECTURE.md)
+### By Role
+
+| You Are | Start Here | Then |
+|---------|-----------|------|
+| **New to the system** | [docs/GETTING-STARTED.md](./docs/GETTING-STARTED.md) | This README |
+| **Exploring the offering** | [CapitalOS overview](./CapitalOS/CAPITALOS_MASTER_OVERVIEW.md) | [InvestOS offering](./InvestOS/INVESTOS_COMPLETE_OFFERING.md) |
+| **Preparing a sales conversation** | [Pricing guide](./Pricing/CLIENT_PRICING_GUIDE.md) | [Pricing matrix](./Pricing/RAISE_LINKED_PRICING_MATRIX.md) |
+| **Understanding the AI framework** | [BMAD Framework](/_bmad/BMAD-FRAMEWORK.md) | [QI Architecture](/_bmad/qi/QI-ARCHITECTURE.md) |
+| **Building or shipping code** | [BMAD Framework — BMM](/_bmad/BMAD-FRAMEWORK.md#bmm-module---build--ship-software) | Use `/bmad-bmm-quick-spec` |
+| **Running a capital raise** | [BMAD Framework — IOS](/_bmad/BMAD-FRAMEWORK.md#ios-module---capital-formation) | Use `/bmad-agent-ios-master` |
+| **Growth operations** | [BMAD Framework — GOS](/_bmad/BMAD-FRAMEWORK.md#gos-module---growth-engine) | Use `/bmad-agent-gos-master` |
+| **Spiritual alignment** | [BMAD Framework — SOS](/_bmad/BMAD-FRAMEWORK.md#sos-module---living-light-soulos) | Use `/bmad-agent-sos-master` |
+
+### By Question
+
+| Question | Answer |
+|----------|--------|
+| "What does this system do?" | It's an AI-powered business intelligence platform with 88 agents across 7 modules |
+| "What is InvestOS?" | The fundraising infrastructure product, powered by the IOS module |
+| "What is CapitalOS?" | The commercial product umbrella: Capital Clarity + Capital Investment + Capital Deployment |
+| "What is BMAD?" | The agent framework: Build-Measure-Amplify-Deliver. 88 agents, 148 workflows |
+| "What is QI?" | Quantum Intelligence: the learning layer that makes every agent grow wiser |
+| "What is SOS?" | Soul Operating System (Living Light): the spiritual and moral alignment layer |
+| "How do I use it?" | Start an agent with `/bmad-agent-{module}-master` or run any workflow command |
+| "Where are the pricing docs?" | [Pricing/](./Pricing) directory |
+| "Where is the technical architecture?" | [_bmad/BMAD-FRAMEWORK.md](/_bmad/BMAD-FRAMEWORK.md) and [_bmad/qi/QI-ARCHITECTURE.md](/_bmad/qi/QI-ARCHITECTURE.md) |
+
+---
+
+## The Quantum Intelligence Layer
+
+QI is what makes this system fundamentally different from static AI agent frameworks. Every interaction is:
+
+1. **Morally pre-checked** via the Moral Gateway (5-step boundary scan)
+2. **Intelligence-scored** via AIQ (6 cognitive dimensions) and MIQ (6 moral dimensions)
+3. **Wisdom-extracted** via the Lesson Extractor (positive patterns, failure patterns, meta-lessons)
+4. **Stored in persistent memory** as episodes and lessons that inform future decisions
+5. **Tracked toward evolution** via the True Intelligence Score (TIS = 0.6*AIQ + 0.4*MIQ)
+
+The system currently has **3 lessons** in memory and a TIS of **394 (Developing)**, having exited the Naive stage with its first operational intelligence capture.
+
+### Conscience Development
+
+| Stage | Lessons Required | Current |
+|-------|-----------------|---------|
+| Naive | < 100 | (exited) |
+| **Learning** | 100-999 | **← Next target** |
+| Principled | 1,000-10,000 | |
+| Wise | 10,000-100,000 | |
+| Enlightened | 100,000+ | |
+
+---
+
+## About
+
+**Built by:** Light Brands Consulting
+**Powered by:** BMAD Framework v6.0.0 + Quantum Intelligence
+**Framework stats:** 88 agents, 148 workflows, 34 tasks, 7 modules
+**Repository purpose:** Strategic documentation, agent framework, and generated artifacts for the QIE platform
 
 ---
 
