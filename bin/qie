@@ -1,0 +1,760 @@
+#!/usr/bin/env bash
+# QIE Client Hub CLI
+# Master orchestration layer for managing repos across GitHub organizations.
+# Registry-first, pull-on-demand architecture.
+set -euo pipefail
+
+# ─── Root Resolution ──────────────────────────────────────────────────────────
+QIE_ROOT="$(git -C "$(dirname "${BASH_SOURCE[0]}")" rev-parse --show-toplevel 2>/dev/null)" || {
+  echo "Error: Not inside a git repository." >&2; exit 1
+}
+QIE_DIR="$QIE_ROOT/.qie"
+CLIENTS_DIR="$QIE_ROOT/clients"
+REGISTRY="$QIE_DIR/registry.json"
+CONTEXT="$QIE_DIR/context.yaml"
+SOURCES="$QIE_DIR/sources.yaml"
+IGNORE_FILE="$QIE_DIR/ignore"
+BMAD_DIR="$QIE_ROOT/_bmad"
+
+# ─── Colors ───────────────────────────────────────────────────────────────────
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+DIM='\033[2m'
+BOLD='\033[1m'
+NC='\033[0m'
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+info()  { echo -e "${BLUE}▸${NC} $*"; }
+ok()    { echo -e "${GREEN}✓${NC} $*"; }
+warn()  { echo -e "${YELLOW}⚠${NC} $*"; }
+err()   { echo -e "${RED}✗${NC} $*" >&2; }
+
+require_cmd() {
+  command -v "$1" &>/dev/null || { err "Required command not found: $1"; exit 1; }
+}
+
+require_registry() {
+  [[ -f "$REGISTRY" ]] || { err "Registry not found. Run: qie scan"; exit 1; }
+}
+
+# Time-ago formatting (works on macOS and Linux)
+time_ago() {
+  local iso_date="$1"
+  local then now diff
+  if [[ "$(uname)" == "Darwin" ]]; then
+    then=$(date -jf "%Y-%m-%dT%H:%M:%SZ" "$iso_date" "+%s" 2>/dev/null || date -jf "%Y-%m-%dT%H:%M:%S%z" "${iso_date}Z" "+%s" 2>/dev/null || echo 0)
+  else
+    then=$(date -d "$iso_date" "+%s" 2>/dev/null || echo 0)
+  fi
+  now=$(date "+%s")
+  diff=$(( now - then ))
+  if (( diff < 60 )); then echo "just now"
+  elif (( diff < 3600 )); then echo "$(( diff / 60 ))m ago"
+  elif (( diff < 86400 )); then echo "$(( diff / 3600 ))h ago"
+  elif (( diff < 604800 )); then echo "$(( diff / 86400 ))d ago"
+  elif (( diff < 2592000 )); then echo "$(( diff / 604800 ))w ago"
+  else echo "$(( diff / 2592000 ))mo ago"
+  fi
+}
+
+# Get the expected local path for a registry entry
+get_local_path() {
+  local category="$1" name="$2"
+  echo "$CLIENTS_DIR/$category/$name"
+}
+
+# Check if a project is local (directory exists with .git)
+is_local() {
+  local category="$1" name="$2"
+  local path
+  path="$(get_local_path "$category" "$name")"
+  [[ -d "$path/.git" ]]
+}
+
+# Find a project in the registry by name (supports fuzzy/partial match)
+find_project() {
+  local query="$1"
+  local matches
+
+  # Exact match first
+  matches=$(jq -r --arg q "$query" '.repos[] | select(.name == $q) | .name' "$REGISTRY")
+  if [[ -n "$matches" ]]; then
+    echo "$matches"
+    return 0
+  fi
+
+  # Substring match
+  matches=$(jq -r --arg q "$query" '.repos[] | select(.name | contains($q)) | .name' "$REGISTRY")
+  local count
+  count=$(echo "$matches" | grep -c . 2>/dev/null || echo 0)
+
+  if (( count == 0 )); then
+    err "No project found matching: $query"
+    return 1
+  elif (( count == 1 )); then
+    echo "$matches"
+    return 0
+  else
+    err "Multiple matches for '$query':"
+    echo "$matches" | while read -r m; do echo "  - $m"; done >&2
+    err "Be more specific."
+    return 1
+  fi
+}
+
+# Get project details from registry as JSON
+get_project() {
+  local name="$1"
+  jq --arg n "$name" '.repos[] | select(.name == $n)' "$REGISTRY"
+}
+
+# Read active project from context
+get_active_project() {
+  if [[ -f "$CONTEXT" ]]; then
+    grep "^active_project:" "$CONTEXT" 2>/dev/null | sed 's/active_project: *//' || true
+  fi
+}
+
+get_active_path() {
+  if [[ -f "$CONTEXT" ]]; then
+    grep "^active_path:" "$CONTEXT" 2>/dev/null | sed 's/active_path: *//' || true
+  fi
+}
+
+# Read ignored repos
+get_ignored() {
+  if [[ -f "$IGNORE_FILE" ]]; then
+    grep -v '^#' "$IGNORE_FILE" | grep -v '^$' || true
+  fi
+}
+
+# ─── Commands ─────────────────────────────────────────────────────────────────
+
+cmd_scan() {
+  require_cmd gh
+  require_cmd jq
+
+  info "Scanning GitHub for repos..."
+
+  local repos_json='[]'
+  local new_count=0
+  local total=0
+
+  # Parse organizations from sources.yaml
+  local org_lines
+  org_lines=$(grep "name:" "$SOURCES" | grep -v "^#" | sed 's/.*name: *//' | tr -d "'\"") || true
+
+  for org in $org_lines; do
+    info "Querying org: ${BOLD}$org${NC}"
+    local category
+    # Get category for this org (line after the name)
+    category=$(awk "/name: *$org/{getline; print}" "$SOURCES" | sed 's/.*category: *//' | tr -d "'\"")
+    [[ -z "$category" ]] && category=$(echo "$org" | tr '[:upper:]' '[:lower:]')
+
+    local org_repos
+    org_repos=$(gh api "/orgs/$org/repos" --paginate --jq '.[] | select(.archived == false and .disabled == false) | {
+      name: .name,
+      owner: .owner.login,
+      full_name: .full_name,
+      ssh_url: .ssh_url,
+      https_url: .clone_url,
+      category: "'"$category"'",
+      description: (.description // ""),
+      default_branch: .default_branch,
+      language: (.language // "—"),
+      updated_at: .pushed_at,
+      archived: .archived
+    }' 2>/dev/null) || { warn "Failed to query org: $org"; continue; }
+
+    local count
+    count=$(echo "$org_repos" | jq -s 'length')
+    info "  Found $count repos"
+    total=$(( total + count ))
+
+    repos_json=$(echo "$repos_json" | jq --argjson new "$(echo "$org_repos" | jq -s '.')" '. + $new')
+  done
+
+  # Parse personal repos from sources.yaml
+  local personal_lines
+  personal_lines=$(awk '/^personal:/,0 { if (/repo:/) print }' "$SOURCES" | sed 's/.*repo: *//' | tr -d "'\"") || true
+
+  for repo_full in $personal_lines; do
+    [[ -z "$repo_full" ]] && continue
+    info "Querying repo: ${BOLD}$repo_full${NC}"
+
+    local category
+    category=$(awk "/repo: *${repo_full//\//\\/}/{getline; print}" "$SOURCES" | sed 's/.*category: *//' | tr -d "'\"")
+    [[ -z "$category" ]] && category="personal"
+
+    local repo_data
+    repo_data=$(gh api "/repos/$repo_full" --jq '{
+      name: .name,
+      owner: .owner.login,
+      full_name: .full_name,
+      ssh_url: .ssh_url,
+      https_url: .clone_url,
+      category: "'"$category"'",
+      description: (.description // ""),
+      default_branch: .default_branch,
+      language: (.language // "—"),
+      updated_at: .pushed_at,
+      archived: .archived
+    }' 2>/dev/null) || { warn "Failed to query repo: $repo_full"; continue; }
+
+    total=$(( total + 1 ))
+    repos_json=$(echo "$repos_json" | jq --argjson new "[$repo_data]" '. + $new')
+  done
+
+  # Check for new repos vs existing registry
+  if [[ -f "$REGISTRY" ]]; then
+    local old_count
+    old_count=$(jq '.repos | length' "$REGISTRY")
+    new_count=$(( total - old_count ))
+    (( new_count < 0 )) && new_count=0
+  else
+    new_count=$total
+  fi
+
+  # Sort repos by category then name
+  repos_json=$(echo "$repos_json" | jq 'sort_by(.category, .name)')
+
+  # Write registry (atomic write via temp file)
+  local tmp_registry
+  tmp_registry=$(mktemp)
+  jq -n --argjson repos "$repos_json" --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{
+    last_scan: $ts,
+    repos: $repos
+  }' > "$tmp_registry"
+  mv "$tmp_registry" "$REGISTRY"
+
+  echo ""
+  ok "Registry updated: ${BOLD}$total${NC} repos total"
+  if (( new_count > 0 )); then
+    ok "${GREEN}+$new_count new${NC} repos discovered"
+  fi
+  info "Run ${BOLD}qie list${NC} to browse"
+}
+
+cmd_list() {
+  require_registry
+
+  local filter="${1:-}"
+  local show_all=false
+  local show_local_only=false
+  local show_remote_only=false
+
+  case "$filter" in
+    --all)    show_all=true ;;
+    --local)  show_local_only=true ;;
+    --remote) show_remote_only=true ;;
+  esac
+
+  local ignored
+  ignored=$(get_ignored)
+  local active
+  active=$(get_active_project)
+
+  # Count totals
+  local total local_count remote_count
+  total=$(jq '.repos | length' "$REGISTRY")
+  local_count=0
+  remote_count=0
+
+  # Build display data
+  local categories
+  categories=$(jq -r '.repos[].category' "$REGISTRY" | sort -u)
+
+  # First pass: count local/remote
+  while IFS='|' read -r name category; do
+    if is_local "$category" "$name"; then
+      local_count=$(( local_count + 1 ))
+    else
+      remote_count=$(( remote_count + 1 ))
+    fi
+  done < <(jq -r '.repos[] | "\(.name)|\(.category)"' "$REGISTRY")
+
+  echo ""
+  echo -e "${BOLD}QIE Client Hub${NC} — $total repos (${GREEN}$local_count local${NC}, ${DIM}$remote_count remote${NC})"
+  echo ""
+
+  for cat in $categories; do
+    local cat_display
+    cat_display=$(echo "$cat" | tr '[:lower:]' '[:upper:]' | tr '-' ' ')
+    local cat_count
+    cat_count=$(jq --arg c "$cat" '[.repos[] | select(.category == $c)] | length' "$REGISTRY")
+
+    echo -e "  ${BOLD}${cat_display}${NC} ($cat_count repos)"
+
+    while IFS='|' read -r name language updated_at; do
+      # Check ignore list
+      if [[ "$show_all" != "true" ]] && echo "$ignored" | grep -qx "$name" 2>/dev/null; then
+        continue
+      fi
+
+      local is_loc=false
+      is_local "$cat" "$name" && is_loc=true
+
+      # Apply filters
+      if [[ "$show_local_only" == "true" && "$is_loc" != "true" ]]; then continue; fi
+      if [[ "$show_remote_only" == "true" && "$is_loc" == "true" ]]; then continue; fi
+
+      # Format columns
+      local marker="  "
+      local status_str
+      local name_color="$NC"
+
+      if [[ "$is_loc" == "true" ]]; then
+        marker="${GREEN}*${NC} "
+        status_str="${GREEN}local${NC}"
+        name_color="$BOLD"
+      else
+        status_str="${DIM}remote${NC}"
+      fi
+
+      if [[ "$name" == "$active" ]]; then
+        marker="${CYAN}>${NC} "
+        name_color="${CYAN}${BOLD}"
+      fi
+
+      local time_str
+      time_str=$(time_ago "$updated_at" 2>/dev/null || echo "—")
+
+      printf "    %b %-24b %-12s %b  %s\n" "$marker" "${name_color}${name}${NC}" "$language" "$status_str" "$time_str"
+    done < <(jq -r --arg c "$cat" '.repos[] | select(.category == $c) | "\(.name)|\(.language)|\(.updated_at)"' "$REGISTRY")
+
+    echo ""
+  done
+
+  echo -e "  ${GREEN}*${NC} = local  ${CYAN}>${NC} = active"
+  [[ -n "$active" ]] && echo -e "  Active: ${CYAN}${BOLD}$active${NC}"
+  echo ""
+}
+
+cmd_pull() {
+  local query="${1:-}"
+  local full_clone=false
+
+  [[ -z "$query" ]] && { err "Usage: qie pull <project> [--full]"; exit 1; }
+  [[ "${2:-}" == "--full" ]] && full_clone=true
+
+  require_registry
+  require_cmd git
+
+  local name
+  name=$(find_project "$query") || exit 1
+
+  local project_json
+  project_json=$(get_project "$name")
+  local category ssh_url default_branch
+  category=$(echo "$project_json" | jq -r '.category')
+  ssh_url=$(echo "$project_json" | jq -r '.ssh_url')
+  default_branch=$(echo "$project_json" | jq -r '.default_branch')
+
+  local target_dir
+  target_dir="$(get_local_path "$category" "$name")"
+
+  # Check if already local
+  if [[ -d "$target_dir/.git" ]]; then
+    ok "$name is already local at: $target_dir"
+    return 0
+  fi
+
+  # Create category directory if needed
+  mkdir -p "$CLIENTS_DIR/$category"
+
+  info "Pulling ${BOLD}$name${NC} → $target_dir"
+
+  # Clone
+  local clone_args=("clone")
+  if [[ "$full_clone" != "true" ]]; then
+    clone_args+=("--depth" "1")
+  fi
+  clone_args+=("--branch" "$default_branch" "$ssh_url" "$target_dir")
+
+  if git "${clone_args[@]}"; then
+    ok "Cloned ${BOLD}$name${NC}"
+  else
+    err "Failed to clone $name"
+    return 1
+  fi
+
+  # Ensure _bmad is in the project's .gitignore
+  local project_gitignore="$target_dir/.gitignore"
+  if [[ -f "$project_gitignore" ]]; then
+    if ! grep -qx "_bmad" "$project_gitignore" 2>/dev/null; then
+      echo "" >> "$project_gitignore"
+      echo "# QIE Intelligence Framework (symlink — not part of this project)" >> "$project_gitignore"
+      echo "_bmad" >> "$project_gitignore"
+      info "Added _bmad to $name/.gitignore"
+    fi
+  else
+    echo "# QIE Intelligence Framework (symlink — not part of this project)" > "$project_gitignore"
+    echo "_bmad" >> "$project_gitignore"
+    info "Created .gitignore with _bmad exclusion"
+  fi
+
+  echo ""
+  ok "Ready. Run: ${BOLD}qie select $name${NC}"
+}
+
+cmd_select() {
+  local query="${1:-}"
+  [[ -z "$query" ]] && { err "Usage: qie select <project>"; exit 1; }
+
+  require_registry
+
+  local name
+  name=$(find_project "$query") || exit 1
+
+  local project_json
+  project_json=$(get_project "$name")
+  local category owner
+  category=$(echo "$project_json" | jq -r '.category')
+  owner=$(echo "$project_json" | jq -r '.owner')
+
+  local target_dir
+  target_dir="$(get_local_path "$category" "$name")"
+
+  # Auto-pull if not local
+  if ! [[ -d "$target_dir/.git" ]]; then
+    warn "$name is not local. Pulling first..."
+    cmd_pull "$name"
+    echo ""
+  fi
+
+  # Remove previous symlink
+  local prev_active prev_path
+  prev_active=$(get_active_project)
+  prev_path=$(get_active_path)
+  if [[ -n "$prev_path" && -L "$QIE_ROOT/$prev_path/_bmad" ]]; then
+    rm "$QIE_ROOT/$prev_path/_bmad"
+    info "Removed symlink from $prev_active"
+  fi
+
+  # Create new symlink
+  local symlink_target="../../../_bmad"
+  ln -sf "$symlink_target" "$target_dir/_bmad"
+
+  # Verify symlink resolves
+  if [[ -d "$target_dir/_bmad/core" ]]; then
+    ok "Intelligence linked"
+  else
+    warn "Symlink created but could not verify _bmad/core — check directory structure"
+  fi
+
+  # Ensure _bmad is in gitignore
+  local project_gitignore="$target_dir/.gitignore"
+  if [[ -f "$project_gitignore" ]]; then
+    if ! grep -qx "_bmad" "$project_gitignore" 2>/dev/null; then
+      echo "" >> "$project_gitignore"
+      echo "# QIE Intelligence Framework (symlink — not part of this project)" >> "$project_gitignore"
+      echo "_bmad" >> "$project_gitignore"
+    fi
+  fi
+
+  # Write context
+  local rel_path="clients/$category/$name"
+  cat > "$CONTEXT" << EOF
+active_project: $name
+active_path: $rel_path
+owner: $owner
+selected_at: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+EOF
+
+  echo ""
+  ok "Active: ${CYAN}${BOLD}$name${NC} ($owner/$name)"
+  info "Working directory: $target_dir"
+}
+
+cmd_deselect() {
+  local prev_active prev_path
+  prev_active=$(get_active_project)
+  prev_path=$(get_active_path)
+
+  if [[ -z "$prev_active" ]]; then
+    info "No active project."
+    return 0
+  fi
+
+  # Remove symlink
+  if [[ -n "$prev_path" && -L "$QIE_ROOT/$prev_path/_bmad" ]]; then
+    rm "$QIE_ROOT/$prev_path/_bmad"
+  fi
+
+  # Clear context
+  rm -f "$CONTEXT"
+
+  ok "Deselected ${BOLD}$prev_active${NC}"
+}
+
+cmd_status() {
+  local active
+  active=$(get_active_project)
+
+  if [[ -z "$active" ]]; then
+    info "No active project. Run: ${BOLD}qie select <project>${NC}"
+    echo ""
+    if [[ -f "$REGISTRY" ]]; then
+      local total local_count=0
+      total=$(jq '.repos | length' "$REGISTRY")
+      while IFS='|' read -r name category; do
+        is_local "$category" "$name" && local_count=$(( local_count + 1 ))
+      done < <(jq -r '.repos[] | "\(.name)|\(.category)"' "$REGISTRY")
+      info "Registry: $total repos ($local_count local)"
+    else
+      warn "No registry. Run: ${BOLD}qie scan${NC}"
+    fi
+    return 0
+  fi
+
+  local active_path
+  active_path="$QIE_ROOT/$(get_active_path)"
+
+  echo ""
+  echo -e "${BOLD}Active Project: ${CYAN}$active${NC}"
+  echo -e "Path: $active_path"
+
+  # Symlink status
+  if [[ -L "$active_path/_bmad" ]]; then
+    echo -e "Intelligence: ${GREEN}linked${NC}"
+  else
+    echo -e "Intelligence: ${RED}not linked${NC}"
+  fi
+
+  # Git info
+  if [[ -d "$active_path/.git" ]]; then
+    local branch dirty ahead behind
+    branch=$(git -C "$active_path" branch --show-current 2>/dev/null || echo "detached")
+    dirty=$(git -C "$active_path" status --porcelain 2>/dev/null | head -1)
+    echo -e "Branch: ${BOLD}$branch${NC}"
+    if [[ -n "$dirty" ]]; then
+      echo -e "Status: ${YELLOW}dirty${NC}"
+    else
+      echo -e "Status: ${GREEN}clean${NC}"
+    fi
+    local last_commit
+    last_commit=$(git -C "$active_path" log -1 --format="%h %s" 2>/dev/null || echo "—")
+    echo -e "Last commit: ${DIM}$last_commit${NC}"
+  fi
+  echo ""
+}
+
+cmd_sync() {
+  local target="${1:-}"
+
+  if [[ -n "$target" ]]; then
+    # Sync single project
+    require_registry
+    local name
+    name=$(find_project "$target") || exit 1
+    local project_json
+    project_json=$(get_project "$name")
+    local category
+    category=$(echo "$project_json" | jq -r '.category')
+    local target_dir
+    target_dir="$(get_local_path "$category" "$name")"
+
+    if ! [[ -d "$target_dir/.git" ]]; then
+      err "$name is not local. Run: qie pull $name"
+      return 1
+    fi
+
+    info "Syncing ${BOLD}$name${NC}..."
+    if git -C "$target_dir" pull --ff-only 2>/dev/null; then
+      ok "$name updated"
+    else
+      warn "$name could not fast-forward — may need manual merge"
+    fi
+    return 0
+  fi
+
+  # Sync all local projects
+  info "Syncing all local projects..."
+  echo ""
+  local synced=0 failed=0
+
+  if [[ ! -d "$CLIENTS_DIR" ]]; then
+    info "No local projects. Run: ${BOLD}qie pull <project>${NC}"
+    return 0
+  fi
+
+  # Find all git repos under clients/
+  while IFS= read -r git_dir; do
+    local project_dir
+    project_dir="$(dirname "$git_dir")"
+    local project_name
+    project_name="$(basename "$project_dir")"
+
+    if git -C "$project_dir" pull --ff-only 2>/dev/null; then
+      ok "$project_name"
+      synced=$(( synced + 1 ))
+    else
+      warn "$project_name — could not fast-forward"
+      failed=$(( failed + 1 ))
+    fi
+  done < <(find "$CLIENTS_DIR" -mindepth 3 -maxdepth 3 -name ".git" -type d 2>/dev/null)
+
+  echo ""
+  ok "Synced: $synced  Failed: $failed"
+}
+
+cmd_remove() {
+  local query="${1:-}"
+  [[ -z "$query" ]] && { err "Usage: qie remove <project>"; exit 1; }
+
+  require_registry
+
+  local name
+  name=$(find_project "$query") || exit 1
+  local project_json
+  project_json=$(get_project "$name")
+  local category
+  category=$(echo "$project_json" | jq -r '.category')
+  local target_dir
+  target_dir="$(get_local_path "$category" "$name")"
+
+  if ! [[ -d "$target_dir" ]]; then
+    info "$name is not local — nothing to remove."
+    return 0
+  fi
+
+  # Check for dirty state
+  if [[ -d "$target_dir/.git" ]]; then
+    local dirty
+    dirty=$(git -C "$target_dir" status --porcelain 2>/dev/null)
+    if [[ -n "$dirty" ]]; then
+      warn "${BOLD}$name has uncommitted changes:${NC}"
+      git -C "$target_dir" status --short 2>/dev/null | head -10
+      echo ""
+      read -rp "Remove anyway? This will delete uncommitted work. [y/N] " confirm
+      [[ "$confirm" =~ ^[Yy]$ ]] || { info "Cancelled."; return 0; }
+    fi
+  fi
+
+  # Deselect if this is the active project
+  local active
+  active=$(get_active_project)
+  if [[ "$active" == "$name" ]]; then
+    cmd_deselect
+  fi
+
+  rm -rf "$target_dir"
+  ok "Removed ${BOLD}$name${NC} from local"
+  info "Still in registry — run ${BOLD}qie pull $name${NC} to re-pull"
+}
+
+cmd_open() {
+  local query="${1:-}"
+  [[ -z "$query" ]] && { err "Usage: qie open <project>"; exit 1; }
+
+  require_registry
+
+  local name
+  name=$(find_project "$query") || exit 1
+  local project_json
+  project_json=$(get_project "$name")
+  local category
+  category=$(echo "$project_json" | jq -r '.category')
+  local target_dir
+  target_dir="$(get_local_path "$category" "$name")"
+
+  if ! [[ -d "$target_dir" ]]; then
+    err "$name is not local. Run: qie pull $name"
+    return 1
+  fi
+
+  if [[ -n "${EDITOR:-}" ]]; then
+    info "Opening ${BOLD}$name${NC} in $EDITOR"
+    "$EDITOR" "$target_dir"
+  elif [[ "$(uname)" == "Darwin" ]]; then
+    info "Opening ${BOLD}$name${NC} in Finder"
+    open "$target_dir"
+  else
+    info "Path: $target_dir"
+  fi
+}
+
+cmd_help() {
+  echo ""
+  echo -e "${BOLD}QIE Client Hub${NC} — Master orchestration for your GitHub repos"
+  echo ""
+  echo -e "${BOLD}Registry:${NC}"
+  echo "  qie scan                  Refresh registry from GitHub"
+  echo "  qie list                  Show all repos (local + remote)"
+  echo "  qie list --local          Show only pulled repos"
+  echo "  qie list --remote         Show only non-local repos"
+  echo "  qie list --all            Include ignored repos"
+  echo ""
+  echo -e "${BOLD}Projects:${NC}"
+  echo "  qie pull <project>        Clone repo locally (shallow)"
+  echo "  qie pull <project> --full Clone with full history"
+  echo "  qie select <project>      Activate project (auto-pulls if needed)"
+  echo "  qie deselect              Deactivate current project"
+  echo "  qie status                Show active project details"
+  echo ""
+  echo -e "${BOLD}Maintenance:${NC}"
+  echo "  qie sync                  Pull latest for all local repos"
+  echo "  qie sync <project>        Pull latest for one repo"
+  echo "  qie remove <project>      Delete local clone (keeps in registry)"
+  echo "  qie open <project>        Open project in editor/Finder"
+  echo ""
+  echo -e "${BOLD}Supports fuzzy matching:${NC} qie select aur → auracle"
+  echo ""
+}
+
+# ─── Default (no args) ───────────────────────────────────────────────────────
+cmd_default() {
+  echo ""
+  echo -e "${BOLD}QIE Client Hub${NC}"
+
+  local active
+  active=$(get_active_project)
+  if [[ -n "$active" ]]; then
+    echo -e "Active: ${CYAN}${BOLD}$active${NC}"
+  fi
+
+  if [[ -f "$REGISTRY" ]]; then
+    local total
+    total=$(jq '.repos | length' "$REGISTRY")
+    local local_count=0
+    while IFS='|' read -r name category; do
+      is_local "$category" "$name" && local_count=$(( local_count + 1 ))
+    done < <(jq -r '.repos[] | "\(.name)|\(.category)"' "$REGISTRY")
+    echo -e "Registry: $total repos (${GREEN}$local_count local${NC})"
+    local last_scan
+    last_scan=$(jq -r '.last_scan' "$REGISTRY")
+    echo -e "Last scan: $(time_ago "$last_scan" 2>/dev/null || echo "$last_scan")"
+  else
+    warn "No registry. Run: ${BOLD}qie scan${NC}"
+  fi
+
+  echo ""
+  echo -e "Run ${BOLD}qie help${NC} for commands"
+  echo ""
+}
+
+# ─── Main Dispatch ────────────────────────────────────────────────────────────
+main() {
+  local cmd="${1:-}"
+  shift 2>/dev/null || true
+
+  case "$cmd" in
+    scan)       cmd_scan "$@" ;;
+    list|ls)    cmd_list "$@" ;;
+    pull)       cmd_pull "$@" ;;
+    select|sel) cmd_select "$@" ;;
+    deselect)   cmd_deselect "$@" ;;
+    status|st)  cmd_status "$@" ;;
+    sync)       cmd_sync "$@" ;;
+    remove|rm)  cmd_remove "$@" ;;
+    open)       cmd_open "$@" ;;
+    help|--help|-h) cmd_help ;;
+    "")         cmd_default ;;
+    *)          err "Unknown command: $cmd"; cmd_help; exit 1 ;;
+  esac
+}
+
+main "$@"

@@ -7,3 +7,11 @@ user_name: Lawless
 communication_language: English
 document_output_language: English
 output_folder: _bmad-output
+
+# QIE Client Hub
+hub_enabled: true
+hub_cli: bin/qie
+hub_registry: .qie/registry.json
+hub_context: .qie/context.yaml
+hub_clients_dir: clients
+hub_knowledge: _bmad/core/data/qie-client-hub.md

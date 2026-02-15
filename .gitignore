@@ -1,0 +1,8 @@
+# QIE Client Hub — client repos are per-user working state (NEVER tracked)
+clients/
+
+# QIE Hub — per-user active project context
+.qie/context.yaml
+
+# OS files
+.DS_Store

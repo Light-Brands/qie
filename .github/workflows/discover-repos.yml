@@ -1,0 +1,149 @@
+name: QIE Registry Auto-Discovery
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:        # Manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scan for new repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          REGISTRY=".qie/registry.json"
+          SOURCES=".qie/sources.yaml"
+
+          # Save current registry for comparison
+          if [[ -f "$REGISTRY" ]]; then
+            cp "$REGISTRY" /tmp/old-registry.json
+            OLD_COUNT=$(jq '.repos | length' /tmp/old-registry.json)
+          else
+            echo '{"repos":[],"last_scan":""}' > /tmp/old-registry.json
+            OLD_COUNT=0
+          fi
+
+          # Build new registry using same logic as qie scan
+          REPOS_JSON='[]'
+
+          # Parse organizations
+          ORG_NAMES=$(grep "name:" "$SOURCES" | grep -v "^#" | sed 's/.*name: *//' | tr -d "'\"") || true
+
+          for ORG in $ORG_NAMES; do
+            CATEGORY=$(awk "/name: *$ORG/{getline; print}" "$SOURCES" | sed 's/.*category: *//' | tr -d "'\"")
+            [ -z "$CATEGORY" ] && CATEGORY=$(echo "$ORG" | tr '[:upper:]' '[:lower:]')
+
+            ORG_REPOS=$(gh api "/orgs/$ORG/repos" --paginate --jq '.[] | select(.archived == false and .disabled == false) | {
+              name: .name,
+              owner: .owner.login,
+              full_name: .full_name,
+              ssh_url: .ssh_url,
+              https_url: .clone_url,
+              category: "'"$CATEGORY"'",
+              description: (.description // ""),
+              default_branch: .default_branch,
+              language: (.language // "—"),
+              updated_at: .pushed_at,
+              archived: .archived
+            }' 2>/dev/null) || continue
+
+            REPOS_JSON=$(echo "$REPOS_JSON" | jq --argjson new "$(echo "$ORG_REPOS" | jq -s '.')" '. + $new')
+          done
+
+          # Parse personal repos
+          PERSONAL=$(awk '/^personal:/,/^[^ ]/' "$SOURCES" | grep "repo:" | sed 's/.*repo: *//' | tr -d "'\"") || true
+
+          for REPO_FULL in $PERSONAL; do
+            [ -z "$REPO_FULL" ] && continue
+            CATEGORY=$(awk "/repo: *${REPO_FULL//\//\\/}/{getline; print}" "$SOURCES" | sed 's/.*category: *//' | tr -d "'\"")
+            [ -z "$CATEGORY" ] && CATEGORY="personal"
+
+            REPO_DATA=$(gh api "/repos/$REPO_FULL" --jq '{
+              name: .name,
+              owner: .owner.login,
+              full_name: .full_name,
+              ssh_url: .ssh_url,
+              https_url: .clone_url,
+              category: "'"$CATEGORY"'",
+              description: (.description // ""),
+              default_branch: .default_branch,
+              language: (.language // "—"),
+              updated_at: .pushed_at,
+              archived: .archived
+            }' 2>/dev/null) || continue
+
+            REPOS_JSON=$(echo "$REPOS_JSON" | jq --argjson new "[$REPO_DATA]" '. + $new')
+          done
+
+          # Sort and write
+          REPOS_JSON=$(echo "$REPOS_JSON" | jq 'sort_by(.category, .name)')
+          NEW_COUNT=$(echo "$REPOS_JSON" | jq 'length')
+
+          jq -n --argjson repos "$REPOS_JSON" --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{
+            last_scan: $ts,
+            repos: $repos
+          }' > "$REGISTRY"
+
+          # Calculate diff
+          ADDED=$(( NEW_COUNT - OLD_COUNT ))
+          if (( ADDED < 0 )); then ADDED=0; fi
+
+          # Find actual new repo names
+          jq -r '.repos[].name' "$REGISTRY" | sort > /tmp/new-names.txt
+          jq -r '.repos[].name' /tmp/old-registry.json | sort > /tmp/old-names.txt
+          NEW_NAMES=$(comm -13 /tmp/old-names.txt /tmp/new-names.txt | tr '\n' ', ' | sed 's/,$//' || true)
+
+          # Export for PR step
+          echo "TOTAL=$NEW_COUNT" >> "$GITHUB_ENV"
+          echo "ADDED=$ADDED" >> "$GITHUB_ENV"
+          echo "NEW_NAMES=$NEW_NAMES" >> "$GITHUB_ENV"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet .qie/registry.json 2>/dev/null; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create PR if registry changed
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOTAL: ${{ env.TOTAL }}
+          ADDED: ${{ env.ADDED }}
+          NEW_NAMES: ${{ env.NEW_NAMES }}
+        run: |
+          BRANCH="auto/registry-update-$(date +%Y%m%d-%H%M)"
+          git config user.name "QIE Auto-Discovery"
+          git config user.email "qie@noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add .qie/registry.json
+          git commit -m "Registry update: ${TOTAL} repos (+${ADDED} new)"
+          git push origin "$BRANCH"
+
+          PR_BODY=$(cat <<'PREOF'
+          ## QIE Auto-Discovery
+
+          Registry scan found changes.
+          Check the diff for details.
+
+          Auto-generated by `.github/workflows/discover-repos.yml`
+          PREOF
+          )
+
+          gh pr create \
+            --title "Registry update: +${ADDED} new repos (${TOTAL} total)" \
+            --body "$PR_BODY"

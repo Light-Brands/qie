@@ -1,0 +1,17 @@
+# QIE Client Hub — Source Configuration
+# Defines which GitHub orgs and repos to scan for the registry.
+# Add new orgs or personal repos here, then run: qie scan
+
+# Organizations — all non-archived repos are included
+organizations:
+  - name: Light-Brands
+    category: light-brands
+
+# Individual repos from any owner
+personal:
+  - repo: 0ptimystic/SeedsGame
+    category: personal
+  - repo: danlawless/busybees
+    category: personal
+  - repo: GrowthMastery-ai/growth-mastery
+    category: personal
