@@ -1,8 +1,8 @@
 <task id="_bmad/qi/tasks/score-aiq.xml"
   name="Score AIQ"
-  description="Evaluate cognitive intelligence across 6 weighted dimensions (0-1000) per config.yaml weights">
+  description="Evaluate demonstrated intelligence across 10 components, convert to IQ-calibrated score (70-160+)">
 
-  <objective>Score a workflow episode across 6 cognitive intelligence dimensions — reasoning depth, pattern recognition, context integration, creativity, adaptability, and self-reflection — and calculate a weighted AIQ score</objective>
+  <objective>Score a workflow episode using the performance-based 10-component framework (max 180 raw points), then convert to AIQ using human IQ-calibrated scale (70-160+)</objective>
 
   <inputs>
     <input name="episode_id" required="true" desc="Reference to the episode being scored (must exist in _memory/intuition/episodes/)" />
@@ -16,96 +16,167 @@
     <i>Each action within a step is a REQUIRED action to complete that step</i>
 
     <i>You are the AIQ Engine — the cognitive intelligence evaluator. Score with intellectual honesty.</i>
-    <i>High scores should be earned, not given. A routine task executed well is still routine.</i>
+    <i>AIQ measures DEMONSTRATED PERFORMANCE, not accumulated knowledge or potential.</i>
+    <i>Use the detailed rubric in {project-root}/_bmad/_memory/intuition/schemas/aiq-scoring-rubric.yaml</i>
 
     <principles>
-      <i>Score based on evidence in the episode, not aspirations or intentions</i>
-      <i>Each dimension score (0-1000) should reflect the actual cognitive quality demonstrated</i>
-      <i>Use the guiding question from config.yaml for each dimension as your scoring lens</i>
-      <i>Be calibrated: 500 is competent, 700+ is exceptional, 900+ is rare and remarkable</i>
-      <i>A high score in one dimension cannot compensate for absence in another — weights handle the math</i>
+      <i>Score based on EVIDENCE in the episode, not aspirations or intentions</i>
+      <i>Each component has a max score — give points only for what was actually demonstrated</i>
+      <i>A routine task executed well is still routine — don't inflate scores</i>
+      <i>Perfect scores (180 raw) are theoretically possible but extremely rare</i>
+      <i>Average human performance = 100 AIQ (90 raw points)</i>
+      <i>Use examples in the rubric to calibrate your scoring</i>
     </principles>
   </llm>
 
   <flow>
-    <step n="1" title="Load Configuration">
-      <action>Load AIQ dimension weights from {project-root}/_bmad/qi/config.yaml → aiq.dimensions</action>
-      <action>Load intelligence_levels from {project-root}/_bmad/qi/config.yaml → aiq.intelligence_levels</action>
-      <action>Verify all 6 dimensions are present: reasoning_depth (0.25), pattern_recognition (0.20), context_integration (0.20), creativity (0.15), adaptability (0.10), self_reflection (0.10)</action>
-      <action>Verify weights sum to 1.0</action>
+    <step n="1" title="Load Scoring Rubric">
+      <action>Load the complete rubric from {project-root}/_bmad/_memory/intuition/schemas/aiq-scoring-rubric.yaml</action>
+      <action>Verify all 10 components are present with scoring criteria</action>
+      <action>Load conversion formula: AIQ = 70 + (raw_score / 180) * 90</action>
     </step>
 
     <step n="2" title="Load Episode">
       <action>Load the episode from {project-root}/_bmad/_memory/intuition/episodes/{episode_id}.yaml</action>
-      <action>Verify the episode exists and contains required fields: context, actions, outcomes, feedback</action>
+      <action>Verify the episode exists and contains: context, actions, outcomes, feedback</action>
+      <action>Read the full episode to understand what was done and how</action>
     </step>
 
-    <step n="3" title="Score Reasoning Depth (25%)">
-      <action>Question: "How deeply did the agent reason about cause and effect?"</action>
-      <action>Evaluate the episode's actions.reasoning and actions.key_decisions</action>
-      <action>Assess: How many layers of causal analysis are present? Are root causes identified? Are second-order effects considered?</action>
-      <action>Score 0-1000 based on depth and quality of causal reasoning</action>
+    <step n="3" title="Score Component 1: Cognitive Depth (max 30)">
+      <action>Question: How complex was the task orchestration?</action>
+      <action>Evaluate: Single-step (5), Multi-step sequential (15), Parallel orchestration (25), Recursive/self-modifying (30)</action>
+      <action>Evidence: Look at actions.summary, actions.key_decisions, number of parallel operations</action>
+      <action>Score 0-30 based on rubric criteria</action>
     </step>
 
-    <step n="4" title="Score Pattern Recognition (20%)">
-      <action>Question: "Did the agent connect insights across domains?"</action>
-      <action>Evaluate the episode's actions.key_decisions and actions.alternatives_considered</action>
-      <action>Assess: Were cross-domain connections made? Were analogies drawn from other contexts? Were patterns identified that others might miss?</action>
-      <action>Score 0-1000 based on novelty and quality of connections</action>
+    <step n="4" title="Score Component 2: Domain Integration (max 25)">
+      <action>Question: How many domains were integrated?</action>
+      <action>Evaluate: Single (5), 2-3 domains (15), 4+ domains (25)</action>
+      <action>Evidence: Look at context.domain, modules referenced, cross-cutting concerns</action>
+      <action>Score 0-25 based on rubric criteria</action>
     </step>
 
-    <step n="5" title="Score Context Integration (20%)">
-      <action>Question: "How many stakeholders and constraints were considered?"</action>
-      <action>Evaluate the episode's context (constraints, goals) and actions taken</action>
-      <action>Assess: Breadth of factors considered, stakeholder awareness, constraint handling, environmental awareness</action>
-      <action>Score 0-1000 based on breadth and depth of contextual awareness</action>
+    <step n="5" title="Score Component 3: Pattern Recognition (max 20)">
+      <action>Question: Did the agent recognize, adapt, or discover patterns?</action>
+      <action>Evaluate: Applied existing (5), Adapted to context (12), Discovered new (20)</action>
+      <action>Evidence: Look at actions.reasoning, actions.alternatives_considered, novel insights</action>
+      <action>Score 0-20 based on rubric criteria</action>
     </step>
 
-    <step n="6" title="Score Creativity (15%)">
-      <action>Question: "Did the agent propose original solutions?"</action>
-      <action>Evaluate the episode's actions.alternatives_considered and the approach taken</action>
-      <action>Assess: Were novel approaches proposed? Were non-obvious solutions considered? Was the final approach original or formulaic?</action>
-      <action>Score 0-1000 based on novelty and originality</action>
+    <step n="6" title="Score Component 4: Efficiency (max 15)">
+      <action>Question: How optimized was the execution?</action>
+      <action>Evaluate: Standard (5), Optimized (12), Novel optimization (15)</action>
+      <action>Evidence: Look for parallel operations, batch processing, caching, shortcuts</action>
+      <action>Score 0-15 based on rubric criteria</action>
     </step>
 
-    <step n="7" title="Score Adaptability (10%)">
-      <action>Question: "Did the agent adjust when conditions changed?"</action>
-      <action>Evaluate the episode's outcomes.unexpected_effects and actions taken</action>
-      <action>Assess: Did the agent pivot when encountering unexpected conditions? Was the approach modified based on new information?</action>
-      <action>Score 0-1000 based on responsiveness to changing conditions</action>
+    <step n="7" title="Score Component 5: Context Integration (max 20)">
+      <action>Question: How much context was integrated?</action>
+      <action>Evaluate: Isolated (5), Session context (10), Full integration (20)</action>
+      <action>Evidence: Look at context.constraints, lessons consulted, active project awareness, user preferences</action>
+      <action>Score 0-20 based on rubric criteria</action>
     </step>
 
-    <step n="8" title="Score Self-Reflection (10%)">
-      <action>Question: "Did the agent acknowledge uncertainty and limitations?"</action>
-      <action>Evaluate the episode's feedback.self_reflection</action>
-      <action>Assess: Is there genuine meta-cognitive awareness? Are limitations acknowledged? Is the self-assessment honest and calibrated?</action>
-      <action>Score 0-1000 based on quality of meta-cognitive awareness</action>
+    <step n="8" title="Score Component 6: Creativity (max 15)">
+      <action>Question: How novel was the problem-solving?</action>
+      <action>Evaluate: Standard path (3), Novel decision (10), New approach (15)</action>
+      <action>Evidence: Look at actions.alternatives_considered, unconventional choices</action>
+      <action>Score 0-15 based on rubric criteria</action>
     </step>
 
-    <step n="9" title="Calculate Weighted AIQ">
-      <action>Calculate weighted AIQ: sum of (dimension_score * dimension_weight) for all 6 dimensions</action>
-      <action>AIQ = (reasoning_depth * 0.25) + (pattern_recognition * 0.20) + (context_integration * 0.20) + (creativity * 0.15) + (adaptability * 0.10) + (self_reflection * 0.10)</action>
+    <step n="9" title="Score Component 7: Adaptability (max 15)">
+      <action>Question: How well did the agent recover from obstacles?</action>
+      <action>Evaluate: No obstacles (5), Recovered from blockers (10), Pivoted strategy (15)</action>
+      <action>Evidence: Look at outcomes.unexpected_effects, how issues were handled</action>
+      <action>Score 0-15 based on rubric criteria</action>
+    </step>
+
+    <step n="10" title="Score Component 8: Self-Reflection (max 10)">
+      <action>Question: How metacognitively aware was the agent?</action>
+      <action>Evaluate: No reflection (0), Noted insights (5), Extracted lessons (10)</action>
+      <action>Evidence: Look at feedback.self_reflection, lessons extracted</action>
+      <action>Score 0-10 based on rubric criteria</action>
+    </step>
+
+    <step n="11" title="Score Component 9: Discernment Quality (max 20)">
+      <action>Question: How deep was the moral reasoning? (if applicable)</action>
+      <action>Evaluate: N/A (0), Surface (5), Multi-value (12), Deep stakeholder (20)</action>
+      <action>Evidence: Look at moral_context fields, values considered, stakeholder analysis</action>
+      <action>Score 0-20 based on rubric criteria (0 if no moral dimensions)</action>
+    </step>
+
+    <step n="12" title="Score Component 10: Lesson Application (max 10)">
+      <action>Question: Were previous lessons applied?</action>
+      <action>Evaluate: No lessons existed (5), Existed but not applied (0), Applied 1-2 (7), Applied 3+ (10)</action>
+      <action>Evidence: Look at feedback.lessons_consulted, application of known patterns</action>
+      <action>Score 0-10 based on rubric criteria</action>
+    </step>
+
+    <step n="13" title="Calculate Raw Score">
+      <action>Sum all 10 component scores</action>
+      <action>raw_score = sum of components 1-10</action>
+      <action>Verify: raw_score is between 0 and 180</action>
+    </step>
+
+    <step n="14" title="Convert to AIQ (IQ Scale)">
+      <action>Apply formula: AIQ = 70 + (raw_score / 180) * 90</action>
       <action>Round to nearest integer</action>
+      <action>Verify: AIQ is between 70 and 160</action>
     </step>
 
-    <step n="10" title="Determine Intelligence Level">
-      <action>Match the AIQ score against intelligence_levels from config</action>
-      <action>Find the level whose range contains the AIQ score</action>
-      <action>Record the level name and description</action>
+    <step n="15" title="Determine Intelligence Level">
+      <action>Match AIQ against benchmarks from rubric:</action>
+      <action>70-84: Below average</action>
+      <action>85-99: Low average</action>
+      <action>100-114: Average</action>
+      <action>115-129: Above average</action>
+      <action>130-144: Very superior</action>
+      <action>145-159: Genius</action>
+      <action>160+: Beyond human</action>
     </step>
 
-    <step n="11" title="Output Results">
-      <action>Output all 6 dimension scores with their weights</action>
-      <action>Output the weighted AIQ total</action>
-      <action>Output the intelligence level name and description</action>
-      <action>Output a brief narrative explaining the strongest and weakest dimensions</action>
+    <step n="16" title="Validate Reasonableness">
+      <action>Sanity check: If episode was highly complex and successful, AIQ should be 120+</action>
+      <action>Sanity check: If episode was routine with no obstacles, AIQ should be 100-115</action>
+      <action>Sanity check: If episode involved major failures, AIQ should be 85-100</action>
+      <action>If score seems miscalibrated, review component scores for errors</action>
+    </step>
+
+    <step n="17" title="Output Results">
+      <action>Output all 10 component scores with their max values</action>
+      <action>Output the raw score total (out of 180)</action>
+      <action>Output the converted AIQ score (70-160+)</action>
+      <action>Output the intelligence level classification</action>
+      <action>Output a brief narrative (2-3 sentences) explaining:</action>
+      <action>- Which components scored highest and why</action>
+      <action>- Which components scored lowest and why</action>
+      <action>- How this AIQ compares to human performance</action>
     </step>
   </flow>
 
   <halt-conditions>
-    <condition>HALT with error if config.yaml cannot be loaded or AIQ dimensions are missing</condition>
+    <condition>HALT with error if aiq-scoring-rubric.yaml cannot be loaded</condition>
     <condition>HALT with error if episode_id does not resolve to an existing episode file</condition>
-    <condition>HALT with error if any dimension score is outside 0-1000 range</condition>
+    <condition>HALT with error if any component score exceeds its max value</condition>
+    <condition>HALT with error if raw_score is outside 0-180 range</condition>
+    <condition>HALT with error if calculated AIQ is outside 70-160 range</condition>
   </halt-conditions>
+
+  <examples>
+    <example name="Highly Complex Episode">
+      <scenario>Multi-agent orchestration across 4 domains, discovered new pattern, applied 3 lessons</scenario>
+      <expected_range>AIQ 135-145 (Very Superior to Genius)</expected_range>
+    </example>
+
+    <example name="Routine Task">
+      <scenario>Single-domain, followed standard workflow, no obstacles, no lessons applied</scenario>
+      <expected_range>AIQ 95-110 (Average)</expected_range>
+    </example>
+
+    <example name="Failed Episode">
+      <scenario>Attempted complex task, multiple mistakes, poor adaptability, learned from failure</scenario>
+      <expected_range>AIQ 80-95 (Below to Low Average), BUT high self-reflection score</expected_range>
+    </example>
+  </examples>
 
 </task>

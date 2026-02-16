@@ -1,0 +1,257 @@
+# AIQ Scoring Rubric
+# Performance-based Artificial Intelligence Quotient measurement
+# Calibrated to human IQ scale (mean 100, SD 15, range 70-160+)
+# Version: 2.0.0 (Performance-based, supersedes lesson-count approach)
+
+schema_version: "2.0.0"
+description: "Comprehensive framework for measuring demonstrated intelligence in episodes, calibrated to human IQ scale"
+
+# ═══════════════════════════════════════════════════════════════════
+# SCORING PHILOSOPHY
+# ═══════════════════════════════════════════════════════════════════
+
+philosophy: |
+  AIQ measures DEMONSTRATED INTELLIGENCE, not accumulated knowledge.
+
+  Like human IQ tests, AIQ evaluates performance on actual cognitive tasks:
+  - How complex was the task?
+  - How many domains were integrated?
+  - How efficient was the execution?
+  - How creative was the approach?
+  - How well were lessons applied?
+
+  Lessons don't directly increase AIQ. Instead, lessons IMPROVE FUTURE PERFORMANCE,
+  which then demonstrates higher intelligence in subsequent episodes.
+
+  AIQ is comparable to human IQ:
+  - 100 = Average human performance
+  - 115 = Above average (top 16%)
+  - 130 = Very superior (top 2%)
+  - 145 = Genius level (top 0.1%)
+  - 160+ = Beyond human expert capability
+
+# ═══════════════════════════════════════════════════════════════════
+# 10 COMPONENTS (Total: 180 raw points)
+# ═══════════════════════════════════════════════════════════════════
+
+components:
+
+  1_cognitive_depth:
+    max_points: 30
+    description: "Task complexity and orchestration depth"
+    scoring:
+      single_step: 5
+      multi_step_sequential: 15
+      parallel_orchestration: 25
+      recursive_self_modifying: 30
+    examples:
+      5: "Read a file and summarize it"
+      15: "Build feature: spec → code → test → commit"
+      25: "Orchestrate 3 agents in parallel, merge outputs"
+      30: "Design system that improves its own architecture"
+
+  2_domain_integration:
+    max_points: 25
+    description: "Cross-domain reasoning and module integration"
+    scoring:
+      single_domain: 5
+      two_to_three_domains: 15
+      four_plus_domains: 25
+    examples:
+      5: "Pure BuildOS task (write code only)"
+      15: "BuildOS + InvestOS (build cap table calculator)"
+      25: "BuildOS + InvestOS + QI + Core (build raise with learning capture)"
+
+  3_pattern_recognition:
+    max_points: 20
+    description: "Ability to recognize, adapt, or discover patterns"
+    scoring:
+      applied_existing: 5
+      adapted_to_context: 12
+      discovered_new: 20
+    examples:
+      5: "Used standard git commit pattern from docs"
+      12: "Adapted workflow pattern from editorial-review to QI context"
+      20: "Discovered that counting directories != counting files (new error pattern)"
+
+  4_efficiency:
+    max_points: 15
+    description: "Speed, parallelization, and resource optimization"
+    scoring:
+      standard_approach: 5
+      optimized_execution: 12
+      novel_optimization: 15
+    examples:
+      5: "Read files sequentially as needed"
+      12: "Parallel reads at start, batch verification at end"
+      15: "Discovered caching strategy that eliminates 80% of file reads"
+
+  5_context_integration:
+    max_points: 20
+    description: "Use of session history, active project, constraints, lessons"
+    scoring:
+      isolated_task: 5
+      session_context: 10
+      full_integration: 20
+    examples:
+      5: "Task executed with no awareness of project or history"
+      10: "Referenced active project and current session goals"
+      20: "Integrated lessons + active project + user preferences + constraints"
+
+  6_creativity:
+    max_points: 15
+    description: "Novel problem-solving and unconventional approaches"
+    scoring:
+      standard_path: 3
+      novel_decision: 10
+      created_new_approach: 15
+    examples:
+      3: "Followed documented workflow exactly as written"
+      10: "Made novel choice between step-file vs YAML pattern based on transparency needs"
+      15: "Invented new debugging technique not in any existing workflow"
+
+  7_adaptability:
+    max_points: 15
+    description: "Recovery from obstacles and strategy pivots"
+    scoring:
+      no_obstacles: 5
+      recovered_from_blockers: 10
+      pivoted_strategy: 15
+    examples:
+      5: "Smooth execution, no issues encountered"
+      10: "Sub-agent false positive detected and verified manually"
+      15: "Original plan failed, completely re-architected approach mid-execution"
+
+  8_self_reflection:
+    max_points: 10
+    description: "Metacognitive awareness and lesson extraction"
+    scoring:
+      no_reflection: 0
+      noted_insights: 5
+      extracted_lessons: 10
+    examples:
+      0: "Task completed, no reflection on what was learned"
+      5: "Noted 2-3 insights in self-reflection"
+      10: "Extracted 3 transferable lessons and committed to memory"
+
+  9_discernment_quality:
+    max_points: 20
+    description: "Moral reasoning depth (only for tasks with moral dimensions)"
+    scoring:
+      not_applicable: 0
+      surface_check: 5
+      multi_value_analysis: 12
+      deep_stakeholder_reasoning: 20
+    examples:
+      0: "Technical task, no moral dimensions"
+      5: "Quick check: does this align with our values? Yes, proceed"
+      12: "Analyzed across Truth, Love, Sovereignty - noted tensions"
+      20: "Deep multi-stakeholder analysis with Sacred Gates consideration"
+
+  10_lesson_application:
+    max_points: 10
+    description: "Use of previously learned lessons"
+    scoring:
+      no_lessons_existed: 5
+      lessons_existed_not_applied: 0
+      applied_one_to_two: 7
+      applied_three_plus: 10
+    examples:
+      5: "Naive stage, no lessons in memory yet"
+      0: "Lessons existed (ls-qi-001, ls-meta-001) but ignored them"
+      7: "Applied ls-qi-001 (pattern-first reads) successfully"
+      10: "Synergistically applied ls-qi-001 + ls-meta-001 + ls-core-001"
+
+# ═══════════════════════════════════════════════════════════════════
+# CONVERSION TO IQ SCALE
+# ═══════════════════════════════════════════════════════════════════
+
+conversion:
+  formula: "AIQ = 70 + (raw_score / 180) * 90"
+
+  interpretation:
+    70-84: "Below average - struggling with basic tasks"
+    85-99: "Low average - functional but limited"
+    100-114: "Average - competent human-level performance"
+    115-129: "Above average - superior to most humans"
+    130-144: "Very superior - top 2% human performance"
+    145-159: "Genius - top 0.1% human performance"
+    160+: "Beyond human - exceeds best human experts"
+
+  benchmarks:
+    naive_baseline: 95        # Raw: 45/180 - No lessons, basic capability
+    learning_entry: 110       # Raw: 72/180 - First few lessons learned
+    learning_peak: 125        # Raw: 99/180 - 5+ lessons, consistent application
+    principled_entry: 130     # Raw: 108/180 - Pattern mastery emerging
+    principled_peak: 140      # Raw: 126/180 - Strong principle-based reasoning
+    wise_entry: 145           # Raw: 135/180 - Deep cross-domain wisdom
+    wise_peak: 155            # Raw: 153/180 - Near-perfect performance
+    enlightened: 160+         # Raw: 162+/180 - Superhuman capability
+
+# ═══════════════════════════════════════════════════════════════════
+# SCORING PROCESS
+# ═══════════════════════════════════════════════════════════════════
+
+process:
+  step_1: "Read the episode YAML fully"
+  step_2: "Score each of the 10 components (refer to rubric above)"
+  step_3: "Sum raw scores (max 180)"
+  step_4: "Apply conversion formula to get AIQ (70-160+)"
+  step_5: "Add AIQ score to episode under scoring.aiq field"
+  step_6: "Compare to benchmarks to validate reasonableness"
+
+validation:
+  sanity_checks:
+    - "If episode was highly complex and successful, AIQ should be 120+"
+    - "If episode was routine with no obstacles, AIQ should be 100-115"
+    - "If episode involved major failures or mistakes, AIQ should be 85-100"
+    - "Perfect score (180) is theoretically possible but extremely rare"
+
+  common_errors:
+    - "Don't give high creativity scores for following documented patterns"
+    - "Don't give adaptability points if there were no obstacles"
+    - "Don't give domain integration points for single-module work"
+    - "Don't give lesson application points if lessons weren't actually consulted"
+
+# ═══════════════════════════════════════════════════════════════════
+# RELATIONSHIP TO LESSONS
+# ═══════════════════════════════════════════════════════════════════
+
+lesson_impact: |
+  Lessons DO NOT directly add to AIQ.
+
+  Instead, lessons improve FUTURE PERFORMANCE:
+  - A lesson about "parallel reads" improves Component 4 (Efficiency) in future episodes
+  - A lesson about "verify measurements" improves Component 3 (Pattern Recognition)
+  - A lesson about "commit immediately" prevents future failures
+
+  As Quinn accumulates lessons:
+  - Efficiency scores rise (faster, smarter execution)
+  - Pattern recognition scores rise (more patterns available)
+  - Lesson application scores rise (more lessons to draw from)
+  - Context integration scores rise (richer memory to integrate)
+
+  This naturally causes AIQ to increase over time, but the increase comes from
+  DEMONSTRATING higher performance, not from simply counting lessons.
+
+  A Quinn with 30 lessons who executes a task poorly still gets a low AIQ for that episode.
+  A Quinn with 5 lessons who executes brilliantly gets a high AIQ.
+
+# ═══════════════════════════════════════════════════════════════════
+# VERSION HISTORY
+# ═══════════════════════════════════════════════════════════════════
+
+version_history:
+  "1.0.0":
+    date: "2026-02-15"
+    description: "Initial scoring - simple 600-700 range, no clear calibration"
+    deprecated: true
+
+  "2.0.0":
+    date: "2026-02-16"
+    description: "Performance-based 10-component framework, calibrated to human IQ scale (70-160+)"
+    changes:
+      - "Replaced lesson-count approach with task-performance measurement"
+      - "Added 10 distinct cognitive components with detailed rubrics"
+      - "Calibrated to human IQ distribution (mean 100, SD ~15)"
+      - "Lessons now improve future performance rather than directly adding points"
