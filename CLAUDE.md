@@ -11,6 +11,7 @@ This repo is also a **Client Hub** — a master orchestration layer over all Lig
 - **Registry** (`.qie/registry.json`): Knows every repo in the org. Committed to git. Shared awareness.
 - **Clients** (`clients/`): Gitignored. Contains only repos pulled locally for active work. Per-user state.
 - **Intelligence Symlink**: When a project is selected, `_bmad → ../../../_bmad` symlink gives it access to all QIE agents/workflows. The symlink is gitignored in each project.
+- **Legal Vault** (`legal-vault/`): Committed to git. Houses all client proposals, signed agreements, NDAs, and reusable templates. This is the organization's permanent record for deals.
 - **The framework never ships.** Client repos deploy clean — zero QIE code in production.
 
 ### Working with Client Projects
@@ -60,6 +61,11 @@ investos/                     # Root — QIE Intelligence System
 ├── clients/                  # GITIGNORED — pulled repos only
 │   ├── light-brands/<name>/  # Org repos
 │   └── personal/<name>/      # Personal repos
+├── legal-vault/              # COMMITTED — proposals, agreements, NDAs, templates
+│   ├── proposals/            # Client proposals and partnership offers
+│   ├── agreements/           # Signed agreements and contracts
+│   ├── ndas/                 # Non-disclosure agreements
+│   └── templates/            # Reusable document templates
 ├── bin/qie                   # CLI tool
 └── .github/workflows/        # Auto-discovery cron
 ```
@@ -73,6 +79,22 @@ investos/                     # Root — QIE Intelligence System
 5. **The _bmad symlink in a client project** points back to root intelligence. Agents and workflows are available from there.
 6. **To create/modify repos**: select the project, work within its directory, commit and push from there. Changes go to the project's own remote.
 7. **To discover new repos**: run `bin/qie scan` or wait for the auto-discovery GitHub Action.
+8. **When creating proposals, agreements, or NDAs**, store them in `legal-vault/` under the appropriate subdirectory. Use naming convention: `{client}-{description}-{YYYY-MM-DD}.md`. This is the organization's permanent deal record.
+
+## Legal Vault
+
+The `legal-vault/` directory is the organization's permanent record for all client-facing legal and business documents. It is committed to git and shared across all sessions.
+
+| Directory | Contents |
+|-----------|----------|
+| `legal-vault/proposals/` | Client proposals, partnership offers, pricing packages |
+| `legal-vault/agreements/` | Signed agreements, contracts, partnership terms |
+| `legal-vault/ndas/` | Non-disclosure agreements |
+| `legal-vault/templates/` | Reusable templates for proposals, agreements, NDAs |
+
+**Naming convention:** `{client}-{description}-{YYYY-MM-DD}.md`
+
+**Rule:** Any time a proposal, agreement, NDA, or deal document is created, it goes here — not in `_bmad-output/`. The legal vault is the source of truth for all deals.
 
 ## BMAD Framework
 
