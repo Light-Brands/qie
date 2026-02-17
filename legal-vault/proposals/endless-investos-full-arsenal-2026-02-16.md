@@ -1,25 +1,17 @@
-# AI Fundraising Intelligence — Endless Partnership Proposal
+# Capital Formation Partnership — Endless
 
 **Prepared by:** Light-Brands Intelligence Team
 **Date:** February 16, 2026
-**Partnership Type:** Strategic AI Technology & Capital Formation Alliance
-**Version:** 2.0
+**Partnership Type:** Strategic Capital Formation Alliance
+**Version:** 3.0
 
 ---
 
-## A Story Worth Telling
+## The Short Version
 
-Imagine you're standing at the edge of a capital raise. You know the vision is right. You know the market is real. But between where you are today and a funded company lies a mountain of complexity — securities law, financial modeling, investor narratives, data rooms, campaign strategy, compliance reviews, roadshow logistics — and the clock is ticking.
+We build the complete infrastructure required to take Endless from where you are today to a funded company — every document, every model, every compliance filing, every investor-facing material, every campaign asset — delivered in weeks, not months, for zero upfront cost.
 
-Most founders at this stage hire a patchwork of consultants. Each one smart, but siloed. A securities attorney who doesn't talk to the narrative strategist. A financial modeler who hasn't read the market research. A PR firm that doesn't understand the deal structure. Months of coordination. Massive cost. And still, the raise takes longer than it should.
-
-**This is the problem we solved.**
-
-We built a full-stack AI capital formation intelligence system — 21 specialist AI agents working in concert across every dimension of a capital raise. Not a software platform you license. Not a consulting team you manage. A living intelligence system that ingests your story, understands your market, and produces institutional-grade raise materials faster and more rigorously than any traditional approach.
-
-We deployed this system on a live raise — **Transformational Epicenter** — and built 25+ investor documents, a complete financial model, entity architecture, investor narrative, and full campaign infrastructure in the time it would typically take to get a first draft from a traditional firm.
-
-Now we want to deploy it for Endless.
+You get a $2M+ capital formation package. You pay nothing until the raise is working.
 
 ---
 
@@ -28,326 +20,176 @@ Now we want to deploy it for Endless.
 | | |
 |---|---|
 | **Partner** | Endless |
-| **System** | InvestOS + AmplifyOS — Full AI Capital Formation Intelligence |
-| **Agents Deployed** | 21 specialist AI agents |
-| **Workflows Activated** | 52+ structured capital formation workflows |
-| **Total Deal Value** | $2,250,000 |
+| **What You Get** | Complete capital formation infrastructure — 40+ deliverables across strategy, legal, financial, materials, communications, and campaign |
+| **Total Value** | $2,250,000 |
 | **Your Upfront Cost** | $0 — 100% deferred to raise milestones |
 | **Model** | We succeed when you succeed |
 
-This is not a consulting engagement. This is the deployment of a complete AI capital formation platform — built, proven, and ready to run — on Endless's behalf.
+---
+
+## What You Receive — The Complete Deliverable List
+
+This is the full inventory of what Endless walks away with. Every item is a tangible deliverable you can review, share with investors, and use to close your raise.
+
+### Phase 1: Strategy & Discovery (8 Deliverables)
+
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 1 | **Raise Strategy** | Capital amount, structure, regulation pathway (Reg A/D/CF/S-1), timeline, and phased execution roadmap |
+| 2 | **Strategic Foundation** | Master strategic plan with vision, mission, market positioning, go-to-market strategy, and the executive summary that becomes your investor-facing anchor document |
+| 3 | **Market Research** | TAM/SAM/SOM analysis with bottom-up and top-down methodology, CAGR projections with source attribution, and market dynamics research across your primary sector and adjacent markets |
+| 4 | **Competitive Analysis** | 50+ competitor profiles, positioning maps, capability matrices, pricing benchmarks, and differentiation framework identifying white space |
+| 5 | **Investor Targeting Matrix** | Investor personas, ideal profiles, qualification criteria, and outreach strategy — who to talk to, in what order, with what message |
+| 6 | **Deal Structure & Terms** | Instrument selection, terms architecture, negotiation framework, and investor rights provisions |
+| 7 | **Engagement Plan** | Project timeline, milestones, resource allocation, and dependency mapping |
+| 8 | **Investor FAQ & Objection Handling** | 20+ most common institutional due diligence questions, answered with data from your research and financials |
+
+> **What this replaces:** A strategy consultancy engagement ($500K-$1.5M at McKinsey/Bain/BCG) plus a custom market research study ($150K-$400K). Traditional timeline: 3-6 months.
 
 ---
 
-## What We Built for Epicenter (The Proof)
+### Phase 2: Legal Architecture (3 Deliverables)
 
-Before we show you what you get, let us show you what this system has already done.
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 9 | **Entity Structure Architecture** | Multi-entity master structure, jurisdiction-by-jurisdiction analysis, entity formation guides, inter-entity transaction framework, and governance documents |
+| 10 | **Regulatory Compliance Roadmap** | SEC filing requirements, regulation pathway mapping, compliance timeline, and disclosure requirements — specific to your raise structure |
+| 11 | **Investment Documents** | Private Placement Memorandum (PPM), subscription agreements, operating agreements, risk factor documentation, and investor rights provisions |
 
-**Transformational Epicenter** is a luxury medical wellness and bio-optimization company building the world's first integrated destination combining hospital-grade care, five-star hospitality, advanced bio-optimization technology, and plant medicine. They came to us preparing a $5M capital raise.
-
-We deployed the full arsenal. Here is what the system produced:
-
-```mermaid
-mindmap
-  root((Epicenter Arsenal))
-    Capital Strategy
-      Raise structure & regulation pathway
-      Deal architecture & investor targeting
-      Entity structure & jurisdiction selection
-      Regulatory compliance roadmap
-    Financial Infrastructure
-      12-tab institutional financial model
-      9-point valuation report
-      Cap table with dilution waterfall
-      Staffing model linked to financials
-      Stress-tested sensitivity analysis
-    Legal Architecture
-      PPM & subscription agreements
-      Operating agreements & risk factors
-      Governance structure
-      Compliance filing roadmap
-    Investor Materials
-      21-document institutional data room
-      Strategic investor narrative
-      Brand voice & visual identity system
-      Operational blueprint & KPI framework
-    Market Intelligence
-      TAM/SAM/SOM analysis
-      Competitive landscape mapping
-      Investor persona profiles
-      Market dynamics research
-    Digital Ecosystem
-      AI Superintelligent System spec
-      Investor portal architecture
-      HIPAA-compliant platform design
-      Guest journey digital mapping
-    Investor Communications
-      Offering circular (full production)
-      Investor pitch deck
-      Email drip campaign sequences
-      Landing pages & social content
-      Video scripts & financial content packages
-```
-
-Everything you see in that map was produced by our AI agents — not a team of 20 consultants — operating with institutional standards, cross-referencing every document for consistency, and validating every figure against every claim.
-
-**This is what we're bringing to Endless.**
+> **What this replaces:** Big 4 tax structuring ($200K-$750K) plus securities counsel ($15K-$75K for PPM alone). Traditional timeline: 2-4 months.
 
 ---
 
-## The AI Capital Formation System
+### Phase 3: Financial Infrastructure (5 Deliverables)
 
-Our system is built on three intelligence layers, each powered by specialist AI agents:
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 12 | **12-Tab Financial Model** | Institutional-grade Google Sheets model — fully formula-driven, with cascading assumptions. Revenue model, expense model, P&L, cash flow, balance sheet, unit economics, scenario analysis, sensitivity tables, and investment returns. Change one assumption and the entire model recalculates in real time. |
+| 13 | **9-Point Valuation Report** | Enterprise valuation using 9 independent methods (DCF, comparable companies, precedent transactions, revenue multiples, EBITDA multiples, venture capital method, scorecard method, cost approach, and growth-adjusted DCF) — weighted, cross-validated, with valuation range and supporting analysis |
+| 14 | **Cap Table Model** | Full capitalization table with pre-money/post-money scenarios, dilution waterfall, round modeling, and investor return calculations (IRR, MOIC, cash-on-cash) at multiple exit scenarios |
+| 15 | **Staffing Model** | Organizational design, hiring plan by phase, compensation structure, and headcount projections — linked directly to the financial model's expense assumptions |
+| 16 | **Model Validation Report** | Stress-tested assumptions, sensitivity analysis across key variables, break-even analysis, and cross-reference validation ensuring every figure ties back to a single source of truth |
 
-```mermaid
-graph TB
-    subgraph Layer1["Layer 1: InvestOS — Capital Formation Engine"]
-        A1[Alexander<br/>Master Orchestrator]
-        A2[Victoria<br/>Securities Counsel]
-        A3[Marcus<br/>Financial Modeler]
-        A4[Diana<br/>Market Intelligence]
-        A5[Cassandra<br/>Narrative Director]
-        A6[Helena<br/>Data Room Architect]
-        A7[Raymond<br/>Operations Strategist]
-        A8[Nikolai<br/>Platform Architect]
-    end
-
-    subgraph Layer2["Layer 2: AmplifyOS — Investor Communications Engine"]
-        B1[Diana<br/>Campaign Orchestrator]
-        B2[Emma<br/>Content Production]
-        B3[Sarah<br/>Compliance Counsel]
-        B4[Michael<br/>Financial Communications]
-        B5[Amanda<br/>Investor Relations]
-        B6[Victoria<br/>Crisis Management]
-        B7[Zoe<br/>Brand Voice]
-    end
-
-    subgraph Layer3["Layer 3: GrowthOS + BuildOS"]
-        C1[Investor Acquisition<br/>Marketing]
-        C2[Custom Investor<br/>Portal Development]
-    end
-
-    A1 --> A2
-    A1 --> A3
-    A1 --> A4
-    A1 --> A5
-    A1 --> A6
-    A1 --> A7
-    A1 --> A8
-    Layer1 --> Layer2
-    B1 --> B2
-    B1 --> B3
-    B1 --> B4
-    B1 --> B5
-    Layer2 --> Layer3
-
-    style Layer1 fill:#1a1a2e,stroke:#4a9eff,color:#fff
-    style Layer2 fill:#16213e,stroke:#7b68ee,color:#fff
-    style Layer3 fill:#0f3460,stroke:#e94560,color:#fff
-```
+> **What this replaces:** Boutique investment bank financial advisory ($50K-$150K for model) plus Big 4 valuation services ($75K-$200K for formal opinion). Traditional timeline: 2-3 months.
 
 ---
 
-## What Endless Gets
+### Phase 4: Investor Materials (6 Deliverables)
 
-### The Complete Raise Journey
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 17 | **21-Document Institutional Data Room** | Complete due diligence package — corporate documents, financials, legal structure, regulatory filings, PPM, cap table, market research, competitive analysis, management team, IP documentation, and more. Organized in numbered folders, cross-referenced, version-controlled, and ready for institutional review. |
+| 18 | **Investor Narrative** | Investment thesis, pitch narrative, and the compelling story arc that connects market opportunity to your team's unfair advantage to the financial returns — calibrated for your specific investor audience |
+| 19 | **Operational Blueprint** | SOPs for each business segment, organizational structure, role descriptions, capacity planning, quality assurance frameworks, and KPI dashboards — proving to investors you know *how* to execute |
+| 20 | **Investor Platform Plan** | Architecture and feature specification for a custom investor portal — dashboards, gated data room access, meeting scheduling, engagement analytics |
+| 21 | **Investor Platform Design** | Design system with brand tokens, component library, user flows, and responsive layouts — ready for development |
+| 22 | **Brand Guidelines** | Brand voice, visual identity system, typography, color palette, and channel-specific adaptation guidelines |
 
-```mermaid
-journey
-    title Endless Raise Journey — AI-Powered
-    section Month 1-2: Foundation
-      Project intake & source ingestion: 5: InvestOS
-      Raise strategy & capital roadmap: 5: Alexander
-      Strategic foundation: 5: Cassandra
-      Market research & competitive analysis: 5: Diana
-      Entity structure & regulatory pathway: 5: Victoria
-      Deal structure & terms architecture: 5: Alexander
-    section Month 2-3: Financial & Legal
-      12-tab financial model: 5: Marcus
-      9-point valuation report: 5: Marcus
-      Cap table & dilution waterfall: 5: Marcus
-      Staffing model linked to financials: 5: Marcus
-      Investment documents PPM & agreements: 5: Victoria
-    section Month 3-4: Materials & Narrative
-      21-document data room: 5: Helena
-      Investor narrative & pitch story: 5: Cassandra
-      Brand voice & visual identity: 5: Cassandra
-      Operational blueprint: 5: Raymond
-      Investor readiness scoring: 5: Alexander
-    section Month 4-5: Communications & Campaign
-      Offering circular production: 5: AmplifyOS
-      Investor pitch deck: 5: Emma
-      Email drip campaign sequences: 5: Emma
-      Landing pages & social content: 5: Emma
-      Full compliance review cycle: 5: Sarah
-    section Month 5-6: Launch & Distribution
-      Campaign planning & channel strategy: 5: Diana
-      Investor roadshow planning: 5: Amanda
-      Multi-channel campaign execution: 5: AmplifyOS
-      Platform specification: 5: Nikolai
-```
+> **What this replaces:** Data room assembly through an investment bank ($200K-$500K) plus operational consulting ($150K-$350K) plus brand/design agency ($50K-$150K). Traditional timeline: 3-5 months.
 
 ---
 
-### Module 1: InvestOS — Capital Formation Engine
+### Phase 5: Investor Readiness Validation (3 Deliverables)
 
-**10 specialist agents | 28+ workflows | 25 core deliverables**
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 23 | **Investor Readiness Scorecard** | 8-dimension readiness score (0-100) covering financial model completeness, legal documentation, narrative clarity, data room organization, regulatory compliance, team credibility, market positioning, and communication readiness — with gap analysis and remediation recommendations |
+| 24 | **Quality Assurance Report** | Cross-deliverable quality validation ensuring institutional standards across all 22 prior deliverables |
+| 25 | **Cross-Reference Validation** | Every figure, every claim, every projection verified across every document — ensuring complete internal consistency |
 
-```mermaid
-flowchart LR
-    subgraph Phase1["Phase 1 — Discovery"]
-        D1[Raise Strategy]
-        D2[Strategic Foundation]
-        D3[Market Research]
-        D4[Competitive Analysis]
-        D5[Investor Targeting]
-        D6[Deal Structure]
-        D7[Tier Routing]
-        D8[Engagement Plan]
-    end
-
-    subgraph Phase2["Phase 2 — Legal Architecture"]
-        L1[Entity Structure]
-        L2[Regulatory Compliance]
-        L3[Investment Documents<br/>PPM · Sub Agreements · OA]
-    end
-
-    subgraph Phase3["Phase 3 — Financial Infrastructure"]
-        F1[12-Tab Financial Model]
-        F2[9-Point Valuation Report]
-        F3[Cap Table + Dilution Waterfall]
-        F4[Staffing Model]
-        F5[Model Validation + Stress Test]
-    end
-
-    subgraph Phase4["Phase 4 — Materials"]
-        M1[21-Doc Data Room]
-        M2[Investor Narrative]
-        M3[Operational Blueprint]
-        M4[Platform Plan]
-        M5[Platform Design]
-        M6[Brand Guidelines]
-    end
-
-    subgraph Phase5["Phase 5 — Readiness"]
-        R1[Investor Readiness Score<br/>8 Dimensions, 0-100]
-        R2[Quality Check]
-        R3[Cross-Reference Validation]
-    end
-
-    Phase1 --> Phase2 --> Phase3 --> Phase4 --> Phase5
-
-    style Phase1 fill:#0d1b2a,stroke:#4a9eff,color:#fff
-    style Phase2 fill:#1b2a0d,stroke:#4aff6e,color:#fff
-    style Phase3 fill:#2a0d1b,stroke:#ff4a9e,color:#fff
-    style Phase4 fill:#1b0d2a,stroke:#9e4aff,color:#fff
-    style Phase5 fill:#2a1b0d,stroke:#ff9e4a,color:#fff
-```
-
-#### The 10 InvestOS Agents
-
-| Agent | Specialist | What They Deliver |
-|-------|-----------|-------------------|
-| **Alexander** | Master Orchestrator | Full raise coordination, dependency management, progress tracking |
-| **Victoria** | Securities Counsel | Entity structures, regulatory compliance, PPM, subscription agreements |
-| **Marcus** | Financial Modeler | 12-tab financial models, valuations, cap tables, staffing models |
-| **Cassandra** | Narrative Director | Strategic foundation, investor narrative, brand guidelines |
-| **Diana** | Market Intelligence | TAM/SAM/SOM analysis, competitive landscape, market research |
-| **Helena** | Data Room Architect | 21+ document institutional data room, cross-reference validation |
-| **Raymond** | Operations Strategist | Operational blueprints, org design, SOPs, KPI frameworks |
-| **Nikolai** | Platform Architect | Investor portal architecture, design system, user flows |
-| **Kai** | Quick Flow | Rapid single-deliverable production |
-| **Priya** | Investor Engagement | Investor relations, outreach coordination, roadshow support |
+> **This is what separates our work from traditional consulting.** When an investor finds the same number in the PPM, the financial model, the data room, and the pitch narrative — and they all match — that's when trust is built.
 
 ---
 
-### Module 2: AmplifyOS — Investor Communications Engine
+### Phase 6: Investor Communications & Campaign (12+ Deliverables)
 
-**11 specialist agents | 24 workflows | Full campaign lifecycle**
+| # | Deliverable | What You Get |
+|---|------------|--------------|
+| 26 | **Offering Circular** | Full production offering document (Form C / PPM equivalent) — SEC/FINRA-compliant, professionally formatted |
+| 27 | **Investor Pitch Deck** | Narrative-driven deck with slide content, data visualization, and design direction — not a template, a story |
+| 28 | **Email Drip Campaigns** | Multi-touch investor sequences — from awareness through qualification through commitment — compliance-reviewed |
+| 29 | **Landing Pages** | Conversion-optimized investor-facing pages with qualification flows and call-to-action architecture |
+| 30 | **Video Scripts** | Investor-facing video content scripts — founder story, market thesis, financial summary |
+| 31 | **Social Media Content** | Calendar and channel-specific content for investor awareness and credibility building |
+| 32 | **Financial Content Packages** | Metrics presentations, financial narratives, FAQs, and forward guidance documents |
+| 33 | **Brand Voice Guidelines** | Tone matrix, channel-specific voice adaptation, and compliance-safe messaging boundaries |
+| 34 | **Compliance Review Cycle** | Every piece of investor-facing content scanned for regulatory compliance — SEC/FINRA standards, disclosure verification, final gate review before distribution |
+| 35 | **Campaign Plan & Channel Strategy** | Multi-channel campaign design with investor segmentation, channel allocation, and performance benchmarks |
+| 36 | **Investor Roadshow Plan** | Schedule, presentation formats, venue/virtual logistics, follow-up sequences, and conversion tracking |
+| 37 | **Campaign Performance Framework** | Tracking, reporting, and optimization playbook for the live campaign |
 
-```mermaid
-flowchart TD
-    subgraph Strategy["Strategy Foundation"]
-        S1[Brand Voice Guidelines]
-        S2[Compliance Framework]
-        S3[Investor Segmentation]
-        S4[Market Intelligence]
-    end
-
-    subgraph Content["Content Production"]
-        C1[Offering Circular]
-        C2[Investor Pitch Deck]
-        C3[Email Drip Campaigns]
-        C4[Video Scripts]
-        C5[Landing Pages]
-        C6[Social Media Calendar]
-        C7[Financial Content Packages]
-    end
-
-    subgraph Compliance["Compliance & Review"]
-        CR1[Content Compliance Review]
-        CR2[Offering Document Audit]
-        CR3[Disclosure Review]
-        CR4[Final Gate Review]
-    end
-
-    subgraph Campaign["Campaign & Distribution"]
-        CA1[Campaign Planning]
-        CA2[Multi-Channel Execution]
-        CA3[Investor Roadshow]
-        CA4[Performance Tracking]
-    end
-
-    subgraph Crisis["Crisis & Ongoing"]
-        K1[Crisis Response Protocols]
-        K2[SEC Comment Responses]
-        K3[Campaign Optimization]
-    end
-
-    Strategy --> Content
-    Content --> Compliance
-    Compliance --> Campaign
-    Campaign --> Crisis
-
-    style Strategy fill:#0d2a1b,stroke:#4aff9e,color:#fff
-    style Content fill:#0d1b2a,stroke:#4a9eff,color:#fff
-    style Compliance fill:#2a1b0d,stroke:#ff9e4a,color:#fff
-    style Campaign fill:#1b0d2a,stroke:#9e4aff,color:#fff
-    style Crisis fill:#2a0d1b,stroke:#ff4a9e,color:#fff
-```
+> **What this replaces:** Full investor communications agency ($150K-$400K) plus marketing agency for investor acquisition ($75K-$200K). Traditional timeline: 3-4 months.
 
 ---
 
-### Module 3: Supporting Capabilities
+### Ongoing Support
 
-| Module | What's Available |
-|--------|-----------------|
-| **BuildOS** | Full-stack investor portal if Endless needs a custom platform — 8 specialist software agents |
-| **GrowthOS** | Investor acquisition marketing — SEO, paid campaigns, content marketing, email automation — 12 specialist agents |
-| **QIE Hub** | Project orchestration across all workstreams — registry-first, multi-entity capable |
+| Capability | What's Included |
+|-----------|----------------|
+| **Crisis Response** | Protocols and rapid response capability for investor concerns, market events, or regulatory inquiries |
+| **SEC Comment Responses** | If the SEC sends a comment letter, we draft the response |
+| **Campaign Optimization** | Performance review, A/B testing recommendations, and campaign iteration |
+| **Investor Relations** | Ongoing investor communication support, update templates, and relationship management tools |
 
 ---
 
-## The Deal Structure
+## The Proof — What We Already Built
 
-```mermaid
-timeline
-    title Endless Partnership — Milestone-Based Payment Structure
-    section Phase 0 Start
-        Engagement begins : Zero cash required
-        Full AI arsenal activated : System deployed on Endless
-    section 5% Raise Achieved
-        First milestone triggered : $250,000 cash payment
-        Continue full operations : All 21 agents remain active
-    section 10% Raise Achieved
-        Second milestone triggered : $750,000 cash payment
-        Equity fully vested : $1,250,000 equity position
-    section Ongoing
-        Campaign optimization : Investor relations support
-        Crisis response on standby : SEC comment support
-```
+We deployed this same package for **Transformational Epicenter** — a luxury medical wellness company building the world's first integrated destination combining hospital-grade care, five-star hospitality, and advanced bio-optimization. They came to us preparing a $5M capital raise.
 
-### The Financial Picture
+**What we delivered for Epicenter:**
+- Complete raise strategy and entity architecture
+- 12-tab institutional financial model with sensitivity analysis
+- 9-point valuation report
+- Cap table with dilution waterfall
+- 21-document institutional data room
+- Strategic investor narrative and brand identity
+- Full offering circular production
+- Investor pitch deck and email campaigns
+- Operational blueprint and KPI framework
+- Investor portal architecture
+- Campaign infrastructure and compliance review
+
+Everything internally consistent. Every figure cross-referenced. Every claim validated against the financials.
+
+**This is the same package we're deploying for Endless.**
+
+---
+
+## How It Gets Built
+
+Our production engine uses AI-powered specialist systems across securities law, financial modeling, market intelligence, narrative development, compliance, and campaign production. This is how we deliver institutional-grade work in weeks instead of months, and at a fraction of traditional cost.
+
+**The AI advantage isn't the product — it's the reason the economics work:**
+
+| Dimension | Traditional Approach | Our Approach |
+|-----------|---------------------|-------------|
+| **Timeline** | 6-12 months | 4-8 weeks |
+| **Production cost** | $1.5M-$3M+ across 8+ firms | Structural 96-98% cost reduction |
+| **Vendors to manage** | 8+ separate firms, separate timelines | One team, one narrative, one invoice |
+| **Internal consistency** | Low (multiple authors across firms) | Total cross-referencing across all deliverables |
+| **Quality** | Varies by vendor | Institutional-grade, validated |
+
+> We didn't replace the expertise — we replaced the inefficiency. The knowledge of a securities attorney, a financial modeler, a market researcher, and a narrative strategist is all present. What's eliminated is the 6 months of sequential handoffs, conflicting recommendations, and scattered narratives.
+
+---
+
+## The Timeline
+
+| Phase | Weeks | What Gets Delivered |
+|-------|-------|---------------------|
+| **Discovery** | 1-3 | Raise strategy, strategic foundation, market research, competitive analysis, entity structure, deal terms |
+| **Financial & Legal** | 3-6 | 12-tab financial model, valuation report, cap table, staffing model, investment documents |
+| **Materials** | 6-10 | Data room, investor narrative, operational blueprint, brand guidelines, readiness scoring |
+| **Communications** | 10-14 | Offering circular, pitch deck, email campaigns, landing pages, social content, compliance review |
+| **Launch** | 14-18 | Campaign planning, roadshow, multi-channel execution, performance tracking |
+| **Ongoing** | 18+ | Campaign optimization, investor relations, crisis response, SEC comment support |
+
+---
+
+## The Deal
+
+### Payment Structure
 
 | | |
 |---|---|
@@ -356,34 +198,40 @@ timeline
 | **Equity Component** | $1,250,000 (pre-money valuation, sellable anytime) |
 | **Upfront Cost to Endless** | **$0** |
 
+### Cash Milestones
+
 | Milestone | Trigger | Payment |
 |-----------|---------|---------|
 | First | 5% of raise achieved | $250,000 |
 | Second | 10% of raise achieved | $750,000 |
 | **Total cash** | | **$1,000,000** |
 
+### Equity Terms
+
+| | |
+|---|---|
+| **Equity value** | $1,250,000 |
+| **Valuation basis** | Pre-money valuation at time of agreement |
+| **Vesting** | Fully vested upon delivery |
+| **Liquidity** | Sellable at any time at our preference |
+
 ---
 
-## The Numbers — What You're Getting vs. What You're Paying
+## What You're Getting vs. What You're Paying
 
-```mermaid
-xychart-beta
-    title "Standalone Value vs. Partnership Investment"
-    x-axis ["InvestOS Full", "AmplifyOS Campaign", "GrowthOS Investor Acq.", "BuildOS Platform", "12-Month Support", "Total Value"]
-    y-axis "USD (thousands)" 0 --> 2500
-    bar [250, 275, 137, 200, 240, 2250]
-```
-
-| Component | Standalone Market Value |
-|-----------|------------------------|
-| InvestOS Capital Clarity (diagnostic) | $10,000 |
-| InvestOS Capital Formation — Full | $150,000 – $350,000 |
-| InvestOS Capital Deployment (platform + ongoing) | $100,000 – $750,000 |
-| AmplifyOS Full Campaign | $150,000 – $400,000 |
-| GrowthOS Investor Acquisition | $75,000 – $200,000 |
-| BuildOS Investor Platform | $100,000 – $300,000 |
-| Ongoing Support & Optimization (12 months) | $120,000 – $360,000 |
-| **Total standalone value** | **$705,000 – $2,370,000** |
+| Component | What It Would Cost Separately |
+|-----------|------------------------------|
+| Strategy & positioning (strategic foundation, go-to-market, FAQ) | $500K - $1.5M |
+| Market research & competitive intelligence | $150K - $400K |
+| Financial modeling & valuation | $125K - $350K |
+| Legal architecture & investment documents | $215K - $825K |
+| Operational blueprint & staffing model | $150K - $350K |
+| Data room assembly & cross-reference validation | $200K - $500K |
+| Investor communications & campaign production | $150K - $400K |
+| Investor acquisition marketing | $75K - $200K |
+| Investor platform (architecture + design) | $100K - $300K |
+| Ongoing support & optimization (12 months) | $120K - $360K |
+| **Total assembled separately** | **$1.8M - $5.2M** |
 
 **What Endless pays:** $0 upfront. $1M deferred to milestones. $1.25M equity.
 
@@ -391,74 +239,18 @@ xychart-beta
 
 ## Why This Works for Both Sides
 
-```mermaid
-quadrantChart
-    title Alignment of Interests
-    x-axis "Low Risk" --> "High Risk"
-    y-axis "Low Upside" --> "High Upside"
-    quadrant-1 Ideal Zone
-    quadrant-2 Traditional Consulting
-    quadrant-3 No Deal
-    quadrant-4 Speculation
-    Light-Brands Partnership: [0.2, 0.85]
-    Traditional Consulting: [0.7, 0.3]
-    DIY Approach: [0.8, 0.5]
-    In-House Team: [0.6, 0.4]
-```
-
 **For Endless:**
 - Zero upfront cost — no cash leaves the building until the raise is working
-- Access to institutional-grade AI capital formation (21 agents, 52+ workflows)
-- Milestone-based payments mean we're aligned with their success
-- Speed advantage — AI compresses months into weeks
-- A $2M+ platform for the price of equity + deferred cash
+- 37+ institutional-grade deliverables covering every dimension of the raise
+- Milestone-based payments mean we're aligned with your success
+- Weeks instead of months — capital formation infrastructure while the window is open
+- Complete internal consistency — every document cross-references every other
 
 **For Light-Brands:**
 - $1M guaranteed cash once the raise gains traction
 - $1.25M equity at pre-money valuation — maximum upside
 - Equity sellable at our discretion — we control our exit timing
-- Portfolio company relationship — this becomes a reference deployment
-
----
-
-## What the System Looks Like in Motion
-
-```mermaid
-sequenceDiagram
-    participant Endless as Endless Team
-    participant Alex as Alexander (Orchestrator)
-    participant Agents as Specialist Agents
-    participant Output as Deliverables
-    participant Amp as AmplifyOS
-    participant Market as Investor Market
-
-    Endless->>Alex: Project intake + source documents
-    Alex->>Agents: Distribute to specialists in parallel
-    Note over Agents: Victoria (legal) + Marcus (financial)<br/>Diana (market) + Cassandra (narrative)<br/>Helena (data room) + Raymond (ops)
-    Agents->>Output: Phase 1-5 deliverables produced
-    Output->>Alex: Cross-reference validation + quality check
-    Alex->>Endless: Investor Readiness Score (0-100)
-    Endless->>Amp: Activate communications engine
-    Amp->>Market: Offering circular + pitch deck + campaign
-    Market->>Endless: Investor interest + capital commitments
-    Note over Endless,Market: Milestone 1: 5% raise → $250K payment
-    Note over Endless,Market: Milestone 2: 10% raise → $750K payment
-```
-
----
-
-## The Capability We Bring
-
-| Capability | Detail |
-|-----------|--------|
-| **21 AI Agents** | Specialist intelligence across securities law, financial modeling, market research, narrative, compliance, communications, brand, crisis, operations, platform |
-| **52+ Workflows** | Structured processes covering every phase from intake through post-raise |
-| **Institutional Standards** | SEC/FINRA-grade compliance review, 21-document data rooms, 12-tab financial models |
-| **Proven Arsenal** | System already deployed on a live raise — Transformational Epicenter's complete capital formation package |
-| **Speed** | AI-powered delivery compresses months into weeks |
-| **Full Campaign Engine** | Not just raise documents — full investor communications, campaigns, roadshows |
-| **Technology** | Investor platform architecture and design if needed |
-| **Ongoing** | Crisis management, SEC responses, campaign optimization |
+- Portfolio company relationship — reference deployment for future clients
 
 ---
 
@@ -470,9 +262,9 @@ sequenceDiagram
 - **$750K** at 10% raise
 - **$1.25M equity** at pre-money, sellable anytime
 
-Endless gets the full Light-Brands AI capital formation intelligence system — 21 specialist agents, 52+ workflows, every deliverable from raise strategy to investor roadshow — the same arsenal we deployed for Transformational Epicenter, now activated for their raise.
+Endless receives the complete capital formation infrastructure — 37+ deliverables from raise strategy through financial modeling through data room through investor campaign — delivered in weeks, cross-referenced for consistency, and built to institutional standards.
 
-This isn't consulting. This isn't software. This is capital formation infrastructure — the most comprehensive AI-powered raise platform ever built, deployed by our team, operating on your behalf, aligned to your success.
+This isn't consulting. This is capital formation infrastructure — deployed by our team, operating on your behalf, aligned to your success.
 
 ---
 

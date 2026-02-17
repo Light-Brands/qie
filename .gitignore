@@ -23,5 +23,10 @@ _bmad-output/epic-center-source/
 # Tool-specific runtime (per-user, not intelligence)
 .playwright-mcp/
 
+# Environment secrets (API keys, tokens)
+.env
+.env.*
+!.env.example
+
 # OS files
 .DS_Store
