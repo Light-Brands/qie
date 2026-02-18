@@ -1,0 +1,131 @@
+# ROS - RealEstateOS Module Configuration
+# The Stripe of Real Estate Capital Formation
+# Version: 1.0.0
+
+module_name: RealEstateOS
+module_id: ros
+module_version: 1.0.0
+codename: Raise
+description: "AI-native real estate capital formation platform -- make raising capital for a RE deal as easy as launching a store on Shopify"
+
+communication_language: English
+document_output_language: English
+output_folder: _bmad-output
+
+# Agent Roster (11 agents)
+agents:
+  master: Meridian           # Master Orchestrator
+  deal_architect: Morgan     # Deal Structuring & Entity Design
+  document_engine: Reeves    # AI Document Generation (PPM, Sub Docs, OA)
+  financial_intelligence: Petra  # RE Financial Modeling (NOI, IRR, Waterfalls)
+  compliance_guardian: Langley   # Regulatory Compliance Engine
+  investor_gateway: Sable    # Investor Onboarding & CRM
+  raise_commander: Mercer    # Raise Execution & Tracking
+  lifecycle_manager: Sterling    # Post-Close Operations
+  intelligence_engine: Vance # Cross-Deal Analytics & Market Intelligence
+  platform_architect: Harlow # Platform Infrastructure & UX
+  quick_flow: Cruz           # Rapid Single-Deliverable Execution
+
+# Agent triggers (for Quinn routing)
+trigger_prefix: bmad-ros-
+routing_signals:
+  - raise platform
+  - real estate capital formation
+  - sponsor platform
+  - deal packaging
+  - investor portal
+  - distribution waterfall
+  - property financial model
+  - raise dashboard
+  - investor onboarding
+  - KYC accreditation
+  - post-close reporting
+  - K-1 generation
+  - deal benchmarking
+  - capital formation SaaS
+
+# Workflow Phases (8 phases, 35+ workflows)
+phases:
+  0: "Intake & Orchestration"
+  1: "Deal Architecture"
+  2: "Document Generation"
+  3: "Compliance & Review"
+  4: "Investor Management"
+  5: "Raise Execution"
+  6: "Post-Close Lifecycle"
+  7: "Platform Intelligence"
+
+# RE-Specific Configuration
+supported_deal_types:
+  acquisition:
+    - multifamily
+    - commercial-office
+    - industrial-warehouse
+    - retail
+    - mixed-use
+    - self-storage
+    - mobile-home-parks
+    - senior-living
+    - student-housing
+    - medical-office
+    - hospitality
+  development:
+    - ground-up-construction
+    - adaptive-reuse
+    - land-entitlement
+    - subdivision
+  strategy:
+    - core
+    - core-plus
+    - value-add
+    - opportunistic
+    - distressed
+
+supported_regulations:
+  - reg-d-506b      # Private placement, pre-existing relationships
+  - reg-d-506c      # Private placement, general solicitation allowed
+  - reg-a-plus      # Mini-IPO, up to $75M, non-accredited allowed
+  - reg-cf          # Crowdfunding, up to $5M
+  - reg-s           # Offshore offering
+
+supported_entity_types:
+  - delaware-lp              # Most common for RE syndications
+  - delaware-llc             # Flexible, common for smaller deals
+  - series-llc               # Multiple properties under one umbrella
+  - tenancy-in-common-tic    # 1031 exchange compatible
+  - delaware-statutory-trust  # 1031 exchange compatible, passive
+  - c-corp-reit              # For larger portfolio plays
+  - qualified-opportunity-zone-fund  # OZ tax incentives
+
+# Financial Metrics (RE-specific)
+primary_metrics:
+  - net-operating-income       # NOI
+  - capitalization-rate        # Cap Rate
+  - cash-on-cash-return        # CoC
+  - internal-rate-of-return    # IRR
+  - equity-multiple            # EM
+  - debt-service-coverage      # DSCR
+  - loan-to-value              # LTV
+  - debt-yield                 # DY
+  - gross-rent-multiplier      # GRM
+  - price-per-unit             # $/Unit
+  - price-per-square-foot      # $/SF
+  - break-even-occupancy       # BEO
+  - operating-expense-ratio    # OER
+  - net-asset-value            # NAV
+
+# Integration Partners (Platform Layer)
+integrations:
+  payments: stripe
+  banking: plaid
+  kyc_aml: parallel-markets
+  accreditation: verify-investor
+  esignature: signnow
+  tax: tax-api-partner
+  escrow: escrow-provider
+  identity: persona
+
+# Cross-Module Dependencies
+depends_on:
+  - ios  # InvestOS -- foundational raise intelligence
+  - aos  # AmplifyOS -- investor communications engine

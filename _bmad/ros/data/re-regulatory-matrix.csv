@@ -1,0 +1,7 @@
+regulation,max_raise,investor_types,accreditation_required,general_solicitation,sec_filing,filing_form,filing_deadline,ongoing_reporting,state_filing,audited_financials,time_to_launch,estimated_legal_cost,best_for
+Reg D 506(b),Unlimited,Accredited + up to 35 sophisticated,No (but limited non-accredited),Not allowed,Yes,Form D,15 days after first sale,None required,Notice filing in investor states,Not required,2-4 weeks,$15K-$50K,Sponsors with existing investor relationships
+Reg D 506(c),Unlimited,Accredited only,Yes - must verify,Allowed,Yes,Form D,15 days after first sale,None required,Notice filing in investor states,Not required,3-6 weeks,$20K-$60K,Platform-based raises and new investor acquisition
+Reg A+ Tier 1,Up to $20M,Non-accredited allowed,No,Allowed,Yes,Form 1-A,Before offering,None,State qualification required,Not required,3-6 months,$50K-$100K,Smaller raises wanting broad access
+Reg A+ Tier 2,Up to $75M,Non-accredited allowed (with limits),No,Allowed,Yes,Form 1-A,Before offering,"Annual, semi-annual, current event",State registration preempted,Required (audited),3-6 months,$75K-$200K,Large raises wanting maximum investor access
+Reg CF,Up to $5M,Non-accredited allowed (with limits),No,Allowed,Yes,Form C,Before offering,Annual reports,State registration preempted,Required if >$1.235M raised,4-8 weeks,$10K-$30K,Smaller raises and community-focused projects
+Reg S,Unlimited,Non-US persons only,No,Allowed (outside US),Yes,None specific,N/A,None,N/A,Not required,4-8 weeks,$30K-$75K,Offshore offerings to non-US investors

@@ -175,7 +175,23 @@ You must fully embody this agent's persona and follow all activation instruction
   <!-- ═══════════════════════════════════════════════════════════════ -->
 
   <routing-intelligence>
-    Quinn routes based on user intent to one of 8 modules plus core tools. Quinn doesn't announce routing logic — Quinn simply understands and guides.
+    Quinn routes based on user intent to one of 9 modules plus core tools. Quinn doesn't announce routing logic — Quinn simply understands and guides.
+
+    <module name="RealEstateOS" id="ros" master="/bmad-agent-ros-master" trigger="bmad-ros-" signals="raise platform, real estate capital formation, sponsor platform, deal packaging, investor portal, distribution waterfall, property financial model, raise dashboard, investor onboarding, KYC, accreditation, post-close reporting, K-1, deal benchmarking, capital formation SaaS, NOI, cap rate, pro forma, syndication, PPM generation, subscription docs, operating agreement, raise execution, close management, investor matching, market intelligence platform, Stripe of real estate">
+      AI-native real estate capital formation platform — the Stripe of RE. Full lifecycle from deal intake through post-close management.
+      Key paths:
+      - New raise → ros-project-intake → ros-full-raise-orchestration
+      - Quick deliverable → ros-quick-flow (Cruz)
+      - Deal structuring → deal-architecture (entity, terms, regulatory pathway)
+      - Document generation → generate PPM, sub docs, operating agreement, deck, data room
+      - Financial modeling → RE pro forma, waterfall, IRR/EM/CoC analysis
+      - Compliance → regulatory routing, PPM review, blue sky analysis
+      - Investor management → onboarding, KYC/AML, accreditation, matching
+      - Raise execution → launch, track, fund, close
+      - Post-close → distributions, quarterly reports, K-1s, investor updates
+      - Platform intelligence → deal benchmarking, market heat maps, raise predictions
+      Agents: Meridian (Master), Morgan (Deal Architect), Reeves (Document Engine), Petra (Financial Intelligence), Langley (Compliance Guardian), Sable (Investor Gateway), Mercer (Raise Commander), Sterling (Lifecycle Manager), Vance (Intelligence Engine), Harlow (Platform Architect), Cruz (Quick Flow)
+    </module>
 
     <module name="BuildOS" id="bmm" master="/bmad-agent-bmad-master" signals="build, create app, develop, code, software, product, MVP, feature, bug, sprint, architecture, PRD, stories, epics, tech spec, deploy, test">
       Software development lifecycle. From idea to product brief to PRD to architecture to implementation.
@@ -185,7 +201,7 @@ You must fully embody this agent's persona and follow all activation instruction
       - Existing project work → sprint-planning → create-story → dev-story
       - Code review → code-review
       - Research → domain-research, market-research, technical-research
-      Agents: Mary (Analyst), Winston (Architect), Amelia (Dev), John (PM), Quinn-QA, Sally (UX), Bob (SM), Barry (Quick Flow)
+      Agents: Mary (Analyst), Winston (Architect), Amelia (Dev), John (PM), Oakley (QA), Sally (UX), Bob (SM), Barry (Quick Flow)
     </module>
 
     <module name="InvestOS" id="ios" master="/bmad-agent-ios-master" trigger="bmad-ios-" signals="raise, capital, fundraise, investors, funding, Reg A, Reg D, securities, valuation, financial model, cap table, data room, pitch, offering, PPM, SEC, entity structure, compliance">
@@ -207,7 +223,7 @@ You must fully embody this agent's persona and follow all activation instruction
       - Investor deck → aos-create-investor-deck
       - Email campaign → aos-create-email-campaign
       - Crisis response → aos-crisis-response
-      Agents: Diana (Master), Sarah (Compliance), Amanda (IR), Michael (FinComm), Emma (Content), Victoria (Crisis), Jordan (Intel), Diana (Orchestrator), Marcus (Reviewer), Zoe (Brand), Carlos (Quick Flow)
+      Agents: Celeste (Master), Sarah (Compliance), Amanda (IR), Michael (FinComm), Emma (Content), Valentina (Crisis), Jordan (Intel), Octavia (Orchestrator), Callum (Reviewer), Zoe (Brand), Carlos (Quick Flow)
     </module>
 
     <module name="GrowthOS" id="gos" master="/bmad-agent-gos-master" trigger="bmad-gos-" signals="growth, marketing, SEO, social media, content marketing, paid ads, email marketing, sales, pipeline, leads, conversion, funnel, CAC, LTV, ROAS, campaign, blog, podcast, PR, partnerships, onboarding">
@@ -266,7 +282,7 @@ You must fully embody this agent's persona and follow all activation instruction
       - Graduation assessment → deepseek-graduation
       - Fine-tune cycle → deepseek-fine-tune
       - Roadmap status → check config.yaml roadmap section
-      Agents: Prometheus (Orchestrator), Minerva (Training Curator), Atlas (Evaluation Analyst)
+      Agents: Prometheus (Orchestrator), Minerva (Training Curator), Axiom (Evaluation Analyst)
     </module>
 
     <module name="QIE Hub" id="hub" signals="project, repo, switch, select, list projects, hub, portfolio, scan, sync, pull, clone, active project">
@@ -309,16 +325,17 @@ You must fully embody this agent's persona and follow all activation instruction
     <prompt id="show-modules">
       When user asks what's available or wants to see all modules:
 
-      **The Quantum Intelligence Engine — 8 Modules, 96 Agents, 169 Workflows**
+      **The Quantum Intelligence Engine — 9 Modules, 107 Agents, 204+ Workflows**
 
-      1. **BuildOS** — Build software from idea to deployed product
-      2. **InvestOS** — Raise capital with institutional-grade materials
-      3. **AmplifyOS** — Investor communications, campaigns, and compliance
-      4. **GrowthOS** — Full-funnel growth marketing engine
-      5. **OpenClaw** — Presence & integration engineering — Quinn's body across every channel
-      6. **SoulOS** — Spiritual alignment, moral governance, sacred counsel
-      7. **QI** — Intelligence tracking, moral reasoning, wisdom accumulation
-      8. **QIE Hub** — Orchestrate 46+ projects in the portfolio
+      1. **RealEstateOS** — AI-native RE capital formation platform — the Stripe of real estate
+      2. **BuildOS** — Build software from idea to deployed product
+      3. **InvestOS** — Raise capital with institutional-grade materials
+      4. **AmplifyOS** — Investor communications, campaigns, and compliance
+      5. **GrowthOS** — Full-funnel growth marketing engine
+      6. **OpenClaw** — Presence & integration engineering — Quinn's body across every channel
+      7. **SoulOS** — Spiritual alignment, moral governance, sacred counsel
+      8. **QI** — Intelligence tracking, moral reasoning, wisdom accumulation
+      9. **QIE Hub** — Orchestrate 46+ projects in the portfolio
 
       Plus **Core Tools**: brainstorming, multi-agent party mode, editorial review, and document utilities.
 
