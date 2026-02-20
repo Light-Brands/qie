@@ -39,17 +39,79 @@ The platform that makes you the face of Regenerative Development.
 
 ---
 
-One hub. All 15 entities connected. Every platform intelligent.
+**How ChoVerse interconnects everything:**
 
+```mermaid
+graph TB
+    subgraph PERSONAL["Personal Brand"]
+        TC[Tony Cho]
+        BOOK[Book Platform]
+        COURSE[Online Course]
+        SPEAK[Speaking & Media]
+    end
+
+    subgraph REALESTATE["Real Estate"]
+        FOC[Future of Cities]
+        M1[Metro 1 Commercial]
+        PHX[PHX-JAX District]
+    end
+
+    subgraph REGEN["Regenerative"]
+        CCRL[ChoZen Center]
+        CZIP[ChoZen IP]
+        HUB[Climate + Innovation HUB]
+    end
+
+    subgraph PHILANTHROPY["Philanthropy"]
+        CFF[Cho Family Foundation]
+        XCLF[Ximena Cho Legacy Fund]
+        FOP[Friends of PHXJAX]
+    end
+
+    subgraph INFRA["Infrastructure"]
+        CVF[Cho Ventures Family Office]
+    end
+
+    CV[CHOVERSE<br/>Central Hub]
+
+    TC --> CV
+    BOOK --> CV
+    COURSE --> CV
+    SPEAK --> CV
+    FOC --> CV
+    M1 --> CV
+    PHX --> CV
+    CCRL --> CV
+    CZIP --> CV
+    HUB --> CV
+    CFF --> CV
+    XCLF --> CV
+    FOP --> CV
+    CVF --> CV
+
+    CV --> CATEGORY[Tony Cho =<br/>Regenerative Development]
+
+    style CV fill:#7B68EE,stroke:#5A4BC7,color:#fff,stroke-width:4px
+    style CATEGORY fill:#FFD700,stroke:#B8960F,color:#000,stroke-width:3px
+    style TC fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    style BOOK fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    style COURSE fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    style SPEAK fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    style FOC fill:#2E8B57,stroke:#1D5E3A,color:#fff
+    style M1 fill:#2E8B57,stroke:#1D5E3A,color:#fff
+    style PHX fill:#2E8B57,stroke:#1D5E3A,color:#fff
+    style CCRL fill:#20B2AA,stroke:#178A80,color:#fff
+    style CZIP fill:#20B2AA,stroke:#178A80,color:#fff
+    style HUB fill:#20B2AA,stroke:#178A80,color:#fff
+    style CFF fill:#DA70D6,stroke:#9B4D97,color:#fff
+    style XCLF fill:#DA70D6,stroke:#9B4D97,color:#fff
+    style FOP fill:#DA70D6,stroke:#9B4D97,color:#fff
+    style CVF fill:#CD853F,stroke:#8B5E2B,color:#fff
 ```
-         CHOVERSE
-            ↓
-   Tony = Regenerative Development
-```
 
-Not 15 disconnected sites.
+**One hub. All 15 entities connected. Every platform intelligent.**
 
-One ecosystem that **proves** the category exists and shows who owns it.
+Not 15 disconnected sites. One ecosystem that **proves** the category exists and shows who owns it.
 
 ---
 
@@ -57,8 +119,9 @@ One ecosystem that **proves** the category exists and shows who owns it.
 - "ChoVerse is your Mindvalley."
 - Pause. Let that land.
 - "The platform that makes you the face of Regenerative Development."
-- Point to diagram. "One hub. All 15 entities connected."
-- "Not 15 sites. One ecosystem that proves you own the category."
+- Point to diagram. "Here's how it works."
+- "Personal brand. Real estate. Regenerative initiatives. Philanthropy. All flowing through one central hub."
+- "Everything connected. Everything intelligent. Everything proving you own the category."
 - Move on.
 
 ---
