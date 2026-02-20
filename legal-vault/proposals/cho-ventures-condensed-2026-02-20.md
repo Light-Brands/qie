@@ -156,6 +156,14 @@ Not better projects. Better positioning.
 
 We heard you. You need to raise $12M. You want to pay us **out of the raise**, not out of pocket upfront.
 
+**Why this deal is structured this way:**
+
+Typically, we charge 30% upfront. This engagement is different.
+
+We believe in you being the authority for regenerative development. The movement needs a leader who can take it where it needs to go. We want to help you get there. This is more mission than transaction for us.
+
+**Let us help you become institutional-ready with your business and future.**
+
 Here's the structure:
 
 ### Three Payment Options (Same Deliverables)

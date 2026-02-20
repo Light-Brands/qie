@@ -122,11 +122,23 @@ One ecosystem that **proves** the category exists and shows who owns it.
 
 ## SLIDE 5: THE DEAL
 
+**Why this deal is structured this way:**
+
+Typically, we charge 30% upfront. This engagement is different.
+
+We believe in you being the authority for regenerative development. The movement needs a leader who can take it where it needs to go. We want to help you get there.
+
+This is more mission than transaction for us.
+
+**Let us help you become institutional-ready.**
+
+---
+
 **$40K starts the build. 90% deferred.**
 
 | | What You Pay |
 |---|---|
-| **Upfront** | $40,000 |
+| **Upfront** | $40,000 (10% vs. typical 30%) |
 | **When $1.2M raised** | $180,000 |
 | **When $3.6M raised** | $180,000 |
 | **Total Cash** | $400,000 (3.3% of $12M raise) |
@@ -137,6 +149,7 @@ One ecosystem that **proves** the category exists and shows who owns it.
 - ChoVerse ecosystem (all 15 entities)
 - Category ownership positioning
 - $12M raise infrastructure
+- Institutional-ready business and future
 - Long-term partnership
 
 ---
@@ -152,9 +165,14 @@ One ecosystem that **proves** the category exists and shows who owns it.
 ---
 
 **SPEAKER NOTES:**
-- "$40K starts the build. 90% deferred."
-- Show the table. "3.3% of the raise upfront. Rest only paid when raise moves."
-- "Equity vests when raise closes. Future work at cost."
+- "Typically we charge 30% upfront. This is structured differently."
+- "We believe in you being the authority for regenerative development."
+- "The movement needs a leader. We want to help you get there."
+- "This is more mission than transaction for us."
+- Pause.
+- "Let us help you become institutional-ready."
+- Show the table. "$40K starts — 10% instead of our typical 30%."
+- "90% deferred. Equity vests when raise closes. Future work at cost."
 - Pause.
 - "The question is not whether we can put you there."
 - Pause.
