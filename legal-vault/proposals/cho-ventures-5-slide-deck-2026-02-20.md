@@ -50,68 +50,55 @@ The start of the larger ecosystem that follows.
 **The Ecosystem Network:**
 
 ```mermaid
-graph TD
-    CV(((<b>CHOVERSE</b><br/><br/>AI-Native Hub<br/>Coherence)))
-
-    M1[Metro 1<br/>Commercial]
-    FOC[Future of<br/>Cities]
-    PHX[PHX-JAX<br/>District]
-
-    RETREAT[ChoZen<br/>Retreat]
-    COMM[ChoZen<br/>Community]
-
-    HUB[Climate +<br/>Innovation HUB]
-    CFF[Cho Family<br/>Foundation]
-    M1FUND[M1 Community<br/>Fund]
-
-    BOOK[Book]
-    COURSE[Online<br/>Course]
-    SPEAK[Speaking &<br/>Keynotes]
-    PODCAST[Podcast]
-
-    CV --- M1
-    CV --- FOC
-    CV --- PHX
-
-    CV --- RETREAT
-    CV --- COMM
-
-    CV --- HUB
-    CV --- CFF
-    CV --- M1FUND
-
-    CV --- BOOK
-    CV --- COURSE
-    CV --- SPEAK
-    CV --- PODCAST
-
-    M1 -.-> FOC
-    FOC -.-> PHX
-    RETREAT -.-> COMM
-    CFF -.-> M1FUND
-    BOOK -.-> COURSE
-    SPEAK -.-> PODCAST
-
-    CV ==>|Becomes| OUTCOME[Tony Cho =<br/>Regenerative<br/>Development]
-
-    style CV fill:#7B68EE,stroke:#5A4BC7,color:#fff,stroke-width:8px
-    style OUTCOME fill:#FFD700,stroke:#B8960F,color:#000,stroke-width:4px
-
-    style M1 fill:#2E8B57,stroke:#1D5E3A,color:#fff
-    style FOC fill:#2E8B57,stroke:#1D5E3A,color:#fff
-    style PHX fill:#2E8B57,stroke:#1D5E3A,color:#fff
-
-    style RETREAT fill:#20B2AA,stroke:#178A80,color:#fff
-    style COMM fill:#20B2AA,stroke:#178A80,color:#fff
-
-    style HUB fill:#CD853F,stroke:#8B5E2B,color:#fff
-    style CFF fill:#CD853F,stroke:#8B5E2B,color:#fff
-    style M1FUND fill:#CD853F,stroke:#8B5E2B,color:#fff
-
-    style BOOK fill:#4A90D9,stroke:#2C5F8A,color:#fff
-    style COURSE fill:#4A90D9,stroke:#2C5F8A,color:#fff
-    style SPEAK fill:#4A90D9,stroke:#2C5F8A,color:#fff
-    style PODCAST fill:#4A90D9,stroke:#2C5F8A,color:#fff
+mindmap
+  root((CHOVERSE))
+    Real Estate
+      Metro 1 Commercial
+        Miami Urban Core
+        $4B+ Transactions
+        Wynwood Pioneer
+      Future of Cities
+        ESG Development
+        Regenerative Design
+        Multi-City Expansion
+      PHX-JAX District
+        8.5 Acres
+        Jacksonville
+        Arts & Innovation
+      Climate + Innovation HUB
+        Little Haiti
+        Climate Tech
+        Innovation Center
+    Regenerative Living
+      ChoZen Retreat
+        40 Acres
+        Sebastian FL
+        Wellness Sanctuary
+        Blue Zone Blueprint
+      ChoZen Community
+        App Platform
+        Member Network
+        Events & Programs
+    Authority Platform
+      Book
+        Regenerative Living
+        Thought Leadership
+      Course
+        Online Learning
+        Certification
+      Speaking
+        Keynotes
+        Media
+        Podcasts
+    Philanthropy
+      Cho Family Foundation
+        Environment
+        Wildlife
+        Indigenous Culture
+      M1 Community Fund
+        Small Business
+        Local Relief
+        Community Support
 ```
 
 **All your projects in one place. Coherence across everything.**
