@@ -53,74 +53,65 @@ The start of the larger ecosystem that follows.
 graph TD
     CV(((<b>CHOVERSE</b><br/><br/>AI-Native Hub<br/>Coherence)))
 
-    TC[Tony Cho<br/>Brand]
-    BOOK[Book<br/>Platform]
-    COURSE[Online<br/>Course]
-    SPEAK[Speaking &<br/>Media]
-
-    FOC[Future of<br/>Cities]
     M1[Metro 1<br/>Commercial]
+    FOC[Future of<br/>Cities]
     PHX[PHX-JAX<br/>District]
 
-    CCRL[ChoZen<br/>Center]
-    CZIP[ChoZen<br/>IP]
-    HUB[Climate<br/>Innovation]
+    RETREAT[ChoZen<br/>Retreat]
+    COMM[ChoZen<br/>Community]
 
+    HUB[Climate +<br/>Innovation HUB]
     CFF[Cho Family<br/>Foundation]
-    XCLF[Ximena Cho<br/>Legacy]
-    FOP[Friends of<br/>PHXJAX]
+    M1FUND[M1 Community<br/>Fund]
 
-    CVF[Family<br/>Office]
+    BOOK[Book]
+    COURSE[Online<br/>Course]
+    SPEAK[Speaking &<br/>Keynotes]
+    PODCAST[Podcast]
 
-    CV --- TC
+    CV --- M1
+    CV --- FOC
+    CV --- PHX
+
+    CV --- RETREAT
+    CV --- COMM
+
+    CV --- HUB
+    CV --- CFF
+    CV --- M1FUND
+
     CV --- BOOK
     CV --- COURSE
     CV --- SPEAK
+    CV --- PODCAST
 
-    CV --- FOC
-    CV --- M1
-    CV --- PHX
-
-    CV --- CCRL
-    CV --- CZIP
-    CV --- HUB
-
-    CV --- CFF
-    CV --- XCLF
-    CV --- FOP
-
-    CV --- CVF
-
-    TC -.-> BOOK
-    FOC -.-> M1
+    M1 -.-> FOC
     FOC -.-> PHX
-    CCRL -.-> CZIP
-    CFF -.-> XCLF
-    CFF -.-> FOP
+    RETREAT -.-> COMM
+    CFF -.-> M1FUND
+    BOOK -.-> COURSE
+    SPEAK -.-> PODCAST
 
     CV ==>|Becomes| OUTCOME[Tony Cho =<br/>Regenerative<br/>Development]
 
     style CV fill:#7B68EE,stroke:#5A4BC7,color:#fff,stroke-width:8px
     style OUTCOME fill:#FFD700,stroke:#B8960F,color:#000,stroke-width:4px
 
-    style TC fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    style M1 fill:#2E8B57,stroke:#1D5E3A,color:#fff
+    style FOC fill:#2E8B57,stroke:#1D5E3A,color:#fff
+    style PHX fill:#2E8B57,stroke:#1D5E3A,color:#fff
+
+    style RETREAT fill:#20B2AA,stroke:#178A80,color:#fff
+    style COMM fill:#20B2AA,stroke:#178A80,color:#fff
+
+    style HUB fill:#CD853F,stroke:#8B5E2B,color:#fff
+    style CFF fill:#CD853F,stroke:#8B5E2B,color:#fff
+    style M1FUND fill:#CD853F,stroke:#8B5E2B,color:#fff
+
     style BOOK fill:#4A90D9,stroke:#2C5F8A,color:#fff
     style COURSE fill:#4A90D9,stroke:#2C5F8A,color:#fff
     style SPEAK fill:#4A90D9,stroke:#2C5F8A,color:#fff
-
-    style FOC fill:#2E8B57,stroke:#1D5E3A,color:#fff
-    style M1 fill:#2E8B57,stroke:#1D5E3A,color:#fff
-    style PHX fill:#2E8B57,stroke:#1D5E3A,color:#fff
-
-    style CCRL fill:#20B2AA,stroke:#178A80,color:#fff
-    style CZIP fill:#20B2AA,stroke:#178A80,color:#fff
-    style HUB fill:#20B2AA,stroke:#178A80,color:#fff
-
-    style CFF fill:#DA70D6,stroke:#9B4D97,color:#fff
-    style XCLF fill:#DA70D6,stroke:#9B4D97,color:#fff
-    style FOP fill:#DA70D6,stroke:#9B4D97,color:#fff
-
-    style CVF fill:#CD853F,stroke:#8B5E2B,color:#fff
+    style PODCAST fill:#4A90D9,stroke:#2C5F8A,color:#fff
 ```
 
 **All your projects in one place. Coherence across everything.**
