@@ -59,6 +59,12 @@ One ecosystem that **proves** the category exists and shows who owns it.
 
 ## SLIDE 3: WHAT IT LOOKS LIKE
 
+**Vishen owns Personal Transformation.**
+
+**You own Regenerative Development.**
+
+---
+
 **When you own the category:**
 
 ✓ **Conference organizers call you first** — keynotes, not panels
@@ -80,7 +86,9 @@ One ecosystem that **proves** the category exists and shows who owns it.
 ---
 
 **SPEAKER NOTES:**
-- "Let me show you what it looks like when you own the category."
+- "Vishen owns Personal Transformation. You own Regenerative Development."
+- Pause. Let that land.
+- "Here's what that looks like."
 - Read each bullet. Don't elaborate.
 - Pause at the transformation line.
 - "That's what we build."
