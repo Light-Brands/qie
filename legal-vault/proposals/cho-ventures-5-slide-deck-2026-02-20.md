@@ -33,7 +33,11 @@ What they should see: **"Tony Cho = Regenerative Development"**
 
 ## SLIDE 2: THE SOLUTION
 
-**ChoVerse makes you the face of Regenerative Development.**
+**ChoVerse is your Mindvalley.**
+
+The platform that makes you the face of Regenerative Development.
+
+---
 
 One hub. All 15 entities connected. Every platform intelligent.
 
@@ -50,10 +54,12 @@ One ecosystem that **proves** the category exists and shows who owns it.
 ---
 
 **SPEAKER NOTES:**
-- "ChoVerse makes you the face of Regenerative Development."
+- "ChoVerse is your Mindvalley."
+- Pause. Let that land.
+- "The platform that makes you the face of Regenerative Development."
 - Point to diagram. "One hub. All 15 entities connected."
 - "Not 15 sites. One ecosystem that proves you own the category."
-- That's it. Move on.
+- Move on.
 
 ---
 
