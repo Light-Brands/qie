@@ -1,10 +1,10 @@
-# Influex x Light Brands — Strategic Partnership Strategy
+# Influex x Light Brands Strategic Partnership Strategy
 
 > **From**: Light Brands (Light Brand Consulting)
 > **To**: Influex (Dmitriy Kozlov, CEO)
 > **Date**: February 22, 2026
 > **Type**: Strategic Technology Partnership
-> **Status**: Internal Strategy Document — Pre-Proposal
+> **Status**: Internal Strategy Document, Pre-Proposal
 
 ---
 
@@ -12,9 +12,9 @@
 
 This is not a vendor engagement. This is a strategic partnership between two companies that believe in the same thing: **design-first, essence-driven brand experiences** delivered at a level the market has never seen.
 
-Light Brands builds the most advanced AI-powered website and brand delivery platform in existence — purpose-built for Influex's methodology, clients, and growth. Influex gains a technology partner that follows every step of their process, from intake through delivery, and transforms a $100K/month WordPress burden into a high-margin, lightning-fast delivery engine.
+Light Brands builds the most advanced AI-powered website and brand delivery platform in existence, purpose-built for Influex's methodology, clients, and growth. Influex gains a technology partner that follows every step of their process, from intake through delivery, and transforms a $100K/month WordPress burden into a high-margin, lightning-fast delivery engine.
 
-In return, Influex promotes the Light Brands AI OS alongside their own services — opening a distribution channel into the most influential personal brands in the world.
+In return, Influex promotes the Light Brands AI OS alongside their own services, opening a distribution channel into the most influential personal brands in the world.
 
 **Both parties win when the other grows. That's the design.**
 
@@ -24,7 +24,7 @@ In return, Influex promotes the Light Brands AI OS alongside their own services 
 
 | Principle | How It Shows Up |
 |-----------|-----------------|
-| **Reciprocity** | Both parties share in each other's success — profit-aligned, not extractive |
+| **Reciprocity** | Both parties share in each other's success through profit alignment, never extractive |
 | **Sovereignty** | Each company remains independent. No equity changes hands. No control transferred. |
 | **Transparency** | Revenue figures shared quarterly. Development costs tracked openly. |
 | **Evolution** | The platform grows with Influex's needs. Major development continues at cost. |
@@ -39,9 +39,9 @@ In return, Influex promotes the Light Brands AI OS alongside their own services 
 A complete replacement of Influex's WordPress infrastructure with an AI-native platform that follows every step of their process:
 
 #### 1. AI Intake System
-- Conversational AI discovery interview (replaces 45-min calls)
+- Conversational AI discovery interview (replaces 45 minute calls)
 - Automatic lead qualification and scoring
-- Auto-generated proposals with e-signature
+- Auto generated proposals with electronic signature
 - Seamless client onboarding into the platform
 
 #### 2. Brand AI Engine
@@ -52,12 +52,12 @@ A complete replacement of Influex's WordPress infrastructure with an AI-native p
 
 #### 3. Design System Engine
 - 50+ premium components with brand enforcement
-- Any component works perfectly for any brand — automatically
+- Any component works perfectly for any brand, automatically
 - Update once, all 200+ sites improve instantly
 - Maintains Influex's design-first quality standard
 
 #### 4. AI Page Builder
-- Natural language prompt → complete, on-brand page
+- Natural language prompt to complete, on brand page
 - Content generation in the client's authentic voice
 - Smart media curation and AI image generation
 - Responsive variants generated automatically
@@ -96,15 +96,15 @@ A complete replacement of Influex's WordPress infrastructure with an AI-native p
 
 ## The Transformation: What Happens When We Plug In
 
-### The Starting Point — Where Influex Is Today
+### The Starting Point: Where Influex Is Today
 
 ```mermaid
 block-beta
   columns 4
   block:header:4
     columns 1
-    A["INFLUEX TODAY — THE WORDPRESS ERA"]
-    B["Revenue: $120K/mo | Costs: $100K/mo | Profit: $20K/mo (17% margin)"]
+    A["INFLUEX TODAY: THE WORDPRESS ERA"]
+    B["Revenue: $120K/mo\nCosts: $100K/mo\nProfit: $20K/mo (17% margin)"]
   end
 
   block:designers:1
@@ -117,7 +117,7 @@ block-beta
   block:developers:1
     columns 1
     E1["DEVELOPERS"]
-    E2["200 separate WordPress codebases\nPlugin hell. Update hell.\nSecurity hell."]
+    E2["200 WordPress codebases\nPlugin hell. Update hell.\nSecurity hell."]
     E3["Bottleneck: 200 fires"]
   end
 
@@ -137,8 +137,8 @@ block-beta
 
   block:footer:4
     columns 1
-    H["CAPACITY: MAXED — can't take more clients without more headcount"]
-    I["DELIVERY: 6-8 weeks per site | PLATFORM: WordPress dead end | FUTURE: Flat"]
+    H["CAPACITY: MAXED\nCan't take more clients\nwithout more headcount"]
+    I["DELIVERY: 6 to 8 weeks per site\nPLATFORM: WordPress dead end\nFUTURE: Flat"]
   end
 
   style header fill:#1a1a2e,color:#fff
@@ -149,7 +149,7 @@ block-beta
   style G3 fill:#8b0000,color:#fff
 ```
 
-### The Shift — Same Team. Same Seats. New Superpowers.
+### The Shift: Same Team. Same Seats. New Superpowers.
 
 We don't fire anyone. We don't reduce headcount. **We upgrade every person in every seat into an AI-native strategist commanding their section of an intelligent army.**
 
@@ -157,20 +157,20 @@ The costs stay the same. The team stays the same. What changes is what each pers
 
 ```mermaid
 flowchart LR
-  subgraph BEFORE["BEFORE — Manual WordPress Era"]
+  subgraph BEFORE["BEFORE: Manual WordPress Era"]
     direction TB
-    B1["**DESIGNER**\n2-3 sites/month by hand\nElementor, CSS, pixel pushing\n_Output: 2-3 sites_"]
-    B2["**DEVELOPER**\n200 WordPress codebases\nPlugin updates, security patches\n_Output: firefighting_"]
-    B3["**BRAND STRATEGIST**\n3-4 strategies/month\nWeeks of research each\n_Output: 3-4 brands_"]
-    B4["**SUPPORT TEAM**\nEvery ticket manually\nHours per client per week\n_Output: surviving_"]
+    B1["DESIGNER\n2 to 3 sites/month\nby hand in Elementor\nOutput: 2 to 3 sites"]
+    B2["DEVELOPER\n200 WordPress codebases\nPlugin and security patches\nOutput: firefighting"]
+    B3["BRAND STRATEGIST\n3 to 4 strategies/month\nWeeks of research each\nOutput: 3 to 4 brands"]
+    B4["SUPPORT TEAM\nEvery ticket manually\nHours per client/week\nOutput: surviving"]
   end
 
-  subgraph AFTER["AFTER — AI-Native Superpowers"]
+  subgraph AFTER["AFTER: AI Native Superpowers"]
     direction TB
-    A1["**AI DESIGN DIRECTOR**\nCommands AI Design System\nSets direction, reviews, refines\n_Output: 20-30 sites/month_"]
-    A2["**AI PLATFORM ENGINEER**\nONE platform, 2,000+ sites\nNext.js, Node.js, AI-native\n_Output: building the future_"]
-    A3["**AI BRAND ARCHITECT**\nDirects Brand AI Engine\nEssence-First at scale\n_Output: 30-40 brands/month_"]
-    A4["**AI OPERATIONS COMMANDER**\n80%+ requests handled by AI\nHuman touch for the 20%\n_Output: thriving_"]
+    A1["AI DESIGN DIRECTOR\nCommands AI Design System\nSets direction and refines\nOutput: 20 to 30 sites/month"]
+    A2["AI PLATFORM ENGINEER\nONE platform, 2,000+ sites\nNext.js, Node.js, AI native\nOutput: building the future"]
+    A3["AI BRAND ARCHITECT\nDirects Brand AI Engine\nEssence First at scale\nOutput: 30 to 40 brands/month"]
+    A4["AI OPS COMMANDER\n80%+ handled by AI\nHuman touch for the 20%\nOutput: thriving"]
   end
 
   B1 -->|"10x"| A1
@@ -192,7 +192,7 @@ flowchart LR
 
 > **KEY INSIGHT**: The team doesn't shrink. The team becomes DANGEROUS. Every person who was drowning in manual work now commands AI that does the manual work at 10x speed while they focus on what humans do best: taste, judgment, relationships, and creative direction.
 
-### The Revenue Curve — What Happens When Capacity Unlocks
+### The Revenue Curve: What Happens When Capacity Unlocks
 
 Today, Influex is capacity-capped. They literally cannot take more clients. The team is maxed out, every hour is spoken for, and every new project means someone works nights.
 
@@ -200,7 +200,7 @@ Today, Influex is capacity-capped. They literally cannot take more clients. The 
 
 ```mermaid
 xychart-beta
-  title "Revenue Growth — 18 Month Scenario ($K/month)"
+  title "Revenue Growth: 18 Month Scenario ($K/mo)"
   x-axis ["Today", "M3", "M6", "M9", "M12", "M15", "M18"]
   y-axis "$ Thousands / Month" 0 --> 550
   bar [120, 120, 135, 200, 300, 400, 500]
@@ -209,16 +209,16 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-  title "Cost Structure — Team Stays, Infrastructure Drops ($K/month)"
+  title "Cost Structure: Team Stays, Infra Drops ($K/mo)"
   x-axis ["Today", "M3", "M6", "M9", "M12", "M15", "M18"]
   y-axis "$ Thousands / Month" 0 --> 120
   bar [100, 95, 80, 80, 87, 94, 100]
   line [100, 95, 80, 80, 87, 94, 100]
 ```
 
-> **Platform goes live at M6 — capacity unlocks.** Team costs stay (same people, same seats). Infrastructure costs plummet as WordPress hosting, plugins, and maintenance are replaced by one platform at pennies per site. Revenue scales because the team can now serve 10x clients.
+> **Platform goes live at M6 and capacity unlocks.** Team costs stay (same people, same seats). Infrastructure costs plummet as WordPress hosting, plugins, and maintenance are replaced by one platform at pennies per site. Revenue scales because the team can now serve 10x clients.
 
-### The Numbers — Quarter by Quarter
+### The Numbers: Quarter by Quarter
 
 | | **Today** | **Q1** | **Q2** | **Q3** | **Q4** | **Q5** | **Q6** |
 |---|---|---|---|---|---|---|---|
@@ -229,31 +229,31 @@ xychart-beta
 | **Profit** | **$20K** | **$25K** | **$55K** | **$120K** | **$213K** | **$306K** | **$400K** |
 | **Profit Margin** | 17% | 21% | 41% | 60% | 71% | 77% | 80% |
 | **Sites Active** | 200 | 200 | 250 | 400 | 700 | 1,200 | 2,000 |
-| **Delivery Speed** | 6-8 wks | 4-6 wks | 2-3 wks | 1-2 wks | 1 week | Days | Days |
+| **Delivery Speed** | 6 to 8 wks | 4 to 6 wks | 2 to 3 wks | 1 to 2 wks | 1 week | Days | Days |
 | **Team Output** | 1x | 1.5x | 3x | 5x | 7x | 8x | 10x |
 
 **What's happening in each quarter:**
 
-**Q1 — Foundation.** Platform is being built. Team starts learning AI-native workflows. WordPress still running. Revenue steady. Costs starting to drop as first efficiencies kick in.
+**Q1: Foundation.** Platform is being built. Team starts learning AI-native workflows. WordPress still running. Revenue steady. Costs starting to drop as first efficiencies kick in.
 
-**Q2 — The Flip.** Platform goes live. First clients migrate. WordPress infrastructure starts shutting down. Team is now working in the new system — each person doing 3x what they did before. Revenue starts climbing as new capacity opens up. Profit doubles.
+**Q2: The Flip.** Platform goes live. First clients migrate. WordPress infrastructure starts shutting down. Team is now working in the new system, each person doing 3x what they did before. Revenue starts climbing as new capacity opens up. Profit doubles.
 
-**Q3 — Scale Begins.** Full migration complete. WordPress is gone. The team is fully AI-native — designers directing AI, developers building platform features, strategists architecting brands at scale. New clients flowing in. Revenue hits $200K. Profit hits $120K/month.
+**Q3: Scale Begins.** Full migration complete. WordPress is gone. The team is fully AI-native with designers directing AI, developers building platform features, and strategists architecting brands at scale. New clients flowing in. Revenue hits $200K. Profit hits $120K/month.
 
-**Q4 — Acceleration.** Word spreads. Influex can now take on clients they used to turn away. Delivery in 1-2 weeks instead of 6-8. Premium pricing maintained because the quality is *better* — AI-native sites are faster, more accessible, more optimized. Revenue hits $300K. Profit hits $213K.
+**Q4: Acceleration.** Word spreads. Influex can now take on clients they used to turn away. Delivery in 1 to 2 weeks instead of 6 to 8. Premium pricing maintained because the quality is *better* and AI-native sites are faster, more accessible, and more optimized. Revenue hits $300K. Profit hits $213K.
 
-**Q5-Q6 — The Empire.** Same core team. $400-500K/month in revenue. 80% margins. 1,200-2,000 sites on the platform. Every site built on Next.js/Node.js — meaning any client can evolve their website into a **full native app on the App Store** when they're ready. That's a whole new revenue tier Influex has never been able to offer.
+**Q5 and Q6: The Empire.** Same core team. $400 to $500K/month in revenue. 80% margins. 1,200 to 2,000 sites on the platform. Every site built on Next.js/Node.js, meaning any client can evolve their website into a **full native app on the App Store** when they're ready. That's a whole new revenue tier Influex has never been able to offer.
 
 ### The App-Store Foundation
 
-This is the part most people miss. We're not just replacing WordPress with a better website builder. We're building on **Next.js and Node.js** — the same technology stack that powers production apps at Netflix, Uber, and Airbnb.
+This is the part most people miss. We're not just replacing WordPress with a better website builder. We're building on **Next.js and Node.js**, the same technology stack that powers production apps at Netflix, Uber, and Airbnb.
 
 ```mermaid
 flowchart LR
   subgraph WP["WORDPRESS WORLD (Today)"]
     direction TB
     WP1["Website\n(WordPress)"]
-    WP2["Dead end.\nStatic. Limited. Fragile.\nCan never become an app."]
+    WP2["Dead end.\nStatic. Limited.\nFragile.\nCan never become\nan app."]
     WP1 --- WP2
   end
 
@@ -264,7 +264,7 @@ flowchart LR
     AI1 --> IOS["iOS App\nApp Store ready"]
     AI1 --> AND["Android App\nPlay Store ready"]
     AI1 --> API["API Layer\nIntegrate anything"]
-    AI1 --> AIF["AI Features\nChatbot, voice, personalization"]
+    AI1 --> AIF["AI Features\nChatbot, voice,\npersonalization"]
   end
 
   WP1 -.->|"Transform"| AI1
@@ -289,10 +289,10 @@ flowchart LR
 
 | Tier | Offering | Price Range |
 |------|----------|-------------|
-| Current | Website | $15-30K |
-| New | Website + PWA | $30-50K |
-| New | Website + Native App | $50-100K |
-| New | Full Digital Platform | $100-250K |
+| Current | Website | $15 to $30K |
+| New | Website + PWA | $30 to $50K |
+| New | Website + Native App | $50 to $100K |
+| New | Full Digital Platform | $100 to $250K |
 
 *Same foundation. Same team. New revenue ceiling.*
 
@@ -303,15 +303,15 @@ flowchart LR
 | **Monthly Revenue** | $120,000 | $500,000+ |
 | **Monthly Profit** | $20,000 | $400,000+ |
 | **Profit Margin** | 17% | 80% |
-| **Team Size** | Same | Same (maybe +2-3 for growth) |
+| **Team Size** | Same | Same (maybe +2 to 3 for growth) |
 | **Sites Managed** | 200 (maxed) | 2,000+ |
-| **Delivery Time** | 6-8 weeks | Days |
-| **Service Ceiling** | WordPress websites only | Websites → Apps → Platforms |
+| **Delivery Time** | 6 to 8 weeks | Days |
+| **Service Ceiling** | WordPress websites only | Websites to Apps to Platforms |
 | **Team Identity** | WordPress developers | AI-native digital architects |
 | **Competitive Moat** | Design taste (copyable) | AI-native platform (not copyable) |
-| **Client Lifetime Value** | $15-30K one-time | $15K-$250K+ with app/platform upsell |
+| **Client Lifetime Value** | $15 to $30K one time | $15K to $250K+ with app/platform upsell |
 
-**The pitch in one sentence**: We keep your team, upgrade their superpowers, replace your infrastructure with something that can scale to the moon, and turn every website into a potential app — and we pay for the whole thing out of the profit we create together.
+**The pitch in one sentence**: We keep your team, upgrade their superpowers, replace your infrastructure with something that can scale to the moon, and turn every website into a potential app. We pay for the whole thing out of the profit we create together.
 
 ---
 
@@ -319,7 +319,7 @@ flowchart LR
 
 ### Promotion of Light Brands AI OS
 
-Influex promotes the **Light Brands AI OS** (Clarity → Strategy → Invest → Amplify) alongside their own services to their network. This includes:
+Influex promotes the **Light Brands AI OS** (Clarity, Strategy, Invest, Amplify) alongside their own services to their network. This includes:
 
 - **Client Referrals**: Recommending Light Brands AI OS to clients who could benefit from the full business intelligence stack
 - **Network Promotion**: Introducing Light Brands AI OS within Influex's ecosystem of 200+ high-profile personal brands, coaches, entrepreneurs, and thought leaders
@@ -344,30 +344,30 @@ A single warm introduction from Influex into any of these networks has significa
 
 ## The Revenue Model
 
-### The Core Philosophy: Profit-Aligned Partnership
+### The Core Philosophy: Profit Aligned Partnership
 
-This is not a revenue-extraction model. This is a **profit-sharing partnership** where Light Brands is directly rewarded for two things: **lowering Influex's costs** and **helping grow Influex's revenue**. Every dollar of cost we eliminate and every dollar of revenue we help generate increases the profit pool we both share in.
+This is not a revenue extraction model. This is a **profit-sharing partnership** where Light Brands is directly rewarded for two things: **lowering Influex's costs** and **helping grow Influex's revenue**. Every dollar of cost we eliminate and every dollar of revenue we help generate increases the profit pool we both share in.
 
 ### Two Phases: Recoupment, Then Ongoing
 
 ```mermaid
 flowchart TB
-  subgraph DEAL["PROFIT-ALIGNED REVENUE MODEL"]
+  subgraph DEAL["PROFIT ALIGNED REVENUE MODEL"]
     direction TB
 
     subgraph PHASES["Partnership Profit Split"]
       direction LR
-      PA["**PHASE A: RECOUPMENT**\n\nProfit weighted toward Light Brands\nOption A: LB 80% / IX 20%\nOption B: LB 50% / IX 50%\n\nUntil dev investment\nis fully recouped"]
-      PB["**PHASE B: ONGOING**\n\n90 / 10 Profit Split\nInfluex keeps 90%\nLight Brands gets 10%\n\nOngoing, indefinite\nIncludes full support\n+ future dev at cost"]
+      PA["PHASE A: RECOUPMENT\n\nProfit weighted toward LB\nOption A: LB 80% / IX 20%\nOption B: LB 50% / IX 50%\n\nUntil dev investment\nis fully recouped"]
+      PB["PHASE B: ONGOING\n\n90 / 10 Profit Split\nInfluex keeps 90%\nLight Brands gets 10%\n\nOngoing, indefinite\nFull support included\nFuture dev at cost"]
       PA -->|"FMV fully\npaid back"| PB
     end
 
     subgraph WHY["Why Profit, Not Revenue"]
-      W1["Light Brands is rewarded for lowering costs AND growing revenue.\nThe better the platform performs, the bigger the profit pool for both."]
+      W1["LB is rewarded for lowering costs\nAND growing revenue.\nBetter platform = bigger profit\npool for both parties."]
     end
 
-    subgraph REF["REFERRAL REVENUE — Active Immediately, Runs Parallel"]
-      R1["Influex refers client → Client purchases Light Brands AI OS\nInfluex receives 10% of that deal's revenue for the LIFETIME of the deal\nNot capped. Not time-limited. For the life of the deal."]
+    subgraph REF["REFERRAL REVENUE: Active Immediately"]
+      R1["IX refers client who purchases\nLight Brands AI OS\n\nIX receives 10% of deal revenue\nfor the LIFETIME of the deal\n\nNot capped. Not time limited.\nFor the life of the deal."]
     end
   end
 
@@ -377,7 +377,7 @@ flowchart TB
   style R1 fill:#4a3000,color:#fff
 ```
 
-### Phase A: Recoupment — Profit Split Weighted Toward Light Brands
+### Phase A: Recoupment, Profit Split Weighted Toward Light Brands
 
 Light Brands is investing the development capital upfront at partner cost basis. During recoupment, the profit split is **weighted in Light Brands' favor** until the full FMV of development is paid back.
 
@@ -398,14 +398,14 @@ The aggressive recoupment. Light Brands gets paid back fast, and the partnership
 | Recoupment Tracking | Amount |
 |---------------------|--------|
 | Total Platform Development FMV (at cost) | $250,000 (illustrative) |
-| LB's 80% share accumulates fast | $20K → $44K → $96K → $170K/month |
-| **Estimated Full Recoupment** | **~Q2-Q3 (3-5 months after launch)** |
+| LB's 80% share accumulates fast | $20K to $44K to $96K to $170K/month |
+| **Estimated Full Recoupment** | **Approximately Q2 to Q3 (3 to 5 months after launch)** |
 
-**Why Influex still wins during 80/20**: Even at 20%, Influex's take goes from $4K to $11K to $24K to $43K/month — doubling their current profit within the first quarter of platform launch. And recoupment is done within a single quarter once revenue starts scaling, getting them to the 90/10 model fast.
+**Why Influex still wins during 80/20**: Even at 20%, Influex's take goes from $4K to $11K to $24K to $43K/month, doubling their current profit within the first quarter of platform launch. And recoupment is done within a single quarter once revenue starts scaling, getting them to the 90/10 model fast.
 
 #### Option B: 50/50 (Light Brands 50% / Influex 50%)
 
-The balanced recoupment. Both parties split equally during payback — feels fair, takes a bit longer, but Influex keeps more during the transition.
+The balanced recoupment. Both parties split equally during payback. It feels fair, takes a bit longer, but Influex keeps more during the transition.
 
 | Quarter | Revenue | Costs | Profit | LB (50%) | Influex (50%) |
 |---------|---------|-------|--------|----------|---------------|
@@ -418,16 +418,16 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 | Recoupment Tracking | Amount |
 |---------------------|--------|
 | Total Platform Development FMV (at cost) | $250,000 (illustrative) |
-| LB's 50% share per quarter | $12.5K → $27.5K → $60K → $106.5K/month |
-| **Estimated Full Recoupment** | **~Q3-Q4 (4-6 months after launch)** |
+| LB's 50% share per quarter | $12.5K to $27.5K to $60K to $106.5K/month |
+| **Estimated Full Recoupment** | **Approximately Q3 to Q4 (4 to 6 months after launch)** |
 
-**Why this option works**: Influex keeps 50% from day one — going from $20K to $27.5K to $60K to $106.5K/month. The recoupment takes slightly longer but the optics are "equal partners sharing equally until the investment is repaid."
+**Why this option works**: Influex keeps 50% from day one, going from $20K to $27.5K to $60K to $106.5K/month. The recoupment takes slightly longer but the optics are "equal partners sharing equally until the investment is repaid."
 
 #### Negotiation Strategy
 
-**Lead with 80/20.** It's justified — Light Brands is making the investment, taking the risk, and building the platform on spec. The recoupment phase is short, and Influex is still more profitable than today even at 20%.
+**Lead with 80/20.** It's justified because Light Brands is making the investment, taking the risk, and building the platform on spec. The recoupment phase is short, and Influex is still more profitable than today even at 20%.
 
-**Fall back to 50/50 if needed.** If Dmitriy pushes back, 50/50 is still strong — equal partnership energy, slightly longer recoupment, and Influex sees immediate profit growth from Q1.
+**Fall back to 50/50 if needed.** If Dmitriy pushes back, 50/50 is still strong with equal partnership energy, slightly longer recoupment, and Influex sees immediate profit growth from Q1.
 
 **Either way, both options reach the same destination**: the 90/10 ongoing split within a few months of launch.
 
@@ -439,19 +439,19 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 2. Profit is calculated as **Influex gross revenue minus operating costs** (defined and agreed upon at partnership signing).
 3. During recoupment, profit is split with the **majority going to Light Brands** until the total FMV of development is fully recouped.
 4. Both parties have full transparency into development costs, operating costs, revenue, and the recoupment balance.
-5. Light Brands is incentivized to cut costs fast and grow revenue fast — because that's how they get paid back.
+5. Light Brands is incentivized to cut costs fast and grow revenue fast because that's how they get paid back.
 
 *Once the FMV is fully recouped, the model shifts immediately to Phase B.*
 
-### Phase B: Ongoing — 90/10 Profit Split
+### Phase B: Ongoing 90/10 Profit Split
 
 **How It Works:**
 
-1. Once development costs are fully recouped, the split shifts to **90/10** — Influex keeps 90%, Light Brands receives 10% of profit.
+1. Once development costs are fully recouped, the split shifts to **90/10** where Influex keeps 90% and Light Brands receives 10% of profit.
 2. This 10% of profit includes:
-   - **Full platform support** — maintenance, monitoring, incident response
-   - **Ongoing optimization** — performance tuning, security updates, cost reduction
-   - **Future major development** — new features, new capabilities, platform expansion — all done at **cost basis** (partner rate, not retail)
+   - **Full platform support** including maintenance, monitoring, and incident response
+   - **Ongoing optimization** including performance tuning, security updates, and cost reduction
+   - **Future major development** including new features, new capabilities, and platform expansion, all done at **cost basis** (partner rate, not retail)
 3. This structure means Influex gets a permanent technology partner whose income *depends* on Influex being as profitable as possible.
 
 **Example at Scale:**
@@ -462,7 +462,7 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 | $300K/mo | $87K | $213K | $191.7K | $21.3K | Full support + dev at cost |
 | $500K/mo | $100K | $400K | $360K | $40K | Full support + dev at cost |
 
-**Compare to today**: Influex currently keeps $20K/month in profit with a maxed-out team. Under this model, the same team (empowered by AI) generates **$108K-$360K/month** in take-home profit — while Light Brands earns a meaningful, growing share that's directly tied to making Influex's team as powerful as possible.
+**Compare to today**: Influex currently keeps $20K/month in profit with a maxed-out team. Under this model, the same team (empowered by AI) generates **$108K to $360K/month** in take-home profit while Light Brands earns a meaningful, growing share that's directly tied to making Influex's team as powerful as possible.
 
 *Light Brands grows when Influex grows. Light Brands grows when Influex's costs shrink. Every incentive is aligned.*
 
@@ -470,10 +470,10 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 
 **How It Works:**
 
-1. Influex promotes the **Light Brands AI OS** (Clarity → Strategy → Invest → Amplify) to their network.
+1. Influex promotes the **Light Brands AI OS** (Clarity, Strategy, Invest, Amplify) to their network.
 2. For every client that Influex refers who purchases any Light Brands AI OS service:
    - Influex receives **10% of the revenue generated from that deal**
-   - This commission is for the **lifetime of the deal** — not a one-time fee
+   - This commission is for the **lifetime of the deal**, not a one-time fee
    - No cap on referrals or total commission
 3. Attribution is tracked via referral codes, warm introductions, or mutual agreement on source.
 
@@ -495,10 +495,10 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 
 | Benefit | Value |
 |---------|-------|
-| Platform worth $250K+ built — no upfront cash | Recouped through profit share over 4-7 months |
+| Platform worth $250K+ built with no upfront cash | Recouped through profit share over 4 to 7 months |
 | Monthly profit goes from ~$5K to $100K+ | 20x profit improvement |
-| Monthly costs drop from $100K to ~$22K | ~$78K/month in savings |
-| Profitable immediately even during recoupment | $17-42K/month (vs $5K today) |
+| Monthly costs drop from $100K to approximately $22K | Approximately $78K/month in savings |
+| Profitable immediately even during recoupment | $17 to $42K/month (vs $5K today) |
 | Keeps 90% of profit after short recoupment | Fair, sustainable long-term split |
 | Capacity goes from 200 to 2,000+ sites | 10x growth potential unlocked |
 | Permanent technology partner in the 10% | No separate support contracts |
@@ -511,9 +511,9 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 
 | Benefit | Value |
 |---------|-------|
-| Development investment recouped in 4-7 months | Majority of profit until paid back |
+| Development investment recouped in 4 to 7 months | Majority of profit until paid back |
 | 10% ongoing profit share after recoupment | Aligned, growing income stream |
-| Direct incentive to reduce Influex costs | Better platform = faster recoupment + more ongoing profit |
+| Direct incentive to reduce Influex costs | Better platform means faster recoupment and more ongoing profit |
 | Access to Influex's premium network | 200+ high-profile personal brands |
 | Distribution channel for AI OS | Warm introductions to ideal clients |
 | Platform becomes proof-of-concept | Demonstrable case study at scale |
@@ -521,7 +521,7 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 
 ### The Math Works
 
-**Influex's Perspective — The Full Picture:**
+**Influex's Perspective, The Full Picture:**
 
 | | Today | Q2 (Recoup 80/20) | Q4 (Recoup 80/20) | Q5+ (Ongoing 90/10) |
 |---|---|---|---|---|
@@ -529,18 +529,18 @@ The balanced recoupment. Both parties split equally during payback — feels fai
 | Monthly Costs | $100K | $80K | $87K | $94K |
 | Monthly Profit | $20K | $55K | $213K | $306K |
 | Influex Keeps | $20K | $11K (20%) | $43K (20%) | $275K (90%) |
-| Same team? | Yes | Yes | Yes (+1-2) | Yes (+2-3) |
+| Same team? | Yes | Yes | Yes (+1 to 2) | Yes (+2 to 3) |
 
-During the short recoupment phase, Influex's per-month take dips slightly below today at Q2 — but by Q3-Q4 their 20% slice is already **double** their current profit. Once recoupment is done, they're keeping $275K+/month. Same team. New superpowers.
+During the short recoupment phase, Influex's per-month take dips slightly below today at Q2, but by Q3 and Q4 their 20% slice is already **double** their current profit. Once recoupment is done, they're keeping $275K+/month. Same team. New superpowers.
 
 **Light Brands' Perspective:**
-- Recoupment phase: $44-170K/month (80% of profit) — FMV recovered within 3-5 months of launch
-- Ongoing share: $30-46K/month from Influex (10% of profit) — grows as Influex scales
-- AI OS referral revenue: Variable — access to 200+ of the most influential personal brands in the world
+- Recoupment phase: $44 to $170K/month (80% of profit) with FMV recovered within 3 to 5 months of launch
+- Ongoing share: $30 to $46K/month from Influex (10% of profit) that grows as Influex scales
+- AI OS referral revenue: Variable, with access to 200+ of the most influential personal brands in the world
 - Development commitment: At cost, covered by the 10%
 - Net: Fast payback, then sustainable growing income aligned with partner success
 
-**The bottom line**: Light Brands recoups its investment within a single quarter of scale. Influex goes from $20K/month profit with a maxed-out, exhausted team to **$275K+/month** with the same team empowered as AI-native strategists — and the capacity to keep scaling toward $500K/month. The pie doesn't just get bigger. It gets **15x bigger**.
+**The bottom line**: Light Brands recoups its investment within a single quarter of scale. Influex goes from $20K/month profit with a maxed-out, exhausted team to **$275K+/month** with the same team empowered as AI-native strategists and the capacity to keep scaling toward $500K/month. The pie doesn't just get bigger. It gets **15x bigger**.
 
 ---
 
@@ -562,31 +562,31 @@ During the short recoupment phase, Influex's per-month take dips slightly below 
 For significant new features or platform expansions:
 - Light Brands scopes and estimates at **partner cost basis** (internal rate, not retail)
 - Influex approves scope before work begins
-- This ensures Influex always gets enterprise-grade development at a fraction of market rate
-- Examples: New AI capabilities, additional automation layers, white-label features, API development
+- This ensures Influex always gets enterprise grade development at a fraction of market rate
+- Examples include new AI capabilities, additional automation layers, white label features, and API development
 
 ---
 
 ## Implementation Approach
 
-### Phase 1: Foundation (Months 1-2)
-- Multi-tenant platform core
+### Phase 1: Foundation (Months 1 and 2)
+- Multi tenant platform core
 - Design system engine with 50+ components
-- Auto-deploy pipeline
+- Auto deploy pipeline
 - Development cost tracking begins
 
-### Phase 2: Intelligence (Months 2-4)
+### Phase 2: Intelligence (Months 2 through 4)
 - AI Brand Generator (trained on Influex's 200+ portfolio)
 - AI Page Builder
-- Content AI Engine with per-client voice training
+- Content AI Engine with per client voice training
 
-### Phase 3: Self-Service (Months 3-5)
+### Phase 3: Self Service (Months 3 through 5)
 - Client portal with asset management
 - AI Support System
 - Automated test suite
 
-### Phase 4: Migration & Scale (Months 4-6)
-- Pilot migration (5-10 select clients)
+### Phase 4: Migration and Scale (Months 4 through 6)
+- Pilot migration (5 to 10 select clients)
 - Early adopter rollout (50 clients)
 - Full migration (200+ clients)
 - WordPress decommissioned
@@ -601,15 +601,15 @@ For significant new features or platform expansions:
 
 ---
 
-## Lane Protection — The Investment Raise Process
+## Lane Protection: The Investment Raise Process
 
-Influex is free to take their platform and capabilities in any direction they want. Brand development, design, content, apps, growth strategy — all open, no restrictions. That's their world.
+Influex is free to take their platform and capabilities in any direction they want. Brand development, design, content, apps, and growth strategy are all open with no restrictions. That's their world.
 
-**The protected lane is the investment raise process.** Light Brands' AI OS (Clarity → Strategy → Invest → Amplify) encompasses brand, strategy, capital formation, and communications — but the protected application is specifically **how those capabilities serve the investment raise process**. That's Light Brands' domain.
+**The protected lane is the investment raise process.** Light Brands' AI OS (Clarity, Strategy, Invest, Amplify) encompasses brand, strategy, capital formation, and communications, but the protected application is specifically **how those capabilities serve the investment raise process**. That's Light Brands' domain.
 
 ```mermaid
 flowchart TB
-  subgraph AIOS["LIGHT BRANDS AI OS — All 4 Products"]
+  subgraph AIOS["LIGHT BRANDS AI OS: All 4 Products"]
     direction LR
     C["Clarity"]
     S["Strategy"]
@@ -617,7 +617,7 @@ flowchart TB
     A["Amplify"]
   end
 
-  subgraph OPEN["OPEN FOR INFLUEX — General Applications"]
+  subgraph OPEN["OPEN FOR INFLUEX: General Applications"]
     direction TB
     O1["Brand identity & development"]
     O2["Growth strategy & marketing"]
@@ -626,12 +626,12 @@ flowchart TB
     O5["Any new direction as business evolves"]
   end
 
-  subgraph PROTECTED["PROTECTED FOR LIGHT BRANDS — Investment Raise Process"]
+  subgraph PROTECTED["PROTECTED FOR LB: Investment Raise Process"]
     direction TB
-    P1["Clarity applied to raise positioning\n& investor-facing brand"]
-    P2["Strategy applied to raise planning\n& investor narrative"]
-    P3["Invest — capital formation, financial\nmodeling, investor materials, fundraising"]
-    P4["Amplify — investor communications,\ncampaigns, compliance, distribution"]
+    P1["Clarity: raise positioning\nand investor facing brand"]
+    P2["Strategy: raise planning\nand investor narrative"]
+    P3["Invest: capital formation,\nfinancial modeling,\ninvestor materials"]
+    P4["Amplify: investor comms,\ncampaigns, compliance,\ndistribution"]
   end
 
   C & S -.->|"General use"| OPEN
@@ -648,12 +648,12 @@ flowchart TB
 ### The Agreement
 
 **Influex agrees:**
-- Not to recreate, replicate, or compete with the Light Brands AI OS **as it applies to the investment raise process** — this includes all four products (Clarity, Strategy, Invest, Amplify) when used for capital formation, investor communications, raise positioning, investor-facing brand development, financial modeling, fundraising execution, or any service specifically targeting the investment raise lifecycle
+- Not to recreate, replicate, or compete with the Light Brands AI OS **as it applies to the investment raise process**, which includes all four products (Clarity, Strategy, Invest, Amplify) when used for capital formation, investor communications, raise positioning, investor facing brand development, financial modeling, fundraising execution, or any service specifically targeting the investment raise lifecycle
 - To connect Light Brands to their investment networks and introduce deal flow opportunities
 
 **Influex is free to:**
-- Offer brand development, identity, and creative services (Clarity-adjacent) for general business purposes
-- Offer growth strategy and marketing services (Strategy-adjacent) for general business purposes
+- Offer brand development, identity, and creative services (Clarity adjacent) for general business purposes
+- Offer growth strategy and marketing services (Strategy adjacent) for general business purposes
 - Build apps, products, and digital platforms in any vertical
 - Take the AI-native platform capabilities in any direction they choose
 - No restrictions outside the investment raise process
@@ -665,7 +665,7 @@ flowchart TB
 
 ### Why This Works
 
-The protection is specific to a *process*, not a broad category. Influex can do brand work — they just can't package it as "investor-facing brand positioning for a capital raise." They can do strategy — they just can't package it as "raise strategy and investor narrative development." The investment raise lifecycle is a specialized market that requires securities knowledge, compliance awareness, and capital formation expertise. It's a different world from building websites for coaches.
+The protection is specific to a *process*, not a broad category. Influex can do brand work, they just can't package it as "investor facing brand positioning for a capital raise." They can do strategy, they just can't package it as "raise strategy and investor narrative development." The investment raise lifecycle is a specialized market that requires securities knowledge, compliance awareness, and capital formation expertise. It's a different world from building websites for coaches.
 
 **The flywheel**: When Influex's clients say "I want to raise capital" or "I need to talk to investors," that's a Light Brands referral. Influex earns 10% lifetime on every deal. They make more money sending those clients to Light Brands than they ever would trying to build investment raise capabilities from scratch.
 
@@ -675,31 +675,31 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 
 | Term | Detail |
 |------|--------|
-| **Partnership Type** | Strategic technology partnership — no equity exchange |
-| **Development Cost Basis** | Partner rate (at cost) — tracked transparently |
+| **Partnership Type** | Strategic technology partnership with no equity exchange |
+| **Development Cost Basis** | Partner rate (at cost), tracked transparently |
 | **Profit Definition** | Gross revenue minus agreed operating costs (defined at signing) |
 | **Recoupment Split** | Profit weighted toward Light Brands until FMV fully recouped (80/20 LB/IX or 50/50) |
-| **Recoupment Duration** | Estimated 4-7 months post-platform launch depending on split chosen |
+| **Recoupment Duration** | Estimated 4 to 7 months post platform launch depending on split chosen |
 | **Ongoing Split** | 90/10 profit split (Influex 90% / Light Brands 10%), indefinite |
 | **Ongoing Includes** | Full support, maintenance, optimization, platform management |
-| **Major Future Development** | At cost basis (partner rate) — scoped and approved by Influex |
+| **Major Future Development** | At cost basis (partner rate), scoped and approved by Influex |
 | **Light Brands AI OS Referral** | 10% of referred deal revenue, lifetime of the deal |
 | **Referral Attribution** | Tracked via referral codes, warm intros, or mutual agreement |
-| **Reporting** | Quarterly profit & loss reports shared by both parties |
-| **Termination** | Terms TBD — designed for long-term, with fair exit provisions |
+| **Reporting** | Quarterly profit and loss reports shared by both parties |
+| **Termination** | Terms TBD, designed for long term with fair exit provisions |
 | **Lane Protection** | Influex agrees not to compete with Light Brands AI OS as applied to the investment raise process (all 4 products in that context). All other applications are open. |
-| **Network Access** | Influex connects LB to investment networks; LB keeps IX connected to closed deals via lifetime referral |
+| **Network Access** | Influex connects LB to investment networks and LB keeps IX connected to closed deals via lifetime referral |
 
 ---
 
 ## Next Steps
 
-1. **Internal Review** — Refine this strategy and model the economics in detail
-2. **Legal Framework** — Draft formal partnership agreement terms
-3. **Presentation to Dmitriy** — Present the vision, the platform, and the deal structure
-4. **Negotiation** — Align on final percentages, recoupment timeline, and terms
-5. **Agreement Execution** — Sign and begin development
-6. **Kickoff** — Platform development begins
+1. **Internal Review**: Refine this strategy and model the economics in detail
+2. **Legal Framework**: Draft formal partnership agreement terms
+3. **Presentation to Dmitriy**: Present the vision, the platform, and the deal structure
+4. **Negotiation**: Align on final percentages, recoupment timeline, and terms
+5. **Agreement Execution**: Sign and begin development
+6. **Kickoff**: Platform development begins
 
 ---
 
@@ -711,14 +711,14 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 
 | Stage | Name | What It Does |
 |-------|------|-------------|
-| 1 | **Clarity** | Brand identity, positioning, voice, visual direction — AI-powered brand development |
-| 2 | **Strategy** | Growth strategy, market analysis, competitive positioning, go-to-market planning |
+| 1 | **Clarity** | Brand identity, positioning, voice, and visual direction through AI powered brand development |
+| 2 | **Strategy** | Growth strategy, market analysis, competitive positioning, and go to market planning |
 | 3 | **Invest** | Capital formation, financial modeling, investor materials, fundraising execution |
 | 4 | **Amplify** | Investor communications, campaign management, content production, distribution |
 
-The AI OS serves entrepreneurs, thought leaders, and growth-stage businesses — exactly the clients in Influex's network. Every referral from Influex is likely a strong fit.
+The AI OS serves entrepreneurs, thought leaders, and growth stage businesses, exactly the clients in Influex's network. Every referral from Influex is likely a strong fit.
 
 ---
 
-*Strategy Document — February 22, 2026*
-*Light Brands — Intelligence That Grows With You*
+*Strategy Document, February 22, 2026*
+*Light Brands: Intelligence That Grows With You*
