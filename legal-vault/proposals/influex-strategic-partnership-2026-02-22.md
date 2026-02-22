@@ -601,55 +601,73 @@ For significant new features or platform expansions:
 
 ---
 
-## Lane Protection — The One Boundary
+## Lane Protection — The Investment Raise Process
 
-Influex is free to take their platform and brand development capabilities in any direction they want as the business evolves. Brand identity, design, content, apps, products — that's their world. No restrictions.
+Influex is free to take their platform and capabilities in any direction they want. Brand development, design, content, apps, growth strategy — all open, no restrictions. That's their world.
 
-**The only protected lane is the investment stack.** Light Brands' Invest and Amplify products serve the capital formation and investor communications industry. That's our domain, and the one area where we need a clear non-compete.
+**The protected lane is the investment raise process.** Light Brands' AI OS (Clarity → Strategy → Invest → Amplify) encompasses brand, strategy, capital formation, and communications — but the protected application is specifically **how those capabilities serve the investment raise process**. That's Light Brands' domain.
 
 ```mermaid
-flowchart LR
-  subgraph OPEN["INFLUEX — OPEN FIELD (No Restrictions)"]
+flowchart TB
+  subgraph AIOS["LIGHT BRANDS AI OS — All 4 Products"]
+    direction LR
+    C["Clarity"]
+    S["Strategy"]
+    I["Invest"]
+    A["Amplify"]
+  end
+
+  subgraph OPEN["OPEN FOR INFLUEX — General Applications"]
     direction TB
-    O1["Brand development & identity"]
-    O2["App & product development"]
-    O3["Website delivery at scale"]
-    O4["Content, creative, design services"]
+    O1["Brand identity & development"]
+    O2["Growth strategy & marketing"]
+    O3["Content & creative services"]
+    O4["App & product development"]
     O5["Any new direction as business evolves"]
   end
 
-  subgraph PROTECTED["LIGHT BRANDS — PROTECTED LANE"]
+  subgraph PROTECTED["PROTECTED FOR LIGHT BRANDS — Investment Raise Process"]
     direction TB
-    P1["**Invest**\nCapital formation, financial modeling\nInvestor materials, fundraising"]
-    P2["**Amplify**\nInvestor communications, campaigns\nCompliance review, distribution"]
+    P1["Clarity applied to raise positioning\n& investor-facing brand"]
+    P2["Strategy applied to raise planning\n& investor narrative"]
+    P3["Invest — capital formation, financial\nmodeling, investor materials, fundraising"]
+    P4["Amplify — investor communications,\ncampaigns, compliance, distribution"]
   end
 
-  OPEN -->|"Connects LB to\ninvestment networks\n& deal flow"| PROTECTED
+  C & S -.->|"General use"| OPEN
+  C & S & I & A -->|"Applied to\ninvestment raises"| PROTECTED
+
+  OPEN -->|"IX connects LB to\ninvestment networks"| PROTECTED
   PROTECTED -->|"10% lifetime referral\non every closed deal"| OPEN
 
+  style AIOS fill:#2d2d2d,color:#fff
   style OPEN fill:#1a3a5c,color:#fff
   style PROTECTED fill:#4a0000,color:#fff
-  style P1 fill:#8b0000,color:#fff
-  style P2 fill:#8b0000,color:#fff
 ```
 
 ### The Agreement
 
 **Influex agrees:**
-- Not to recreate, replicate, or compete with Light Brands' **investment-focused products** — specifically **Invest** (capital formation, fundraising, financial modeling, investor materials) and **Amplify** (investor communications, campaign management, compliance review)
+- Not to recreate, replicate, or compete with the Light Brands AI OS **as it applies to the investment raise process** — this includes all four products (Clarity, Strategy, Invest, Amplify) when used for capital formation, investor communications, raise positioning, investor-facing brand development, financial modeling, fundraising execution, or any service specifically targeting the investment raise lifecycle
 - To connect Light Brands to their investment networks and introduce deal flow opportunities
-- Everything else is open — Influex can take brand development, app development, and any other capability in whatever direction they choose
+
+**Influex is free to:**
+- Offer brand development, identity, and creative services (Clarity-adjacent) for general business purposes
+- Offer growth strategy and marketing services (Strategy-adjacent) for general business purposes
+- Build apps, products, and digital platforms in any vertical
+- Take the AI-native platform capabilities in any direction they choose
+- No restrictions outside the investment raise process
 
 **Light Brands agrees:**
 - To keep Influex connected to every deal closed through their referral via the 10% lifetime commission
 - To continue building and supporting the AI-native platform as the partnership's technology backbone
-- No restrictions on Influex's brand, creative, or product development business in any capacity
+- No restrictions on any Influex capability outside the investment raise domain
 
 ### Why This Works
 
-The protection is narrow and fair — it only covers the investment industry tools (Invest + Amplify), which are a completely different market from what Influex does. Influex serves entrepreneurs, thought leaders, and personal brands with design and development. Light Brands serves the capital formation industry with investor-grade tools. There's no natural overlap.
+The protection is specific to a *process*, not a broad category. Influex can do brand work — they just can't package it as "investor-facing brand positioning for a capital raise." They can do strategy — they just can't package it as "raise strategy and investor narrative development." The investment raise lifecycle is a specialized market that requires securities knowledge, compliance awareness, and capital formation expertise. It's a different world from building websites for coaches.
 
-**The flywheel**: When Influex's clients need to raise capital or communicate with investors, they send them to Light Brands. When Light Brands closes that deal, Influex earns 10% for life. Influex has zero reason to build investment tools — they make more money by referring than by competing.
+**The flywheel**: When Influex's clients say "I want to raise capital" or "I need to talk to investors," that's a Light Brands referral. Influex earns 10% lifetime on every deal. They make more money sending those clients to Light Brands than they ever would trying to build investment raise capabilities from scratch.
 
 ---
 
@@ -669,7 +687,7 @@ The protection is narrow and fair — it only covers the investment industry too
 | **Referral Attribution** | Tracked via referral codes, warm intros, or mutual agreement |
 | **Reporting** | Quarterly profit & loss reports shared by both parties |
 | **Termination** | Terms TBD — designed for long-term, with fair exit provisions |
-| **Lane Protection** | Influex agrees not to compete with Light Brands' investment-focused products (Invest + Amplify) only. All other directions are open. |
+| **Lane Protection** | Influex agrees not to compete with Light Brands AI OS as applied to the investment raise process (all 4 products in that context). All other applications are open. |
 | **Network Access** | Influex connects LB to investment networks; LB keeps IX connected to closed deals via lifetime referral |
 
 ---
