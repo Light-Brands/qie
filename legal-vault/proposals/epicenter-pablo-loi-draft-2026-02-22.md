@@ -2,7 +2,7 @@
 
 ## Convertible Note Investment — Transformational Epicenter
 
-**Date:** February 22, 2026
+**Date:** February 22, 2026 (Revised)
 
 **Non-Binding** (except as noted in Section 12)
 
