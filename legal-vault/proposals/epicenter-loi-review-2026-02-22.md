@@ -85,10 +85,42 @@ Calling this "conservative" without a supporting model will invite scrutiny.
 
 ---
 
-## Three Decisions Needed Before Drafting
+## Resolution: Time-Based Declining Equity (Added Feb 22)
 
-1. **Conversion mechanics:** Fixed 49% on election, or a formula? This must be defined.
-2. **Interest timing:** Can the business service debt by Q1 2027? If not, propose a PIK structure.
-3. **Early repayment right:** Keep it, modify it, or use it as a negotiation concession?
+The conversion mechanics gap has been resolved with a time-based declining equity schedule, now incorporated into the LOI draft.
 
-Once these are settled, the LOI can be drafted cleanly.
+### Mechanism
+
+- Full 49% conversion available for 12 months from funding
+- After month 12, conversion equity declines proportionally as interest is paid
+- Formula: Equity = (($17.3M - Cumulative Interest Paid) / $17.3M) x 49%
+- Presented as a fixed schedule in the agreement for legal clarity
+
+### Conversion Schedule
+
+| Conversion Point | Cumulative Interest | Equity % | Multiple at $229M |
+|---|---|---|---|
+| Month 12 | $778,500 | 49.0% | 6.5x |
+| Month 18 | $1,557,000 | 44.6% | 6.0x |
+| Month 24 | $2,335,500 | 42.4% | 5.7x |
+| Year 3 | $3,892,500 | 38.0% | 5.3x |
+| Year 4 | $5,449,500 | 33.6% | 4.8x |
+| Year 5 | $7,006,500 | 29.2% | 4.3x |
+
+### Why This Works
+
+**For the founders:** Creates urgency for conversion. Prevents the investor from holding a 5-year free option on 49% while collecting 9% interest. The equity premium reflects capital at risk, and as that risk decreases through interest payments, so does the premium.
+
+**For the investor:** The mechanism is mathematically fair, not punitive. At every point on the schedule, conversion still yields a significantly higher return than interest-only (4.3x to 6.5x vs 1.4x). The investor is never disadvantaged by converting; they are simply rewarded more for converting earlier.
+
+**For the deal:** The structure is clean to draft (one table), easy to understand, and institutionally credible. The formula provides the mathematical basis; the schedule provides the legal certainty.
+
+### Drafting Recommendation
+
+Use the **fixed schedule** in the definitive agreements, not the formula. The formula is the logic. The schedule is the law. If there is ever a dispute about payment timing or calculation, the schedule governs.
+
+### Remaining Open Items
+
+1. **Interest timing:** Can the business service $389,250/quarter by Q1 2027? Model the revenue timeline.
+2. **Early repayment right:** Still active at month 12. The declining equity mechanism makes this less critical as a founder protection, but it remains a strong negotiation position.
+3. **Governance at lower equity:** If the investor converts at 29% (Year 5), does a 3-seat board with one investor seat still make sense? Consider tying board representation to conversion equity threshold.

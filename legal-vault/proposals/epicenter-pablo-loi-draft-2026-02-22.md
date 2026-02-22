@@ -59,19 +59,51 @@ Interest is calculated on a simple interest basis on the outstanding principal b
 
 ## 4. CONVERSION RIGHTS
 
-At the Investor's election, the Note may convert into equity ownership in the Transformational Epicenter ecosystem as follows:
+At the Investor's election, the Note may convert into equity ownership in the Transformational Epicenter ecosystem, subject to the conversion schedule below.
 
-**Conversion Equity:** Up to forty-nine percent (49%) ownership across the three operating entities:
+### 4a. Full Conversion Window (Months 0 through 12)
 
-| Entity | Description | Investor Equity on Conversion |
-|--------|-------------|-------------------------------|
+During the first twelve (12) months from the date of funding, the Investor may elect to convert the Note into the maximum equity position:
+
+**Full Conversion Equity:** Forty-nine percent (49%) ownership across the three operating entities:
+
+| Entity | Description | Investor Equity |
+|--------|-------------|-----------------|
 | Entity A | Real Estate Holding Company | 49% |
 | Entity B | Operational / Clinical Company | 49% |
 | Entity C | IP, Technology, and Data Holding Company | 49% |
 
-**Conversion Window:** The Investor may elect to convert at any time during the term of the Note prior to maturity or repayment.
+### 4b. Time-Based Conversion Schedule (After Month 12)
 
-**Conversion Mechanics:** Upon conversion, the first-position lien on the Property shall be fully released. The Investor's security interest terminates and is replaced by equity ownership. Partial conversion is not permitted; conversion shall be for the full principal amount into the full 49% equity position.
+After the initial twelve-month window, the Investor retains the right to convert, but the conversion equity shall decrease according to the following schedule.
+
+**Rationale:** The 49% equity position reflects the full capital at risk at the time of investment. As the Investor receives quarterly interest payments, the effective capital at risk decreases. The conversion equity adjusts proportionally to reflect this reduced exposure.
+
+**Formula:** Conversion Equity = (($17,300,000 minus Cumulative Interest Paid) / $17,300,000) x 49%
+
+**Fixed Conversion Schedule:**
+
+| Conversion Elected | Cumulative Interest Received | Conversion Equity | Equity Value at $229M Projection |
+|--------------------|-----------------------------|--------------------|----------------------------------|
+| **Months 0 through 12** | $778,500 | **49.0%** | $112,210,000 |
+| **Month 18** | $1,557,000 | **44.6%** | $102,134,000 |
+| **Month 24** | $2,335,500 | **42.4%** | $97,096,000 |
+| **Year 3** | $3,892,500 | **38.0%** | $87,020,000 |
+| **Year 4** | $5,449,500 | **33.6%** | $76,944,000 |
+| **Year 5 (Maturity)** | $7,006,500 | **29.2%** | $66,868,000 |
+
+The schedule above shall govern conversion equity. In the event of any discrepancy between the formula and the schedule, the schedule shall control.
+
+Conversion equity applies proportionally across all three entities. If the schedule indicates 44.6%, the Investor receives 44.6% in each of Entity A, Entity B, and Entity C.
+
+### 4c. Conversion Mechanics
+
+Upon conversion at any point on the schedule:
+
+- The first-position lien on the Property shall be fully released
+- The Investor's security interest terminates and is replaced by equity ownership
+- Partial conversion is not permitted; conversion shall be for the full principal amount into the applicable equity position per the schedule
+- All accrued but unpaid interest at the time of conversion shall be paid in cash at closing
 
 Final conversion mechanics, including representations, warranties, and closing conditions, shall be defined in the definitive agreements.
 
@@ -170,18 +202,33 @@ The following projections are provided for illustrative purposes only and do not
 
 **Projected Five-Year Enterprise Valuation:** $229,000,000 USD
 
-| Scenario | Investor Position | Value |
-|----------|------------------|-------|
-| **Interest-Only Return** (no conversion, full term) | Principal + 5 years interest | $25,085,000 |
-| **Conversion at Projected Valuation** | 49% of $229M enterprise value | $112,210,000 |
+### Investor Return Scenarios
+
+| Scenario | Equity % | Interest Received | Equity Value at $229M | Total Return | Multiple |
+|----------|----------|-------------------|----------------------|-------------|----------|
+| **Convert at Month 12** | 49.0% | $778,500 | $112,210,000 | $112,988,500 | **6.5x** |
+| **Convert at Month 18** | 44.6% | $1,557,000 | $102,134,000 | $103,691,000 | **6.0x** |
+| **Convert at Month 24** | 42.4% | $2,335,500 | $97,096,000 | $99,431,500 | **5.7x** |
+| **Convert at Year 3** | 38.0% | $3,892,500 | $87,020,000 | $90,912,500 | **5.3x** |
+| **Convert at Year 4** | 33.6% | $5,449,500 | $76,944,000 | $82,393,500 | **4.8x** |
+| **Convert at Year 5** | 29.2% | $7,006,500 | $66,868,000 | $73,874,500 | **4.3x** |
+| **No Conversion (Interest Only)** | 0% | $7,006,500 | $0 | $24,306,500 | **1.4x** |
+
+### Key Metrics
 
 | Metric | Value |
 |--------|-------|
 | Initial Investment | $17,300,000 |
-| Implied Post-Money Valuation at Entry | $35,306,122 |
-| Projected 49% Equity Value (Year 5) | $112,210,000 |
-| Multiple on Invested Capital | 6.5x |
-| Interest-Only Return (5 Years) | $25,085,000 (1.5x) |
+| Implied Post-Money Valuation at Entry (Full 49%) | $35,306,122 |
+| Maximum Equity Value (49% at $229M) | $112,210,000 |
+| Maximum Multiple (Convert at Month 12) | 6.5x |
+| Interest-Only Return (Full Term, No Conversion) | $24,306,500 (1.4x) |
+
+### The Conversion Incentive
+
+Early conversion maximizes the Investor's equity position. Each year of delay reduces conversion equity by approximately 4 to 5 percentage points while providing interest income. The structure rewards conviction: the Investor who converts early captures the maximum ownership stake during the venture's highest-growth phase.
+
+At any conversion point, the Investor's total return (interest received plus equity value) significantly exceeds the interest-only return, making conversion the economically superior outcome at any point on the schedule.
 
 These projections are based on management's current financial models and market assumptions. Actual results may differ materially. The Investor is encouraged to conduct independent due diligence and obtain professional advice.
 
