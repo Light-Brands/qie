@@ -601,58 +601,55 @@ For significant new features or platform expansions:
 
 ---
 
-## Lane Protection — Who Does What
+## Lane Protection — The One Boundary
 
-This partnership works because each party stays in their lane and excels at what they do best. Clear boundaries prevent competition and create mutual dependence.
+Influex is free to take their platform and brand development capabilities in any direction they want as the business evolves. Brand identity, design, content, apps, products — that's their world. No restrictions.
+
+**The only protected lane is the investment stack.** Light Brands' Invest and Amplify products serve the capital formation and investor communications industry. That's our domain, and the one area where we need a clear non-compete.
 
 ```mermaid
 flowchart LR
-  subgraph IX["INFLUEX LANE"]
+  subgraph OPEN["INFLUEX — OPEN FIELD (No Restrictions)"]
     direction TB
-    IX1["App & Product Development"]
-    IX2["Website delivery at scale"]
-    IX3["Brand identity & design"]
-    IX4["Client-facing creative services"]
+    O1["Brand development & identity"]
+    O2["App & product development"]
+    O3["Website delivery at scale"]
+    O4["Content, creative, design services"]
+    O5["Any new direction as business evolves"]
   end
 
-  subgraph LB["LIGHT BRANDS LANE"]
+  subgraph PROTECTED["LIGHT BRANDS — PROTECTED LANE"]
     direction TB
-    LB1["Clarity — AI Brand Development"]
-    LB2["Strategy — Growth Intelligence"]
-    LB3["Invest — Capital Formation"]
-    LB4["Amplify — Investor Communications"]
+    P1["**Invest**\nCapital formation, financial modeling\nInvestor materials, fundraising"]
+    P2["**Amplify**\nInvestor communications, campaigns\nCompliance review, distribution"]
   end
 
-  IX -->|"Connects LB to\ninvestment networks\n& deal flow"| LB
-  LB -->|"Keeps IX connected\nto closed deals via\nlifetime referral revenue"| IX
+  OPEN -->|"Connects LB to\ninvestment networks\n& deal flow"| PROTECTED
+  PROTECTED -->|"10% lifetime referral\non every closed deal"| OPEN
 
-  style IX fill:#1a3a5c,color:#fff
-  style LB fill:#0d3b0d,color:#fff
+  style OPEN fill:#1a3a5c,color:#fff
+  style PROTECTED fill:#4a0000,color:#fff
+  style P1 fill:#8b0000,color:#fff
+  style P2 fill:#8b0000,color:#fff
 ```
 
 ### The Agreement
 
 **Influex agrees:**
-- Not to recreate, replicate, or compete with the Light Brands AI OS products (Clarity, Strategy, Invest, Amplify) in any capacity
-- Their domain is **app and product development** — building, designing, and delivering digital experiences for clients
+- Not to recreate, replicate, or compete with Light Brands' **investment-focused products** — specifically **Invest** (capital formation, fundraising, financial modeling, investor materials) and **Amplify** (investor communications, campaign management, compliance review)
 - To connect Light Brands to their investment networks and introduce deal flow opportunities
+- Everything else is open — Influex can take brand development, app development, and any other capability in whatever direction they choose
 
 **Light Brands agrees:**
-- Their domain is **servicing the investment industry** — capital formation, investor communications, growth strategy, and AI-powered brand intelligence
 - To keep Influex connected to every deal closed through their referral via the 10% lifetime commission
-- Not to compete with Influex in frontend app/product development services
+- To continue building and supporting the AI-native platform as the partnership's technology backbone
+- No restrictions on Influex's brand, creative, or product development business in any capacity
 
 ### Why This Works
 
-| | Influex | Light Brands |
-|---|---|---|
-| **Core Business** | App & product development | Investment industry services |
-| **Technology** | AI-native delivery platform | AI OS (Clarity → Strategy → Invest → Amplify) |
-| **Clients** | Entrepreneurs, thought leaders, personal brands | Investors, funds, capital formation clients |
-| **Revenue Source** | Client projects + maintenance | AI OS subscriptions + deal-based revenue |
-| **What They Bring the Other** | Investment network access + warm intros | Lifetime deal revenue + platform technology |
+The protection is narrow and fair — it only covers the investment industry tools (Invest + Amplify), which are a completely different market from what Influex does. Influex serves entrepreneurs, thought leaders, and personal brands with design and development. Light Brands serves the capital formation industry with investor-grade tools. There's no natural overlap.
 
-The lanes are complementary, not competitive. Influex builds the products. Light Brands services the investment stack. When Influex's clients need capital strategy, they send them to Light Brands. When Light Brands closes a deal through that intro, Influex earns 10% for life. **Neither party has any reason to cross into the other's lane — and every reason to send business the other's way.**
+**The flywheel**: When Influex's clients need to raise capital or communicate with investors, they send them to Light Brands. When Light Brands closes that deal, Influex earns 10% for life. Influex has zero reason to build investment tools — they make more money by referring than by competing.
 
 ---
 
@@ -672,8 +669,7 @@ The lanes are complementary, not competitive. Influex builds the products. Light
 | **Referral Attribution** | Tracked via referral codes, warm intros, or mutual agreement |
 | **Reporting** | Quarterly profit & loss reports shared by both parties |
 | **Termination** | Terms TBD — designed for long-term, with fair exit provisions |
-| **Lane Protection** | Influex stays in app/product development; Light Brands stays in investment services. Neither competes in the other's lane. |
-| **Non-Compete on AI OS** | Influex agrees not to recreate or compete with Clarity, Strategy, Invest, or Amplify products |
+| **Lane Protection** | Influex agrees not to compete with Light Brands' investment-focused products (Invest + Amplify) only. All other directions are open. |
 | **Network Access** | Influex connects LB to investment networks; LB keeps IX connected to closed deals via lifetime referral |
 
 ---
