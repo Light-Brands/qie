@@ -27,7 +27,7 @@ In return, Influex promotes the Light Brands AI OS alongside their own services,
 | **Reciprocity** | Both parties share in each other's success through profit alignment, never extractive |
 | **Sovereignty** | Each company remains independent. No equity changes hands. No control transferred. |
 | **Transparency** | Revenue figures shared quarterly. Development costs tracked openly. |
-| **Evolution** | The platform grows with Influex's needs. Major development continues at cost. |
+| **Evolution** | The platform grows with Influex's needs. Major development quoted as fixed-price outcomes. |
 | **Long-Term Alignment** | This is designed to last years, not quarters. |
 
 ---
@@ -357,9 +357,9 @@ flowchart TB
 
     subgraph PHASES["Partnership Profit Split"]
       direction LR
-      PA["PHASE A: RECOUPMENT\n\nProfit weighted toward LB\nOption A: LB 80% / IX 20%\nOption B: LB 50% / IX 50%\n\nUntil dev investment\nis fully recouped"]
-      PB["PHASE B: ONGOING\n\n90 / 10 Profit Split\nInfluex keeps 90%\nLight Brands gets 10%\n\nOngoing, indefinite\nFull support included\nFuture dev at cost"]
-      PA -->|"FMV fully\npaid back"| PB
+      PA["PHASE A: RECOUPMENT\n\nFixed $250K development fee\nOption A: LB 80% / IX 20%\nOption B: LB 50% / IX 50%\n\nUntil $250K\nis fully recouped"]
+      PB["PHASE B: ONGOING\n\n90 / 10 Profit Split\nInfluex keeps 90%\nLight Brands gets 10%\n\nOngoing, indefinite\nFull support included\nFuture dev quoted fixed"]
+      PA -->|"$250K fully\npaid back"| PB
     end
 
     subgraph WHY["Why Profit, Not Revenue"]
@@ -377,9 +377,11 @@ flowchart TB
   style R1 fill:#4a3000,color:#fff
 ```
 
-### Phase A: Recoupment, Profit Split Weighted Toward Light Brands
+### Phase A: Recoupment of the $250K Development Investment
 
-Light Brands is investing the development capital upfront at partner cost basis. During recoupment, the profit split is **weighted in Light Brands' favor** until the full FMV of development is paid back.
+Light Brands is investing $250,000 upfront to build the complete AI-native platform and train the Influex team to operate as AI-native strategists in their seats. This is a **fixed fee**, not hourly, not time-and-materials. One number, one outcome: Influex's entire operation transformed.
+
+During recoupment, the profit split is **weighted in Light Brands' favor** until the full $250K is paid back.
 
 **Two paths we could take:**
 
@@ -397,7 +399,7 @@ The aggressive recoupment. Light Brands gets paid back fast, and the partnership
 
 | Recoupment Tracking | Amount |
 |---------------------|--------|
-| Total Platform Development FMV (at cost) | $250,000 (illustrative) |
+| Fixed Development Fee | $250,000 |
 | LB's 80% share accumulates fast | $20K to $44K to $96K to $170K/month |
 | **Estimated Full Recoupment** | **Approximately Q2 to Q3 (3 to 5 months after launch)** |
 
@@ -417,7 +419,7 @@ The balanced recoupment. Both parties split equally during payback. It feels fai
 
 | Recoupment Tracking | Amount |
 |---------------------|--------|
-| Total Platform Development FMV (at cost) | $250,000 (illustrative) |
+| Fixed Development Fee | $250,000 |
 | LB's 50% share per quarter | $12.5K to $27.5K to $60K to $106.5K/month |
 | **Estimated Full Recoupment** | **Approximately Q3 to Q4 (4 to 6 months after launch)** |
 
@@ -427,13 +429,13 @@ The balanced recoupment. Both parties split equally during payback. It feels fai
 
 **How It Works (Both Options):**
 
-1. Light Brands tracks all development hours at **partner cost basis** (not retail rates). This is the FMV of the work being built.
+1. The development investment is a **fixed $250,000**. No hourly tracking, no timesheets, no scope creep math. One number for the full transformation: platform build + team training + AI-native transition.
 2. Profit is calculated as **Influex gross revenue minus operating costs** (defined and agreed upon at partnership signing).
-3. During recoupment, profit is split with the **majority going to Light Brands** until the total FMV of development is fully recouped.
-4. Both parties have full transparency into development costs, operating costs, revenue, and the recoupment balance.
+3. During recoupment, profit is split with the **majority going to Light Brands** until the full $250K is paid back.
+4. Both parties have full transparency into operating costs, revenue, and the recoupment balance.
 5. Light Brands is incentivized to cut costs fast and grow revenue fast because that's how they get paid back.
 
-*Once the FMV is fully recouped, the model shifts immediately to Phase B.*
+*Once the $250K is fully recouped, the model shifts immediately to Phase B.*
 
 ### Phase B: Ongoing 90/10 Profit Split
 
@@ -443,16 +445,16 @@ The balanced recoupment. Both parties split equally during payback. It feels fai
 2. This 10% of profit includes:
    - **Full platform support** including maintenance, monitoring, and incident response
    - **Ongoing optimization** including performance tuning, security updates, and cost reduction
-   - **Future major development** including new features, new capabilities, and platform expansion, all done at **cost basis** (partner rate, not retail)
+   - **Future major development** including new features, new capabilities, and platform expansion, all quoted as **fixed-price outcomes** (never hourly)
 3. This structure means Influex gets a permanent technology partner whose income *depends* on Influex being as profitable as possible.
 
 **Example at Scale:**
 
 | Influex Revenue | Costs (team + infra) | Profit | Influex (90%) | LB (10%) | What's Included |
 |----------------|---------------------|--------|---------------|----------|-----------------|
-| $200K/mo | $80K | $120K | $108K | $12K | Full support + dev at cost |
-| $300K/mo | $87K | $213K | $191.7K | $21.3K | Full support + dev at cost |
-| $500K/mo | $100K | $400K | $360K | $40K | Full support + dev at cost |
+| $200K/mo | $80K | $120K | $108K | $12K | Full support + fixed-price dev |
+| $300K/mo | $87K | $213K | $191.7K | $21.3K | Full support + fixed-price dev |
+| $500K/mo | $100K | $400K | $360K | $40K | Full support + fixed-price dev |
 
 **Compare to today**: Influex currently keeps $20K/month in profit with a maxed-out team. Under this model, the same team (empowered by AI) generates **$108K to $360K/month** in take-home profit while Light Brands earns a meaningful, growing share that's directly tied to making Influex's team as powerful as possible.
 
@@ -487,14 +489,14 @@ The balanced recoupment. Both parties split equally during payback. It feels fai
 
 | Benefit | Value |
 |---------|-------|
-| Platform worth $250K+ built with no upfront cash | Recouped through profit share over 4 to 7 months |
+| $250K platform built with no upfront cash | Fixed fee recouped through profit share over 4 to 7 months |
 | Monthly profit goes from ~$5K to $100K+ | 20x profit improvement |
 | Monthly costs drop from $100K to approximately $22K | Approximately $78K/month in savings |
 | Profitable immediately even during recoupment | $17 to $42K/month (vs $5K today) |
 | Keeps 90% of profit after short recoupment | Fair, sustainable long-term split |
 | Capacity goes from 200 to 2,000+ sites | 10x growth potential unlocked |
 | Permanent technology partner in the 10% | No separate support contracts |
-| Future development at cost basis | Major features built affordably |
+| Future development quoted as fixed-price outcomes | No hourly billing, ever |
 | 10% lifetime referral commission on AI OS | New revenue stream from introductions |
 | No equity given up | Full ownership and sovereignty maintained |
 | Partner is incentivized to cut their costs | Light Brands profits when Influex profits |
@@ -530,12 +532,12 @@ During the short recoupment phase, Influex's per-month take dips slightly below 
 | **Minor Enhancements** | Small features, UI improvements, workflow tweaks |
 | **Dedicated Support** | Direct access to Light Brands engineering team |
 
-### Major Development (At Cost)
+### Major Development (Fixed-Price Outcomes)
 
 For significant new features or platform expansions:
-- Light Brands scopes and estimates at **partner cost basis** (internal rate, not retail)
-- Influex approves scope before work begins
-- This ensures Influex always gets enterprise grade development at a fraction of market rate
+- Light Brands quotes a **fixed price per outcome**, no hourly tracking, no timesheets, no scope creep math
+- Influex approves the quote before work begins
+- We build outcomes, not billable hours. You know the price before we start, and it doesn't change.
 - Examples include new AI capabilities, additional automation layers, white label features, and API development
 
 ---
@@ -546,7 +548,7 @@ For significant new features or platform expansions:
 - Multi tenant platform core
 - Design system engine with 50+ components
 - Auto deploy pipeline
-- Development cost tracking begins
+- Team AI-native training begins
 
 ### Phase 2: Intelligence (Months 2 through 4)
 - AI Brand Generator (trained on Influex's 200+ portfolio)
@@ -649,13 +651,13 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 | Term | Detail |
 |------|--------|
 | **Partnership Type** | Strategic technology partnership with no equity exchange |
-| **Development Cost Basis** | Partner rate (at cost), tracked transparently |
+| **Development Investment** | Fixed $250,000 for complete platform build + team AI-native training |
 | **Profit Definition** | Gross revenue minus agreed operating costs (defined at signing) |
-| **Recoupment Split** | Profit weighted toward Light Brands until FMV fully recouped (80/20 LB/IX or 50/50) |
+| **Recoupment Split** | Profit weighted toward Light Brands until $250K fully recouped (80/20 LB/IX or 50/50) |
 | **Recoupment Duration** | Estimated 4 to 7 months post platform launch depending on split chosen |
 | **Ongoing Split** | 90/10 profit split (Influex 90% / Light Brands 10%), indefinite |
 | **Ongoing Includes** | Full support, maintenance, optimization, platform management |
-| **Major Future Development** | At cost basis (partner rate), scoped and approved by Influex |
+| **Major Future Development** | Fixed-price per outcome, quoted and approved by Influex. No hourly billing. |
 | **Light Brands AI OS Referral** | 10% of referred deal revenue, lifetime of the deal |
 | **Referral Attribution** | Tracked via referral codes, warm intros, or mutual agreement |
 | **Reporting** | Quarterly profit and loss reports shared by both parties |
