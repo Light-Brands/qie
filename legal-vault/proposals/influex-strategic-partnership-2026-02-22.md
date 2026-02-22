@@ -14,7 +14,7 @@ This is not a vendor engagement. This is a strategic partnership between two com
 
 Light Brands builds the most advanced AI-powered website and brand delivery platform in existence, purpose-built for Influex's methodology, clients, and growth. Influex gains a technology partner that follows every step of their process, from intake through delivery, and transforms a $100K/month WordPress burden into a high-margin, lightning-fast delivery engine.
 
-In return, Influex promotes the Light Brands AI OS alongside their own services, opening a distribution channel into the most influential personal brands in the world.
+In return, Influex provides curated, invitation-only access to the Light Brands AI OS for their top clients who are ready for it.
 
 **Both parties win when the other grows. That's the design.**
 
@@ -317,14 +317,29 @@ flowchart LR
 
 ## What Influex Provides
 
-### Promotion of Light Brands AI OS
+### Curated Access to Light Brands AI OS
 
-Influex promotes the **Light Brands AI OS** (Clarity, Strategy, Invest, Amplify) alongside their own services to their network. This includes:
+This is not a marketing arrangement. Influex does not advertise, sell, or promote the Light Brands AI OS. Instead, Influex provides **curated, invitation-only access** to a select group of clients who are ready for it.
 
-- **Client Referrals**: Recommending Light Brands AI OS to clients who could benefit from the full business intelligence stack
-- **Network Promotion**: Introducing Light Brands AI OS within Influex's ecosystem of 200+ high-profile personal brands, coaches, entrepreneurs, and thought leaders
-- **Co-Marketing**: Featuring Light Brands AI OS in relevant materials, conversations, and touchpoints where appropriate
-- **Warm Introductions**: Facilitating connections between Light Brands and qualified prospects in Influex's network
+The target is the **top 10%** of Influex's client roster: founders, operators, and thought leaders who are actively seeking capital, preparing for institutional readiness, or building ventures that require the full strategic infrastructure Light Brands provides.
+
+**How it works:**
+
+- **Recognition, not promotion**: When a client signals they are raising capital, exploring investment, or scaling beyond what brand alone can solve, Influex recognizes the fit
+- **Invitation, not advertisement**: Influex offers or introduces the client to Light Brands AI OS as an exclusive resource available through the partnership
+- **Selective, not broad**: This is reserved for clients where the fit is genuine and the timing is right. It is never mass-marketed or publicly listed as a service
+
+### When Influex Extends an Invitation
+
+The moments that signal a client is ready:
+
+- "I am thinking about raising capital"
+- "I need to get investor-ready"
+- "I want to structure this venture properly"
+- "I need help with my financial model and pitch"
+- They are building something that clearly requires institutional infrastructure
+
+In these moments, Influex does not sell. They invite. *"We work with a partner who does exactly this. Let me connect you."*
 
 ### The Network Value
 
@@ -338,7 +353,7 @@ Influex's client roster represents some of the most influential personal brands 
 | Networks | Genius Network, Maverick 1000, Rise Nation (Daymond John) |
 | Health/Wellness | JJ Virgin, Shaun T |
 
-A single warm introduction from Influex into any of these networks has significant value. These are the exact clients who benefit from the full Light Brands AI OS stack.
+A single introduction from this network carries significant weight. The exclusivity is the point. This is not available to everyone. It is available to the clients who need it, when they need it.
 
 ---
 
@@ -367,7 +382,7 @@ flowchart TB
     end
 
     subgraph REF["REFERRAL REVENUE: Active Immediately"]
-      R1["IX refers client who purchases\nLight Brands AI OS\n\nIX receives 10% of deal revenue\nfor the LIFETIME of the deal\n\nNot capped. Not time limited.\nFor the life of the deal."]
+      R1["IX introduces select client\nto Light Brands AI OS\n\nIX receives 10% of engagement revenue\nfor the LIFETIME of the engagement\n\nNot capped. Not time limited.\nInvitation only."]
     end
   end
 
@@ -470,12 +485,12 @@ The balanced recoupment. Both parties split equally during payback. It feels fai
 
 **How It Works:**
 
-1. Influex promotes the **Light Brands AI OS** (Clarity, Strategy, Invest, Amplify) to their network.
-2. For every client that Influex refers who purchases any Light Brands AI OS service:
-   - Influex receives **10% of the revenue generated from that deal**
-   - This commission is for the **lifetime of the deal**, not a one-time fee
-   - No cap on referrals or total commission
-3. Attribution is tracked via referral codes, warm introductions, or mutual agreement on source.
+1. When Influex identifies a client who is ready for the Light Brands AI OS, they extend an invitation and make the introduction.
+2. For every client that Influex introduces who engages with any Light Brands AI OS service:
+   - Influex receives **10% of the revenue generated from that engagement**
+   - This commission is for the **lifetime of the engagement**, not a one-time fee
+   - No cap on introductions or total commission
+3. Attribution is tracked via warm introductions or mutual agreement on source.
 
 **Example Scenario:**
 
@@ -683,12 +698,12 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 | **Ongoing Split** | 90/10 profit split (Influex 90% / Light Brands 10%), indefinite |
 | **Ongoing Includes** | Full support, maintenance, optimization, platform management |
 | **Major Future Development** | At cost basis (partner rate), scoped and approved by Influex |
-| **Light Brands AI OS Referral** | 10% of referred deal revenue, lifetime of the deal |
-| **Referral Attribution** | Tracked via referral codes, warm intros, or mutual agreement |
+| **Light Brands AI OS Referral** | 10% of referred engagement revenue, lifetime of engagement. Invitation-only, not marketed. |
+| **Referral Attribution** | Tracked via warm introductions or mutual agreement on source |
 | **Reporting** | Quarterly profit and loss reports shared by both parties |
 | **Termination** | Terms TBD, designed for long term with fair exit provisions |
 | **Lane Protection** | Influex agrees not to compete with Light Brands AI OS as applied to the investment raise process (all 4 products in that context). All other applications are open. |
-| **Network Access** | Influex connects LB to investment networks and LB keeps IX connected to closed deals via lifetime referral |
+| **Network Access** | Influex invites select clients into LB ecosystem. LB keeps IX connected to closed engagements via lifetime referral. |
 
 ---
 
@@ -705,7 +720,7 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 
 ## Appendix: Light Brands AI OS
 
-### The Product Influex Promotes
+### The Product Influex Introduces
 
 **Light Brands AI OS** is a comprehensive AI-powered business intelligence system with four stages:
 
@@ -716,7 +731,7 @@ The protection is specific to a *process*, not a broad category. Influex can do 
 | 3 | **Invest** | Capital formation, financial modeling, investor materials, fundraising execution |
 | 4 | **Amplify** | Investor communications, campaign management, content production, distribution |
 
-The AI OS serves entrepreneurs, thought leaders, and growth stage businesses, exactly the clients in Influex's network. Every referral from Influex is likely a strong fit.
+The AI OS serves entrepreneurs, thought leaders, and growth stage businesses. When an Influex client is ready for this level of infrastructure, the introduction is natural.
 
 ---
 
