@@ -1,6 +1,6 @@
 # LETTER OF INTENT
 
-## Convertible Note Investment — Transformational Epicenter
+## Convertible Note Investment - Transformational Epicenter
 
 **Date:** February 22, 2026 (Revised)
 
@@ -134,7 +134,7 @@ This right is exercisable solely by the Company and does not obligate early repa
 
 Upon conversion, governance shall be structured as follows:
 
-**Board of Directors — Three (3) Members:**
+**Board of Directors - Three (3) Members:**
 
 | Seat | Appointed By |
 |------|-------------|
