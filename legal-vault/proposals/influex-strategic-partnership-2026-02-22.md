@@ -98,39 +98,55 @@ A complete replacement of Influex's WordPress infrastructure with an AI-native p
 
 ### The Starting Point — Where Influex Is Today
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                       INFLUEX TODAY — THE WORDPRESS ERA                      │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   REVENUE:  $120,000 / month                                                │
-│   COSTS:    $100,000 / month                                                │
-│   PROFIT:    $20,000 / month  (17% margin)                                  │
-│                                                                              │
-│   THE TEAM (brilliant people, drowning in manual work):                     │
-│                                                                              │
-│   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐      │
-│   │  DESIGNERS   │ │  DEVELOPERS  │ │ STRATEGISTS  │ │   SUPPORT    │      │
-│   │              │ │              │ │              │ │              │      │
-│   │ Building 2-3 │ │ Maintaining  │ │ Running 3-4  │ │ Answering    │      │
-│   │ sites/month  │ │ 200 separate │ │ brand strat  │ │ every ticket │      │
-│   │ by hand in   │ │ WordPress    │ │ sessions per │ │ manually.    │      │
-│   │ WordPress.   │ │ codebases.   │ │ month. Each  │ │ Hours per    │      │
-│   │ Pixel by     │ │ Plugin hell. │ │ takes weeks. │ │ client.      │      │
-│   │ pixel.       │ │ Update hell. │ │              │ │              │      │
-│   │              │ │ Security     │ │ Bottleneck:  │ │ Bottleneck:  │      │
-│   │ Bottleneck:  │ │ hell.        │ │ human hours  │ │ everything   │      │
-│   │ human hours  │ │              │ │              │ │ is reactive  │      │
-│   │              │ │ Bottleneck:  │ │              │ │              │      │
-│   │              │ │ 200 fires    │ │              │ │              │      │
-│   └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘      │
-│                                                                              │
-│   CAPACITY: MAXED. Can't take on more clients without more headcount.       │
-│   DELIVERY: 6-8 weeks per site. Clients waiting. Revenue capped.            │
-│   PLATFORM: WordPress. Dead end. Every site is a standalone codebase.       │
-│   FUTURE: Flat. More clients = more costs = same thin margins forever.      │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+block-beta
+  columns 4
+  block:header:4
+    columns 1
+    A["INFLUEX TODAY — THE WORDPRESS ERA"]
+    B["Revenue: $120K/mo | Costs: $100K/mo | Profit: $20K/mo (17% margin)"]
+  end
+
+  block:designers:1
+    columns 1
+    D1["DESIGNERS"]
+    D2["2-3 sites/month by hand\nWordPress + Elementor\nPixel by pixel"]
+    D3["Bottleneck: human hours"]
+  end
+
+  block:developers:1
+    columns 1
+    E1["DEVELOPERS"]
+    E2["200 separate WordPress codebases\nPlugin hell. Update hell.\nSecurity hell."]
+    E3["Bottleneck: 200 fires"]
+  end
+
+  block:strategists:1
+    columns 1
+    F1["STRATEGISTS"]
+    F2["3-4 brand strategy sessions/mo\nEach takes weeks of research\nMood boards, iteration"]
+    F3["Bottleneck: human hours"]
+  end
+
+  block:support:1
+    columns 1
+    G1["SUPPORT"]
+    G2["Every ticket manual\nHours per client per week\nReactive. Exhausting."]
+    G3["Bottleneck: everything reactive"]
+  end
+
+  block:footer:4
+    columns 1
+    H["CAPACITY: MAXED — can't take more clients without more headcount"]
+    I["DELIVERY: 6-8 weeks per site | PLATFORM: WordPress dead end | FUTURE: Flat"]
+  end
+
+  style header fill:#1a1a2e,color:#fff
+  style footer fill:#4a0000,color:#fff
+  style D3 fill:#8b0000,color:#fff
+  style E3 fill:#8b0000,color:#fff
+  style F3 fill:#8b0000,color:#fff
+  style G3 fill:#8b0000,color:#fff
 ```
 
 ### The Shift — Same Team. Same Seats. New Superpowers.
@@ -139,73 +155,42 @@ We don't fire anyone. We don't reduce headcount. **We upgrade every person in ev
 
 The costs stay the same. The team stays the same. What changes is what each person can *do*.
 
+```mermaid
+flowchart LR
+  subgraph BEFORE["BEFORE — Manual WordPress Era"]
+    direction TB
+    B1["**DESIGNER**\n2-3 sites/month by hand\nElementor, CSS, pixel pushing\n_Output: 2-3 sites_"]
+    B2["**DEVELOPER**\n200 WordPress codebases\nPlugin updates, security patches\n_Output: firefighting_"]
+    B3["**BRAND STRATEGIST**\n3-4 strategies/month\nWeeks of research each\n_Output: 3-4 brands_"]
+    B4["**SUPPORT TEAM**\nEvery ticket manually\nHours per client per week\n_Output: surviving_"]
+  end
+
+  subgraph AFTER["AFTER — AI-Native Superpowers"]
+    direction TB
+    A1["**AI DESIGN DIRECTOR**\nCommands AI Design System\nSets direction, reviews, refines\n_Output: 20-30 sites/month_"]
+    A2["**AI PLATFORM ENGINEER**\nONE platform, 2,000+ sites\nNext.js, Node.js, AI-native\n_Output: building the future_"]
+    A3["**AI BRAND ARCHITECT**\nDirects Brand AI Engine\nEssence-First at scale\n_Output: 30-40 brands/month_"]
+    A4["**AI OPERATIONS COMMANDER**\n80%+ requests handled by AI\nHuman touch for the 20%\n_Output: thriving_"]
+  end
+
+  B1 -->|"10x"| A1
+  B2 -->|"10x"| A2
+  B3 -->|"10x"| A3
+  B4 -->|"10x"| A4
+
+  style BEFORE fill:#1a1a2e,color:#fff
+  style AFTER fill:#0d3b0d,color:#fff
+  style B1 fill:#4a0000,color:#fff
+  style B2 fill:#4a0000,color:#fff
+  style B3 fill:#4a0000,color:#fff
+  style B4 fill:#4a0000,color:#fff
+  style A1 fill:#006400,color:#fff
+  style A2 fill:#006400,color:#fff
+  style A3 fill:#006400,color:#fff
+  style A4 fill:#006400,color:#fff
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                 THE AI-NATIVE TRANSFORMATION — SAME TEAM, 10x OUTPUT        │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   BEFORE                              AFTER                                 │
-│   ──────                              ─────                                 │
-│                                                                              │
-│   ┌──────────────────────┐           ┌──────────────────────────────────┐   │
-│   │  DESIGNER            │           │  AI DESIGN DIRECTOR              │   │
-│   │                      │           │                                  │   │
-│   │  Builds 2-3 sites    │  ──────▶  │  Commands the AI Design System. │   │
-│   │  per month by hand.  │           │  Sets brand direction, reviews  │   │
-│   │  Elementor. CSS.     │           │  AI-generated designs, refines  │   │
-│   │  Hours of pixel      │           │  the output. Curates the        │   │
-│   │  pushing.            │           │  component library.             │   │
-│   │                      │           │                                  │   │
-│   │  Output: 2-3 sites   │           │  Output: 20-30 sites/month     │   │
-│   └──────────────────────┘           └──────────────────────────────────┘   │
-│                                                                              │
-│   ┌──────────────────────┐           ┌──────────────────────────────────┐   │
-│   │  DEVELOPER           │           │  AI PLATFORM ENGINEER            │   │
-│   │                      │           │                                  │   │
-│   │  Maintains 200       │  ──────▶  │  Maintains ONE platform that    │   │
-│   │  separate WordPress  │           │  serves 2,000+ sites. Next.js.  │   │
-│   │  codebases. Plugin   │           │  Node.js. AI-native stack.      │   │
-│   │  updates. Security   │           │  Deploys features once, every   │   │
-│   │  patches. Fires      │           │  site benefits instantly.       │   │
-│   │  everywhere.         │           │                                  │   │
-│   │                      │           │  Every site is app-store ready. │   │
-│   │  Output: firefighting│           │  Output: building the future    │   │
-│   └──────────────────────┘           └──────────────────────────────────┘   │
-│                                                                              │
-│   ┌──────────────────────┐           ┌──────────────────────────────────┐   │
-│   │  BRAND STRATEGIST    │           │  AI BRAND ARCHITECT              │   │
-│   │                      │           │                                  │   │
-│   │  Runs 3-4 brand      │  ──────▶  │  Directs the Brand AI Engine.   │   │
-│   │  strategy sessions   │           │  Feeds it Influex's Essence-    │   │
-│   │  per month. Each     │           │  First methodology. Reviews     │   │
-│   │  takes weeks of      │           │  AI-generated brand packages.   │   │
-│   │  research, mood      │           │  Applies human taste and        │   │
-│   │  boards, iteration.  │           │  judgment at scale.             │   │
-│   │                      │           │                                  │   │
-│   │  Output: 3-4 brands  │           │  Output: 30-40 brands/month    │   │
-│   └──────────────────────┘           └──────────────────────────────────┘   │
-│                                                                              │
-│   ┌──────────────────────┐           ┌──────────────────────────────────┐   │
-│   │  SUPPORT TEAM        │           │  AI OPERATIONS COMMANDER         │   │
-│   │                      │           │                                  │   │
-│   │  Answers every       │  ──────▶  │  Oversees the AI Support System │   │
-│   │  ticket manually.    │           │  which handles 80%+ of requests │   │
-│   │  Hours per client    │           │  automatically. Handles the 20% │   │
-│   │  per week.           │           │  that need a human touch — with │   │
-│   │  Reactive. Exhausting│           │  full AI-prepared context.      │   │
-│   │                      │           │                                  │   │
-│   │  Output: surviving   │           │  Output: thriving               │   │
-│   └──────────────────────┘           └──────────────────────────────────┘   │
-│                                                                              │
-│   ═══════════════════════════════════════════════════════════════════════   │
-│                                                                              │
-│   KEY INSIGHT: The team doesn't shrink. The team becomes DANGEROUS.        │
-│   Every person who was drowning in manual work now commands AI that         │
-│   does the manual work at 10x speed while they focus on what humans        │
-│   do best: taste, judgment, relationships, and creative direction.         │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+
+> **KEY INSIGHT**: The team doesn't shrink. The team becomes DANGEROUS. Every person who was drowning in manual work now commands AI that does the manual work at 10x speed while they focus on what humans do best: taste, judgment, relationships, and creative direction.
 
 ### The Revenue Curve — What Happens When Capacity Unlocks
 
@@ -213,56 +198,25 @@ Today, Influex is capacity-capped. They literally cannot take more clients. The 
 
 **When we plug in the AI-native platform, the capacity ceiling disappears.**
 
+```mermaid
+xychart-beta
+  title "Revenue Growth — 18 Month Scenario ($K/month)"
+  x-axis ["Today", "M3", "M6", "M9", "M12", "M15", "M18"]
+  y-axis "$ Thousands / Month" 0 --> 550
+  bar [120, 120, 135, 200, 300, 400, 500]
+  line [120, 120, 135, 200, 300, 400, 500]
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    REVENUE GROWTH SCENARIO — 18 MONTHS                       │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   Revenue                                                                    │
-│   ($K/mo)                                                                    │
-│                                                                              │
-│   $500K ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ●          │
-│                                                                /             │
-│   $400K ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ●               │
-│                                                            /                 │
-│   $300K ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ●                      │
-│                                                      /                       │
-│   $200K ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ●                               │
-│                                            /                                 │
-│   $150K ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ●                                        │
-│                                   /                                          │
-│   $120K ── ● ── ● ── ● ── ●                                                │
-│            │                 ▲                                                │
-│            │                 │                                                │
-│            │           PLATFORM GOES                                         │
-│            │           LIVE — CAPACITY                                        │
-│            │           UNLOCKS                                                │
-│            │                                                                  │
-│         TODAY                                                                │
-│                                                                              │
-│         M1   M3   M6   M9   M12  M15  M18                                   │
-│                                                                              │
-│   ─────────────────────────────────────────────────────────────────────────  │
-│                                                                              │
-│   Costs                                                                      │
-│   ($K/mo)                                                                    │
-│                                                                              │
-│   $100K ── ● ── ● ── ●                                                      │
-│                        \                                                     │
-│   $80K ─ ─ ─ ─ ─ ─ ─ ── ●       (WordPress winding down)                   │
-│                            \                                                 │
-│   $60K ─ ─ ─ ─ ─ ─ ─ ─ ── ●     (Migration in progress)                    │
-│                              \                                               │
-│   $40K ─ ─ ─ ─ ─ ─ ─ ─ ─ ── ● ── ● ── ● ── ● ── ●                        │
-│                                                                              │
-│   Team costs stay. Infrastructure costs plummet.                            │
-│   WordPress hosting, plugins, maintenance → gone.                           │
-│   One platform. Pennies per site.                                           │
-│                                                                              │
-│         M1   M3   M6   M9   M12  M15  M18                                   │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+
+```mermaid
+xychart-beta
+  title "Cost Structure — Team Stays, Infrastructure Drops ($K/month)"
+  x-axis ["Today", "M3", "M6", "M9", "M12", "M15", "M18"]
+  y-axis "$ Thousands / Month" 0 --> 120
+  bar [100, 95, 80, 80, 87, 94, 100]
+  line [100, 95, 80, 80, 87, 94, 100]
 ```
+
+> **Platform goes live at M6 — capacity unlocks.** Team costs stay (same people, same seats). Infrastructure costs plummet as WordPress hosting, plugins, and maintenance are replaced by one platform at pennies per site. Revenue scales because the team can now serve 10x clients.
 
 ### The Numbers — Quarter by Quarter
 
@@ -294,48 +248,53 @@ Today, Influex is capacity-capped. They literally cannot take more clients. The 
 
 This is the part most people miss. We're not just replacing WordPress with a better website builder. We're building on **Next.js and Node.js** — the same technology stack that powers production apps at Netflix, Uber, and Airbnb.
 
+```mermaid
+flowchart LR
+  subgraph WP["WORDPRESS WORLD (Today)"]
+    direction TB
+    WP1["Website\n(WordPress)"]
+    WP2["Dead end.\nStatic. Limited. Fragile.\nCan never become an app."]
+    WP1 --- WP2
+  end
+
+  subgraph AI["AI-NATIVE WORLD (Tomorrow)"]
+    direction TB
+    AI1["Website\n(Next.js)"]
+    AI1 --> PWA["Progressive Web App\nInstallable on phone"]
+    AI1 --> IOS["iOS App\nApp Store ready"]
+    AI1 --> AND["Android App\nPlay Store ready"]
+    AI1 --> API["API Layer\nIntegrate anything"]
+    AI1 --> AIF["AI Features\nChatbot, voice, personalization"]
+  end
+
+  WP1 -.->|"Transform"| AI1
+
+  style WP fill:#4a0000,color:#fff
+  style WP1 fill:#8b0000,color:#fff
+  style WP2 fill:#660000,color:#fff
+  style AI fill:#0d3b0d,color:#fff
+  style AI1 fill:#006400,color:#fff
+  style PWA fill:#228B22,color:#fff
+  style IOS fill:#228B22,color:#fff
+  style AND fill:#228B22,color:#fff
+  style API fill:#228B22,color:#fff
+  style AIF fill:#228B22,color:#fff
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│              EVERY SITE IS AN APP WAITING TO HAPPEN                          │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   WORDPRESS WORLD (TODAY)              AI-NATIVE WORLD (TOMORROW)           │
-│   ───────────────────────              ──────────────────────────           │
-│                                                                              │
-│   ┌──────────────┐                    ┌──────────────────────────────────┐  │
-│   │  Website     │                    │  Website (Next.js)               │  │
-│   │  (WordPress) │                    │       │                          │  │
-│   │              │                    │       ├── Progressive Web App    │  │
-│   │  Dead end.   │                    │       │   (installable on phone) │  │
-│   │  Can never   │                    │       │                          │  │
-│   │  become an   │                    │       ├── iOS App (React Native) │  │
-│   │  app.        │                    │       │   (App Store ready)      │  │
-│   │              │                    │       │                          │  │
-│   │  Static.     │                    │       ├── Android App            │  │
-│   │  Limited.    │                    │       │   (Play Store ready)     │  │
-│   │  Fragile.    │                    │       │                          │  │
-│   │              │                    │       ├── API Layer              │  │
-│   │              │                    │       │   (integrate anything)   │  │
-│   │              │                    │       │                          │  │
-│   │              │                    │       └── AI Features            │  │
-│   │              │                    │           (chatbot, voice,       │  │
-│   │              │                    │            personalization)      │  │
-│   └──────────────┘                    └──────────────────────────────────┘  │
-│                                                                              │
-│   When Jim Kwik says "I want an app for my memory training"                 │
-│   WordPress answer: "That's a separate $200K project."                      │
-│   AI-native answer: "Your site IS the app. Let's turn it on."              │
-│                                                                              │
-│   NEW REVENUE TIER FOR INFLUEX:                                             │
-│   • Website: $15-30K (current offering)                                     │
-│   • Website + PWA: $30-50K (new tier)                                       │
-│   • Website + Native App: $50-100K (new tier)                               │
-│   • Full Digital Platform: $100-250K (enterprise tier)                      │
-│                                                                              │
-│   Same foundation. Same team. New revenue ceiling.                          │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+
+> **When Jim Kwik says "I want an app for my memory training"**
+> - WordPress answer: *"That's a separate $200K project."*
+> - AI-native answer: *"Your site IS the app. Let's turn it on."*
+
+**New Revenue Tiers for Influex:**
+
+| Tier | Offering | Price Range |
+|------|----------|-------------|
+| Current | Website | $15-30K |
+| New | Website + PWA | $30-50K |
+| New | Website + Native App | $50-100K |
+| New | Full Digital Platform | $100-250K |
+
+*Same foundation. Same team. New revenue ceiling.*
 
 ### What Dmitriy Sees in 18 Months
 
@@ -391,45 +350,31 @@ This is not a revenue-extraction model. This is a **profit-sharing partnership**
 
 ### Two Phases: Recoupment, Then Ongoing
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        PROFIT-ALIGNED REVENUE MODEL                         │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   PHASE A: RECOUPMENT                    PHASE B: ONGOING                   │
-│   ─────────────────────                  ──────────────────                  │
-│                                                                              │
-│   ┌─────────────────────────┐           ┌─────────────────────────┐         │
-│   │                         │           │                         │         │
-│   │  PROFIT SPLIT WEIGHTED  │           │   90 / 10 PROFIT SPLIT  │         │
-│   │  TOWARD LIGHT BRANDS    │  ──────▶  │                         │         │
-│   │                         │  (once    │   Influex keeps 90%     │         │
-│   │  Option A: LB 80%/IX 20%│  FMV is   │   Light Brands gets 10% │         │
-│   │  Option B: LB 50%/IX 50%│  fully    │                         │         │
-│   │                         │  paid)    │   Ongoing, indefinite   │         │
-│   │  Until dev investment   │           │   Includes full support │         │
-│   │  is fully recouped      │           │   + future dev at cost  │         │
-│   └─────────────────────────┘           └─────────────────────────┘         │
-│                                                                              │
-│   WHY PROFIT, NOT REVENUE:                                                  │
-│   Light Brands is rewarded for lowering costs AND growing revenue.          │
-│   The better the platform performs, the bigger the profit pool for both.    │
-│                                                                              │
-│   ════════════════════════════════════════════════════════════════════════  │
-│                                                                              │
-│   REFERRAL REVENUE (Active Immediately, Runs Parallel)                      │
-│                                                                              │
-│   ┌─────────────────────────────────────────────────────────────────────┐  │
-│   │                                                                      │  │
-│   │   Influex refers client → Client purchases Light Brands AI OS       │  │
-│   │   Influex receives 10% of that deal's revenue for the LIFETIME      │  │
-│   │   of the deal.                                                       │  │
-│   │                                                                      │  │
-│   │   This is not capped. Not time-limited. For the life of the deal.   │  │
-│   │                                                                      │  │
-│   └─────────────────────────────────────────────────────────────────────┘  │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+  subgraph DEAL["PROFIT-ALIGNED REVENUE MODEL"]
+    direction TB
+
+    subgraph PHASES["Partnership Profit Split"]
+      direction LR
+      PA["**PHASE A: RECOUPMENT**\n\nProfit weighted toward Light Brands\nOption A: LB 80% / IX 20%\nOption B: LB 50% / IX 50%\n\nUntil dev investment\nis fully recouped"]
+      PB["**PHASE B: ONGOING**\n\n90 / 10 Profit Split\nInfluex keeps 90%\nLight Brands gets 10%\n\nOngoing, indefinite\nIncludes full support\n+ future dev at cost"]
+      PA -->|"FMV fully\npaid back"| PB
+    end
+
+    subgraph WHY["Why Profit, Not Revenue"]
+      W1["Light Brands is rewarded for lowering costs AND growing revenue.\nThe better the platform performs, the bigger the profit pool for both."]
+    end
+
+    subgraph REF["REFERRAL REVENUE — Active Immediately, Runs Parallel"]
+      R1["Influex refers client → Client purchases Light Brands AI OS\nInfluex receives 10% of that deal's revenue for the LIFETIME of the deal\nNot capped. Not time-limited. For the life of the deal."]
+    end
+  end
+
+  style PA fill:#1a3a5c,color:#fff
+  style PB fill:#0d3b0d,color:#fff
+  style W1 fill:#2d2d2d,color:#fff
+  style R1 fill:#4a3000,color:#fff
 ```
 
 ### Phase A: Recoupment — Profit Split Weighted Toward Light Brands
