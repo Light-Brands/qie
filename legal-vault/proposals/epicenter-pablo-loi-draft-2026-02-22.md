@@ -2,7 +2,7 @@
 
 ## Convertible Note Investment - Transformational Epicenter
 
-**Date:** February 22, 2026 (Revised)
+**Date:** February 22, 2026 (Revised February 23, 2026)
 
 **Non-Binding** (except as noted in Section 12)
 
@@ -63,9 +63,9 @@ Interest is calculated on a simple interest basis on the outstanding principal b
 
 At the Investor's election, the Note may convert into equity ownership in the Transformational Epicenter ecosystem, subject to the conversion schedule below.
 
-### 4a. Full Conversion Window (Months 0 through 18)
+### 4a. Full Conversion Window (Months 0 through 12)
 
-During the first eighteen (18) months from the date of funding, the Investor may elect to convert the Note into the maximum equity position:
+During the first twelve (12) months from the date of funding, the Investor may elect to convert the Note into the maximum equity position:
 
 **Full Conversion Equity:** Forty-nine percent (49%) ownership across the three operating entities:
 
@@ -75,19 +75,22 @@ During the first eighteen (18) months from the date of funding, the Investor may
 | Entity B | Operational / Clinical Company | 49% |
 | Entity C | IP, Technology, and Data Holding Company | 49% |
 
-### 4b. Time-Based Conversion Schedule (After Month 18)
+### 4b. Time-Based Declining Conversion Schedule (After Month 12)
 
-After the initial eighteen-month window, the Investor retains the right to convert, but the conversion equity shall decrease according to the following schedule.
+Beginning in Month 13, the Investor retains the right to convert, but the conversion equity shall decrease quarterly in proportion to cumulative interest received.
 
 **Rationale:** The 49% equity position reflects the full capital at risk at the time of investment. As the Investor receives quarterly interest payments, the effective capital at risk decreases. The conversion equity adjusts proportionally to reflect this reduced exposure.
 
 **Formula:** Conversion Equity = (($17,300,000 minus Cumulative Interest Paid) / $17,300,000) x 49%
 
+**Quarterly Recalculation:** Conversion equity shall be recalculated at the end of each calendar quarter based on cumulative interest actually paid. The applicable equity percentage at the time of the Investor's conversion election shall be determined by the most recently completed quarter.
+
 **Fixed Conversion Schedule:**
 
 | Conversion Elected | Cumulative Interest Received | Conversion Equity | Equity Value at $229M Projection |
 |--------------------|-----------------------------|--------------------|----------------------------------|
-| **Months 0 through 18** | Up to $1,557,000 | **49.0%** | $112,210,000 |
+| **Months 0 through 12** | Up to $778,500 | **49.0%** | $112,210,000 |
+| **Month 15** | $1,167,750 | **45.7%** | $104,653,000 |
 | **Month 24** | $2,335,500 | **42.4%** | $97,096,000 |
 | **Year 3** | $3,892,500 | **38.0%** | $87,020,000 |
 | **Year 4** | $5,449,500 | **33.6%** | $76,944,000 |
@@ -95,7 +98,9 @@ After the initial eighteen-month window, the Investor retains the right to conve
 
 The schedule above shall govern conversion equity. In the event of any discrepancy between the formula and the schedule, the schedule shall control.
 
-Conversion equity applies proportionally across all three entities. If the schedule indicates 44.6%, the Investor receives 44.6% in each of Entity A, Entity B, and Entity C.
+**Illustrative Decline:** Following the close of the full conversion window at Month 12, each quarterly interest payment of $389,250 reduces the Investor's conversion equity by approximately 1.1 percentage points. For example, at Month 15, cumulative interest of $1,167,750 reduces conversion equity from 49.0% to 45.7%. By Year 5, cumulative interest of $7,006,500 reduces conversion equity to 29.2%.
+
+Conversion equity applies proportionally across all three entities. If the schedule indicates 42.4%, the Investor receives 42.4% in each of Entity A, Entity B, and Entity C.
 
 ### 4c. Conversion Mechanics
 
@@ -169,12 +174,12 @@ Board decisions shall be governed by simple majority vote unless otherwise speci
 
 ## 7. DEFAULT AND ENFORCEMENT
 
-**Event of Default:** If quarterly interest payments remain unpaid for a cumulative period of twenty-four (24) months, an Event of Default shall be declared.
+**Event of Default:** If interest payments remain unpaid for a cumulative period of twelve (12) months, an Event of Default shall be declared.
 
 **Enforcement Rights:** Upon an Event of Default, the Investor shall have the right to enforce its security interest, which may include:
 
-- Foreclosure on the secured Property
-- Directed sale of the Property
+- Foreclosure on the secured real estate
+- Sale of the Property
 - Recovery of outstanding principal, all accrued and unpaid interest, and reasonable enforcement costs
 
 The Company shall have a thirty (30) day cure period following written notice of default before enforcement proceedings may commence.
@@ -217,14 +222,14 @@ The following projections are provided for illustrative purposes only and do not
 
 | Scenario | Equity % | Interest Received | Equity Value at $229M | Total Return | Multiple |
 |----------|----------|-------------------|----------------------|-------------|----------|
-| **Convert at Month 18 (Full Window)** | 49.0% | $1,557,000 | $112,210,000 | $113,767,000 | **6.6x** |
+| **Convert within 12 Months (Full Window)** | 49.0% | $778,500 | $112,210,000 | $112,988,500 | **6.5x** |
 | **Convert at Month 24** | 42.4% | $2,335,500 | $97,096,000 | $99,431,500 | **5.7x** |
 | **Convert at Year 3** | 38.0% | $3,892,500 | $87,020,000 | $90,912,500 | **5.3x** |
 | **Convert at Year 4** | 33.6% | $5,449,500 | $76,944,000 | $82,393,500 | **4.8x** |
 | **Convert at Year 5** | 29.2% | $7,006,500 | $66,868,000 | $73,874,500 | **4.3x** |
 | **No Conversion (Interest Only)** | 0% | $7,006,500 | $0 | $24,306,500 | **1.4x** |
 
-The Investor may convert at any point during the eighteen-month full window (Months 0 through 18) at the full 49% equity. Converting at Month 18 maximizes both interest received and equity ownership.
+The Investor may convert at any point during the twelve-month full window (Months 0 through 12) at the full 49% equity. Converting within the full window maximizes equity ownership.
 
 ### Key Metrics
 
@@ -233,12 +238,12 @@ The Investor may convert at any point during the eighteen-month full window (Mon
 | Initial Investment | $17,300,000 |
 | Implied Post-Money Valuation at Entry (Full 49%) | $35,306,122 |
 | Maximum Equity Value (49% at $229M) | $112,210,000 |
-| Maximum Multiple (Convert at Month 18) | 6.6x |
+| Maximum Multiple (Convert within 12 Months) | 6.5x |
 | Interest-Only Return (Full Term, No Conversion) | $24,306,500 (1.4x) |
 
 ### The Conversion Incentive
 
-The eighteen-month full conversion window gives the Investor time to evaluate Phase 1 performance before committing to permanent equity, while preserving the maximum ownership position. After Month 18, each additional period reduces conversion equity by approximately 4 to 7 percentage points while providing interest income. The structure rewards conviction: the Investor who converts within the full window captures the maximum ownership stake during the venture's highest-growth phase.
+The twelve-month full conversion window gives the Investor time to evaluate initial progress before committing to permanent equity, while preserving the maximum ownership position. After Month 12, each additional quarter reduces conversion equity by approximately 1.1 percentage points while providing interest income. The structure rewards conviction: the Investor who converts within the full window captures the maximum ownership stake during the venture's highest-growth phase.
 
 At any conversion point, the Investor's total return (interest received plus equity value) significantly exceeds the interest-only return, making conversion the economically superior outcome at any point on the schedule.
 
