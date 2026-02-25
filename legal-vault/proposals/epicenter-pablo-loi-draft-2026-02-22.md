@@ -10,12 +10,12 @@
 
 **Between:**
 
-**Nicholas Courschesne and Jason Sparks** ("Founders")
+**_______________________** and **_______________________** ("Founders")
 On behalf of the Transformational Epicenter project and its affiliated entities (collectively, the "Company")
 
 **And:**
 
-**Pablo _______________** ("Investor")
+**_______________________** ("Investor")
 
 ---
 
@@ -144,8 +144,8 @@ Upon conversion, governance shall be structured as follows:
 
 | Seat | Appointed By |
 |------|-------------|
-| Seat 1 | Nicholas Courschesne |
-| Seat 2 | Jason Sparks |
+| Seat 1 | Founder 1 |
+| Seat 2 | Founder 2 |
 | Seat 3 | The Investor |
 
 Board decisions shall be governed by simple majority vote unless otherwise specified in the definitive agreements.
@@ -321,13 +321,15 @@ This LOI shall expire if not executed by both parties on or before April 30, 202
 &nbsp;
 
 ______________________________
-**Nicholas Courschesne**
+Name: _______________
+Title / Entity: _______________
 Date: _______________
 
 &nbsp;
 
 ______________________________
-**Jason Sparks**
+Name: _______________
+Title / Entity: _______________
 Date: _______________
 
 &nbsp;
@@ -337,5 +339,6 @@ Date: _______________
 &nbsp;
 
 ______________________________
-**Pablo _______________**
+Name: _______________
+Title / Entity: _______________
 Date: _______________

@@ -10,12 +10,12 @@
 
 **Between:**
 
-**Nicholas Courschesne and Jason Sparks** ("Founders")
+**_______________________** and **_______________________** ("Founders")
 On behalf of the Transformational Epicenter project and its affiliated entities
 
 **And:**
 
-**Pablo _______________** ("Partner")
+**_______________________** ("Partner")
 
 ---
 
@@ -137,13 +137,15 @@ This LOI shall expire if not executed by both parties on or before March 31, 202
 &nbsp;
 
 ______________________________
-**Nicholas Courschesne**
+Name: _______________
+Title / Entity: _______________
 Date: _______________
 
 &nbsp;
 
 ______________________________
-**Jason Sparks**
+Name: _______________
+Title / Entity: _______________
 Date: _______________
 
 &nbsp;
@@ -153,5 +155,6 @@ Date: _______________
 &nbsp;
 
 ______________________________
-**Pablo _______________**
+Name: _______________
+Title / Entity: _______________
 Date: _______________
