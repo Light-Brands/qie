@@ -53,7 +53,7 @@ The Note shall be secured by:
 Quarterly interest payment: $389,250
 Annual interest: $1,557,000
 
-Interest is calculated on a simple interest basis on the outstanding principal balance.
+The Investor shall be entitled to receive one hundred percent (100%) of all interest payments, calculated on the full principal amount of $17,300,000 USD. Interest is a standalone obligation of the Company under the Note and is not limited by, proportional to, or contingent upon any equity conversion percentage. Whether or not the Investor elects to convert, and regardless of the applicable conversion equity at the time, interest shall continue to accrue and be payable on the full outstanding principal balance.
 
 **Pre-Revenue Interest:** If operational revenue is insufficient to service quarterly interest payments during the pre-revenue period, interest shall accrue on a paid-in-kind (PIK) basis and be added to the outstanding principal balance. PIK interest shall convert to cash-pay interest once operations generate sufficient revenue to service quarterly payments. PIK interest accrued during the pre-revenue period shall not affect the fixed conversion schedule defined in Section 4b.
 
@@ -61,7 +61,7 @@ Interest is calculated on a simple interest basis on the outstanding principal b
 
 ## 4. CONVERSION RIGHTS
 
-At the Investor's election, the Note may convert into equity ownership in the Transformational Epicenter ecosystem, subject to the conversion schedule below.
+At the Investor's election, the Note may convert into equity ownership in the Transformational Epicenter ecosystem, subject to the conversion schedule below. Conversion rights are separate from and in addition to the Investor's right to receive interest on the full principal as defined in Section 3. The Investor retains full interest entitlement on the entire $17,300,000 regardless of conversion timing or equity percentage.
 
 ### 4a. Full Conversion Window (Months 0 through 12)
 
@@ -79,7 +79,7 @@ During the first twelve (12) months from the date of funding, the Investor may e
 
 Beginning in Month 13, the Investor retains the right to convert, but the conversion equity shall decrease quarterly in proportion to cumulative interest received.
 
-**Rationale:** The 49% equity position reflects the full capital at risk at the time of investment. As the Investor receives quarterly interest payments, the effective capital at risk decreases. The conversion equity adjusts proportionally to reflect this reduced exposure.
+**Rationale:** The 49% equity position reflects the full capital at risk at the time of investment. As the Investor receives quarterly interest payments, the effective capital at risk decreases. The conversion equity adjusts proportionally to reflect this reduced exposure. For clarity, the declining conversion equity does not reduce or limit the Investor's entitlement to receive 100% of interest on the full $17,300,000 principal. Interest and conversion equity are independent entitlements.
 
 **Formula:** Conversion Equity = (($17,300,000 minus Cumulative Interest Paid) / $17,300,000) x 49%
 
