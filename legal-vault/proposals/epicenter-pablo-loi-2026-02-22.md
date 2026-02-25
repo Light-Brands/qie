@@ -46,7 +46,7 @@ The Note shall be secured by:
 | **Principal** | $17,300,000 USD |
 | **Interest Rate** | 9% per annum, simple interest |
 | **Interest Payment** | Quarterly cash payments |
-| **Interest Commencement** | Six (6) months after operations commence, and no later than January 1, 2027 |
+| **Interest Commencement** | From the date of funding. Quarterly cash payments begin six (6) months after operations commence, and no later than January 1, 2027 |
 | **Maturity** | Five (5) years from the date of funding, unless converted earlier |
 | **Security** | First-position lien on the Property |
 
@@ -87,18 +87,18 @@ Beginning in Month 13, the Investor retains the right to convert, but the conver
 
 **Fixed Conversion Schedule:**
 
-| Conversion Elected | Cumulative Interest Received | Conversion Equity | Equity Value at $229M Projection |
+| Conversion Elected | Cumulative Interest Accrued | Conversion Equity | Equity Value at $229M Projection |
 |--------------------|-----------------------------|--------------------|----------------------------------|
-| **Months 0 through 12** | Up to $778,500 | **49.0%** | $112,210,000 |
-| **Month 15** | $1,167,750 | **45.7%** | $104,653,000 |
-| **Month 24** | $2,335,500 | **42.4%** | $97,096,000 |
-| **Year 3** | $3,892,500 | **38.0%** | $87,020,000 |
-| **Year 4** | $5,449,500 | **33.6%** | $76,944,000 |
-| **Year 5 (Maturity)** | $7,006,500 | **29.2%** | $66,868,000 |
+| **Months 0 through 12** | Up to $1,557,000 | **49.0%** | $112,210,000 |
+| **Month 15** | $1,946,250 | **43.5%** | $99,615,000 |
+| **Month 24** | $3,114,000 | **40.2%** | $92,058,000 |
+| **Year 3** | $4,671,000 | **35.8%** | $81,982,000 |
+| **Year 4** | $6,228,000 | **31.4%** | $71,906,000 |
+| **Year 5 (Maturity)** | $7,785,000 | **27.0%** | $61,830,000 |
 
 The schedule above shall govern conversion equity. In the event of any discrepancy between the formula and the schedule, the schedule shall control.
 
-**Illustrative Decline:** Following the close of the full conversion window at Month 12, each quarterly interest payment of $389,250 reduces the Investor's conversion equity by approximately 1.1 percentage points. For example, at Month 15, cumulative interest of $1,167,750 reduces conversion equity from 49.0% to 45.7%. By Year 5, cumulative interest of $7,006,500 reduces conversion equity to 29.2%.
+**Illustrative Decline:** Following the close of the full conversion window at Month 12, each quarterly interest payment of $389,250 reduces the Investor's conversion equity by approximately 1.1 percentage points. For example, at Month 15, cumulative interest of $1,946,250 reduces conversion equity from 49.0% to 43.5%. By Year 5, cumulative interest of $7,785,000 reduces conversion equity to 27.0%.
 
 Conversion equity applies proportionally across all three entities. If the schedule indicates 42.4%, the Investor receives 42.4% in each of Entity A, Entity B, and Entity C.
 
@@ -222,12 +222,12 @@ The following projections are provided for illustrative purposes only and do not
 
 | Scenario | Equity % | Interest Received | Equity Value at $229M | Total Return | Multiple |
 |----------|----------|-------------------|----------------------|-------------|----------|
-| **Convert within 12 Months (Full Window)** | 49.0% | $778,500 | $112,210,000 | $112,988,500 | **6.5x** |
-| **Convert at Month 24** | 42.4% | $2,335,500 | $97,096,000 | $99,431,500 | **5.7x** |
-| **Convert at Year 3** | 38.0% | $3,892,500 | $87,020,000 | $90,912,500 | **5.3x** |
-| **Convert at Year 4** | 33.6% | $5,449,500 | $76,944,000 | $82,393,500 | **4.8x** |
-| **Convert at Year 5** | 29.2% | $7,006,500 | $66,868,000 | $73,874,500 | **4.3x** |
-| **No Conversion (Interest Only)** | 0% | $7,006,500 | $0 | $24,306,500 | **1.4x** |
+| **Convert within 12 Months (Full Window)** | 49.0% | $1,557,000 | $112,210,000 | $113,767,000 | **6.6x** |
+| **Convert at Month 24** | 40.2% | $3,114,000 | $92,058,000 | $95,172,000 | **5.5x** |
+| **Convert at Year 3** | 35.8% | $4,671,000 | $81,982,000 | $86,653,000 | **5.0x** |
+| **Convert at Year 4** | 31.4% | $6,228,000 | $71,906,000 | $78,134,000 | **4.5x** |
+| **Convert at Year 5** | 27.0% | $7,785,000 | $61,830,000 | $69,615,000 | **4.0x** |
+| **No Conversion (Interest Only)** | 0% | $7,785,000 | $0 | $25,085,000 | **1.4x** |
 
 The Investor may convert at any point during the twelve-month full window (Months 0 through 12) at the full 49% equity. Converting within the full window maximizes equity ownership.
 
@@ -238,8 +238,8 @@ The Investor may convert at any point during the twelve-month full window (Month
 | Initial Investment | $17,300,000 |
 | Implied Post-Money Valuation at Entry (Full 49%) | $35,306,122 |
 | Maximum Equity Value (49% at $229M) | $112,210,000 |
-| Maximum Multiple (Convert within 12 Months) | 6.5x |
-| Interest-Only Return (Full Term, No Conversion) | $24,306,500 (1.4x) |
+| Maximum Multiple (Convert within 12 Months) | 6.6x |
+| Interest-Only Return (Full Term, No Conversion) | $25,085,000 (1.4x) |
 
 ### The Conversion Incentive
 
