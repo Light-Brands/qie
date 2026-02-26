@@ -243,10 +243,10 @@ flowchart TB
     classDef ai fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
     classDef route fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
 
-    DISCOVER["<b>PERSON DISCOVERS CHO VENTURES</b><br/>via website, social, event, referral, media, book"]:::trigger
-    CAPTURE["<b>TOUCHPOINT CAPTURE</b><br/>Form · Booking · App registration · Email"]:::process
-    CRM["<b>CENTRAL CRM</b><br/>Future of Cities Hub<br/><br/>Contact created · Source tracked<br/>Entity tagged · Score calculated"]:::process
-    ENGINE["<b>AI ENGINE</b><br/><br/>Lead quality scored · Entity fit ranked<br/>Interests inferred · Next action decided"]:::ai
+    DISCOVER["<b>PERSON DISCOVERS</b><br/><b>CHO VENTURES</b><br/>Website · Social · Event<br/>Referral · Media · Book"]:::trigger
+    CAPTURE["<b>TOUCHPOINT CAPTURE</b><br/>Form · Booking<br/>App Registration · Email"]:::process
+    CRM["<b>CENTRAL CRM</b><br/>Future of Cities Hub<br/>Contact created · Source tracked<br/>Entity tagged · Score calculated"]:::process
+    ENGINE["<b>AI ENGINE</b><br/>Lead quality scored<br/>Entity fit ranked<br/>Interests inferred<br/>Next action decided"]:::ai
 
     PIPELINE["<b>Primary Entity<br/>Pipeline</b>"]:::route
     REFERRAL["<b>Cross-Entity<br/>Referral</b>"]:::route
@@ -293,12 +293,12 @@ flowchart TB
 
     subgraph RECORD["CONTACT RECORD"]
         direction TB
-        IDENTITY["<b>IDENTITY</b><br/>Name · Email · Phone<br/>Address · Source · Source Entity"]:::blue
-        ENGAGEMENT["<b>ENGAGEMENT</b><br/>Lead Score (0-100) · Engagement Score (0-100)<br/>Lifetime Value · Last Interaction<br/>Total Interactions · Content Consumed"]:::green
-        RELATIONSHIPS["<b>ENTITY RELATIONSHIPS</b><br/>Metro 1: Lead · PHX-JAX: Event Attendee<br/>Climate HUB: Participant · ChoZen: Past Guest<br/>Community: Premium Member · Foundation: Donor<br/>Book: Reader · Course: Student"]:::lavender
-        PROFILE["<b>COMMUNITY PROFILE</b><br/>Membership Tier · Interests · Preferences<br/>Achievements · Karma Score · Joined Date"]:::lavender
-        INTERACTIONS["<b>INTERACTIONS</b><br/>Event: Climate HUB Demo · Email: Opened newsletter<br/>Web: Viewed PHX-JAX site · App: Joined community"]:::gold
-        COMMERCE["<b>BOOKINGS & PURCHASES</b><br/>Retreat: Mar 2026 · Course: Enrolled<br/>Book: Pre-ordered · Event: PHX-JAX Gala"]:::gold
+        IDENTITY["<b>IDENTITY</b><br/>Name · Email · Phone<br/>Address · Source<br/>Source Entity"]:::blue
+        ENGAGEMENT["<b>ENGAGEMENT</b><br/>Lead Score (0-100)<br/>Engagement Score (0-100)<br/>Lifetime Value<br/>Last Interaction"]:::green
+        RELATIONSHIPS["<b>ENTITY RELATIONSHIPS</b><br/>Metro 1: Lead<br/>PHX-JAX: Event Attendee<br/>Climate HUB: Participant<br/>ChoZen: Past Guest<br/>Community: Premium Member<br/>Foundation: Donor"]:::lavender
+        PROFILE["<b>COMMUNITY PROFILE</b><br/>Membership Tier · Interests<br/>Preferences · Achievements<br/>Karma Score · Joined Date"]:::lavender
+        INTERACTIONS["<b>INTERACTIONS</b><br/>Event: Climate HUB Demo<br/>Email: Opened newsletter<br/>Web: Viewed PHX-JAX site<br/>App: Joined community"]:::gold
+        COMMERCE["<b>BOOKINGS & PURCHASES</b><br/>Retreat: Mar 2026<br/>Course: Enrolled<br/>Book: Pre-ordered<br/>Event: PHX-JAX Gala"]:::gold
     end
 ```
 
@@ -790,8 +790,8 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        FLOW["Lead Capture → AI Lead Scoring → Pipeline Routing<br/>Property Sync → Cross-Entity Matching<br/>Deal Updates → Investor Reporting"]:::hub
-        CROSS["<b>Cross-Entity Triggers</b><br/>ESG interest → Climate HUB event invite<br/>Visiting Sebastian → ChoZen retreat offer<br/>High-value client → FoC investor pipeline<br/>Jacksonville interest → PHX-JAX intro"]:::trigger
+        FLOW["<b>Operational</b><br/>Lead Capture → AI Scoring<br/>→ Pipeline Routing<br/>Property Sync<br/>→ Cross-Entity Matching<br/>Deal Updates<br/>→ Investor Reporting"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>ESG interest → Climate HUB<br/>Visiting Sebastian → ChoZen<br/>High-value client → FoC<br/>Jacksonville → PHX-JAX"]:::trigger
     end
 
     WEB --> HUB
@@ -852,9 +852,9 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        OPS["<b>Operational</b><br/>Tenant database synced · Lease pipeline tracked<br/>Space availability real-time · Event attendance captured"]:::hub
-        INV["<b>Investor Reporting</b><br/>NOI tracking · Occupancy metrics · Sites A-F pipeline<br/>JV partner management · Capital call & distribution tracking"]:::investor
-        CROSS["<b>Cross-Entity Triggers</b><br/>Creative tenant → Climate HUB · Miami attendee → Metro 1<br/>Wellness interest → ChoZen · High-net-worth → FoC investor"]:::trigger
+        OPS["<b>Operational</b><br/>Tenant database synced<br/>Lease pipeline tracked<br/>Space availability real-time<br/>Event attendance captured"]:::hub
+        INV["<b>Investor Reporting</b><br/>NOI tracking · Occupancy metrics<br/>Sites A-F pipeline<br/>JV partner management<br/>Capital call & distribution"]:::investor
+        CROSS["<b>Cross-Entity Triggers</b><br/>Creative tenant → Climate HUB<br/>Miami attendee → Metro 1<br/>Wellness interest → ChoZen<br/>High-net-worth → FoC"]:::trigger
     end
 
     PHX --> HUB
@@ -926,8 +926,8 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        OPS["<b>Operational</b><br/>Startup portfolio in CRM · Mentor network managed<br/>Program participants tracked · Event attendance captured"]:::hub
-        CROSS["<b>Cross-Entity Triggers</b><br/>Startup needs space → PHX-JAX/Metro 1<br/>Founder wellness interest → ChoZen<br/>Mentor as investor → FoC pipeline<br/>Corporate sponsor → Metro 1 · Course interest → Authority funnel"]:::trigger
+        OPS["<b>Operational</b><br/>Startup portfolio in CRM<br/>Mentor network managed<br/>Program participants tracked<br/>Event attendance captured"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>Startup needs space → PHX-JAX<br/>Founder wellness → ChoZen<br/>Mentor as investor → FoC<br/>Corporate sponsor → Metro 1<br/>Course interest → Authority"]:::trigger
     end
 
     CLIMATE --> HUB
@@ -986,9 +986,9 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        OPS["<b>Operational</b><br/>Guest profiles in CRM · Booking pipeline tracked<br/>Availability synced · Post-stay sequences automated"]:::hub
-        COMM["<b>Community Connection</b><br/>Post-stay → Community app invitation<br/>Community member → Retreat discount<br/>Course student → Retreat credit"]:::community
-        CROSS["<b>Cross-Entity Triggers</b><br/>RE professional → Metro 1 · Entrepreneur → Climate HUB<br/>High-net-worth → FoC investor · Philanthropic → Foundation<br/>Community interest → ChoZen app"]:::trigger
+        OPS["<b>Operational</b><br/>Guest profiles in CRM<br/>Booking pipeline tracked<br/>Availability synced<br/>Post-stay sequences automated"]:::hub
+        COMM["<b>Community Connection</b><br/>Post-stay → Community app<br/>Community member → Discount<br/>Course student → Retreat credit"]:::community
+        CROSS["<b>Cross-Entity Triggers</b><br/>RE professional → Metro 1<br/>Entrepreneur → Climate HUB<br/>High-net-worth → FoC<br/>Philanthropic → Foundation"]:::trigger
     end
 
     CHOZEN --> HUB
@@ -1041,8 +1041,8 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        OPS["<b>Operational</b><br/>Donor profiles in CRM · Donation history tracked<br/>Grant applications managed · Impact metrics aggregated"]:::hub
-        CROSS["<b>Cross-Entity Triggers</b><br/>RE client donor → Metro 1 · Wellness interest → ChoZen<br/>Corporate donor → Climate HUB sponsor<br/>Philanthropic contact → FoC investor pipeline"]:::trigger
+        OPS["<b>Operational</b><br/>Donor profiles in CRM<br/>Donation history tracked<br/>Grant applications managed<br/>Impact metrics aggregated"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>RE client donor → Metro 1<br/>Wellness interest → ChoZen<br/>Corporate donor → Climate HUB<br/>Philanthropic → FoC investor"]:::trigger
     end
 
     FOUND --> HUB
@@ -1086,8 +1086,8 @@ flowchart TB
 
     subgraph HUB["CENTRAL HUB (Future of Cities)"]
         direction TB
-        CRM_FLOW["<b>All Authority Contacts Flow to CRM</b><br/>Book buyers → Reader pipeline<br/>Course students → Learning pipeline<br/>Newsletter subscribers → Nurture sequences<br/>Speaking contacts → Relationship pipeline<br/>Social followers → Awareness tracking"]:::hub
-        FLYWHEEL["<b>The Flywheel</b><br/>Book → Course → Community → Retreat<br/>→ Advocate → Speaking → Awareness → Book"]:::flywheel
+        CRM_FLOW["<b>All Authority Contacts</b><br/><b>Flow to CRM</b><br/>Book buyers → Reader<br/>Course students → Learning<br/>Newsletter → Nurture<br/>Speaking → Relationship<br/>Social → Awareness"]:::hub
+        FLYWHEEL["<b>The Flywheel</b><br/>Book → Course → Community<br/>→ Retreat → Advocate<br/>→ Speaking → Awareness<br/>→ Book"]:::flywheel
     end
 
     TONY --> HUB
@@ -1179,13 +1179,13 @@ flowchart TB
 
     ENGINE["<b>LEAD SCORING ENGINE</b>"]:::header
 
-    DEMO["<b>DEMOGRAPHIC SIGNALS (30%)</b><br/>Geography (Miami/Jacksonville = high)<br/>Industry (RE, sustainability, wellness = high)<br/>Title/Role (decision-maker = high)<br/>Company Size (matches entity targets)"]:::demo
+    DEMO["<b>DEMOGRAPHIC (30%)</b><br/>Geography<br/>Industry<br/>Title/Role<br/>Company Size"]:::demo
 
-    BEHAV["<b>BEHAVIORAL SIGNALS (40%)</b><br/>Website visits (recency + frequency)<br/>Content engagement (downloads, reads, watches)<br/>Email engagement (opens, clicks)<br/>Event attendance · App engagement"]:::behavior
+    BEHAV["<b>BEHAVIORAL (40%)</b><br/>Website visits<br/>Content engagement<br/>Email engagement<br/>Event attendance<br/>App engagement"]:::behavior
 
-    SRC["<b>SOURCE SIGNALS (15%)</b><br/>Referral source quality<br/>Campaign attribution<br/>Entry point entity"]:::source
+    SRC["<b>SOURCE (15%)</b><br/>Referral source quality<br/>Campaign attribution<br/>Entry point entity"]:::source
 
-    AISIG["<b>AI SIGNALS (15%)</b><br/>Entity fit score (embedding-based)<br/>Interest inference (NLP on behavior)<br/>Propensity model output"]:::ai
+    AISIG["<b>AI SIGNALS (15%)</b><br/>Entity fit score<br/>Interest inference<br/>Propensity model"]:::ai
 
     ENGINE --> DEMO
     ENGINE --> BEHAV
@@ -1274,10 +1274,10 @@ flowchart TB
     classDef action fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
 
     QUERY["<b>USER QUERY</b>"]:::input
-    INTENT["<b>INTENT CLASSIFICATION</b><br/>Question type · Entity context · Urgency level"]:::process
-    KNOWLEDGE["<b>KNOWLEDGE RETRIEVAL</b><br/>(Retrieval-Augmented Generation)<br/>Search knowledge base · Rank relevance · Select top passages"]:::process
-    RESPONSE["<b>RESPONSE GENERATION</b><br/>Language model · Entity-specific voice<br/>Factual grounding · Safety filters"]:::generate
-    ACTION["<b>ACTION LAYER</b><br/>Log to CRM · Trigger automation<br/>Escalate if needed · Update contact score"]:::action
+    INTENT["<b>INTENT CLASSIFICATION</b><br/>Question type<br/>Entity context<br/>Urgency level"]:::process
+    KNOWLEDGE["<b>KNOWLEDGE RETRIEVAL</b><br/>(RAG)<br/>Search knowledge base<br/>Rank relevance<br/>Select top passages"]:::process
+    RESPONSE["<b>RESPONSE GENERATION</b><br/>Language model<br/>Entity-specific voice<br/>Factual grounding<br/>Safety filters"]:::generate
+    ACTION["<b>ACTION LAYER</b><br/>Log to CRM<br/>Trigger automation<br/>Escalate if needed<br/>Update contact score"]:::action
 
     QUERY --> INTENT --> KNOWLEDGE --> RESPONSE --> ACTION
 ```
@@ -2219,10 +2219,10 @@ flowchart TB
     classDef exec fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
     classDef follow fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
 
-    GEN["<b>OPPORTUNITY GENERATION</b><br/>Inbound inquiries (website, referrals, agent)<br/>Proactive outreach (target conferences)<br/>Speaker referrals (post-engagement ask)"]:::gen
-    PREP["<b>PREPARATION</b><br/>AI researches host, audience, context<br/>AI generates customized talking points<br/>AI prepares Q&A prediction<br/>Bio & materials adapted · Pre-event media coordination"]:::prep
-    EXEC["<b>EXECUTION</b><br/>Keynote delivery<br/>Content capture (video, audio, photos)<br/>Networking & relationship building<br/>Media opportunities at event"]:::exec
-    FOLLOW["<b>FOLLOW-UP</b><br/>Thank-you sequence (automated, personalized)<br/>Content repurposing (talk → articles, clips, posts)<br/>Relationship nurture (CRM pipeline)<br/>Referral request for future engagements"]:::follow
+    GEN["<b>OPPORTUNITY GENERATION</b><br/>Inbound inquiries<br/>Proactive outreach<br/>Speaker referrals"]:::gen
+    PREP["<b>PREPARATION</b><br/>AI researches audience<br/>Customized talking points<br/>Q&A prediction<br/>Bio & materials adapted"]:::prep
+    EXEC["<b>EXECUTION</b><br/>Keynote delivery<br/>Content capture<br/>Networking<br/>Media opportunities"]:::exec
+    FOLLOW["<b>FOLLOW-UP</b><br/>Thank-you sequence<br/>Content repurposing<br/>Relationship nurture<br/>Referral request"]:::follow
 
     GEN --> PREP --> EXEC --> FOLLOW
     FOLLOW -.->|referrals| GEN
@@ -2743,17 +2743,17 @@ flowchart LR
     classDef highlight fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e,stroke-width:3px
 
     subgraph SOURCES["SOURCES"]
-        DEBT["<b>Debt: $7.42M</b><br/>Construction Loans: $3.19M<br/>Bridge Loans: $4.23M"]:::source
+        DEBT["<b>Debt: $7.42M</b><br/>Construction: $3.19M<br/>Bridge: $4.23M"]:::source
         EQUITY["<b>Equity: $7.00M</b><br/>← THE RAISE"]:::source
     end
 
     subgraph USES["USES ($14.42M)"]
-        CAPEX["Construction & Core CapEx: $2.73M"]:::use
+        CAPEX["Construction CapEx: $2.73M"]:::use
         TI["Tenant Improvements: $1.43M"]:::use
-        FIN["Financing & Structure: $1.06M"]:::use
+        FIN["Financing: $1.06M"]:::use
         PAYDOWN["Debt Paydowns: $7.39M"]:::use
         OPS["Operating Runway: $1.13M"]:::use
-        PLATFORM["<b>Sponsor & Platform: $0.67M</b><br/>⬅ THE OPPORTUNITY"]:::highlight
+        PLATFORM["<b>Sponsor & Platform:</b><br/><b>$0.67M</b><br/>⬅ THE OPPORTUNITY"]:::highlight
     end
 
     DEBT --> CAPEX
@@ -3144,10 +3144,10 @@ flowchart TB
     classDef lavender fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
     classDef gold fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
 
-    M["<b>MEASURE</b><br/>Dashboard KPIs · User feedback<br/>AI performance · Revenue · Technical health"]:::blue
-    A["<b>ANALYZE</b><br/>What's working? · What's underperforming?<br/>What do users want? · Highest ROI? · At risk?"]:::green
-    P["<b>PRIORITIZE</b><br/>Quick wins (&lt; 1 week) · Medium projects (1-4 weeks)<br/>Major features (1-3 months) · Strategic initiatives (quarterly)"]:::lavender
-    I["<b>IMPLEMENT</b><br/>Sprint planning · Development<br/>Testing · Deploy · Monitor"]:::gold
+    M["<b>MEASURE</b><br/>Dashboard KPIs<br/>User feedback<br/>AI performance<br/>Revenue · Tech health"]:::blue
+    A["<b>ANALYZE</b><br/>What's working?<br/>What's underperforming?<br/>What do users want?<br/>Highest ROI?"]:::green
+    P["<b>PRIORITIZE</b><br/>Quick wins (&lt; 1 week)<br/>Medium (1-4 weeks)<br/>Major (1-3 months)<br/>Strategic (quarterly)"]:::lavender
+    I["<b>IMPLEMENT</b><br/>Sprint planning<br/>Development<br/>Testing · Deploy<br/>Monitor"]:::gold
 
     M --> A --> P --> I --> M
 ```
