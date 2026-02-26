@@ -1,0 +1,60 @@
+# Lesson: Always enrich documentation with Mermaid diagrams
+id: "ls-core-002"
+version: 1
+created_at: "2026-02-17T22:00:00Z"
+updated_at: "2026-02-17T22:00:00Z"
+
+trigger_pattern: "When producing any documentation, proposals, strategy documents, technical specs, architecture documents, or any structured written output"
+lesson_core: "Every document we produce should leverage Mermaid diagrams to visually enrich the content. Diagrams make complex relationships, hierarchies, flows, and comparisons immediately visible in ways that text alone cannot. This is especially powerful in proposals where showing what a client gets (Option 1 vs Option 2) creates an instant visual contrast that drives decision-making. Mermaid is preferred because it renders natively in GitHub, most markdown viewers, and Google Docs via plugins, keeping documents portable and editable. Apply to: ecosystem maps, architecture diagrams, flow charts, comparison diagrams, timeline charts, entity relationship maps, and any structure that benefits from visual representation."
+action_bias:
+  type: require
+  target: "include Mermaid diagrams in all documentation output"
+  magnitude: 0.90
+  conditions:
+    - "Creating or updating any markdown documentation"
+    - "Writing proposals or strategy documents"
+    - "Documenting architecture or ecosystem relationships"
+    - "Comparing options, tiers, or packages"
+    - "Showing flows, timelines, or processes"
+    - "Mapping entity relationships or hierarchies"
+
+domain: core
+tags:
+  - documentation
+  - mermaid
+  - visual-communication
+  - proposals
+  - diagrams
+  - enrichment
+  - presentation
+situation_types:
+  - documentation-creation
+  - proposal-writing
+  - architecture-documentation
+  - strategy-planning
+  - client-deliverables
+  - comparison-presentation
+
+strength: 0.8
+confidence: 0.95
+application_count: 1
+reinforcement_history:
+  - date: "2026-02-17T22:00:00Z"
+    delta: 0.3
+    reason: "User explicitly requested this as a standard practice after seeing the impact of Mermaid diagrams in the Cho Ventures pricing strategy. The Option 1 vs Option 2 visual contrast was immediately compelling."
+    episode_id: "cho-ventures-pricing-mermaid-2026-02-17"
+
+source_episodes:
+  - "cho-ventures-pricing-mermaid-2026-02-17"
+
+keywords:
+  - mermaid
+  - diagrams
+  - documentation
+  - visual enrichment
+  - flowchart
+  - proposals
+  - architecture
+  - ecosystem map
+  - option comparison
+  - always diagram

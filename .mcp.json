@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "google-drive": {
+      "command": "npx",
+      "args": ["@piotr-agier/google-drive-mcp"],
+      "env": {
+        "GOOGLE_DRIVE_OAUTH_CREDENTIALS": "/Users/lawless/.config/google-drive-mcp/gcp-oauth.keys.json",
+        "GOOGLE_DRIVE_MCP_TOKEN_PATH": "/Users/lawless/.config/google-drive-mcp/tokens.json"
+      }
+    }
+  }
+}
