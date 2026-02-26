@@ -17,7 +17,7 @@
 
 This is not a proposal. This is a complete project plan.
 
-It contains everything required to build, deploy, and operate an AI-powered ecosystem centered on **Future of Cities** — the platform that unifies Tony Cho's portfolio of ventures, amplifies his authority in regenerative placemaking, and creates the infrastructure for institutional capital formation.
+It contains everything required to build, deploy, and operate an AI-powered ecosystem centered on **Future of Cities**, the platform that unifies Tony Cho's portfolio of ventures, amplifies his authority in regenerative placemaking, and creates the infrastructure for institutional capital formation.
 
 This document is designed to be handed to any qualified technology team and executed as-is. It includes:
 
@@ -38,7 +38,7 @@ Every recommendation is **tool-agnostic**. We specify what needs to be built and
 
 ### The Opportunity
 
-Tony Cho has built something nobody else in the world can claim: a portfolio of ventures spanning real estate, climate innovation, hospitality, wellness, arts, and philanthropy — all connected by a singular, authentic vision of regenerative living. The track record is proven. Wynwood. Magic City. PHX-JAX. Climate HUB. ChoZen. The Cho Family Foundation. Over $2B in completed transactions, $2B+ in development impact, and 40%+ IRR across district-level exits.
+Tony Cho has built something nobody else in the world can claim: a portfolio of ventures spanning real estate, climate innovation, hospitality, wellness, arts, and philanthropy, all connected by a singular, authentic vision of regenerative living. The track record is proven. Wynwood. Magic City. PHX-JAX. Climate HUB. ChoZen. The Cho Family Foundation. Over $2B in completed transactions, $2B+ in development impact, and 40%+ IRR across district-level exits.
 
 The substance is real. What is missing is the infrastructure that makes all of it visible as one unified movement.
 
@@ -46,7 +46,7 @@ Right now, 15+ entities operate across disconnected websites, fragmented contact
 
 ### The Solution: Future of Cities as the Central Hub
 
-**Future of Cities** becomes the nerve center of the entire Cho Ventures ecosystem — the single platform through which every entity connects, every contact flows, every piece of content is amplified, and every data point is captured.
+**Future of Cities** becomes the nerve center of the entire Cho Ventures ecosystem: the single platform through which every entity connects, every contact flows, every piece of content is amplified, and every data point is captured.
 
 This is not a website redesign. It is the construction of an AI-powered operating system for a regenerative empire.
 
@@ -80,15 +80,15 @@ flowchart TB
 
 | Layer | Description | Impact |
 |-------|-------------|--------|
-| **Central Hub** | Unified CRM, contact database, automation engine, analytics dashboard — all running through Future of Cities | Every relationship across every entity in one system |
+| **Central Hub** | Unified CRM, contact database, automation engine, analytics dashboard, all running through Future of Cities | Every relationship across every entity in one system |
 | **Entity Integrations** | Each venture connected to the hub with bidirectional data flow | Cross-entity intelligence, automated referrals, zero duplication |
-| **AI Layer** | Intelligence services across every touchpoint — scoring, matching, content generation, personalization, automation | 100+ hours/month saved, 25%+ conversion lift, 5x content velocity |
+| **AI Layer** | Intelligence services across every touchpoint: scoring, matching, content generation, personalization, automation | 100+ hours/month saved, 25%+ conversion lift, 5x content velocity |
 | **Community Platform** | ChoZen member app with content, events, messaging, retreat integration, gamification | 10,000+ active community members within 12 months |
 | **Authority Platform** | Book launch engine, online course, speaking pipeline, content amplification system | Category ownership in regenerative placemaking |
 
 ### The Strategic Recommendation
 
-Based on our analysis of the PHX-JAX capital structure and the broader Cho Ventures portfolio, we believe the optimal path to funding this ecosystem is through a **raise-to-build strategy** — aligning the platform development with an institutional capital raise where the technology infrastructure is positioned as a critical component of the venture's value creation and investor reporting capability.
+Based on our analysis of the PHX-JAX capital structure and the broader Cho Ventures portfolio, we believe the optimal path to funding this ecosystem is through a **raise-to-build strategy**, aligning the platform development with an institutional capital raise where the technology infrastructure is positioned as a critical component of the venture's value creation and investor reporting capability.
 
 The existing $670K Sponsor & Platform allocation within the FoC QOF capital structure provides a natural budget window for the core platform build. Extended ecosystem components (community platform, authority engine) can be funded from operating cash flow as stabilization targets are met.
 
@@ -178,9 +178,9 @@ Future of Cities is the gravitational center of the entire ecosystem. Every enti
 Future of Cities is the natural center because:
 
 1. **It already carries institutional credibility.** Future of Cities is the development consortium with a track record. Investors, partners, and media recognize it.
-2. **It is the mission incarnate.** "Future of Cities" is not just a company — it is the idea. Regenerative placemaking, community-driven development, climate-conscious urbanism. The brand IS the mission.
+2. **It is the mission incarnate.** "Future of Cities" is not just a company, it is the idea. Regenerative placemaking, community-driven development, climate-conscious urbanism. The brand IS the mission.
 3. **It is the investment vehicle.** The FoC QOF is the capital formation entity. The platform that supports investor relations, reporting, and asset management must live here.
-4. **It connects every vertical.** Real estate (Metro 1, PHX-JAX), climate (HUB), wellness (ChoZen), philanthropy (foundations), authority (Tony's brand) — Future of Cities is the only entity that touches all of these naturally.
+4. **It connects every vertical.** Real estate (Metro 1, PHX-JAX), climate (HUB), wellness (ChoZen), philanthropy (foundations), authority (Tony's brand). Future of Cities is the only entity that touches all of these naturally.
 
 ### Hub Architecture
 
@@ -192,7 +192,7 @@ flowchart TB
     classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
     classDef audience fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
 
-    subgraph HUB["FUTURE OF CITIES — CENTRAL HUB"]
+    subgraph HUB["FUTURE OF CITIES: CENTRAL HUB"]
         direction TB
         subgraph CORE["Core Systems"]
             CRM["<b>CRM CORE</b><br/>All Contacts · Pipelines<br/>Segments · Relationships"]:::core
@@ -402,7 +402,7 @@ This decouples systems, improves reliability, and enables real-time cross-entity
 
 ---
 
-# 3. Central Hub — Future of Cities Platform
+# 3. Central Hub: Future of Cities Platform
 
 > *The command center that unifies every entity, every contact, and every data point.*
 
@@ -412,11 +412,11 @@ This decouples systems, improves reliability, and enables real-time cross-entity
 
 The Central Hub is the operational core of the entire ecosystem. It runs through Future of Cities and provides:
 
-- **Unified CRM** — Every contact across every entity in one system
-- **Automation Engine** — Intelligent workflows that route, nurture, and convert
-- **Content Hub** — Centralized asset management and multi-channel publishing
-- **Analytics Dashboard** — Real-time visibility across the entire portfolio
-- **Admin Portal** — System management, permissions, and configuration
+- **Unified CRM** - Every contact across every entity in one system
+- **Automation Engine** - Intelligent workflows that route, nurture, and convert
+- **Content Hub** - Centralized asset management and multi-channel publishing
+- **Analytics Dashboard** - Real-time visibility across the entire portfolio
+- **Admin Portal** - System management, permissions, and configuration
 
 Everything else in this plan connects to the Central Hub. It must be built first.
 
@@ -436,7 +436,7 @@ The CRM is the single source of truth for all relationships across the Cho Ventu
 | **Custom Properties** | Entity-specific fields (Metro 1 needs property preferences; ChoZen needs dietary restrictions; PHX-JAX needs lease terms) without cluttering the shared schema. |
 | **Pipeline Management** | Entity-specific pipelines (Metro 1 deals, PHX-JAX leases, ChoZen bookings, Foundation donations) operating from the same contact base. |
 | **Smart Segmentation** | Dynamic segments based on entity relationships, engagement scores, interests, behaviors, and AI-derived attributes. |
-| **Lifecycle Tracking** | Track a contact's journey across entities over time — from first touch to every subsequent interaction. |
+| **Lifecycle Tracking** | Track a contact's journey across entities over time, from first touch to every subsequent interaction. |
 | **Merge & Deduplication** | Automatic detection and merging of duplicate contacts that enter through different entities. |
 | **API Access** | Full REST or GraphQL API for bidirectional sync with entity systems, the community app, and the AI layer. |
 
@@ -619,7 +619,7 @@ All content across the ecosystem is managed through a unified content hub connec
 | Component | Description |
 |-----------|-------------|
 | **Asset Library** | All brand assets (logos, images, videos, documents) organized by entity with permission controls |
-| **Template Library** | Email templates, social post templates, report templates — entity-branded but centrally managed |
+| **Template Library** | Email templates, social post templates, report templates, entity-branded but centrally managed |
 | **Content Calendar** | Unified view of all content publishing across all entities and channels |
 | **Multi-Channel Publishing** | Publish content to websites, email, social, community app, and newsletter from one interface |
 | **Brand Guidelines** | Centralized brand rules ensuring visual and voice consistency across all entities |
@@ -762,11 +762,11 @@ Every entity website must connect to the central hub:
 
 Every entity integration follows the same pattern:
 
-1. **Bidirectional sync** — Data flows from entity systems to the central hub AND from the hub back to entity systems
-2. **Real-time events** — Critical actions (new leads, bookings, purchases) trigger immediately via webhooks
-3. **Batch sync** — Historical data and bulk updates sync on schedule (hourly or daily)
-4. **Entity autonomy** — Each entity retains its own operational tools. The hub adds intelligence on top, it does not replace entity-level systems.
-5. **Graceful degradation** — If the hub is temporarily unavailable, entity systems continue operating independently
+1. **Bidirectional sync** - Data flows from entity systems to the central hub AND from the hub back to entity systems
+2. **Real-time events** - Critical actions (new leads, bookings, purchases) trigger immediately via webhooks
+3. **Batch sync** - Historical data and bulk updates sync on schedule (hourly or daily)
+4. **Entity autonomy** - Each entity retains its own operational tools. The hub adds intelligence on top, it does not replace entity-level systems.
+5. **Graceful degradation** - If the hub is temporarily unavailable, entity systems continue operating independently
 
 ---
 
@@ -1069,7 +1069,7 @@ flowchart TB
 
 ### Integration Architecture
 
-Tony's personal brand is the gravity that pulls the entire ecosystem together. It is not a separate entity — it is the connective tissue.
+Tony's personal brand is the gravity that pulls the entire ecosystem together. It is not a separate entity, it is the connective tissue.
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
@@ -1104,13 +1104,13 @@ The Tony Cho Brand integration is covered in detail in Section 7 (Authority Plat
 
 # 5. AI Integration Layer
 
-> *Intelligence at every touchpoint — the system that makes everything smarter.*
+> *Intelligence at every touchpoint. The system that makes everything smarter.*
 
 ---
 
 ## Overview
 
-The AI layer is not a standalone product. It is an intelligence fabric woven through every component of the ecosystem — scoring leads, matching contacts to entities, generating personalized content, automating workflows, and surfacing insights that no manual process could achieve.
+The AI layer is not a standalone product. It is an intelligence fabric woven through every component of the ecosystem: scoring leads, matching contacts to entities, generating personalized content, automating workflows, and surfacing insights that no manual process could achieve.
 
 This section maps every AI touchpoint across the ecosystem and specifies what each one does, what data it needs, and how it fits into the architecture.
 
@@ -1260,12 +1260,12 @@ AI-powered chat and assistant capabilities across the ecosystem.
 
 | Application | Context | Knowledge Base |
 |-------------|---------|----------------|
-| **Website Chat** | Entity websites — answer questions, capture leads | Entity-specific FAQs, services, team info |
-| **Booking Assistant** | ChoZen Retreat — help with reservations | Availability, programs, pricing, retreat details |
-| **Book Companion** | Authority platform — discuss book concepts | Full book content, discussion guides, related resources |
-| **Course Tutor** | Course platform — support student learning | Course curriculum, exercises, supplementary materials |
-| **Community Guide** | Community app — help members navigate | Community features, content library, event calendar |
-| **Investor Portal** | FoC — answer investor questions | Quarterly reports, distributions, NAV data, compliance info |
+| **Website Chat** | Entity websites -answer questions, capture leads | Entity-specific FAQs, services, team info |
+| **Booking Assistant** | ChoZen Retreat -help with reservations | Availability, programs, pricing, retreat details |
+| **Book Companion** | Authority platform -discuss book concepts | Full book content, discussion guides, related resources |
+| **Course Tutor** | Course platform -support student learning | Course curriculum, exercises, supplementary materials |
+| **Community Guide** | Community app -help members navigate | Community features, content library, event calendar |
+| **Investor Portal** | FoC -answer investor questions | Quarterly reports, distributions, NAV data, compliance info |
 
 #### Conversational AI Architecture
 
@@ -1294,83 +1294,83 @@ flowchart TB
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Lead Scoring | Phase 1 | High — improves routing accuracy across all entities |
-| Entity Matching | Phase 1 | High — powers the cross-entity referral engine |
-| Email Generation | Phase 1 | High — scales personalized outreach |
-| Engagement Scoring | Phase 1 | Medium — enables re-engagement automation |
-| Churn Prediction | Phase 2 | Medium — reduces community and pipeline churn |
-| Content Recommendations | Phase 2 | High — drives community engagement |
+| Lead Scoring | Phase 1 | High -improves routing accuracy across all entities |
+| Entity Matching | Phase 1 | High -powers the cross-entity referral engine |
+| Email Generation | Phase 1 | High -scales personalized outreach |
+| Engagement Scoring | Phase 1 | Medium -enables re-engagement automation |
+| Churn Prediction | Phase 2 | Medium -reduces community and pipeline churn |
+| Content Recommendations | Phase 2 | High -drives community engagement |
 
 ### Metro 1 Commercial AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Lead Qualification | Phase 1 | High — filters noise, surfaces quality leads |
-| Property-Client Matching | Phase 2 | High — accelerates deal velocity |
-| Market Intelligence | Phase 2 | Medium — informs strategy and client advisory |
-| Listing Descriptions | Phase 1 | Medium — saves time, improves quality |
-| Response Generation | Phase 1 | Medium — faster follow-up on inquiries |
-| Comparable Analysis | Phase 3 | Medium — data-driven pricing support |
+| Lead Qualification | Phase 1 | High -filters noise, surfaces quality leads |
+| Property-Client Matching | Phase 2 | High -accelerates deal velocity |
+| Market Intelligence | Phase 2 | Medium -informs strategy and client advisory |
+| Listing Descriptions | Phase 1 | Medium -saves time, improves quality |
+| Response Generation | Phase 1 | Medium -faster follow-up on inquiries |
+| Comparable Analysis | Phase 3 | Medium -data-driven pricing support |
 
 ### Future of Cities AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Impact Report Generation | Phase 1 | High — streamlines investor and stakeholder reporting |
-| Stakeholder Communication | Phase 1 | Medium — personalized updates at scale |
-| ESG Scoring | Phase 2 | Medium — quantifies regenerative impact |
-| Trend Analysis | Phase 2 | Medium — informs development strategy |
-| Policy Monitoring | Phase 3 | Low — long-term intelligence capability |
+| Impact Report Generation | Phase 1 | High -streamlines investor and stakeholder reporting |
+| Stakeholder Communication | Phase 1 | Medium -personalized updates at scale |
+| ESG Scoring | Phase 2 | Medium -quantifies regenerative impact |
+| Trend Analysis | Phase 2 | Medium -informs development strategy |
+| Policy Monitoring | Phase 3 | Low -long-term intelligence capability |
 
 ### PHX-JAX District AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Tenant Matching | Phase 1 | High — accelerates leasing |
-| Event Recommendations | Phase 2 | Medium — increases district engagement |
-| Rent Optimization | Phase 2 | High — maximizes NOI |
-| Predictive Maintenance | Phase 3 | Medium — reduces operating costs |
-| Sentiment Tracking | Phase 2 | Low — monitors tenant satisfaction |
+| Tenant Matching | Phase 1 | High -accelerates leasing |
+| Event Recommendations | Phase 2 | Medium -increases district engagement |
+| Rent Optimization | Phase 2 | High -maximizes NOI |
+| Predictive Maintenance | Phase 3 | Medium -reduces operating costs |
+| Sentiment Tracking | Phase 2 | Low -monitors tenant satisfaction |
 
 ### Climate + Innovation HUB AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Startup Screening | Phase 1 | High — improves program quality |
-| Mentor Matching | Phase 2 | High — accelerates startup success |
-| Investor Matching | Phase 2 | High — enables funding connections |
-| Program Personalization | Phase 3 | Medium — tailors curriculum |
-| Outcome Prediction | Phase 3 | Medium — informs program design |
+| Startup Screening | Phase 1 | High -improves program quality |
+| Mentor Matching | Phase 2 | High -accelerates startup success |
+| Investor Matching | Phase 2 | High -enables funding connections |
+| Program Personalization | Phase 3 | Medium -tailors curriculum |
+| Outcome Prediction | Phase 3 | Medium -informs program design |
 
 ### ChoZen Retreat AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Booking Assistant | Phase 1 | High — converts inquiries, reduces manual booking work |
-| Guest Personalization | Phase 2 | High — elevates the guest experience |
-| Demand Prediction | Phase 2 | Medium — informs pricing and staffing |
-| Dynamic Pricing | Phase 3 | Medium — optimizes revenue per available room |
-| Return Visit Prediction | Phase 2 | Medium — enables targeted re-engagement |
+| Booking Assistant | Phase 1 | High -converts inquiries, reduces manual booking work |
+| Guest Personalization | Phase 2 | High -elevates the guest experience |
+| Demand Prediction | Phase 2 | Medium -informs pricing and staffing |
+| Dynamic Pricing | Phase 3 | Medium -optimizes revenue per available room |
+| Return Visit Prediction | Phase 2 | Medium -enables targeted re-engagement |
 
 ### Foundation AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Impact Story Generation | Phase 1 | High — compelling donor communication |
-| Donor Potential Scoring | Phase 2 | High — prioritizes cultivation efforts |
-| Grant Application Screening | Phase 2 | Medium — scales review process |
-| Ask Optimization | Phase 3 | Medium — improves solicitation effectiveness |
-| Thank You Generation | Phase 1 | Low — personalized stewardship at scale |
+| Impact Story Generation | Phase 1 | High -compelling donor communication |
+| Donor Potential Scoring | Phase 2 | High -prioritizes cultivation efforts |
+| Grant Application Screening | Phase 2 | Medium -scales review process |
+| Ask Optimization | Phase 3 | Medium -improves solicitation effectiveness |
+| Thank You Generation | Phase 1 | Low -personalized stewardship at scale |
 
 ### Authority Platform AI
 
 | Application | Priority | Impact |
 |-------------|----------|--------|
-| Book Companion | Phase 3 | High — extends book value, drives community |
-| Course AI Tutor | Phase 3 | High — improves completion rates |
-| Content Repurposing | Phase 2 | High — 5x content velocity |
-| Social Content Generation | Phase 2 | Medium — consistent social presence |
-| Newsletter Curation | Phase 2 | Medium — engaged subscriber base |
+| Book Companion | Phase 3 | High -extends book value, drives community |
+| Course AI Tutor | Phase 3 | High -improves completion rates |
+| Content Repurposing | Phase 2 | High -5x content velocity |
+| Social Content Generation | Phase 2 | Medium -consistent social presence |
+| Newsletter Curation | Phase 2 | Medium -engaged subscriber base |
 
 ---
 
@@ -1549,7 +1549,7 @@ flowchart LR
 
 ---
 
-# 6. Community Platform — ChoZen
+# 6. Community Platform: ChoZen
 
 > *Where the regenerative living movement comes together.*
 
@@ -1561,9 +1561,9 @@ The ChoZen Community Platform is a mobile-first application that serves as the c
 
 The platform serves three strategic purposes:
 
-1. **Retention Engine** — Keeps every person who touches any entity engaged long-term
-2. **Revenue Generator** — Membership subscriptions, retreat bookings, course sales, events
-3. **Movement Builder** — Transforms individual interactions into a self-sustaining community
+1. **Retention Engine** - Keeps every person who touches any entity engaged long-term
+2. **Revenue Generator** - Membership subscriptions, retreat bookings, course sales, events
+3. **Movement Builder** - Transforms individual interactions into a self-sustaining community
 
 ---
 
@@ -1587,7 +1587,7 @@ The platform serves three strategic purposes:
 | Category | Features | Description |
 |----------|----------|-------------|
 | **Onboarding** | Registration, profile setup, interest selection, guided tour | First-run experience that captures preferences and introduces the community |
-| **Home Feed** | Personalized content feed, featured content, upcoming events, progress tracking | The daily destination — curated content and activity |
+| **Home Feed** | Personalized content feed, featured content, upcoming events, progress tracking | The daily destination, curated content and activity |
 | **Content Library** | Articles, videos, guided practices, resource downloads | Tony's teachings and community knowledge, categorized and searchable |
 | **Member Directory** | Search, basic profiles, direct messaging | Find and connect with other members |
 | **Interest Groups** | Topic-based groups with discussion threads | Self-organizing communities within the community |
@@ -1988,7 +1988,7 @@ erDiagram
 
 ---
 
-# 7. Authority Platform — Tony Cho Brand
+# 7. Authority Platform: Tony Cho Brand
 
 > *Positioning Tony Cho as the definitive voice in regenerative placemaking.*
 
@@ -1998,10 +1998,10 @@ erDiagram
 
 The Authority Platform transforms Tony Cho's lived experience, philosophy, and track record into a scalable, self-reinforcing engine of influence. It is built on four pillars:
 
-1. **The Book** — *Generation Regeneration* — the definitive text on regenerative placemaking
-2. **The Course** — A structured learning experience that deepens the book's principles
-3. **The Speaking Engine** — A pipeline that generates, prepares, and amplifies speaking engagements
-4. **The Content Amplification System** — A machine that turns every piece of source content into dozens of distribution-ready assets
+1. **The Book** - *Generation Regeneration*, the definitive text on regenerative placemaking
+2. **The Course** - A structured learning experience that deepens the book's principles
+3. **The Speaking Engine** - A pipeline that generates, prepares, and amplifies speaking engagements
+4. **The Content Amplification System** - A machine that turns every piece of source content into dozens of distribution-ready assets
 
 Each pillar feeds the others. Together, they create a flywheel:
 
@@ -2034,7 +2034,7 @@ flowchart LR
 
 ---
 
-## Pillar 1: Book Launch — *Generation Regeneration*
+## Pillar 1: Book Launch - *Generation Regeneration*
 
 ### Pre-Launch Campaign
 
@@ -2141,7 +2141,7 @@ The course translates the book's philosophy into a structured, actionable learni
 |---------|-------------|
 | **Video Lessons** | High-quality filmed content with Tony teaching (8-15 minutes each) |
 | **Worksheets** | Downloadable implementation guides for each module |
-| **AI Companion** | 24/7 learning support — answers questions, coaches application, assesses understanding |
+| **AI Companion** | 24/7 learning support that answers questions, coaches application, assesses understanding |
 | **Live Sessions** | Monthly live Q&A with Tony for enrolled students |
 | **Community Space** | Course-specific discussion area within the ChoZen community app |
 | **Progress Tracking** | Module completion, quiz scores, badges, certificates |
@@ -2201,13 +2201,13 @@ The course translates the book's philosophy into a structured, actionable learni
 
 ### Speaking Strategy
 
-The speaking engine is a systematized pipeline — not ad hoc. It generates opportunities, prepares Tony, captures content, and follows up.
+The speaking engine is a systematized pipeline, not ad hoc. It generates opportunities, prepares Tony, captures content, and follows up.
 
 #### Speaking Topics
 
 | Topic | Audience | Core Message |
 |-------|----------|--------------|
-| **Regenerative Placemaking** | Real estate developers, investors, urban planners | Beyond sustainability — development that restores |
+| **Regenerative Placemaking** | Real estate developers, investors, urban planners | Beyond sustainability, development that restores |
 | **Blue Zone Development** | Health, wellness, architecture communities | Designing places for human flourishing |
 | **Climate Innovation** | Tech, investors, entrepreneurs | The business case for climate solutions |
 | **Community-Driven Development** | Civic leaders, nonprofits, urbanists | Building places that build people |
@@ -2322,7 +2322,7 @@ flowchart LR
 | **Scheduling** | Suggest optimal posting times based on audience engagement patterns | Approve schedule |
 | **Analysis** | Report on performance, recommend adjustments | Strategic decisions on content direction |
 
-### Newsletter — *The Regenerative Report*
+### Newsletter: *The Regenerative Report*
 
 **Frequency:** Weekly
 **Target List:** 50,000+ subscribers at maturity
@@ -2377,7 +2377,7 @@ flowchart LR
 
 # 8. Implementation Roadmap
 
-> *How to build this — phased, sequenced, and realistic.*
+> *How to build this. Phased, sequenced, and realistic.*
 
 ---
 
@@ -2719,13 +2719,13 @@ The technology team executing this build will need the following roles:
 
 # 9. Capital & Funding Strategy
 
-> *How to finance the build — aligned with the capital you're already raising.*
+> *How to finance the build, aligned with the capital you're already raising.*
 
 ---
 
 ## Overview
 
-This section presents a strategic recommendation for funding the ecosystem build. Based on analysis of the FoC QOF capital structure and the broader Cho Ventures portfolio, the optimal path is a **raise-to-build strategy** — aligning platform development with institutional capital formation where the technology infrastructure is positioned as a critical component of value creation and investor reporting.
+This section presents a strategic recommendation for funding the ecosystem build. Based on analysis of the FoC QOF capital structure and the broader Cho Ventures portfolio, the optimal path is a **raise-to-build strategy**, aligning platform development with institutional capital formation where the technology infrastructure is positioned as a critical component of value creation and investor reporting.
 
 This is not the only way to fund the build. But it is the most capital-efficient approach given what is already in motion.
 
@@ -2735,7 +2735,7 @@ This is not the only way to fund the build. But it is the most capital-efficient
 
 ### Core Concept
 
-The FoC QOF $7M equity raise includes a **$670K Sponsor & Platform Costs** allocation within its capital structure. This creates a natural budget window for the core platform build — no additional fundraising required.
+The FoC QOF $7M equity raise includes a **$670K Sponsor & Platform Costs** allocation within its capital structure. This creates a natural budget window for the core platform build. No additional fundraising required.
 
 The proposition: build the platform infrastructure the fund already needs, within the budget it already allocated, on the timeline it already established.
 
@@ -2774,7 +2774,7 @@ flowchart LR
 |--------|-----------|
 | **Budget Already Allocated** | $670K in the capital structure for sponsor and platform costs |
 | **Scope Already Defined** | The FoC QOF investment memorandum identifies six platform modules needed for operations |
-| **Timeline Already Set** | Equity raise targeting March 31, 2026 close — platform build begins immediately after |
+| **Timeline Already Set** | Equity raise targeting March 31, 2026 close, platform build begins immediately after |
 | **Value is Immediate** | Platform supports Phase 2 (Stabilization) and enables Phase 3 (Monetization) |
 | **Investor Expectations** | Institutional investors expect professional reporting infrastructure |
 
@@ -2797,7 +2797,7 @@ The investment memorandum explicitly identifies these operational platform requi
 
 ### Tier 1: Core Platform Build ($450,000 - $650,000)
 
-**Funding Source:** FoC QOF equity raise — $670K Sponsor & Platform allocation
+**Funding Source:** FoC QOF equity raise, $670K Sponsor & Platform allocation
 **Timeline:** Build begins upon raise close, operational within 6 months
 
 This tier delivers all six platform modules plus the central hub infrastructure.
@@ -2857,7 +2857,7 @@ The broader investment thesis projects significant proceeds from 2027-2030. The 
 
 | Year | Platform Contribution | Context |
 |------|----------------------|---------|
-| **2026** | Build year — infrastructure investment | Platform development aligned with raise close |
+| **2026** | Build year, infrastructure investment | Platform development aligned with raise close |
 | **2027** | Automated investor reporting, first distributions supported | Portal eliminates manual reporting, builds investor confidence |
 | **2028** | Asset management supports building sales | NOI data, tenant history, and compliance documentation ready for due diligence |
 | **2029** | Pipeline tracker enables parcel monetization | JV partner interface accelerates deal execution |
@@ -2934,11 +2934,11 @@ At scale, the community platform alone generates more annual revenue than the to
 
 Based on the analysis of the capital structure, operational timeline, and strategic priorities:
 
-1. **Begin Phase 1 (Discovery) immediately** — funded from operating cash flow ($15,000 - $25,000). This produces the detailed architecture and implementation plan that any technology team needs to build.
+1. **Begin Phase 1 (Discovery) immediately**, funded from operating cash flow ($15,000 - $25,000). This produces the detailed architecture and implementation plan that any technology team needs to build.
 
-2. **Execute Tier 1 (Core Platform) upon raise close** — funded from the $670K Sponsor & Platform allocation. This delivers all six platform modules within the existing budget window.
+2. **Execute Tier 1 (Core Platform) upon raise close**, funded from the $670K Sponsor & Platform allocation. This delivers all six platform modules within the existing budget window.
 
-3. **Phase Tier 2 (Extended Ecosystem) into 2027-2028** — funded from operating cash flow as stabilization generates revenue. The community platform and authority engine are built on top of the operational infrastructure.
+3. **Phase Tier 2 (Extended Ecosystem) into 2027-2028**, funded from operating cash flow as stabilization generates revenue. The community platform and authority engine are built on top of the operational infrastructure.
 
 This approach means the ecosystem builds itself through the capital it helps attract.
 
@@ -2959,7 +2959,7 @@ This approach means the ecosystem builds itself through the capital it helps att
 
 # 10. Operating Model & Team Requirements
 
-> *What it takes to run this — ongoing costs, team structure, and continuous improvement.*
+> *What it takes to run this: ongoing costs, team structure, and continuous improvement.*
 
 ---
 
@@ -3222,8 +3222,8 @@ This document set is designed to be handed to any qualified technology team. The
 
 | Document | Purpose |
 |----------|---------|
-| **This Master Plan** | The complete specification — everything in this document |
-| **Phase 1 Deliverables** | The output of discovery sessions — current state, architecture decisions, specific technology selections |
+| **This Master Plan** | The complete specification, everything in this document |
+| **Phase 1 Deliverables** | The output of discovery sessions: current state, architecture decisions, specific technology selections |
 | **Access Credentials** | Login access to all current entity systems for integration |
 | **Brand Assets** | Logos, color palettes, typography, photography for all entities |
 | **Content Library** | All existing content to seed the community platform and content hub |
