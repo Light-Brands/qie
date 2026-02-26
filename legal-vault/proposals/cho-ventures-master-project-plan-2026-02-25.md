@@ -2,9 +2,13 @@
 # Master Project Plan: AI-Powered Regenerative Ecosystem
 
 > **Date:** February 25, 2026
+>
 > **Prepared for:** Tony Cho
+>
 > **Prepared by:** Light Brands Strategic Advisory
+>
 > **Classification:** Confidential
+>
 > **Document Type:** Execution Blueprint
 
 ---
