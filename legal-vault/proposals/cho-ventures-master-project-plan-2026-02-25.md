@@ -46,27 +46,30 @@ Right now, 15+ entities operate across disconnected websites, fragmented contact
 
 This is not a website redesign. It is the construction of an AI-powered operating system for a regenerative empire.
 
-```
-                          ┌─────────────────────────┐
-                          │    TONY CHO BRAND        │
-                          │    Personal Authority    │
-                          │    Book + Course +       │
-                          │    Speaking + Media      │
-                          └───────────┬─────────────┘
-                                      │
-                                      ▼
-┌──────────┐    ┌──────────┐    ╔═══════════════╗    ┌──────────┐    ┌──────────┐
-│ Metro 1  │    │ PHX-JAX  │    ║   FUTURE OF   ║    │ Climate  │    │  ChoZen  │
-│Commercial│───▶║   CITIES  ║◀───│Innovation│    │ Retreat  │
-│          │    │ District │    ║  CENTRAL HUB  ║    │   HUB    │    │          │
-└──────────┘    └──────────┘    ╚═══════════════╝    └──────────┘    └──────────┘
-                                      ▲
-                          ┌───────────┴─────────────┐
-                          │      FOUNDATIONS         │
-                          │  Cho Family Foundation   │
-                          │  M1 Community Fund       │
-                          │  Friends of PHX-JAX      │
-                          └─────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'primaryBorderColor': '#5B9BD5', 'lineColor': '#7FB3D8', 'fontSize': '14px'}}}%%
+flowchart TB
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e,stroke-width:3px
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef brand fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef foundation fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+
+    TONY["<b>TONY CHO BRAND</b><br/>Personal Authority<br/>Book + Course + Speaking + Media"]:::brand
+
+    M1["<b>Metro 1</b><br/>Commercial"]:::entity
+    PHX["<b>PHX-JAX</b><br/>District"]:::entity
+    FOC["<b>FUTURE OF CITIES</b><br/>CENTRAL HUB"]:::hub
+    CLIMATE["<b>Climate</b><br/>Innovation HUB"]:::entity
+    CHOZEN["<b>ChoZen</b><br/>Retreat"]:::entity
+
+    FOUND["<b>FOUNDATIONS</b><br/>Cho Family Foundation<br/>M1 Community Fund<br/>Friends of PHX-JAX"]:::foundation
+
+    TONY --> FOC
+    M1 --> FOC
+    PHX --> FOC
+    CLIMATE --> FOC
+    CHOZEN --> FOC
+    FOUND --> FOC
 ```
 
 ### What Gets Built
@@ -120,6 +123,7 @@ This document is organized into ten sections, each designed to be actionable:
 The tech team should start with Sections 2-5 to understand what they are building. Tony and leadership should focus on Sections 1, 8, 9, and 10 for the strategic picture.
 
 Every section is designed to stand alone. A team assigned to build the community platform can work from Section 6 without reading the rest.
+
 
 ---
 
@@ -176,46 +180,51 @@ Future of Cities is the natural center because:
 
 ### Hub Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                     FUTURE OF CITIES — CENTRAL HUB                          │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   ┌─────────────────┐  ┌──────────────────┐  ┌──────────────────────────┐   │
-│   │   CRM CORE      │  │  AI ENGINE       │  │  AUTOMATION ENGINE       │   │
-│   │                 │  │                  │  │                          │   │
-│   │  • All Contacts │  │  • Lead Scoring  │  │  • Workflow Triggers     │   │
-│   │  • Pipelines    │  │  • Matching      │  │  • Email/SMS Sequences   │   │
-│   │  • Segments     │  │  • Generation    │  │  • Cross-Entity Routing  │   │
-│   │  • Relationships│  │  • Prediction    │  │  • Event-Based Actions   │   │
-│   └─────────────────┘  └──────────────────┘  └──────────────────────────┘   │
-│                                                                              │
-│   ┌─────────────────┐  ┌──────────────────┐  ┌──────────────────────────┐   │
-│   │  CONTENT HUB    │  │  ANALYTICS       │  │  ADMIN PORTAL            │   │
-│   │                 │  │                  │  │                          │   │
-│   │  • Asset Library│  │  • Unified Dash  │  │  • User Management       │   │
-│   │  • Templates    │  │  • Entity Reports│  │  • Permissions            │   │
-│   │  • Publishing   │  │  • Impact Metrics│  │  • System Health          │   │
-│   │  • Brand Assets │  │  • AI Performance│  │  • Configuration          │   │
-│   └─────────────────┘  └──────────────────┘  └──────────────────────────┘   │
-│                                                                              │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                          INTEGRATION LAYER                                   │
-│                                                                              │
-│  ┌────────┐ ┌────────┐ ┌─────────┐ ┌─────────┐ ┌────────┐ ┌────────────┐  │
-│  │Metro 1 │ │PHX-JAX │ │Climate  │ │ChoZen   │ │Found-  │ │Tony Cho    │  │
-│  │        │ │        │ │HUB      │ │Retreat  │ │ations  │ │Brand       │  │
-│  └────────┘ └────────┘ └─────────┘ └─────────┘ └────────┘ └────────────┘  │
-│                                                                              │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                          AUDIENCE LAYER                                      │
-│                                                                              │
-│  ┌────────┐ ┌────────┐ ┌─────────┐ ┌─────────┐ ┌────────┐ ┌────────────┐  │
-│  │Websites│ │Social  │ │Events   │ │Booking  │ │Email/  │ │Community   │  │
-│  │        │ │Media   │ │         │ │         │ │SMS     │ │App         │  │
-│  └────────┘ └────────┘ └─────────┘ └─────────┘ └────────┘ └────────────┘  │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '13px'}}}%%
+flowchart TB
+    classDef core fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef support fill:#E0F2F1,stroke:#80CBC4,color:#1a1a2e
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef audience fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+
+    subgraph HUB["FUTURE OF CITIES — CENTRAL HUB"]
+        direction TB
+        subgraph CORE["Core Systems"]
+            CRM["<b>CRM CORE</b><br/>All Contacts · Pipelines<br/>Segments · Relationships"]:::core
+            AI["<b>AI ENGINE</b><br/>Lead Scoring · Matching<br/>Generation · Prediction"]:::core
+            AUTO["<b>AUTOMATION ENGINE</b><br/>Workflow Triggers · Email/SMS<br/>Cross-Entity Routing"]:::core
+        end
+        subgraph SUPPORT["Support Systems"]
+            CONTENT["<b>CONTENT HUB</b><br/>Asset Library · Templates<br/>Publishing · Brand Assets"]:::support
+            ANALYTICS["<b>ANALYTICS</b><br/>Unified Dashboard · Entity Reports<br/>Impact Metrics · AI Performance"]:::support
+            ADMIN["<b>ADMIN PORTAL</b><br/>User Management · Permissions<br/>System Health · Configuration"]:::support
+        end
+    end
+
+    subgraph INTEGRATION["INTEGRATION LAYER"]
+        direction LR
+        M1["Metro 1"]:::entity
+        PHX["PHX-JAX"]:::entity
+        CLIMATE["Climate HUB"]:::entity
+        CHOZEN["ChoZen Retreat"]:::entity
+        FOUND["Foundations"]:::entity
+        TONY["Tony Cho Brand"]:::entity
+    end
+
+    subgraph AUDIENCE["AUDIENCE LAYER"]
+        direction LR
+        WEB["Websites"]:::audience
+        SOCIAL["Social Media"]:::audience
+        EVENTS["Events"]:::audience
+        BOOKING["Booking"]:::audience
+        EMAIL["Email/SMS"]:::audience
+        APP["Community App"]:::audience
+    end
+
+    CORE --> SUPPORT
+    HUB --> INTEGRATION
+    INTEGRATION --> AUDIENCE
 ```
 
 ---
@@ -226,48 +235,27 @@ Future of Cities is the natural center because:
 
 Every person who touches any Cho entity enters the unified system and is intelligently routed:
 
-```
-PERSON DISCOVERS CHO VENTURES
-(via website, social, event, referral, media, book)
-         │
-         ▼
-┌─────────────────────────┐
-│  TOUCHPOINT CAPTURE     │
-│  (Form, booking, app    │
-│   registration, email)  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  CENTRAL CRM            │
-│  (Future of Cities Hub) │
-│                         │
-│  • Contact created      │
-│  • Source tracked        │
-│  • Entity tagged         │
-│  • Score calculated      │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  AI ENGINE              │
-│                         │
-│  • Lead quality scored  │
-│  • Entity fit ranked    │
-│  • Interests inferred   │
-│  • Next action decided  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────────────────────────────┐
-│  INTELLIGENT ROUTING                             │
-│                                                  │
-│  ┌──────────┐ ┌──────────┐ ┌──────────────────┐ │
-│  │ Primary  │ │ Cross-   │ │ Community        │ │
-│  │ Entity   │ │ Entity   │ │ Invitation       │ │
-│  │ Pipeline │ │ Referral │ │                  │ │
-│  └──────────┘ └──────────┘ └──────────────────┘ │
-└─────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '13px'}}}%%
+flowchart TB
+    classDef trigger fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef process fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef ai fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef route fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+
+    DISCOVER["<b>PERSON DISCOVERS CHO VENTURES</b><br/>via website, social, event, referral, media, book"]:::trigger
+    CAPTURE["<b>TOUCHPOINT CAPTURE</b><br/>Form · Booking · App registration · Email"]:::process
+    CRM["<b>CENTRAL CRM</b><br/>Future of Cities Hub<br/><br/>Contact created · Source tracked<br/>Entity tagged · Score calculated"]:::process
+    ENGINE["<b>AI ENGINE</b><br/><br/>Lead quality scored · Entity fit ranked<br/>Interests inferred · Next action decided"]:::ai
+
+    PIPELINE["<b>Primary Entity<br/>Pipeline</b>"]:::route
+    REFERRAL["<b>Cross-Entity<br/>Referral</b>"]:::route
+    COMMUNITY["<b>Community<br/>Invitation</b>"]:::route
+
+    DISCOVER --> CAPTURE --> CRM --> ENGINE
+    ENGINE --> PIPELINE
+    ENGINE --> REFERRAL
+    ENGINE --> COMMUNITY
 ```
 
 **Example:** A person attends a Climate HUB event. They enter the central CRM tagged as a Climate HUB contact. The AI engine scores them: high interest in sustainability, based in Miami, professional background in real estate. The system routes them into the Climate HUB nurture sequence AND flags them as a potential Metro 1 lead for ESG-focused commercial properties AND invites them to the ChoZen community app. One person, three entity touchpoints, zero manual work.
@@ -295,39 +283,23 @@ Currently, these connections are made manually, if at all. The AI-powered hub ma
 
 Every contact in the system has relationships to multiple entities:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                       CONTACT RECORD                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  IDENTITY                    ENGAGEMENT                      │
-│  ─────────                   ──────────                      │
-│  • Name                      • Lead Score (0-100)            │
-│  • Email                     • Engagement Score (0-100)      │
-│  • Phone                     • Lifetime Value                │
-│  • Address                   • Last Interaction              │
-│  • Source                    • Total Interactions             │
-│  • Source Entity             • Content Consumed               │
-│                                                              │
-│  ENTITY RELATIONSHIPS        COMMUNITY PROFILE               │
-│  ────────────────────        ─────────────────               │
-│  • Metro 1: Lead             • Membership Tier               │
-│  • PHX-JAX: Event Attendee   • Interests                     │
-│  • Climate HUB: Participant  • Preferences                   │
-│  • ChoZen: Past Guest        • Achievements                  │
-│  • Community: Premium Member • Karma Score                   │
-│  • Foundation: Donor         • Joined Date                   │
-│  • Book: Reader                                              │
-│  • Course: Student                                           │
-│                                                              │
-│  INTERACTIONS                BOOKINGS & PURCHASES            │
-│  ────────────                ────────────────────            │
-│  • Event: Climate HUB Demo   • Retreat: Mar 2026             │
-│  • Email: Opened newsletter  • Course: Enrolled              │
-│  • Web: Viewed PHX-JAX site  • Book: Pre-ordered             │
-│  • App: Joined community     • Event: PHX-JAX Gala           │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef blue fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef green fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef lavender fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef gold fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+
+    subgraph RECORD["CONTACT RECORD"]
+        direction TB
+        IDENTITY["<b>IDENTITY</b><br/>Name · Email · Phone<br/>Address · Source · Source Entity"]:::blue
+        ENGAGEMENT["<b>ENGAGEMENT</b><br/>Lead Score (0-100) · Engagement Score (0-100)<br/>Lifetime Value · Last Interaction<br/>Total Interactions · Content Consumed"]:::green
+        RELATIONSHIPS["<b>ENTITY RELATIONSHIPS</b><br/>Metro 1: Lead · PHX-JAX: Event Attendee<br/>Climate HUB: Participant · ChoZen: Past Guest<br/>Community: Premium Member · Foundation: Donor<br/>Book: Reader · Course: Student"]:::lavender
+        PROFILE["<b>COMMUNITY PROFILE</b><br/>Membership Tier · Interests · Preferences<br/>Achievements · Karma Score · Joined Date"]:::lavender
+        INTERACTIONS["<b>INTERACTIONS</b><br/>Event: Climate HUB Demo · Email: Opened newsletter<br/>Web: Viewed PHX-JAX site · App: Joined community"]:::gold
+        COMMERCE["<b>BOOKINGS & PURCHASES</b><br/>Retreat: Mar 2026 · Course: Enrolled<br/>Book: Pre-ordered · Event: PHX-JAX Gala"]:::gold
+    end
 ```
 
 ### Entity Relationship Types
@@ -384,12 +356,18 @@ Every component communicates through well-defined APIs. No direct database acces
 
 Entity systems communicate through events, not direct calls:
 
-```
-Metro 1 Website     →  "new_lead" event      →  Central CRM
-ChoZen Booking      →  "booking_created"      →  Central CRM + Community App
-Community App       →  "member_joined"        →  Central CRM + Analytics
-AI Engine           →  "score_updated"        →  Automation Engine
-Automation Engine   →  "sequence_triggered"   →  Email/SMS Service
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart LR
+    classDef source fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef event fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef dest fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+
+    M1["Metro 1 Website"]:::source -->|new_lead| CRM1["Central CRM"]:::dest
+    CZ["ChoZen Booking"]:::source -->|booking_created| CRM2["Central CRM +<br/>Community App"]:::dest
+    APP["Community App"]:::source -->|member_joined| CRM3["Central CRM +<br/>Analytics"]:::dest
+    AI["AI Engine"]:::source -->|score_updated| AE["Automation Engine"]:::dest
+    AE2["Automation Engine"]:::source -->|sequence_triggered| SMS["Email/SMS Service"]:::dest
 ```
 
 This decouples systems, improves reliability, and enables real-time cross-entity intelligence.
@@ -416,6 +394,7 @@ This decouples systems, improves reliability, and enables real-time cross-entity
 | AI Response | < 2 seconds |
 | App Load Time | < 1.5 seconds |
 | System Uptime | 99.5%+ |
+
 
 ---
 
@@ -459,58 +438,72 @@ The CRM is the single source of truth for all relationships across the Cho Ventu
 
 ### Contact Data Model
 
-```
-CONTACT
-├── id (UUID)
-├── email (unique)
-├── first_name
-├── last_name
-├── phone
-├── address (JSON: street, city, state, zip, country)
-├── source (first touchpoint: website, event, referral, social, direct)
-├── source_entity (which entity they first interacted with)
-├── created_at
-├── updated_at
-├── lead_score (0-100, AI-calculated)
-├── engagement_score (0-100, AI-calculated)
-├── lifetime_value (currency)
-├── tags[] (string array)
-│
-├── ENTITY_RELATIONSHIPS[] (one-to-many)
-│   ├── entity_id (metro1, phxjax, climate_hub, chozen, foc, foundation_cho, foundation_m1, foundation_phx)
-│   ├── relationship_type (lead, client, tenant, guest, donor, investor, member, student, etc.)
-│   ├── status (active, inactive, prospect, former)
-│   ├── created_at
-│   └── metadata (JSON: entity-specific data)
-│
-├── INTERACTIONS[] (one-to-many)
-│   ├── type (email_open, web_visit, form_submit, event_attend, booking, purchase, app_action)
-│   ├── entity (which entity context)
-│   ├── channel (web, email, sms, app, in-person)
-│   ├── timestamp
-│   └── details (JSON: event-specific data)
-│
-├── COMMUNITY_PROFILE (one-to-one, nullable)
-│   ├── membership_tier (free, essentials, premium, founder)
-│   ├── joined_at
-│   ├── interests[] (string array)
-│   ├── preferences (JSON)
-│   ├── karma_score (float)
-│   └── achievements[] (badge references)
-│
-├── BOOKINGS[] (one-to-many)
-│   ├── entity (chozen, phxjax, climate_hub)
-│   ├── type (retreat, event, program, space)
-│   ├── start_date
-│   ├── end_date
-│   ├── status (pending, confirmed, completed, cancelled)
-│   └── amount (currency)
-│
-└── PURCHASES[] (one-to-many)
-    ├── product_type (book, course, membership, merchandise)
-    ├── product_id
-    ├── amount (currency)
-    └── purchased_at
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+erDiagram
+    CONTACT {
+        uuid id PK
+        string email UK
+        string first_name
+        string last_name
+        string phone
+        json address
+        string source
+        string source_entity
+        datetime created_at
+        datetime updated_at
+        int lead_score
+        int engagement_score
+        currency lifetime_value
+        array tags
+    }
+
+    ENTITY_RELATIONSHIP {
+        string entity_id
+        string relationship_type
+        string status
+        datetime created_at
+        json metadata
+    }
+
+    INTERACTION {
+        string type
+        string entity
+        string channel
+        datetime timestamp
+        json details
+    }
+
+    COMMUNITY_PROFILE {
+        string membership_tier
+        datetime joined_at
+        array interests
+        json preferences
+        float karma_score
+        array achievements
+    }
+
+    BOOKING {
+        string entity
+        string type
+        date start_date
+        date end_date
+        string status
+        currency amount
+    }
+
+    PURCHASE {
+        string product_type
+        string product_id
+        currency amount
+        datetime purchased_at
+    }
+
+    CONTACT ||--o{ ENTITY_RELATIONSHIP : "has"
+    CONTACT ||--o{ INTERACTION : "has"
+    CONTACT ||--o| COMMUNITY_PROFILE : "has"
+    CONTACT ||--o{ BOOKING : "makes"
+    CONTACT ||--o{ PURCHASE : "makes"
 ```
 
 ### Pipeline Configuration
@@ -570,33 +563,45 @@ The automation engine handles intelligent, event-driven workflows across the ent
 
 ### Workflow Architecture
 
-```
-TRIGGER LAYER
-├── Form Submissions (webhooks from entity websites)
-├── Booking Events (webhooks from booking systems)
-├── Purchase Events (webhooks from payment processors)
-├── Behavior Events (tracked by analytics)
-├── Date/Time Triggers (scheduled)
-├── Score Changes (AI-calculated thresholds)
-└── Manual Triggers (staff-initiated)
-         │
-         ▼
-PROCESSING LAYER
-├── Condition Check (if/then logic)
-├── Branch Logic (segment-based routing)
-├── Delay/Wait (timed sequences)
-├── A/B Split (variant testing)
-└── AI Decision (model-based routing)
-         │
-         ▼
-ACTION LAYER
-├── Send Email (personalized, templated)
-├── Send SMS (transactional, marketing)
-├── Internal Notification (staff alerts)
-├── CRM Update (tags, scores, stages)
-├── Segment Update (add/remove from lists)
-├── Webhook (external system notification)
-└── Task Creation (manual follow-up assignment)
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+    classDef process fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef action fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+
+    subgraph TRIGGERS["TRIGGER LAYER"]
+        direction LR
+        T1["Form Submissions"]:::trigger
+        T2["Booking Events"]:::trigger
+        T3["Purchase Events"]:::trigger
+        T4["Behavior Events"]:::trigger
+        T5["Date/Time Triggers"]:::trigger
+        T6["Score Changes"]:::trigger
+        T7["Manual Triggers"]:::trigger
+    end
+
+    subgraph PROCESSING["PROCESSING LAYER"]
+        direction LR
+        P1["Condition Check"]:::process
+        P2["Branch Logic"]:::process
+        P3["Delay/Wait"]:::process
+        P4["A/B Split"]:::process
+        P5["AI Decision"]:::process
+    end
+
+    subgraph ACTIONS["ACTION LAYER"]
+        direction LR
+        A1["Send Email"]:::action
+        A2["Send SMS"]:::action
+        A3["Internal Notification"]:::action
+        A4["CRM Update"]:::action
+        A5["Segment Update"]:::action
+        A6["Webhook"]:::action
+        A7["Task Creation"]:::action
+    end
+
+    TRIGGERS --> PROCESSING --> ACTIONS
 ```
 
 ---
@@ -740,6 +745,7 @@ Every entity website must connect to the central hub:
 | **Donations** | One-time, recurring, acknowledgment letters |
 | **Merchandise** | Product catalog, inventory, shipping |
 
+
 ---
 
 # 4. Entity Integration Specifications
@@ -768,32 +774,29 @@ Metro 1 operates as a commercial real estate brokerage with its own website, lea
 
 ### Integration Architecture
 
-```
-┌───────────────────────────────────────────────────────┐
-│  METRO 1 SYSTEMS                                       │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Website  │  │ Property   │  │ Deal Tracking    │   │
-│  │ + Forms  │  │ Database   │  │ (CRM/Pipeline)   │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  Lead Capture → AI Lead Scoring → Pipeline Routing     │
-│  Property Sync → Cross-Entity Matching                 │
-│  Deal Updates → Investor Reporting                     │
-│                                                        │
-│  CROSS-ENTITY TRIGGERS:                                │
-│  • Client interested in ESG → Climate HUB event invite │
-│  • Client visiting Sebastian → ChoZen retreat offer    │
-│  • High-value client → FoC investor pipeline           │
-│  • Client interested in Jacksonville → PHX-JAX intro   │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    subgraph M1["METRO 1 SYSTEMS"]
+        direction LR
+        WEB["Website<br/>+ Forms"]:::entity
+        PROP["Property<br/>Database"]:::entity
+        DEAL["Deal Tracking<br/>(CRM/Pipeline)"]:::entity
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        FLOW["Lead Capture → AI Lead Scoring → Pipeline Routing<br/>Property Sync → Cross-Entity Matching<br/>Deal Updates → Investor Reporting"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>ESG interest → Climate HUB event invite<br/>Visiting Sebastian → ChoZen retreat offer<br/>High-value client → FoC investor pipeline<br/>Jacksonville interest → PHX-JAX intro"]:::trigger
+    end
+
+    WEB --> HUB
+    PROP --> HUB
+    DEAL --> HUB
 ```
 
 ### Integration Points
@@ -829,46 +832,32 @@ Metro 1 operates as a commercial real estate brokerage with its own website, lea
 
 ### Integration Architecture
 
-```
-┌───────────────────────────────────────────────────────┐
-│  PHX-JAX SYSTEMS                                       │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Website  │  │ Tenant     │  │ Event            │   │
-│  │ + Forms  │  │ Management │  │ Management       │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-│  ┌────┴─────┐  ┌─────┴──────┐  ┌────────┴─────────┐   │
-│  │ Leasing  │  │ Space      │  │ Community        │   │
-│  │ Pipeline │  │ Inventory  │  │ Programming      │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  OPERATIONAL:                                          │
-│  • Tenant database synced to CRM                       │
-│  • Lease pipeline tracked centrally                    │
-│  • Space availability real-time                        │
-│  • Event attendance captured                           │
-│                                                        │
-│  INVESTOR REPORTING:                                   │
-│  • NOI tracking and reporting                          │
-│  • Occupancy metrics                                   │
-│  • Development pipeline status (Sites A-F)             │
-│  • JV partner relationship management                  │
-│  • Capital call and distribution tracking              │
-│                                                        │
-│  CROSS-ENTITY TRIGGERS:                                │
-│  • Creative tenant prospect → Climate HUB intro        │
-│  • Event attendee from Miami → Metro 1 opportunity     │
-│  • Event attendee interested in wellness → ChoZen      │
-│  • High-net-worth attendee → FoC investor pipeline     │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef investor fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    subgraph PHX["PHX-JAX SYSTEMS"]
+        direction LR
+        WEB["Website + Forms"]:::entity
+        TENANT["Tenant Management"]:::entity
+        EVENT["Event Management"]:::entity
+        LEASE["Leasing Pipeline"]:::entity
+        SPACE["Space Inventory"]:::entity
+        PROG["Community Programming"]:::entity
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        OPS["<b>Operational</b><br/>Tenant database synced · Lease pipeline tracked<br/>Space availability real-time · Event attendance captured"]:::hub
+        INV["<b>Investor Reporting</b><br/>NOI tracking · Occupancy metrics · Sites A-F pipeline<br/>JV partner management · Capital call & distribution tracking"]:::investor
+        CROSS["<b>Cross-Entity Triggers</b><br/>Creative tenant → Climate HUB · Miami attendee → Metro 1<br/>Wellness interest → ChoZen · High-net-worth → FoC investor"]:::trigger
+    end
+
+    PHX --> HUB
 ```
 
 ### Integration Points
@@ -918,40 +907,30 @@ Innovation center in Miami's Little Haiti focused on climate tech incubation, pr
 
 ### Integration Architecture
 
-```
-┌───────────────────────────────────────────────────────┐
-│  CLIMATE HUB SYSTEMS                                   │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Website  │  │ Startup    │  │ Program          │   │
-│  │ + Forms  │  │ Portfolio  │  │ Management       │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-│  ┌────┴─────┐  ┌─────┴──────┐  ┌────────┴─────────┐   │
-│  │ Mentor   │  │ Event      │  │ Impact           │   │
-│  │ Network  │  │ Calendar   │  │ Tracking         │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  OPERATIONAL:                                          │
-│  • Startup portfolio in CRM                            │
-│  • Mentor network managed centrally                    │
-│  • Program participants tracked                        │
-│  • Event attendance captured                           │
-│                                                        │
-│  CROSS-ENTITY TRIGGERS:                                │
-│  • Startup needs space → PHX-JAX/Metro 1               │
-│  • Startup founder interested in wellness → ChoZen     │
-│  • Mentor is potential investor → FoC pipeline          │
-│  • Sponsor/corporate partner → Metro 1 relationship    │
-│  • Participant interested in course → Authority funnel  │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    subgraph CLIMATE["CLIMATE HUB SYSTEMS"]
+        direction LR
+        WEB["Website + Forms"]:::entity
+        STARTUP["Startup Portfolio"]:::entity
+        PROGRAM["Program Management"]:::entity
+        MENTOR["Mentor Network"]:::entity
+        EVENTS["Event Calendar"]:::entity
+        IMPACT["Impact Tracking"]:::entity
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        OPS["<b>Operational</b><br/>Startup portfolio in CRM · Mentor network managed<br/>Program participants tracked · Event attendance captured"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>Startup needs space → PHX-JAX/Metro 1<br/>Founder wellness interest → ChoZen<br/>Mentor as investor → FoC pipeline<br/>Corporate sponsor → Metro 1 · Course interest → Authority funnel"]:::trigger
+    end
+
+    CLIMATE --> HUB
 ```
 
 ### Integration Points
@@ -987,45 +966,32 @@ Innovation center in Miami's Little Haiti focused on climate tech incubation, pr
 
 ### Integration Architecture
 
-```
-┌───────────────────────────────────────────────────────┐
-│  CHOZEN RETREAT SYSTEMS                                │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Website  │  │ Booking    │  │ Guest            │   │
-│  │ + Forms  │  │ System     │  │ Management       │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-│  ┌────┴─────┐  ┌─────┴──────┐  ┌────────┴─────────┐   │
-│  │ Program  │  │ Calendar / │  │ Review /         │   │
-│  │ Catalog  │  │ Availability│  │ Feedback         │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  OPERATIONAL:                                          │
-│  • Guest profiles in CRM                               │
-│  • Booking pipeline tracked                            │
-│  • Availability synced                                 │
-│  • Post-stay sequences automated                       │
-│                                                        │
-│  COMMUNITY CONNECTION:                                 │
-│  • Post-stay → Community app invitation                │
-│  • Community member → Retreat discount                  │
-│  • Course student → Retreat credit                      │
-│                                                        │
-│  CROSS-ENTITY TRIGGERS:                                │
-│  • Guest is real estate professional → Metro 1          │
-│  • Guest is entrepreneur → Climate HUB                  │
-│  • Guest is high-net-worth → FoC investor pipeline      │
-│  • Guest is philanthropic → Foundation donor pipeline    │
-│  • Guest interested in community → ChoZen app           │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef community fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    subgraph CHOZEN["CHOZEN RETREAT SYSTEMS"]
+        direction LR
+        WEB["Website + Forms"]:::entity
+        BOOK["Booking System"]:::entity
+        GUEST["Guest Management"]:::entity
+        PROG["Program Catalog"]:::entity
+        CAL["Calendar / Availability"]:::entity
+        REV["Review / Feedback"]:::entity
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        OPS["<b>Operational</b><br/>Guest profiles in CRM · Booking pipeline tracked<br/>Availability synced · Post-stay sequences automated"]:::hub
+        COMM["<b>Community Connection</b><br/>Post-stay → Community app invitation<br/>Community member → Retreat discount<br/>Course student → Retreat credit"]:::community
+        CROSS["<b>Cross-Entity Triggers</b><br/>RE professional → Metro 1 · Entrepreneur → Climate HUB<br/>High-net-worth → FoC investor · Philanthropic → Foundation<br/>Community interest → ChoZen app"]:::trigger
+    end
+
+    CHOZEN --> HUB
 ```
 
 ### Integration Points
@@ -1059,34 +1025,27 @@ Innovation center in Miami's Little Haiti focused on climate tech incubation, pr
 
 All three foundations share the same integration pattern:
 
-```
-┌───────────────────────────────────────────────────────┐
-│  FOUNDATION SYSTEMS                                    │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Website  │  │ Donation   │  │ Grant            │   │
-│  │ + Forms  │  │ Processing │  │ Management       │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  OPERATIONAL:                                          │
-│  • Donor profiles in CRM                               │
-│  • Donation history tracked                            │
-│  • Grant applications managed                          │
-│  • Impact metrics aggregated                           │
-│                                                        │
-│  CROSS-ENTITY TRIGGERS:                                │
-│  • Donor is real estate client → Metro 1               │
-│  • Donor interested in wellness → ChoZen               │
-│  • Corporate donor → Climate HUB sponsor pipeline      │
-│  • Philanthropic contact → FoC investor pipeline        │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef entity fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef trigger fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    subgraph FOUND["FOUNDATION SYSTEMS"]
+        direction LR
+        WEB["Website + Forms"]:::entity
+        DONATE["Donation Processing"]:::entity
+        GRANT["Grant Management"]:::entity
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        OPS["<b>Operational</b><br/>Donor profiles in CRM · Donation history tracked<br/>Grant applications managed · Impact metrics aggregated"]:::hub
+        CROSS["<b>Cross-Entity Triggers</b><br/>RE client donor → Metro 1 · Wellness interest → ChoZen<br/>Corporate donor → Climate HUB sponsor<br/>Philanthropic contact → FoC investor pipeline"]:::trigger
+    end
+
+    FOUND --> HUB
 ```
 
 ### AI Enhancements for Foundations
@@ -1108,41 +1067,34 @@ All three foundations share the same integration pattern:
 
 Tony's personal brand is the gravity that pulls the entire ecosystem together. It is not a separate entity — it is the connective tissue.
 
-```
-┌───────────────────────────────────────────────────────┐
-│  TONY CHO BRAND SYSTEMS                               │
-│                                                        │
-│  ┌──────────┐  ┌────────────┐  ┌──────────────────┐   │
-│  │ Personal │  │ Social     │  │ Speaking /       │   │
-│  │ Website  │  │ Media      │  │ Media Pipeline   │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-│  ┌────┴─────┐  ┌─────┴──────┐  ┌────────┴─────────┐   │
-│  │ Book     │  │ Course     │  │ Newsletter /     │   │
-│  │ Platform │  │ Platform   │  │ Email List       │   │
-│  └────┬─────┘  └─────┬──────┘  └────────┬─────────┘   │
-│       │              │                   │              │
-└───────┼──────────────┼───────────────────┼──────────────┘
-        │              │                   │
-        ▼              ▼                   ▼
-┌───────────────────────────────────────────────────────┐
-│  CENTRAL HUB (Future of Cities)                        │
-│                                                        │
-│  ALL AUTHORITY PLATFORM CONTACTS FLOW TO CRM           │
-│  • Book buyers → Reader pipeline                       │
-│  • Course students → Learning pipeline                 │
-│  • Newsletter subscribers → Nurture sequences          │
-│  • Speaking contacts → Relationship pipeline            │
-│  • Social followers → Awareness tracking                │
-│                                                        │
-│  THE FLYWHEEL:                                         │
-│  Book → Course → Community → Retreat → Advocate →      │
-│  Speaking → Awareness → Book                           │
-│                                                        │
-└───────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef brand fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef hub fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef flywheel fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+
+    subgraph TONY["TONY CHO BRAND SYSTEMS"]
+        direction LR
+        WEB["Personal Website"]:::brand
+        SOCIAL["Social Media"]:::brand
+        SPEAK["Speaking / Media Pipeline"]:::brand
+        BOOK_P["Book Platform"]:::brand
+        COURSE_P["Course Platform"]:::brand
+        NEWS["Newsletter / Email List"]:::brand
+    end
+
+    subgraph HUB["CENTRAL HUB (Future of Cities)"]
+        direction TB
+        CRM_FLOW["<b>All Authority Contacts Flow to CRM</b><br/>Book buyers → Reader pipeline<br/>Course students → Learning pipeline<br/>Newsletter subscribers → Nurture sequences<br/>Speaking contacts → Relationship pipeline<br/>Social followers → Awareness tracking"]:::hub
+        FLYWHEEL["<b>The Flywheel</b><br/>Book → Course → Community → Retreat<br/>→ Advocate → Speaking → Awareness → Book"]:::flywheel
+    end
+
+    TONY --> HUB
 ```
 
 The Tony Cho Brand integration is covered in detail in Section 7 (Authority Platform).
+
 
 ---
 
@@ -1164,38 +1116,37 @@ This section maps every AI touchpoint across the ecosystem and specifies what ea
 
 The AI layer operates across three tiers:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          AI ARCHITECTURE                                     │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   TIER 1: CORE AI SERVICES                                                  │
-│   ────────────────────────                                                  │
-│   ┌─────────────────┐  ┌──────────────────┐  ┌──────────────────────────┐   │
-│   │ Language Models  │  │ Embedding Models │  │  Machine Learning        │   │
-│   │                 │  │                  │  │                          │   │
-│   │ Content gen,    │  │ Semantic search, │  │ Scoring, prediction,     │   │
-│   │ summarization,  │  │ similarity,      │  │ classification,          │   │
-│   │ conversation    │  │ clustering       │  │ forecasting              │   │
-│   └─────────────────┘  └──────────────────┘  └──────────────────────────┘   │
-│                                                                              │
-│   TIER 2: AI ORCHESTRATION                                                  │
-│   ────────────────────────                                                  │
-│   ┌─────────────────┐  ┌──────────────────┐  ┌──────────────────────────┐   │
-│   │ Model Router    │  │ Response Cache   │  │  Performance Monitor     │   │
-│   │                 │  │                  │  │                          │   │
-│   │ Selects optimal │  │ Stores frequent  │  │ Tracks latency, cost,    │   │
-│   │ model per task  │  │ responses        │  │ accuracy, throughput     │   │
-│   └─────────────────┘  └──────────────────┘  └──────────────────────────┘   │
-│                                                                              │
-│   TIER 3: APPLICATION LAYER                                                 │
-│   ─────────────────────────                                                 │
-│   ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐    │
-│   │ Intelli- │ │Content   │ │Automation│ │Personal- │ │Conversational│    │
-│   │ gence    │ │Generation│ │Engine    │ │ization   │ │AI            │    │
-│   └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────────┘    │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef tier1 fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef tier2 fill:#E0F2F1,stroke:#80CBC4,color:#1a1a2e
+    classDef tier3 fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+
+    subgraph T1["TIER 1: CORE AI SERVICES"]
+        direction LR
+        LLM["<b>Language Models</b><br/>Content generation<br/>Summarization<br/>Conversation"]:::tier1
+        EMBED["<b>Embedding Models</b><br/>Semantic search<br/>Similarity<br/>Clustering"]:::tier1
+        ML["<b>Machine Learning</b><br/>Scoring, prediction<br/>Classification<br/>Forecasting"]:::tier1
+    end
+
+    subgraph T2["TIER 2: AI ORCHESTRATION"]
+        direction LR
+        ROUTER["<b>Model Router</b><br/>Selects optimal<br/>model per task"]:::tier2
+        CACHE["<b>Response Cache</b><br/>Stores frequent<br/>responses"]:::tier2
+        MONITOR["<b>Performance Monitor</b><br/>Tracks latency, cost<br/>accuracy, throughput"]:::tier2
+    end
+
+    subgraph T3["TIER 3: APPLICATION LAYER"]
+        direction LR
+        INTEL["Intelligence"]:::tier3
+        CONTENT["Content Generation"]:::tier3
+        AUTO["Automation Engine"]:::tier3
+        PERSONAL["Personalization"]:::tier3
+        CONVO["Conversational AI"]:::tier3
+    end
+
+    T1 --> T2 --> T3
 ```
 
 ---
@@ -1217,30 +1168,29 @@ These are the scoring, prediction, and analysis engines that power decision-maki
 
 #### Lead Scoring Model Specification
 
-```
-LEAD SCORING ENGINE
-├── DEMOGRAPHIC SIGNALS (30%)
-│   ├── Geography (Miami/Jacksonville = high)
-│   ├── Industry (RE, sustainability, wellness = high)
-│   ├── Title/Role (decision-maker = high)
-│   └── Company Size (matches entity targets)
-│
-├── BEHAVIORAL SIGNALS (40%)
-│   ├── Website visits (recency + frequency)
-│   ├── Content engagement (downloads, reads, watches)
-│   ├── Email engagement (opens, clicks)
-│   ├── Event attendance
-│   └── App engagement (for community members)
-│
-├── SOURCE SIGNALS (15%)
-│   ├── Referral source quality
-│   ├── Campaign attribution
-│   └── Entry point entity
-│
-└── AI SIGNALS (15%)
-    ├── Entity fit score (embedding-based)
-    ├── Interest inference (NLP on behavior)
-    └── Propensity model output
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef header fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e,stroke-width:2px
+    classDef demo fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef behavior fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef source fill:#E0F2F1,stroke:#80CBC4,color:#1a1a2e
+    classDef ai fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+
+    ENGINE["<b>LEAD SCORING ENGINE</b>"]:::header
+
+    DEMO["<b>DEMOGRAPHIC SIGNALS (30%)</b><br/>Geography (Miami/Jacksonville = high)<br/>Industry (RE, sustainability, wellness = high)<br/>Title/Role (decision-maker = high)<br/>Company Size (matches entity targets)"]:::demo
+
+    BEHAV["<b>BEHAVIORAL SIGNALS (40%)</b><br/>Website visits (recency + frequency)<br/>Content engagement (downloads, reads, watches)<br/>Email engagement (opens, clicks)<br/>Event attendance · App engagement"]:::behavior
+
+    SRC["<b>SOURCE SIGNALS (15%)</b><br/>Referral source quality<br/>Campaign attribution<br/>Entry point entity"]:::source
+
+    AISIG["<b>AI SIGNALS (15%)</b><br/>Entity fit score (embedding-based)<br/>Interest inference (NLP on behavior)<br/>Propensity model output"]:::ai
+
+    ENGINE --> DEMO
+    ENGINE --> BEHAV
+    ENGINE --> SRC
+    ENGINE --> AISIG
 ```
 
 ### 2. Content Generation
@@ -1259,16 +1209,20 @@ AI generates personalized content across every communication channel.
 
 #### Content Generation Workflow
 
-```
-SOURCE CONTENT                    AI TRANSFORMATION              OUTPUT
-─────────────                    ──────────────────              ──────
-Book chapter excerpt      →      Summarize + adapt voice    →   LinkedIn article
-Speaking engagement       →      Extract key points         →   5 social posts
-Retreat experience        →      Narrative generation       →   Instagram carousel
-Course module             →      Create discussion points   →   Community post
-Foundation impact data    →      Story generation           →   Donor update email
-Investor financial data   →      Report narrative           →   Quarterly report section
-Property listing data     →      Compelling description     →   Listing copy
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart LR
+    classDef source fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef transform fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef output fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+
+    S1["Book chapter excerpt"]:::source -->|Summarize + adapt voice| O1["LinkedIn article"]:::output
+    S2["Speaking engagement"]:::source -->|Extract key points| O2["5 social posts"]:::output
+    S3["Retreat experience"]:::source -->|Narrative generation| O3["Instagram carousel"]:::output
+    S4["Course module"]:::source -->|Create discussion points| O4["Community post"]:::output
+    S5["Foundation impact data"]:::source -->|Story generation| O5["Donor update email"]:::output
+    S6["Investor financial data"]:::source -->|Report narrative| O6["Quarterly report"]:::output
+    S7["Property listing data"]:::source -->|Compelling description| O7["Listing copy"]:::output
 ```
 
 ### 3. Automation Intelligence
@@ -1311,44 +1265,21 @@ AI-powered chat and assistant capabilities across the ecosystem.
 
 #### Conversational AI Architecture
 
-```
-USER QUERY
-    │
-    ▼
-┌─────────────────────────┐
-│  INTENT CLASSIFICATION   │
-│  • Question type         │
-│  • Entity context        │
-│  • Urgency level         │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  KNOWLEDGE RETRIEVAL     │
-│  (Retrieval-Augmented    │
-│   Generation)            │
-│  • Search knowledge base │
-│  • Rank relevance        │
-│  • Select top passages   │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  RESPONSE GENERATION     │
-│  • Language model         │
-│  • Entity-specific voice │
-│  • Factual grounding     │
-│  • Safety filters        │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  ACTION LAYER            │
-│  • Log to CRM            │
-│  • Trigger automation    │
-│  • Escalate if needed    │
-│  • Update contact score  │
-└─────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef input fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef process fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef generate fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef action fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+
+    QUERY["<b>USER QUERY</b>"]:::input
+    INTENT["<b>INTENT CLASSIFICATION</b><br/>Question type · Entity context · Urgency level"]:::process
+    KNOWLEDGE["<b>KNOWLEDGE RETRIEVAL</b><br/>(Retrieval-Augmented Generation)<br/>Search knowledge base · Rank relevance · Select top passages"]:::process
+    RESPONSE["<b>RESPONSE GENERATION</b><br/>Language model · Entity-specific voice<br/>Factual grounding · Safety filters"]:::generate
+    ACTION["<b>ACTION LAYER</b><br/>Log to CRM · Trigger automation<br/>Escalate if needed · Update contact score"]:::action
+
+    QUERY --> INTENT --> KNOWLEDGE --> RESPONSE --> ACTION
 ```
 
 ---
@@ -1441,32 +1372,31 @@ USER QUERY
 
 ## Implementation Priority Matrix
 
-```
-                          HIGH IMPACT
-                              │
-          ┌───────────────────┼───────────────────┐
-          │                   │                   │
-          │   QUICK WINS      │   STRATEGIC       │
-          │   (Phase 1)       │   INVESTMENTS     │
-          │                   │   (Phase 2-3)     │
-          │   • Lead Scoring  │   • AI Tutor      │
-          │   • Email Gen     │   • Book Companion│
-          │   • Entity Match  │   • Dynamic Price  │
-          │   • Booking Bot   │   • Content Recs   │
-          │   • Listing Copy  │   • Donor Scoring  │
-LOW ──────┼───────────────────┼───────────────────┤──── HIGH
-EFFORT    │                   │                   │     EFFORT
-          │   FILL-INS        │   AVOID           │
-          │   (As Needed)     │   (Defer)         │
-          │                   │                   │
-          │   • Send Time Opt │   • Predictive    │
-          │   • Thank You Gen │     Maintenance   │
-          │   • Sentiment     │   • Policy Monitor│
-          │                   │   • Full NLP      │
-          │                   │     Analytics     │
-          └───────────────────┼───────────────────┘
-                              │
-                          LOW IMPACT
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '13px'}}}%%
+quadrantChart
+    title AI Implementation Priority Matrix
+    x-axis Low Effort --> High Effort
+    y-axis Low Impact --> High Impact
+    quadrant-1 Strategic Investments
+    quadrant-2 Quick Wins
+    quadrant-3 Fill-Ins
+    quadrant-4 Avoid
+    Lead Scoring: [0.25, 0.80]
+    Email Generation: [0.20, 0.70]
+    Entity Matching: [0.30, 0.75]
+    Booking Bot: [0.35, 0.72]
+    Listing Copy: [0.25, 0.60]
+    AI Tutor: [0.70, 0.85]
+    Book Companion: [0.65, 0.78]
+    Dynamic Pricing: [0.60, 0.68]
+    Content Recs: [0.55, 0.82]
+    Donor Scoring: [0.58, 0.70]
+    Send Time Opt: [0.30, 0.35]
+    Thank You Gen: [0.20, 0.30]
+    Sentiment: [0.35, 0.32]
+    Predictive Maintenance: [0.75, 0.35]
+    Policy Monitor: [0.70, 0.25]
 ```
 
 ---
@@ -1490,24 +1420,33 @@ The system should use the right model for each task. This is a framework for sel
 
 All AI requests should flow through a centralized gateway that handles routing, caching, rate limiting, and monitoring:
 
-```
-APPLICATION LAYER          AI GATEWAY                AI PROVIDERS
-─────────────────          ──────────                ────────────
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart LR
+    classDef app fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef gateway fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e,stroke-width:2px
+    classDef provider fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
 
-Hub Services ──┐           ┌──────────┐
-               │           │          │         ┌──────────────┐
-Community  ────┼──────────▶│ Gateway  │────────▶│ LLM Provider │
-App            │           │          │         └──────────────┘
-               │           │ • Auth   │
-Entity     ────┘           │ • Route  │         ┌──────────────┐
-Systems                    │ • Cache  │────────▶│ Embedding    │
-                          │ • Rate   │         │ Provider     │
-                          │ • Log    │         └──────────────┘
-                          │ • Monitor│
-                          │          │         ┌──────────────┐
-                          │          │────────▶│ Custom       │
-                          └──────────┘         │ Models       │
-                                               └──────────────┘
+    subgraph APPS["APPLICATION LAYER"]
+        HUB_SVC["Hub Services"]:::app
+        COMM_APP["Community App"]:::app
+        ENT_SYS["Entity Systems"]:::app
+    end
+
+    GW["<b>AI GATEWAY</b><br/>Auth · Route · Cache<br/>Rate Limit · Log · Monitor"]:::gateway
+
+    subgraph PROVIDERS["AI PROVIDERS"]
+        LLM["LLM Provider"]:::provider
+        EMBED_P["Embedding Provider"]:::provider
+        CUSTOM["Custom Models"]:::provider
+    end
+
+    HUB_SVC --> GW
+    COMM_APP --> GW
+    ENT_SYS --> GW
+    GW --> LLM
+    GW --> EMBED_P
+    GW --> CUSTOM
 ```
 
 **Key Gateway Requirements:**
@@ -1602,6 +1541,7 @@ Systems                    │ • Cache  │────────▶│ Embe
 | **Adoption** | Percentage of staff using AI features daily | > 70% |
 | **Cost** | AI cost as percentage of revenue influenced | < 5% |
 | **Speed** | Average AI response time | < 2 seconds |
+
 
 ---
 
@@ -1725,45 +1665,59 @@ The platform serves three strategic purposes:
 
 ### System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    COMMUNITY PLATFORM ARCHITECTURE                           │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   CLIENT LAYER                                                              │
-│   ┌────────────┐  ┌────────────┐  ┌────────────┐                          │
-│   │  iOS App   │  │ Android App│  │ Web App    │                          │
-│   │  (Native   │  │ (Native    │  │ (PWA)      │                          │
-│   │   or Cross)│  │  or Cross) │  │            │                          │
-│   └──────┬─────┘  └──────┬─────┘  └──────┬─────┘                          │
-│          │               │               │                                  │
-│   ───────┴───────────────┴───────────────┴──────────────                   │
-│                                                                              │
-│   API LAYER                                                                 │
-│   ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐         │
-│   │API Gateway │  │Auth Service│  │Core API    │  │WebSocket   │         │
-│   │            │  │            │  │            │  │Server      │         │
-│   └────────────┘  └────────────┘  └────────────┘  └────────────┘         │
-│                                                                              │
-│   SERVICE LAYER                                                             │
-│   ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐                 │
-│   │User  │ │Content│ │Commu-│ │Event │ │Notif │ │AI    │                 │
-│   │Svc   │ │Svc    │ │nity  │ │Svc   │ │Svc   │ │Svc   │                 │
-│   └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘                 │
-│                                                                              │
-│   DATA LAYER                                                                │
-│   ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐         │
-│   │Relational  │  │Cache       │  │Media       │  │Search      │         │
-│   │Database    │  │Layer       │  │Storage     │  │Index       │         │
-│   └────────────┘  └────────────┘  └────────────┘  └────────────┘         │
-│                                                                              │
-│   EXTERNAL INTEGRATIONS                                                     │
-│   ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐                          │
-│   │Hub   │ │Course│ │Retreat│ │Payment│ │AI    │                          │
-│   │CRM   │ │LMS   │ │Booking│ │Gateway│ │APIs  │                          │
-│   └──────┘ └──────┘ └──────┘ └──────┘ └──────┘                          │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef client fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef api fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef service fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef data fill:#E0F2F1,stroke:#80CBC4,color:#1a1a2e
+    classDef external fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+
+    subgraph CLIENT["CLIENT LAYER"]
+        direction LR
+        IOS["iOS App"]:::client
+        ANDROID["Android App"]:::client
+        PWA["Web App (PWA)"]:::client
+    end
+
+    subgraph API["API LAYER"]
+        direction LR
+        GW["API Gateway"]:::api
+        AUTH["Auth Service"]:::api
+        CORE["Core API"]:::api
+        WS["WebSocket Server"]:::api
+    end
+
+    subgraph SERVICES["SERVICE LAYER"]
+        direction LR
+        USER["User Svc"]:::service
+        CONT["Content Svc"]:::service
+        COMM["Community Svc"]:::service
+        EVT["Event Svc"]:::service
+        NOTIF["Notification Svc"]:::service
+        AISVC["AI Svc"]:::service
+    end
+
+    subgraph DATA["DATA LAYER"]
+        direction LR
+        DB["Relational Database"]:::data
+        CACHE["Cache Layer"]:::data
+        MEDIA["Media Storage"]:::data
+        SEARCH["Search Index"]:::data
+    end
+
+    subgraph EXTERNAL["EXTERNAL INTEGRATIONS"]
+        direction LR
+        CRM["Hub CRM"]:::external
+        LMS["Course LMS"]:::external
+        BOOKING["Retreat Booking"]:::external
+        PAY["Payment Gateway"]:::external
+        AIAPI["AI APIs"]:::external
+    end
+
+    CLIENT --> API --> SERVICES --> DATA
+    SERVICES --> EXTERNAL
 ```
 
 ### Technology Selection Criteria
@@ -1782,91 +1736,108 @@ The platform serves three strategic purposes:
 
 ### Data Model
 
-```
-USER
-├── id (UUID)
-├── email (unique)
-├── name
-├── avatar_url
-├── bio
-├── preferences (JSON)
-├── timezone
-├── created_at
-├── crm_id (FK → Central Hub CRM)
-│
-├── MEMBERSHIP
-│   ├── tier (free, essentials, premium, founder)
-│   ├── started_at
-│   ├── expires_at
-│   └── status (active, cancelled, expired)
-│
-├── INTERESTS[] (many-to-many)
-│   └── interest_name
-│
-├── ACHIEVEMENTS[] (one-to-many)
-│   ├── badge_id
-│   ├── earned_at
-│   └── category
-│
-├── GROUP_MEMBERSHIPS[] (many-to-many)
-│   ├── group_id
-│   ├── role (member, moderator, admin)
-│   └── joined_at
-│
-├── CONNECTIONS[] (many-to-many)
-│   ├── connected_user_id
-│   ├── status (pending, accepted)
-│   └── connected_at
-│
-└── CONTENT_INTERACTIONS[] (one-to-many)
-    ├── content_id
-    ├── type (view, like, save, share, complete)
-    └── timestamp
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+erDiagram
+    USER {
+        uuid id PK
+        string email UK
+        string name
+        string avatar_url
+        string bio
+        json preferences
+        string timezone
+        datetime created_at
+        string crm_id FK
+    }
 
-GROUP
-├── id (UUID)
-├── name
-├── description
-├── type (interest, local_chapter, course, private)
-├── is_private (boolean)
-├── created_by (FK → User)
-│
-├── POSTS[] (one-to-many)
-│   ├── author_id (FK → User)
-│   ├── body
-│   ├── attachments (JSON)
-│   ├── created_at
-│   └── REPLIES[] (one-to-many)
+    MEMBERSHIP {
+        string tier
+        datetime started_at
+        datetime expires_at
+        string status
+    }
 
-EVENT
-├── id (UUID)
-├── title
-├── description
-├── start_time
-├── end_time
-├── type (virtual, in-person, retreat, workshop)
-├── location
-├── capacity
-├── status (upcoming, live, completed, cancelled)
-├── entity (which Cho entity hosts this)
-│
-└── ATTENDANCES[] (one-to-many)
-    ├── user_id
-    ├── status (registered, attended, no-show)
-    └── registered_at
+    INTEREST {
+        string interest_name
+    }
 
-CONTENT
-├── id (UUID)
-├── title
-├── type (article, video, practice, podcast, course_module)
-├── body
-├── media_url
-├── metadata (JSON)
-├── tags[]
-├── pillar (regenerative_philosophy, place_design, etc.)
-├── access_tier (free, essentials, premium, founder)
-├── published_at
-└── entity_source (which entity produced this)
+    ACHIEVEMENT {
+        string badge_id
+        datetime earned_at
+        string category
+    }
+
+    GROUP {
+        uuid id PK
+        string name
+        string description
+        string type
+        boolean is_private
+        uuid created_by FK
+    }
+
+    POST {
+        uuid author_id FK
+        string body
+        json attachments
+        datetime created_at
+    }
+
+    EVENT {
+        uuid id PK
+        string title
+        string description
+        datetime start_time
+        datetime end_time
+        string type
+        string location
+        int capacity
+        string status
+        string entity
+    }
+
+    CONTENT {
+        uuid id PK
+        string title
+        string type
+        string body
+        string media_url
+        json metadata
+        array tags
+        string pillar
+        string access_tier
+        datetime published_at
+        string entity_source
+    }
+
+    CONNECTION {
+        uuid connected_user_id
+        string status
+        datetime connected_at
+    }
+
+    CONTENT_INTERACTION {
+        uuid content_id FK
+        string type
+        datetime timestamp
+    }
+
+    ATTENDANCE {
+        uuid user_id FK
+        string status
+        datetime registered_at
+    }
+
+    USER ||--o| MEMBERSHIP : "has"
+    USER ||--o{ INTEREST : "selects"
+    USER ||--o{ ACHIEVEMENT : "earns"
+    USER }o--o{ GROUP : "joins"
+    USER ||--o{ CONNECTION : "connects"
+    USER ||--o{ CONTENT_INTERACTION : "interacts"
+    GROUP ||--o{ POST : "contains"
+    EVENT ||--o{ ATTENDANCE : "has"
+    USER ||--o{ ATTENDANCE : "registers"
 ```
 
 ---
@@ -2010,6 +1981,7 @@ CONTENT
 | Tier Conversion (Free → Paid) | 15%+ |
 | Organic Referrals | 30%+ of new members from referrals |
 
+
 ---
 
 # 7. Authority Platform — Tony Cho Brand
@@ -2029,26 +2001,31 @@ The Authority Platform transforms Tony Cho's lived experience, philosophy, and t
 
 Each pillar feeds the others. Together, they create a flywheel:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                       THE AUTHORITY FLYWHEEL                                 │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   BOOK ────▶ READERS ────▶ EMAIL LIST ────▶ COURSE SALES                   │
-│     ▲                                           │                           │
-│     │                                           ▼                           │
-│     │        AWARENESS ◀──── SPEAKING ◀──── STUDENTS                       │
-│     │             │                              │                           │
-│     │             │                              ▼                           │
-│     │             │          RETREATS ◀──── COMMUNITY                       │
-│     │             │              │                │                           │
-│     │             ▼              ▼                ▼                           │
-│     └──── MASS REACH ◀──── ADVOCATES ◀──── MEMBERS                         │
-│                                                                              │
-│   Every component feeds the others.                                         │
-│   The flywheel accelerates with each revolution.                            │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '13px'}}}%%
+flowchart LR
+    classDef blue fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef green fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef gold fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef lavender fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef coral fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
+
+    BOOK["<b>Book</b>"]:::blue
+    READERS["Readers"]:::green
+    LIST["Email List"]:::green
+    COURSE["Course Sales"]:::gold
+    STUDENTS["Students"]:::gold
+    COMMUNITY["Community"]:::lavender
+    MEMBERS["Members"]:::lavender
+    RETREATS["Retreats"]:::coral
+    ADVOCATES["Advocates"]:::coral
+    SPEAKING["Speaking"]:::blue
+    AWARENESS["Awareness"]:::blue
+    REACH["Mass Reach"]:::blue
+
+    BOOK --> READERS --> LIST --> COURSE --> STUDENTS --> COMMUNITY --> MEMBERS --> RETREATS
+    RETREATS --> ADVOCATES --> REACH --> BOOK
+    STUDENTS --> SPEAKING --> AWARENESS --> REACH
 ```
 
 ---
@@ -2090,26 +2067,29 @@ Each pillar feeds the others. Together, they create a flywheel:
 
 ### Launch Automation
 
-```
-PRE-ORDER TRIGGER
-    │
-    ├──▶ Confirmation email
-    ├──▶ Bonus content delivery
-    ├──▶ Pre-launch nurture sequence (5 emails)
-    └──▶ Launch day alert
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef trigger fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e,stroke-width:2px
+    classDef action fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef warn fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e
 
-PURCHASE TRIGGER
-    │
-    ├──▶ Welcome sequence (3 emails)
-    ├──▶ Review request (timed at 14 days post-purchase)
-    ├──▶ Community app invitation
-    └──▶ Course offer (timed at 21 days post-purchase)
+    PRE["<b>PRE-ORDER TRIGGER</b>"]:::trigger
+    PRE --> PA1["Confirmation email"]:::action
+    PRE --> PA2["Bonus content delivery"]:::action
+    PRE --> PA3["Pre-launch nurture (5 emails)"]:::action
+    PRE --> PA4["Launch day alert"]:::action
 
-NON-BUYER SEGMENT
-    │
-    ├──▶ Reminder sequence (2 emails)
-    ├──▶ Testimonial push
-    └──▶ Limited-time bonus offer
+    PURCHASE["<b>PURCHASE TRIGGER</b>"]:::trigger
+    PURCHASE --> PB1["Welcome sequence (3 emails)"]:::action
+    PURCHASE --> PB2["Review request (14 days)"]:::action
+    PURCHASE --> PB3["Community app invitation"]:::action
+    PURCHASE --> PB4["Course offer (21 days)"]:::action
+
+    NONBUYER["<b>NON-BUYER SEGMENT</b>"]:::warn
+    NONBUYER --> PC1["Reminder sequence (2 emails)"]:::action
+    NONBUYER --> PC2["Testimonial push"]:::action
+    NONBUYER --> PC3["Limited-time bonus offer"]:::action
 ```
 
 ### Book Companion AI
@@ -2231,33 +2211,21 @@ The speaking engine is a systematized pipeline — not ad hoc. It generates oppo
 
 #### Speaking Pipeline
 
-```
-OPPORTUNITY GENERATION
-├── Inbound inquiries (website, referrals, agent)
-├── Proactive outreach (target conferences identified)
-└── Speaker referrals (post-engagement ask)
-         │
-         ▼
-PREPARATION
-├── AI researches host organization, audience, context
-├── AI generates customized talking points
-├── AI prepares Q&A prediction based on audience
-├── Bio and materials adapted for context
-└── Pre-event media coordination
-         │
-         ▼
-EXECUTION
-├── Keynote delivery
-├── Content capture (video, audio, photos)
-├── Networking and relationship building
-└── Media opportunities at event
-         │
-         ▼
-FOLLOW-UP
-├── Thank-you sequence (automated, personalized)
-├── Content repurposing (talk → articles, clips, posts)
-├── Relationship nurture (CRM pipeline)
-└── Referral request for future engagements
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef gen fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+    classDef prep fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef exec fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef follow fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+
+    GEN["<b>OPPORTUNITY GENERATION</b><br/>Inbound inquiries (website, referrals, agent)<br/>Proactive outreach (target conferences)<br/>Speaker referrals (post-engagement ask)"]:::gen
+    PREP["<b>PREPARATION</b><br/>AI researches host, audience, context<br/>AI generates customized talking points<br/>AI prepares Q&A prediction<br/>Bio & materials adapted · Pre-event media coordination"]:::prep
+    EXEC["<b>EXECUTION</b><br/>Keynote delivery<br/>Content capture (video, audio, photos)<br/>Networking & relationship building<br/>Media opportunities at event"]:::exec
+    FOLLOW["<b>FOLLOW-UP</b><br/>Thank-you sequence (automated, personalized)<br/>Content repurposing (talk → articles, clips, posts)<br/>Relationship nurture (CRM pipeline)<br/>Referral request for future engagements"]:::follow
+
+    GEN --> PREP --> EXEC --> FOLLOW
+    FOLLOW -.->|referrals| GEN
 ```
 
 #### AI Speaking Support
@@ -2300,29 +2268,34 @@ FOLLOW-UP
 
 Every piece of source content is transformed into multiple distribution-ready assets through AI-powered repurposing.
 
-```
-SOURCE CONTENT                AI TRANSFORMATION                 DISTRIBUTION
-─────────────                ──────────────────                 ────────────
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '11px'}}}%%
+flowchart LR
+    classDef source fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef output fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
 
-Book chapter excerpt   →     Summarize + adapt voice       →   LinkedIn article
-                       →     Extract key quotes             →   Instagram graphics
-                       →     Create discussion questions    →   Community post
+    BOOK["<b>Book Chapter</b>"]:::source
+    BOOK -->|Summarize + adapt| B1["LinkedIn article"]:::output
+    BOOK -->|Extract quotes| B2["Instagram graphics"]:::output
+    BOOK -->|Discussion questions| B3["Community post"]:::output
 
-Speaking engagement    →     Transcribe + extract points    →   Blog article
-                       →     Cut video clips                →   YouTube + Instagram
-                       →     Generate social carousel       →   LinkedIn + Instagram
+    SPEAK["<b>Speaking Engagement</b>"]:::source
+    SPEAK -->|Transcribe + extract| S1["Blog article"]:::output
+    SPEAK -->|Cut video clips| S2["YouTube + Instagram"]:::output
+    SPEAK -->|Social carousel| S3["LinkedIn + Instagram"]:::output
 
-Retreat experience     →     Photo essay + narrative        →   Instagram feed
-                       →     Guest story generation         →   Newsletter feature
-                       →     Wellness practice extract      →   Community content
+    RETREAT["<b>Retreat Experience</b>"]:::source
+    RETREAT -->|Photo essay + narrative| R1["Instagram feed"]:::output
+    RETREAT -->|Guest story| R2["Newsletter feature"]:::output
+    RETREAT -->|Wellness extract| R3["Community content"]:::output
 
-Course module          →     Create preview content         →   Marketing funnel
-                       →     Discussion points              →   Community engagement
-                       →     Success story generation       →   Social proof
+    COURSE["<b>Course Module</b>"]:::source
+    COURSE -->|Preview content| C1["Marketing funnel"]:::output
+    COURSE -->|Discussion points| C2["Community engagement"]:::output
 
-Foundation impact      →     Impact narrative               →   Donor communication
-                       →     Data visualization             →   Annual report
-                       →     Community story                →   Social media
+    IMPACT["<b>Foundation Impact</b>"]:::source
+    IMPACT -->|Impact narrative| I1["Donor communication"]:::output
+    IMPACT -->|Data visualization| I2["Annual report"]:::output
 ```
 
 ### Content Calendar
@@ -2394,6 +2367,7 @@ Foundation impact      →     Impact narrative               →   Donor commun
 | Platform Operations | $2,000 - $4,000 |
 | AI Services | $1,000 - $3,000 |
 | **Total Monthly** | **$16,000 - $33,000** |
+
 
 ---
 
@@ -2474,37 +2448,30 @@ This roadmap organizes the entire ecosystem build into three phases with clear d
 
 ### Phase 2 Timeline
 
-```
-WEEK:  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20
-       ┌──────────────────┐
-  2A:  │  FOUNDATION      │
-       │  CRM, DB, Auth,  │
-       │  Design System   │
-       └──────────────────┘
-                  ┌────────────────────────────┐
-  2B:             │  ENTITY INTEGRATIONS       │
-                  │  Metro 1, FoC, PHX-JAX,    │
-                  │  Climate HUB, ChoZen       │
-                  └────────────────────────────┘
-                           ┌──────────────────────────────┐
-  2C:                      │  COMMUNITY PLATFORM MVP      │
-                           │  App build, content,         │
-                           │  onboarding, events          │
-                           └──────────────────────────────┘
-                                          ┌──────────────────────┐
-  2D:                                     │  AI LAYER            │
-                                          │  Scoring, generation,│
-                                          │  automation, personal│
-                                          └──────────────────────┘
-                                                     ┌────────────────────┐
-  2E:                                                │  INTERFACE LAYER   │
-                                                     │  Dashboard, sites, │
-                                                     │  admin portal      │
-                                                     └────────────────────┘
-                                                                ┌────────┐
-  2F:                                                           │TRAINING│
-                                                                │& LAUNCH│
-                                                                └────────┘
+```mermaid
+gantt
+    title Phase 2: Infrastructure & Integration (20 Weeks)
+    dateFormat X
+    axisFormat Week %s
+    tickInterval 2
+
+    section 2A: Foundation
+    CRM, DB, Auth, Design System           :a1, 1, 4
+
+    section 2B: Entity Integrations
+    Metro 1, FoC, PHX-JAX, Climate HUB, ChoZen :a2, 5, 10
+
+    section 2C: Community MVP
+    App build, content, onboarding, events :a3, 8, 14
+
+    section 2D: AI Layer
+    Scoring, generation, automation, personalization :a4, 12, 16
+
+    section 2E: Interface Layer
+    Dashboard, sites, admin portal         :a5, 14, 18
+
+    section 2F: Training & Launch
+    Training & launch                      :a6, 18, 20
 ```
 
 ### Phase 2A: Foundation Layer (Weeks 1-4)
@@ -2586,30 +2553,26 @@ WEEK:  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20
 
 ### Phase 3 Timeline
 
-```
-MONTH:  1        2        3        4        5        6
-        ┌────────────────────────┐
-  3A:   │  BOOK LAUNCH           │
-        │  Pre-launch, launch    │
-        │  week, evergreen       │
-        └────────────────────────┘
-                  ┌──────────────────────────────┐
-  3B:             │  COURSE BUILD & LAUNCH       │
-                  │  Filming, platform, AI       │
-                  │  companion, first cohort     │
-                  └──────────────────────────────┘
-        ┌─────────────────────────────────────────────────────────┐
-  3C:   │  COMMUNITY SCALE-UP (CONTINUOUS)                       │
-        │  Features, growth, engagement, events                   │
-        └─────────────────────────────────────────────────────────┘
-                           ┌──────────────────────────────────────┐
-  3D:                      │  SPEAKING & MEDIA ENGINE             │
-                           │  Pipeline, prep, content capture     │
-                           └──────────────────────────────────────┘
-        ┌─────────────────────────────────────────────────────────┐
-  3E:   │  CONTENT AMPLIFICATION (CONTINUOUS)                    │
-        │  Repurposing, calendar, distribution                    │
-        └─────────────────────────────────────────────────────────┘
+```mermaid
+gantt
+    title Phase 3: Authority & Scale (6 Months)
+    dateFormat YYYY-MM-DD
+    axisFormat %b
+
+    section 3A: Book Launch
+    Pre-launch, launch week, evergreen     :b1, 2026-07-01, 2026-09-30
+
+    section 3B: Course Build & Launch
+    Filming, platform, AI companion, first cohort :b2, 2026-08-01, 2026-11-30
+
+    section 3C: Community Scale-Up
+    Features, growth, engagement, events   :b3, 2026-07-01, 2026-12-31
+
+    section 3D: Speaking & Media Engine
+    Pipeline, prep, content capture        :b4, 2026-09-01, 2026-12-31
+
+    section 3E: Content Amplification
+    Repurposing, calendar, distribution    :b5, 2026-07-01, 2026-12-31
 ```
 
 ### Phase 3A: Book Launch (Months 1-3)
@@ -2675,42 +2638,42 @@ MONTH:  1        2        3        4        5        6
 
 ## Dependency Map
 
-```
-Phase 1 Deliverables
-├── Architecture Design ──────────────────────┐
-├── Technology Selection ─────────────────────┤
-├── Integration Requirements ─────────────────┤
-└── Budget Approval ──────────────────────────┤
-                                              ▼
-                                    Phase 2A: Foundation
-                                    ├── CRM Setup
-                                    ├── Database
-                                    ├── Auth/SSO
-                                    └── Design System
-                                              │
-                              ┌───────────────┼───────────────┐
-                              ▼               ▼               ▼
-                    Phase 2B: Entity   Phase 2C: Community   (parallel)
-                    Integrations       Platform MVP
-                              │               │
-                              └───────┬───────┘
-                                      ▼
-                            Phase 2D: AI Layer
-                                      │
-                                      ▼
-                            Phase 2E: Interface Layer
-                                      │
-                                      ▼
-                            Phase 2F: Training & Launch
-                                      │
-                              ┌───────┼───────────────────────┐
-                              ▼       ▼                       ▼
-                    Phase 3A: Book  Phase 3C: Community    Phase 3E: Content
-                    Launch          Scale-Up               Amplification
-                              │                               │
-                              ▼                               ▼
-                    Phase 3B: Course                 Phase 3D: Speaking
-                    Build & Launch                   & Media Engine
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '12px'}}}%%
+flowchart TB
+    classDef phase1 fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef phase2 fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef phase3 fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+
+    P1["<b>Phase 1 Deliverables</b><br/>Architecture Design · Technology Selection<br/>Integration Requirements · Budget Approval"]:::phase1
+
+    P2A["<b>Phase 2A: Foundation</b><br/>CRM · Database · Auth/SSO · Design System"]:::phase2
+
+    P2B["<b>Phase 2B: Entity Integrations</b><br/>Metro 1 · FoC · PHX-JAX<br/>Climate HUB · ChoZen"]:::phase2
+    P2C["<b>Phase 2C: Community MVP</b><br/>App · Content · Events"]:::phase2
+
+    P2D["<b>Phase 2D: AI Layer</b><br/>Scoring · Generation · Automation"]:::phase2
+    P2E["<b>Phase 2E: Interface Layer</b><br/>Dashboard · Sites · Admin"]:::phase2
+    P2F["<b>Phase 2F: Training & Launch</b>"]:::phase2
+
+    P3A["<b>Phase 3A: Book Launch</b>"]:::phase3
+    P3B["<b>Phase 3B: Course Build & Launch</b>"]:::phase3
+    P3C["<b>Phase 3C: Community Scale-Up</b>"]:::phase3
+    P3D["<b>Phase 3D: Speaking & Media Engine</b>"]:::phase3
+    P3E["<b>Phase 3E: Content Amplification</b>"]:::phase3
+
+    P1 --> P2A
+    P2A --> P2B
+    P2A --> P2C
+    P2B --> P2D
+    P2C --> P2D
+    P2D --> P2E
+    P2E --> P2F
+    P2F --> P3A
+    P2F --> P3C
+    P2F --> P3E
+    P3A --> P3B
+    P3E --> P3D
 ```
 
 ---
@@ -2747,6 +2710,7 @@ The technology team executing this build will need the following roles:
 | **Content Lead** | Part-time | Full-time | Content strategy, editorial calendar, AI content workflow |
 | **Community Manager** | Part-time | Full-time | Member engagement, moderation, event coordination |
 
+
 ---
 
 # 9. Capital & Funding Strategy
@@ -2771,23 +2735,33 @@ The FoC QOF $7M equity raise includes a **$670K Sponsor & Platform Costs** alloc
 
 The proposition: build the platform infrastructure the fund already needs, within the budget it already allocated, on the timeline it already established.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                   FoC QOF CAPITAL STRUCTURE ($14.42M)                         │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│   SOURCES                              USES                                 │
-│   ───────                              ────                                 │
-│   Debt (Total): $7.42M                 Construction & Core CapEx: $2.73M    │
-│   • Construction Loans: $3.19M         Tenant Improvements: $1.43M          │
-│   • Bridge Loans: $4.23M              Financing & Structure: $1.06M         │
-│                                        Debt Paydowns: $7.39M                │
-│   Equity: $7.00M                       Operating Runway: $1.13M             │
-│                                        Sponsor & Platform: $0.67M ◀──┐      │
-│                                                                       │      │
-│                                           THE OPPORTUNITY ───────────┘      │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '14px'}}}%%
+flowchart LR
+    classDef source fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef use fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef highlight fill:#FDECEA,stroke:#E8A09A,color:#1a1a2e,stroke-width:3px
+
+    subgraph SOURCES["SOURCES"]
+        DEBT["<b>Debt: $7.42M</b><br/>Construction Loans: $3.19M<br/>Bridge Loans: $4.23M"]:::source
+        EQUITY["<b>Equity: $7.00M</b><br/>← THE RAISE"]:::source
+    end
+
+    subgraph USES["USES ($14.42M)"]
+        CAPEX["Construction & Core CapEx: $2.73M"]:::use
+        TI["Tenant Improvements: $1.43M"]:::use
+        FIN["Financing & Structure: $1.06M"]:::use
+        PAYDOWN["Debt Paydowns: $7.39M"]:::use
+        OPS["Operating Runway: $1.13M"]:::use
+        PLATFORM["<b>Sponsor & Platform: $0.67M</b><br/>⬅ THE OPPORTUNITY"]:::highlight
+    end
+
+    DEBT --> CAPEX
+    DEBT --> TI
+    DEBT --> PAYDOWN
+    EQUITY --> FIN
+    EQUITY --> OPS
+    EQUITY --> PLATFORM
 ```
 
 ### Why This Alignment Works
@@ -2976,6 +2950,7 @@ This approach means the ecosystem builds itself through the capital it helps att
 | **Authority timing?** | When does Tony want the book launch engine active? This determines Phase 3 start. |
 | **Team selection?** | Internal team, agency, or hybrid? This plan is designed to work with any qualified technology partner. |
 
+
 ---
 
 # 10. Operating Model & Team Requirements
@@ -3161,38 +3136,20 @@ After the initial build, the platform should continue evolving:
 
 ### Continuous Improvement Cycle
 
-```
-MEASURE
-├── Dashboard KPIs
-├── User feedback
-├── AI performance metrics
-├── Revenue by stream
-└── Technical health
-         │
-         ▼
-ANALYZE
-├── What's working?
-├── What's underperforming?
-├── What do users want?
-├── Where is the highest ROI?
-└── What's at risk?
-         │
-         ▼
-PRIORITIZE
-├── Quick wins (< 1 week)
-├── Medium projects (1-4 weeks)
-├── Major features (1-3 months)
-└── Strategic initiatives (quarterly)
-         │
-         ▼
-IMPLEMENT
-├── Sprint planning
-├── Development
-├── Testing
-├── Deploy
-└── Monitor
-         │
-         └──▶ Back to MEASURE
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#DCEEFB', 'primaryTextColor': '#1a1a2e', 'lineColor': '#7FB3D8', 'fontSize': '14px'}}}%%
+flowchart TB
+    classDef blue fill:#DCEEFB,stroke:#5B9BD5,color:#1a1a2e
+    classDef green fill:#D5F5E3,stroke:#82C785,color:#1a1a2e
+    classDef lavender fill:#EDE7F6,stroke:#B39DDB,color:#1a1a2e
+    classDef gold fill:#FFF8E1,stroke:#FFD54F,color:#1a1a2e
+
+    M["<b>MEASURE</b><br/>Dashboard KPIs · User feedback<br/>AI performance · Revenue · Technical health"]:::blue
+    A["<b>ANALYZE</b><br/>What's working? · What's underperforming?<br/>What do users want? · Highest ROI? · At risk?"]:::green
+    P["<b>PRIORITIZE</b><br/>Quick wins (&lt; 1 week) · Medium projects (1-4 weeks)<br/>Major features (1-3 months) · Strategic initiatives (quarterly)"]:::lavender
+    I["<b>IMPLEMENT</b><br/>Sprint planning · Development<br/>Testing · Deploy · Monitor"]:::gold
+
+    M --> A --> P --> I --> M
 ```
 
 ---
