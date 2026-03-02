@@ -1,11 +1,254 @@
 # TRANSFORMATIONAL EPICENTER
-## Master Global Structure Strategy
+## Global Structure Strategy: Executive Summary + Full Architecture
 
-> **Date:** February 23, 2026
+> **Date:** February 23, 2026 (Executive Summary added March 2, 2026)
 > **Prepared for:** Nicholas Courschesne, Jason Sparks, Pablo [Investor]
 > **Prepared by:** Light-Brands Strategic Advisory
 > **Status:** Strategy Document, Pre-Counsel Review
 > **Classification:** Confidential
+
+---
+
+*We are building a luxury medical transformation platform in Tulum, Mexico, powered by the most advanced AI health intelligence system in ibogaine therapy. The global structure described here protects every asset, separates every risk, and positions the venture for international scale -- all within a clean, two-jurisdiction architecture that any institutional investor or counsel will recognize immediately. This is how smart companies are built.*
+
+---
+
+## EXECUTIVE SUMMARY
+
+### One Structure. Total Protection. Global Scale.
+
+**The Transformational Epicenter uses a single Cayman Islands holding company with three purpose-built subsidiaries to separate risk from assets, protect intellectual property at the holding level, achieve legal tax efficiency across jurisdictions, and give investors institutional-grade security from day one.**
+
+---
+
+### Executive Overview
+
+The Transformational Epicenter is a luxury medical retreat in Tulum, Mexico, combined with a clinical operating platform and an AI-powered health intelligence system. Together, these three components will generate one of the most valuable neurological datasets in the world -- unprecedented longitudinal ibogaine treatment data at scale.
+
+The global structure exists to protect this venture and the people investing in it. Every entity serves a specific purpose. The real estate is isolated from operational liability. The technology and data IP is held at the holding level, outside the reach of any single country's courts or creditors. The clinical operations run through a properly licensed Mexican entity. And the entire structure is governed through a single holding company where all investors participate.
+
+This is not a tax scheme. It is a legal architecture designed for protection, clarity, and scale. Tax efficiency is a natural result of structuring correctly -- not the goal. Every element is compliant, conservative, and defensible under OECD standards.
+
+The structure uses two jurisdictions: the Cayman Islands (for the holding company and IP entity) and Mexico (for real estate and clinical operations). The founders' personal holding vehicles (Panama and Cook Islands) are separate from the corporate architecture. Clean and simple.
+
+---
+
+### The 3 Pillars
+
+**1. Legal Protection (Risk Separation + Enforceability)**
+- Every major asset class lives in its own entity: real estate, operations, and IP/data
+- If the clinical operations face a lawsuit, the real estate and data are untouchable -- they are in separate legal entities
+- If the real estate faces a lien dispute, it cannot affect the operating business or the technology platform
+- The Cayman Islands legal framework (English common law) is well-established and recognized worldwide
+- Investor capital enters through a single entity with clear governance -- one cap table, one set of documents
+
+**2. Tax Efficiency (Legal Optimization + Compliance)**
+- The Cayman holding company pays zero local tax -- this is standard, legal, and recognized by every major financial institution
+- The investor's U.S. tax obligation is deferred until distributions or exit (not a CFC at 49% ownership)
+- Mexican taxes are paid on all Mexican-source income at the statutory 30% rate -- no avoidance, full compliance
+- Transfer pricing between entities follows OECD guidelines, documented by a Big 4 transfer pricing study
+- Estimated current tax rate: 15-23% vs. 40-50% under a simpler structure -- a difference of $9-10M/year at scale
+
+**3. IP Fortress (Holding-Level Ownership + Licensing)**
+- All intellectual property -- the AI platform, clinical protocols, brand, trademarks, and the neurological dataset -- is owned by a Cayman entity
+- The Mexican operating company licenses the IP under a formal agreement; it does not own it
+- If operations shut down tomorrow, every piece of IP remains protected and can be licensed to a new operator anywhere in the world
+- The data never physically resides in Mexico -- it is processed and stored on cloud infrastructure controlled by the IP entity
+- This separation dramatically increases enterprise valuation and enables independent exits for the IP/data business
+
+---
+
+### Entity Architecture
+
+The structure has four entities across two jurisdictions. Each one does one job, and only that job.
+
+**Cayman HoldCo -- "Transformational Epicenter Holdings Ltd."**
+What it does: Holds all subsidiaries. Issues the convertible note to the investor. Manages the cap table (Founders 51%, Investor 49%). Contracts with guests and operates the booking platform. Makes strategic decisions.
+What it does NOT do: Operate clinical services. Hold real estate directly. Employ medical staff. Store data.
+
+**Mexico PropCo -- S.A. de C.V.**
+What it does: Holds the Tulum property through a fideicomiso (bank trust) -- the standard legal mechanism for foreign-owned coastal real estate in Mexico. The investor's first-position lien attaches here.
+What it does NOT do: Run clinical operations. Employ staff (beyond property management). Hold IP. Generate significant operating income.
+
+**Mexico OpCo -- S.A. de C.V.**
+What it does: Runs the medical retreat. Employs doctors, nurses, and clinical staff. Holds all Mexican medical licenses. Delivers patient care. Collects data under license from the IP entity.
+What it does NOT do: Own the real estate. Own the IP or data. Contract directly with international guests (the HoldCo does that). Make strategic decisions outside clinical operations.
+
+**Cayman IP/Data Co -- Exempted Company**
+What it does: Owns all intellectual property -- software platform, AI models, clinical protocols, brand, trademarks, and the master neurological dataset. Licenses IP to OpCo. Controls cloud infrastructure. Enters into research partnerships and third-party data licensing deals.
+What it does NOT do: Treat patients. Employ medical staff. Hold real estate. Operate in Mexico.
+
+---
+
+### IP + Data Protection: How the Fortress Works
+
+The most valuable long-term asset in this venture is not the property. It is the neurological dataset and AI platform. Over five years, the venture will accumulate 5,000+ ibogaine-related brain scan and neurological data reports -- a dataset that does not exist anywhere else on earth.
+
+**How the IP is protected:**
+
+- All IP is owned at the Cayman holding level, not in Mexico
+- The Mexican operating company is a licensee -- it uses the IP under a formal agreement, but it does not own any of it
+- If the Mexican operation is sued, shut down, or faces regulatory action, the IP remains completely unaffected in a separate jurisdiction
+- The data is stored on cloud infrastructure (AWS/Azure/GCP) controlled by the IP entity, not hosted in Mexico -- this avoids Mexican judicial seizure risk
+- If the venture needs to expand to a second location (Costa Rica, Portugal, Thailand), the IP entity simply issues a new license -- no restructuring needed
+
+**Why this matters to investors:**
+
+- The IP entity can be valued, financed, or sold independently of the real estate and operations
+- A pharmaceutical company, biotech firm, or AI health platform could acquire the IP entity alone
+- This structure supports a potential 10-50x valuation multiple on a unique neurological dataset
+- Investor equity in the HoldCo automatically includes exposure to this high-value, separately protected asset
+
+---
+
+### Legal + Risk Containment: Investor Safety
+
+**Separation of liabilities:**
+
+- Medical malpractice liability lives in Mexico OpCo. It cannot reach the real estate (PropCo) or the IP (IP Co).
+- Real estate risk (construction, environmental, property disputes) lives in Mexico PropCo. It cannot reach clinical operations or IP.
+- Technology and data risk lives in Cayman IP Co. It is separated from both Mexican entities.
+
+**Where risk lives vs. where assets live:**
+
+- Operational risk (the highest-probability risk) is in Mexico OpCo -- but OpCo's assets are limited to equipment and working capital
+- The high-value assets (real estate, IP, data) are in separate entities with no operational exposure
+- The investor's lien is on the real estate (the hardest, most recoverable asset) -- not on the operating entity
+
+**How returns flow:**
+
+- HoldCo receives guest payments, then pays OpCo for clinical services (60-70%) and IP Co for technology licensing (10-20%)
+- HoldCo retains the margin (10-30%) for management, marketing, and investor returns
+- All intercompany flows are at arm's length, documented, and defensible
+
+**Why this protects investors and founders equally:**
+
+- Pablo (investor) has a first-position lien on the real estate plus a share pledge -- two layers of security
+- The convertible note converts to 49% equity across all entities -- not just one
+- Founders maintain 51% ownership and operational control
+- If the venture fails, the real estate and IP can be liquidated or licensed independently -- maximum recovery for all parties
+
+---
+
+### Tax Strategy: Legal, Compliant, Clean
+
+Tax efficiency is a byproduct of structuring correctly for legal protection and scalability -- not the driving purpose.
+
+**How it works:**
+
+- The Cayman holding company and IP entity pay zero local tax. This is the standard legal framework of the Cayman Islands, used by the majority of institutional investment structures worldwide.
+- The Mexican entities pay full Mexican corporate tax (30%) on all net income generated in Mexico. No income is hidden from Mexico.
+- Royalties paid from Mexico to the Cayman IP entity are subject to 25% Mexican withholding tax. This is paid to Mexico -- full compliance.
+- The investor's U.S. tax is legally deferred until distributions or exit. At 49% ownership, the HoldCo is not a Controlled Foreign Corporation (CFC) under U.S. law -- this means no current U.S. tax on undistributed earnings.
+
+**What we are NOT doing:**
+
+- We are not using shell companies to hide income
+- We are not claiming treaty benefits we are not entitled to (Cayman has no tax treaties)
+- We are not shifting profits away from Mexico beyond what a transfer pricing study supports
+- We are not creating a structure that requires secrecy to function -- everything is documented and defensible
+
+**Cross-border compliance:**
+
+- A Big 4 transfer pricing study will document all intercompany pricing before operations begin
+- The Cayman Islands complies with OECD BEPS standards and exchanges information under the Common Reporting Standard (CRS)
+- Annual PFIC (Passive Foreign Investment Company) analysis will be performed for the investor's U.S. tax compliance
+- All entities will maintain proper books, records, and economic substance as required by their jurisdictions
+
+**Estimated impact (at $36.4M annual revenue, steady state):**
+
+| | Conservative Structure | Optimized Structure |
+|---|---|---|
+| Annual tax | $14.5-18.2M (40-50%) | $5.4-8.3M (15-23%) |
+| Annual savings | Baseline | $9-10M/year |
+| 5-year cumulative savings | Baseline | $35-50M |
+| Annual compliance cost | $30-50K | $100-200K |
+
+The annual compliance investment is less than 2% of the annual tax savings.
+
+---
+
+### Investor Alignment + Value Creation
+
+**What Pablo is investing into:**
+
+- A single Convertible Promissory Note ($17,300,000) issued by Cayman HoldCo
+- The note pays 9% simple interest quarterly (PIK during pre-revenue)
+- The note converts to 49% equity across all three operating entities
+- The note is secured by a first-position lien on the real estate + a share pledge on PropCo
+
+**How returns flow to the investor:**
+
+- During the note period: 9% annual interest (cash or PIK)
+- After conversion: 49% of all distributions from HoldCo (which collects revenue from all subsidiaries)
+- On exit: 49% of the sale price of HoldCo (or individual entity sales)
+
+**Why this structure supports scaling, exits, and defensibility:**
+
+- Each entity can be sold independently. A real estate fund could buy PropCo. A biotech company could buy IP Co. A hospitality operator could buy OpCo. The HoldCo can sell any combination.
+- The IP licensing model means geographic expansion requires a new license agreement, not a new corporate restructure
+- The structure is recognized by institutional investors worldwide -- any future raise, debt facility, or strategic partner will understand this architecture immediately
+- The data asset creates optionality that a single-entity structure cannot: research partnerships, SaaS licensing, pharmaceutical licensing, standalone IPO
+
+---
+
+### What We Are Building This Week
+
+**Drafting / Setting Up Now:**
+- Engaging Cayman Islands corporate counsel for HoldCo and IP Co formation
+- Engaging Mexican counsel for PropCo and OpCo formation and fideicomiso establishment
+- Finalizing escrow agreement for the $1.7M deposit (institutional escrow, milestone-based release)
+- Preparing the investor's subscription documentation
+
+**Decisions We Need Quickly:**
+- Final confirmation on the revenue flow model: facilitator model (HoldCo contracts with guests) vs. management-fee model (OpCo contracts with guests). Trade-off: tax efficiency vs. PE risk. Mexican counsel will advise.
+- Escrow agent selection: U.S.-based law firm trust account or regulated escrow company
+- Transfer pricing firm selection: Big 4 or recognized TP specialist
+- Cloud infrastructure jurisdiction for data storage (recommended: outside Mexico)
+
+**Feedback We Want from Partners/Investors:**
+- Does the 4-entity structure feel right, or do you want to discuss the 2-entity conservative alternative?
+- Are you comfortable with the Cayman Islands as the HoldCo jurisdiction? Any concerns from your counsel?
+- Confirm Pablo's PFIC counsel is engaged or identified
+- Any questions on the deposit security mechanism (milestone escrow)?
+
+---
+
+### Closing
+
+This structure is designed to do three things: protect everything that matters, create tax efficiency within the law, and build an architecture that scales internationally. Every entity exists for a reason. Every jurisdiction was chosen deliberately. Every dollar flows through a documented, arm's length, compliant channel. The IP -- the most valuable long-term asset -- is protected at the holding level, outside the reach of any single country's operational risk. The investor has institutional-grade security (first-position lien, share pledge, milestone escrow) and significant upside (49% of a venture projected to reach $229M enterprise value). This is how you build something worth protecting. We are ready to execute. We welcome your questions, your counsel's review, and your commitment.
+
+---
+
+## INVESTOR HIGHLIGHTS
+
+1. **Single investment entry point** -- one convertible note, one HoldCo, one cap table. Clean and simple.
+2. **First-position lien on $12.4M property** -- the investor's downside is secured by the hardest asset in the structure.
+3. **49% equity upside** across a real estate asset, a clinical operation, and a one-of-a-kind neurological dataset.
+4. **IP protected at holding level** -- if the operations face trouble, the most valuable asset (data + platform) is untouchable.
+5. **Legal tax efficiency** saves an estimated $9-10M/year vs. a simple structure -- $35-50M over five years.
+6. **Non-CFC structure** means no current U.S. tax on undistributed earnings for the investor.
+7. **Institutional-grade escrow** with milestone-based release protects the $1.7M deposit completely.
+8. **GDPR-standard data governance** from day one -- the dataset is built to be licensed anywhere in the world.
+9. **Independent exit paths** for each entity -- real estate, operations, and IP/data can each be sold to different buyers.
+10. **Global scalability** -- the IP licensing model expands to new geographies without restructuring.
+
+---
+
+## PDF TITLE OPTIONS
+
+**Option A:** *The IP Fortress: Protecting, Scaling, and Structuring the Transformational Epicenter*
+
+**Option B:** *Transformational Epicenter -- Global Structure Strategy: Executive Summary for Investors and Partners*
+
+**Option C:** *One HoldCo. Three Entities. Total Protection. -- The Transformational Epicenter Global Architecture*
+
+---
+---
+
+# DETAILED STRATEGY APPENDIX
+
+*The following sections contain the complete technical analysis supporting the executive summary above.*
 
 ---
 
