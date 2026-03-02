@@ -396,43 +396,35 @@ This combines Option B's simplicity (one investment entry point, one HoldCo, one
 
 ### Entity Stack
 
-```
-    FOUNDERS                                    INVESTOR
-    ────────                                    ────────
-    Nicholas Courschesne         Pablo [Investor]
-    (Panama Private Interest     (Personally or via
-     Foundation)                  U.S. LLC)
-              │                           │
-    Jason Sparks                          │
-    (Cook Islands Trust)                  │
-              │                           │
-              └─────────┬─────────────────┘
-                        │
-                        ▼
-    ╔═══════════════════════════════════════════════════╗
-    ║  CAYMAN ISLANDS EXEMPTED COMPANY                  ║
-    ║  "Transformational Epicenter Holdings Ltd."       ║
-    ║  (Master HoldCo)                                  ║
-    ║                                                   ║
-    ║  Founders: 51%  │  Pablo: 49%                     ║
-    ║  Board: 3 seats (2 Founder, 1 Investor)           ║
-    ╚═══════════════════════════════════════════════════╝
-              │                │                │
-         ┌────┘                │                └────┐
-         ▼                     ▼                     ▼
-    ┌──────────┐       ┌───────────┐       ┌───────────────┐
-    │ MEXICO   │       │ MEXICO    │       │ CAYMAN        │
-    │ PropCo   │       │ OpCo      │       │ IP/Data Co    │
-    │ (S.A.    │       │ (S.A.     │       │ (Exempted     │
-    │  de C.V.)│       │  de C.V.) │       │  Company)     │
-    │          │       │           │       │               │
-    │ Real     │       │ Clinical  │       │ Platform      │
-    │ Estate   │       │ Services  │       │ AI / ML       │
-    │ Holdings │       │ Staff     │       │ Protocols     │
-    │ via Bank │       │ Revenue   │       │ Brain Data    │
-    │ Trust    │       │ Licensing │       │ Mobile App    │
-    │(Fideic.) │       │ Guest Ops │       │ IP Licensing  │
-    └──────────┘       └───────────┘       └───────────────┘
+```mermaid
+graph TD
+    subgraph Founders["FOUNDERS (51%)"]
+        N["Nicholas Courschesne<br/>Panama Private Interest Foundation"]
+        J["Jason Sparks<br/>Cook Islands Trust"]
+    end
+
+    subgraph Investor["INVESTOR (49%)"]
+        P["Pablo<br/>Personally or via U.S. LLC"]
+    end
+
+    N --> HC
+    J --> HC
+    P --> HC
+
+    HC["<b>CAYMAN ISLANDS EXEMPTED COMPANY</b><br/>Transformational Epicenter Holdings Ltd.<br/>(Master HoldCo)<br/><br/>Founders: 51% | Pablo: 49%<br/>Board: 3 seats (2 Founder, 1 Investor)"]
+
+    HC --> PropCo
+    HC --> OpCo
+    HC --> IPCo
+
+    PropCo["<b>MEXICO PropCo</b><br/>S.A. de C.V.<br/><br/>Real Estate Holdings<br/>via Bank Trust (Fideicomiso)"]
+    OpCo["<b>MEXICO OpCo</b><br/>S.A. de C.V.<br/><br/>Clinical Services / Staff<br/>Revenue / Licensing / Guest Ops"]
+    IPCo["<b>CAYMAN IP/Data Co</b><br/>Exempted Company<br/><br/>Platform / AI / ML<br/>Protocols / Brain Data<br/>Mobile App / IP Licensing"]
+
+    style HC fill:#1a5276,color:#fff,stroke:#154360
+    style PropCo fill:#7d6608,color:#fff,stroke:#6c5b07
+    style OpCo fill:#7d6608,color:#fff,stroke:#6c5b07
+    style IPCo fill:#1a5276,color:#fff,stroke:#154360
 ```
 
 ### Why This Structure
@@ -497,36 +489,20 @@ This combines Option B's simplicity (one investment entry point, one HoldCo, one
 
 ### Revenue Flow (Steady State Operations)
 
-```
-GUEST PAYS $14,000/WEEK
-         │
-         ▼
-┌─────────────────────────────────────────────────────────────┐
-│  CAYMAN HOLDCO receives payment via platform/app            │
-│  (Medical tourism facilitator model)                        │
-│                                                             │
-│  HoldCo invoices the guest for the complete wellness        │
-│  package. HoldCo is the contracting party with clients.     │
-│  HoldCo operates the booking platform and app.              │
-└───────────────────┬──────────────────┬──────────────────────┘
-                    │                  │
-                    ▼                  ▼
-        ┌───────────────────┐  ┌──────────────────────┐
-        │  MEXICO OPCO      │  │  CAYMAN IP/DATA CO   │
-        │  Service Fee:     │  │  Royalty/License Fee: │
-        │  $8,400-$9,800    │  │  $1,400-$2,800       │
-        │  (60%-70% of rev) │  │  (10%-20% of rev)    │
-        │                   │  │                       │
-        │  Covers: medical  │  │  Covers: platform    │
-        │  staff, facility, │  │  license, brand,     │
-        │  consumables,     │  │  protocols, AI       │
-        │  local admin,     │  │  analytics, data     │
-        │  regulatory costs │  │  processing          │
-        └───────────────────┘  └──────────────────────┘
-                                        │
-                                   25% Mexico
-                                   withholding tax
-                                   on royalties
+```mermaid
+graph TD
+    Guest["<b>GUEST PAYS $14,000/WEEK</b>"] --> HC
+
+    HC["<b>CAYMAN HOLDCO</b><br/>Receives payment via platform/app<br/>(Medical tourism facilitator model)<br/><br/>HoldCo invoices the guest for the complete<br/>wellness package. HoldCo is the contracting<br/>party with clients. Operates booking platform."]
+
+    HC -->|"Service Fee: $8,400-$9,800<br/>(60-70% of revenue)"| OpCo["<b>MEXICO OPCO</b><br/><br/>Covers: medical staff, facility,<br/>consumables, local admin,<br/>regulatory costs"]
+
+    HC -->|"Royalty/License Fee: $1,400-$2,800<br/>(10-20% of revenue)"| IPCo["<b>CAYMAN IP/DATA CO</b><br/><br/>Covers: platform license, brand,<br/>protocols, AI analytics,<br/>data processing<br/><br/><i>25% Mexico withholding tax on royalties</i>"]
+
+    style Guest fill:#2e86c1,color:#fff
+    style HC fill:#1a5276,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style IPCo fill:#1a5276,color:#fff
 ```
 
 ### Tax Impact by Entity
@@ -616,30 +592,26 @@ The IP architecture must protect this asset absolutely.
 
 ### Data Sovereignty Architecture
 
-```
-PATIENT CONSENT
-(Informed consent under Mexican law + international standards)
-         │
-         ▼
-MEXICO OPCO (Data Collector / Processor)
-- Collects biometric and clinical data during treatment
-- Acts as data processor under license from IP Co
-- Does NOT own the data
-- Transmits encrypted data to cloud infrastructure
-         │
-         ▼
-CLOUD INFRASTRUCTURE (Controlled by IP Co)
-- Hosted on AWS/Azure/GCP in jurisdiction selected by IP Co
-- NOT hosted in Mexico (avoids Mexican judicial seizure)
-- Encrypted at rest and in transit
-- Access controlled by IP Co
-         │
-         ▼
-CAYMAN IP/DATA CO (Data Controller / Owner)
-- Legal owner of all aggregated, anonymized datasets
-- Controls all access, licensing, and monetization decisions
-- Maintains the AI models and analytical platforms
-- Enters into research partnerships and licensing deals
+```mermaid
+graph TD
+    Consent["<b>PATIENT CONSENT</b><br/>Informed consent under Mexican law<br/>+ international standards"]
+
+    Consent --> OpCo
+
+    OpCo["<b>MEXICO OPCO</b><br/>(Data Collector / Processor)<br/><br/>Collects biometric and clinical data<br/>Acts as data processor under license from IP Co<br/>Does NOT own the data<br/>Transmits encrypted data to cloud"]
+
+    OpCo -->|"Encrypted transfer"| Cloud
+
+    Cloud["<b>CLOUD INFRASTRUCTURE</b><br/>(Controlled by IP Co)<br/><br/>Hosted on AWS/Azure/GCP<br/>NOT hosted in Mexico<br/>Encrypted at rest and in transit<br/>Access controlled by IP Co"]
+
+    Cloud --> IPCo
+
+    IPCo["<b>CAYMAN IP/DATA CO</b><br/>(Data Controller / Owner)<br/><br/>Legal owner of all aggregated, anonymized datasets<br/>Controls all access, licensing, and monetization<br/>Maintains AI models and analytical platforms<br/>Enters into research partnerships and licensing deals"]
+
+    style Consent fill:#27ae60,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style Cloud fill:#566573,color:#fff
+    style IPCo fill:#1a5276,color:#fff
 ```
 
 ### Data Compliance Framework
@@ -693,21 +665,21 @@ Tulum is within 50 kilometers of Mexico's coastline, placing it in the constitut
 
 ### Recommended Structure: Mexico PropCo via Fideicomiso
 
-```
-CAYMAN HOLDCO (100% shareholder)
-         │
-         ▼
-MEXICO PROPCO (S.A. de C.V.)
-- Mexican corporation, 100% owned by Cayman HoldCo
-- Registered with RNIE (National Foreign Investment Registry)
-         │
-         ▼
-FIDEICOMISO (Bank Trust)
-- Mexican bank serves as trustee (e.g., Bancomext, BBVA, Santander)
-- PropCo is the beneficiary of the trust
-- Trust holds legal title to the property
-- 50-year term, renewable
-- PropCo has full rights: use, enjoyment, development, sale
+```mermaid
+graph TD
+    HC["<b>CAYMAN HOLDCO</b><br/>(100% shareholder)"]
+
+    HC --> PropCo
+
+    PropCo["<b>MEXICO PROPCO</b><br/>S.A. de C.V.<br/><br/>Mexican corporation, 100% owned by Cayman HoldCo<br/>Registered with RNIE (National Foreign Investment Registry)"]
+
+    PropCo --> Fideic
+
+    Fideic["<b>FIDEICOMISO (Bank Trust)</b><br/><br/>Mexican bank serves as trustee<br/>(e.g., Bancomext, BBVA, Santander)<br/>PropCo is the beneficiary of the trust<br/>Trust holds legal title to the property<br/>50-year term, renewable<br/>PropCo has full rights: use, enjoyment, development, sale"]
+
+    style HC fill:#1a5276,color:#fff
+    style PropCo fill:#7d6608,color:#fff
+    style Fideic fill:#6c3483,color:#fff
 ```
 
 ### Why This Structure
@@ -768,26 +740,28 @@ Mexican counsel must draft the security documents under Mexican law. The fideico
 
 ### Investment Flow
 
-```
-PABLO
-  │
-  │  $17,300,000 (Convertible Promissory Note)
-  │
-  ▼
-CAYMAN HOLDCO
-  │
-  ├──$12,950,000──▶ MEXICO PROPCO (Property + closing + renovation)
-  │
-  ├──$1,000,000───▶ MEXICO OPCO (Licensing + working capital)
-  │
-  ├──$500,000─────▶ CAYMAN IP CO (Platform development)
-  │
-  ├──$350,000─────▶ Professional fees (Legal, tax, TP study)
-  │
-  └──$500,000─────▶ Retained by HoldCo (Contingency)
-  │
-  │  (All internal transfers documented as intercompany
-  │   loans or equity contributions per tax counsel advice)
+```mermaid
+graph TD
+    Pablo["<b>PABLO</b><br/>$17,300,000 Convertible Promissory Note"]
+
+    Pablo --> HC["<b>CAYMAN HOLDCO</b>"]
+
+    HC -->|"$12,950,000"| PropCo["<b>MEXICO PROPCO</b><br/>Property + closing + renovation"]
+    HC -->|"$1,000,000"| OpCo["<b>MEXICO OPCO</b><br/>Licensing + working capital"]
+    HC -->|"$500,000"| IPCo["<b>CAYMAN IP CO</b><br/>Platform development"]
+    HC -->|"$350,000"| Fees["Professional fees<br/>Legal, tax, TP study"]
+    HC -->|"$500,000"| Reserve["Retained by HoldCo<br/>(Contingency)"]
+
+    note["All internal transfers documented as<br/>intercompany loans or equity contributions<br/>per tax counsel advice"]
+
+    style Pablo fill:#2e86c1,color:#fff
+    style HC fill:#1a5276,color:#fff
+    style PropCo fill:#7d6608,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style IPCo fill:#1a5276,color:#fff
+    style Fees fill:#566573,color:#fff
+    style Reserve fill:#566573,color:#fff
+    style note fill:#f9e79f,stroke:#f1c40f,color:#333
 ```
 
 ### Convertible Note Terms (Summary from LOI)
@@ -823,40 +797,23 @@ This is the cleanest, most institutional approach. It protects Pablo completely 
 
 ### Structure
 
-```
-PABLO
-  │
-  │  $1,700,000 wire transfer
-  │
-  ▼
-INTERNATIONAL ESCROW ACCOUNT
-(Held by: Recognized international law firm or
- institutional escrow company — e.g., a major
- law firm's client trust account in Miami or
- a regulated escrow company)
-  │
-  │  Governed by: Escrow Agreement
-  │  Signed by: Pablo, Nicholas, Jason, Escrow Agent
-  │
-  │  Release conditions (milestone-based):
-  │
-  ├─ MILESTONE 1: $200,000 released
-  │  Trigger: Satisfactory preliminary title search
-  │  Purpose: Entity formation costs, legal fees
-  │  Timeline: Within 15 days of escrow funding
-  │
-  ├─ MILESTONE 2: $1,200,000 released
-  │  Trigger: (a) Satisfactory full due diligence, AND
-  │           (b) HoldCo and PropCo legally formed, AND
-  │           (c) Fideicomiso established or in documented progress
-  │  Purpose: Property deposit to seller
-  │  Timeline: Within 60 days of escrow funding
-  │
-  └─ MILESTONE 3: $300,000 released
-     Trigger: (a) All Milestone 2 conditions met, AND
-              (b) Property purchase agreement executed
-     Purpose: Remaining legal, structuring, and pre-closing costs
-     Timeline: Within 90 days of escrow funding
+```mermaid
+graph TD
+    Pablo["<b>PABLO</b><br/>$1,700,000 wire transfer"]
+
+    Pablo --> Escrow["<b>INTERNATIONAL ESCROW ACCOUNT</b><br/><br/>Held by: Recognized international law firm<br/>or institutional escrow company<br/>(e.g., major law firm trust account in Miami)<br/><br/>Governed by: Escrow Agreement<br/>Signed by: Pablo, Nicholas, Jason, Escrow Agent"]
+
+    Escrow -->|"Within 15 days"| M1["<b>MILESTONE 1: $200,000</b><br/><br/>Trigger: Satisfactory preliminary title search<br/>Purpose: Entity formation costs, legal fees"]
+
+    Escrow -->|"Within 60 days"| M2["<b>MILESTONE 2: $1,200,000</b><br/><br/>Trigger: Satisfactory full due diligence AND<br/>HoldCo + PropCo legally formed AND<br/>Fideicomiso established or in progress<br/>Purpose: Property deposit to seller"]
+
+    Escrow -->|"Within 90 days"| M3["<b>MILESTONE 3: $300,000</b><br/><br/>Trigger: All Milestone 2 conditions met AND<br/>Property purchase agreement executed<br/>Purpose: Remaining legal, structuring, pre-closing costs"]
+
+    style Pablo fill:#2e86c1,color:#fff
+    style Escrow fill:#6c3483,color:#fff
+    style M1 fill:#27ae60,color:#fff
+    style M2 fill:#e67e22,color:#fff
+    style M3 fill:#c0392b,color:#fff
 ```
 
 ### Protections
