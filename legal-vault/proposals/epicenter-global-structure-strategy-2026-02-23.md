@@ -64,42 +64,6 @@ The structure has four entities across two jurisdictions. Each one does one job,
 
 #### Structure at a Glance
 
-```
-    FOUNDERS (51%)                    INVESTOR (49%)
-    ──────────────                    ──────────────
-    Nicholas (Panama Foundation)      Pablo (personally
-    Jason (Cook Islands Trust)         or via U.S. LLC)
-              |                              |
-              +──────────┬───────────────────+
-                         |
-                         v
-    +================================================+
-    |    CAYMAN HOLDCO                               |
-    |    "Transformational Epicenter Holdings Ltd."   |
-    |                                                |
-    |    - Issues convertible note                   |
-    |    - Single cap table                          |
-    |    - Contracts with guests                     |
-    |    - Board: 2 Founder + 1 Investor seats       |
-    +================================================+
-           |              |               |
-      +----+         +----+          +----+
-      |               |               |
-      v               v               v
-  +----------+   +-----------+   +---------------+
-  | MEXICO   |   | MEXICO    |   | CAYMAN        |
-  | PropCo   |   | OpCo      |   | IP/Data Co    |
-  |          |   |           |   |               |
-  | Property |   | Clinical  |   | AI Platform   |
-  | via Bank |   | Services  |   | Protocols     |
-  | Trust    |   | Staff     |   | Brain Data    |
-  | (Fideic.)|   | Licenses  |   | Brand / IP    |
-  +----------+   +-----------+   +---------------+
-   HARD ASSET     OPERATIONS       THE FORTRESS
-   Investor's     Risk lives       Most valuable
-   lien here      here             long-term asset
-```
-
 ```mermaid
 graph TD
     subgraph Founders["FOUNDERS (51%)"]
@@ -155,50 +119,6 @@ The most valuable long-term asset in this venture is not the property. It is the
 
 **How the IP is protected:**
 
-```
-  THE IP FORTRESS
-  ===============
-
-  +-----------------------------------------------+
-  |  CAYMAN IP/DATA CO (Owner)                    |
-  |                                               |
-  |  Owns: AI platform, clinical protocols,       |
-  |        brand, trademarks, brain dataset,      |
-  |        all ML models                          |
-  |                                               |
-  |  Controls: Cloud infrastructure               |
-  |            (AWS/Azure/GCP -- NOT in Mexico)    |
-  +-----------------------------------------------+
-            |                         ^
-            | LICENSE                 | ENCRYPTED
-            | (use only,             | DATA
-            |  no ownership)         | TRANSFER
-            v                         |
-  +---------------------------+       |
-  |  MEXICO OpCo (Licensee)   |-------+
-  |                           |
-  |  Can: Use platform,       |
-  |       apply protocols,    |
-  |       collect data        |
-  |                           |
-  |  Cannot: Own IP,          |
-  |          sublicense,      |
-  |          modify protocols,|
-  |          keep data        |
-  +---------------------------+
-
-  IF OPCO IS SUED OR SHUT DOWN:
-  +---------------------------+       +------------------+
-  |  Mexico OpCo              |       | IP/Data Co       |
-  |  [AFFECTED]               |       | [UNTOUCHED]      |
-  |  Lawsuit / shutdown /     |       | Different entity |
-  |  regulatory action        |       | Different country|
-  +---------------------------+       | IP safe. Data    |
-                                      | safe. License    |
-                                      | to new operator. |
-                                      +------------------+
-```
-
 ```mermaid
 graph TB
     subgraph Fortress["THE IP FORTRESS (Cayman)"]
@@ -241,32 +161,6 @@ graph TB
 
 **Separation of liabilities:**
 
-```
-  RISK MAP: Where risk lives vs. where value lives
-  =================================================
-
-  +-------------+    +-------------+    +---------------+
-  |  PropCo     |    |  OpCo       |    |  IP/Data Co   |
-  |             |    |             |    |               |
-  | RISK:       |    | RISK:       |    | RISK:         |
-  | Construction|    | Malpractice |    | Data breach   |
-  | Environment |    | Regulatory  |    | Tech failure  |
-  | Property    |    | Employment  |    |               |
-  | disputes    |    | Operational |    | VALUE:        |
-  |             |    |             |    | AI platform   |
-  | VALUE:      |    | VALUE:      |    | Brain dataset |
-  | $12.4M      |    | Equipment + |    | Protocols     |
-  | property    |    | working     |    | Brand + IP    |
-  | (hard asset)|    | capital     |    | (highest      |
-  |             |    | (limited)   |    |  long-term    |
-  +------+------+    +------+------+    |  value)       |
-         |                  |           +-------+-------+
-         |                  |                   |
-         X                  X                   X
-   CANNOT REACH       CANNOT REACH        CANNOT REACH
-   other entities     other entities      other entities
-```
-
 ```mermaid
 graph LR
     subgraph PropCo["PropCo (Real Estate)"]
@@ -304,31 +198,6 @@ graph LR
 - The investor's lien is on the real estate (the hardest, most recoverable asset) -- not on the operating entity
 
 **How returns flow:**
-
-```
-  GUEST PAYS $14,000/WEEK
-            |
-            v
-  +============================+
-  |  CAYMAN HOLDCO             |
-  |  Receives full payment     |
-  |  Retains 10-30% margin     |
-  +============================+
-       |                  |
-       v                  v
-  +-----------+    +---------------+
-  | MEXICO    |    | CAYMAN        |
-  | OpCo      |    | IP/Data Co    |
-  |           |    |               |
-  | 60-70%    |    | 10-20%        |
-  | Service   |    | Royalty /     |
-  | Fee       |    | License Fee   |
-  +-----------+    +---------------+
-    Pays 30%          Pays 0%
-    MX corp tax       Cayman tax
-                      (25% MX WHT
-                       already paid)
-```
 
 ```mermaid
 graph TD
@@ -400,41 +269,6 @@ The annual compliance investment is less than 2% of the annual tax savings.
 ### Investor Alignment + Value Creation
 
 **What Pablo is investing into:**
-
-```
-  CAPITAL STACK + INVESTOR ENTRY
-  ==============================
-
-  PABLO
-    |
-    |  $17.3M Convertible Note (9% interest)
-    |  Secured by first-position lien on property
-    |
-    v
-  +=============================================+
-  |  CAYMAN HOLDCO                              |
-  |  (Single entry point for all capital)       |
-  +=============================================+
-    |              |             |           |
-    v              v             v           v
-  $12.95M       $1.0M        $500K       $850K
-  Property +    Licensing +   Platform    Legal fees +
-  closing +     working       dev         contingency
-  renovation    capital
-    |              |             |
-    v              v             v
-  PropCo         OpCo         IP Co
-
-  AFTER CONVERSION (month 18):
-  +---------------------------------------------+
-  |  CAYMAN HOLDCO                              |
-  |  Founders: 51%  |  Pablo: 49%               |
-  |  Pablo owns 49% of EVERYTHING:              |
-  |  - 49% of the property                      |
-  |  - 49% of the operations                    |
-  |  - 49% of the IP and data                   |
-  +---------------------------------------------+
-```
 
 ```mermaid
 graph TD
