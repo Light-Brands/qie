@@ -62,6 +62,75 @@ The structure uses two jurisdictions: the Cayman Islands (for the holding compan
 
 The structure has four entities across two jurisdictions. Each one does one job, and only that job.
 
+#### Structure at a Glance
+
+```
+    FOUNDERS (51%)                    INVESTOR (49%)
+    ──────────────                    ──────────────
+    Nicholas (Panama Foundation)      Pablo (personally
+    Jason (Cook Islands Trust)         or via U.S. LLC)
+              |                              |
+              +──────────┬───────────────────+
+                         |
+                         v
+    +================================================+
+    |    CAYMAN HOLDCO                               |
+    |    "Transformational Epicenter Holdings Ltd."   |
+    |                                                |
+    |    - Issues convertible note                   |
+    |    - Single cap table                          |
+    |    - Contracts with guests                     |
+    |    - Board: 2 Founder + 1 Investor seats       |
+    +================================================+
+           |              |               |
+      +----+         +----+          +----+
+      |               |               |
+      v               v               v
+  +----------+   +-----------+   +---------------+
+  | MEXICO   |   | MEXICO    |   | CAYMAN        |
+  | PropCo   |   | OpCo      |   | IP/Data Co    |
+  |          |   |           |   |               |
+  | Property |   | Clinical  |   | AI Platform   |
+  | via Bank |   | Services  |   | Protocols     |
+  | Trust    |   | Staff     |   | Brain Data    |
+  | (Fideic.)|   | Licenses  |   | Brand / IP    |
+  +----------+   +-----------+   +---------------+
+   HARD ASSET     OPERATIONS       THE FORTRESS
+   Investor's     Risk lives       Most valuable
+   lien here      here             long-term asset
+```
+
+```mermaid
+graph TD
+    subgraph Founders["FOUNDERS (51%)"]
+        N["Nicholas<br/>Panama Foundation"]
+        J["Jason<br/>Cook Islands Trust"]
+    end
+
+    subgraph Investor["INVESTOR (49%)"]
+        P["Pablo<br/>Personally or via U.S. LLC"]
+    end
+
+    N --> HC
+    J --> HC
+    P --> HC
+
+    HC["<b>CAYMAN HOLDCO</b><br/>Transformational Epicenter Holdings Ltd.<br/><i>Single cap table / Convertible note issuer</i>"]
+
+    HC --> PropCo
+    HC --> OpCo
+    HC --> IPCo
+
+    PropCo["<b>MEXICO PropCo</b><br/>S.A. de C.V.<br/><br/>Real Estate via Fideicomiso<br/><i>Investor lien attaches here</i>"]
+    OpCo["<b>MEXICO OpCo</b><br/>S.A. de C.V.<br/><br/>Clinical Services / Staff<br/>Medical Licenses / Guest Ops"]
+    IPCo["<b>CAYMAN IP/Data Co</b><br/>Exempted Company<br/><br/>AI Platform / Protocols<br/>Brain Data / Brand / IP"]
+
+    style HC fill:#1a5276,color:#fff,stroke:#154360
+    style PropCo fill:#7d6608,color:#fff,stroke:#6c5b07
+    style OpCo fill:#7d6608,color:#fff,stroke:#6c5b07
+    style IPCo fill:#1a5276,color:#fff,stroke:#154360
+```
+
 **Cayman HoldCo -- "Transformational Epicenter Holdings Ltd."**
 What it does: Holds all subsidiaries. Issues the convertible note to the investor. Manages the cap table (Founders 51%, Investor 49%). Contracts with guests and operates the booking platform. Makes strategic decisions.
 What it does NOT do: Operate clinical services. Hold real estate directly. Employ medical staff. Store data.
@@ -86,6 +155,73 @@ The most valuable long-term asset in this venture is not the property. It is the
 
 **How the IP is protected:**
 
+```
+  THE IP FORTRESS
+  ===============
+
+  +-----------------------------------------------+
+  |  CAYMAN IP/DATA CO (Owner)                    |
+  |                                               |
+  |  Owns: AI platform, clinical protocols,       |
+  |        brand, trademarks, brain dataset,      |
+  |        all ML models                          |
+  |                                               |
+  |  Controls: Cloud infrastructure               |
+  |            (AWS/Azure/GCP -- NOT in Mexico)    |
+  +-----------------------------------------------+
+            |                         ^
+            | LICENSE                 | ENCRYPTED
+            | (use only,             | DATA
+            |  no ownership)         | TRANSFER
+            v                         |
+  +---------------------------+       |
+  |  MEXICO OpCo (Licensee)   |-------+
+  |                           |
+  |  Can: Use platform,       |
+  |       apply protocols,    |
+  |       collect data        |
+  |                           |
+  |  Cannot: Own IP,          |
+  |          sublicense,      |
+  |          modify protocols,|
+  |          keep data        |
+  +---------------------------+
+
+  IF OPCO IS SUED OR SHUT DOWN:
+  +---------------------------+       +------------------+
+  |  Mexico OpCo              |       | IP/Data Co       |
+  |  [AFFECTED]               |       | [UNTOUCHED]      |
+  |  Lawsuit / shutdown /     |       | Different entity |
+  |  regulatory action        |       | Different country|
+  +---------------------------+       | IP safe. Data    |
+                                      | safe. License    |
+                                      | to new operator. |
+                                      +------------------+
+```
+
+```mermaid
+graph TB
+    subgraph Fortress["THE IP FORTRESS (Cayman)"]
+        IPCo["<b>CAYMAN IP/Data Co</b><br/><br/>Owns: AI platform, protocols,<br/>brand, trademarks, brain dataset<br/><br/>Controls: Cloud infrastructure<br/>(NOT hosted in Mexico)"]
+    end
+
+    subgraph Mexico["MEXICO (Operational Risk Zone)"]
+        OpCo["<b>MEXICO OpCo</b><br/>(Licensee only)<br/><br/>Can: Use platform, apply protocols<br/>Cannot: Own IP, sublicense, keep data"]
+    end
+
+    IPCo -->|"LICENSE<br/>(use only, no ownership)"| OpCo
+    OpCo -->|"Encrypted data transfer"| IPCo
+
+    Lawsuit["Lawsuit / Shutdown /<br/>Regulatory Action"] -.->|"AFFECTS"| OpCo
+    Lawsuit -.->|"CANNOT REACH"| IPCo
+
+    style IPCo fill:#1a5276,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style Fortress fill:#d4e6f1,stroke:#1a5276,stroke-width:3px
+    style Mexico fill:#fdebd0,stroke:#7d6608
+    style Lawsuit fill:#c0392b,color:#fff
+```
+
 - All IP is owned at the Cayman holding level, not in Mexico
 - The Mexican operating company is a licensee -- it uses the IP under a formal agreement, but it does not own any of it
 - If the Mexican operation is sued, shut down, or faces regulatory action, the IP remains completely unaffected in a separate jurisdiction
@@ -105,6 +241,58 @@ The most valuable long-term asset in this venture is not the property. It is the
 
 **Separation of liabilities:**
 
+```
+  RISK MAP: Where risk lives vs. where value lives
+  =================================================
+
+  +-------------+    +-------------+    +---------------+
+  |  PropCo     |    |  OpCo       |    |  IP/Data Co   |
+  |             |    |             |    |               |
+  | RISK:       |    | RISK:       |    | RISK:         |
+  | Construction|    | Malpractice |    | Data breach   |
+  | Environment |    | Regulatory  |    | Tech failure  |
+  | Property    |    | Employment  |    |               |
+  | disputes    |    | Operational |    | VALUE:        |
+  |             |    |             |    | AI platform   |
+  | VALUE:      |    | VALUE:      |    | Brain dataset |
+  | $12.4M      |    | Equipment + |    | Protocols     |
+  | property    |    | working     |    | Brand + IP    |
+  | (hard asset)|    | capital     |    | (highest      |
+  |             |    | (limited)   |    |  long-term    |
+  +------+------+    +------+------+    |  value)       |
+         |                  |           +-------+-------+
+         |                  |                   |
+         X                  X                   X
+   CANNOT REACH       CANNOT REACH        CANNOT REACH
+   other entities     other entities      other entities
+```
+
+```mermaid
+graph LR
+    subgraph PropCo["PropCo (Real Estate)"]
+        PR["<b>RISK:</b> Construction,<br/>environment, property disputes"]
+        PV["<b>VALUE:</b> $12.4M property"]
+    end
+
+    subgraph OpCo["OpCo (Operations)"]
+        OR["<b>RISK:</b> Malpractice,<br/>regulatory, employment"]
+        OV["<b>VALUE:</b> Equipment +<br/>working capital (limited)"]
+    end
+
+    subgraph IPCo["IP/Data Co (IP Fortress)"]
+        IR["<b>RISK:</b> Data breach,<br/>tech failure"]
+        IV["<b>VALUE:</b> AI platform, brain<br/>dataset, protocols, brand"]
+    end
+
+    PropCo -.-x|"FIREWALL"| OpCo
+    OpCo -.-x|"FIREWALL"| IPCo
+    PropCo -.-x|"FIREWALL"| IPCo
+
+    style PropCo fill:#fdebd0,stroke:#e67e22,stroke-width:2px
+    style OpCo fill:#fadbd8,stroke:#e74c3c,stroke-width:2px
+    style IPCo fill:#d4e6f1,stroke:#2980b9,stroke-width:2px
+```
+
 - Medical malpractice liability lives in Mexico OpCo. It cannot reach the real estate (PropCo) or the IP (IP Co).
 - Real estate risk (construction, environmental, property disputes) lives in Mexico PropCo. It cannot reach clinical operations or IP.
 - Technology and data risk lives in Cayman IP Co. It is separated from both Mexican entities.
@@ -116,6 +304,47 @@ The most valuable long-term asset in this venture is not the property. It is the
 - The investor's lien is on the real estate (the hardest, most recoverable asset) -- not on the operating entity
 
 **How returns flow:**
+
+```
+  GUEST PAYS $14,000/WEEK
+            |
+            v
+  +============================+
+  |  CAYMAN HOLDCO             |
+  |  Receives full payment     |
+  |  Retains 10-30% margin     |
+  +============================+
+       |                  |
+       v                  v
+  +-----------+    +---------------+
+  | MEXICO    |    | CAYMAN        |
+  | OpCo      |    | IP/Data Co    |
+  |           |    |               |
+  | 60-70%    |    | 10-20%        |
+  | Service   |    | Royalty /     |
+  | Fee       |    | License Fee   |
+  +-----------+    +---------------+
+    Pays 30%          Pays 0%
+    MX corp tax       Cayman tax
+                      (25% MX WHT
+                       already paid)
+```
+
+```mermaid
+graph TD
+    Guest["GUEST<br/>Pays $14,000/week"] --> HC
+
+    HC["<b>CAYMAN HOLDCO</b><br/>Receives full payment<br/>Retains 10-30% margin<br/><i>0% Cayman tax</i>"]
+
+    HC -->|"60-70% Service Fee<br/>($8,400-$9,800)"| OpCo["<b>MEXICO OpCo</b><br/>Clinical services, staff,<br/>facility, consumables<br/><i>30% Mexican corporate tax</i>"]
+
+    HC -->|"10-20% Royalty<br/>($1,400-$2,800)"| IPCo["<b>CAYMAN IP/Data Co</b><br/>Platform, AI, protocols,<br/>brand, data processing<br/><i>0% Cayman tax<br/>(25% MX withholding already paid)</i>"]
+
+    style HC fill:#1a5276,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style IPCo fill:#1a5276,color:#fff
+    style Guest fill:#2e86c1,color:#fff
+```
 
 - HoldCo receives guest payments, then pays OpCo for clinical services (60-70%) and IP Co for technology licensing (10-20%)
 - HoldCo retains the margin (10-30%) for management, marketing, and investor returns
@@ -171,6 +400,65 @@ The annual compliance investment is less than 2% of the annual tax savings.
 ### Investor Alignment + Value Creation
 
 **What Pablo is investing into:**
+
+```
+  CAPITAL STACK + INVESTOR ENTRY
+  ==============================
+
+  PABLO
+    |
+    |  $17.3M Convertible Note (9% interest)
+    |  Secured by first-position lien on property
+    |
+    v
+  +=============================================+
+  |  CAYMAN HOLDCO                              |
+  |  (Single entry point for all capital)       |
+  +=============================================+
+    |              |             |           |
+    v              v             v           v
+  $12.95M       $1.0M        $500K       $850K
+  Property +    Licensing +   Platform    Legal fees +
+  closing +     working       dev         contingency
+  renovation    capital
+    |              |             |
+    v              v             v
+  PropCo         OpCo         IP Co
+
+  AFTER CONVERSION (month 18):
+  +---------------------------------------------+
+  |  CAYMAN HOLDCO                              |
+  |  Founders: 51%  |  Pablo: 49%               |
+  |  Pablo owns 49% of EVERYTHING:              |
+  |  - 49% of the property                      |
+  |  - 49% of the operations                    |
+  |  - 49% of the IP and data                   |
+  +---------------------------------------------+
+```
+
+```mermaid
+graph TD
+    Pablo["<b>PABLO</b><br/>$17.3M Convertible Note<br/>9% interest / 49% equity on conversion<br/>First-position lien on property"]
+
+    Pablo --> HC["<b>CAYMAN HOLDCO</b><br/>Single entry point"]
+
+    HC -->|"$12.95M"| PropCo["<b>PropCo</b><br/>Property + closing<br/>+ renovation"]
+    HC -->|"$1.0M"| OpCo["<b>OpCo</b><br/>Licensing + working<br/>capital"]
+    HC -->|"$500K"| IPCo["<b>IP Co</b><br/>Platform development"]
+    HC -->|"$850K"| Fees["Legal fees +<br/>contingency reserve"]
+
+    subgraph PostConversion["AFTER CONVERSION"]
+        Ownership["Founders 51% | Pablo 49%<br/>Pablo owns 49% of everything:<br/>property + operations + IP + data"]
+    end
+
+    style Pablo fill:#2e86c1,color:#fff
+    style HC fill:#1a5276,color:#fff
+    style PropCo fill:#7d6608,color:#fff
+    style OpCo fill:#7d6608,color:#fff
+    style IPCo fill:#1a5276,color:#fff
+    style Fees fill:#566573,color:#fff
+    style PostConversion fill:#d5f5e3,stroke:#27ae60,stroke-width:2px
+```
 
 - A single Convertible Promissory Note ($17,300,000) issued by Cayman HoldCo
 - The note pays 9% simple interest quarterly (PIK during pre-revenue)
