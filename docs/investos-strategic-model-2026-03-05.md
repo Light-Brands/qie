@@ -105,26 +105,29 @@ Half in cash. Half in equity. Buyout option on the equity.
 
 **Pre-money valuation: $60M (3x raise as typical ratio)**
 
-```
-TOTAL FEE: $2.0M (10% of $20M)
+```mermaid
+graph TD
+    FEE["TOTAL FEE: $2.0M<br/>(10% of $20M)"]
+    FEE --> CASH["CASH: $1.0M"]
+    FEE --> EQUITY["EQUITY: $1.0M"]
 
-CASH ($1.0M)
-├── Payment 1:  $500K    ← when client raises first $2M (10% of round)
-└── Payment 2:  $500K    ← when client closes the full $20M
+    CASH --> P1["Payment 1: $500K<br/>When 10% raised ($2M)"]
+    CASH --> P2["Payment 2: $500K<br/>When round closes ($20M)"]
 
-EQUITY ($1.0M)
-├── Ownership:  1.67% at pre-money ($60M)
-├── Post-raise: 1.25% of $80M post-money = $1.0M
-└── Buyout:     $1.5M (50% premium on $1M equity grant)
+    EQUITY --> OWN["1.67% ownership at<br/>pre-money ($60M)"]
+    OWN --> POST["1.25% post-money<br/>$80M = $1.0M value"]
+    POST --> BUYOUT["Buyout: $1.5M<br/>(50% premium)"]
 
-OUTCOME A — Client buys out equity:
-  $500K + $500K + $1.5M = $2.5M total    (effective 12.5% rate)
+    BUYOUT --> A["Outcome A: Buyout exercised<br/>$500K + $500K + $1.5M = $2.5M<br/>(effective 12.5%)"]
+    POST --> B["Outcome B: Equity held<br/>$1.0M cash + uncapped upside"]
+    P1 --> C["Outcome C: Raise fails<br/>$500K floor<br/>(Payment 1 already collected)"]
 
-OUTCOME B — Client keeps InvestOS as equity partner:
-  $500K + $500K + equity upside = $1.0M cash + uncapped upside
-
-OUTCOME C — Raise fails, equity worthless:
-  $500K + $0 + $0 = $500K floor    (Payment 1 already collected)
+    style FEE fill:#1a1a2e,color:#fff
+    style CASH fill:#16213e,color:#fff
+    style EQUITY fill:#16213e,color:#fff
+    style A fill:#0f3460,color:#fff
+    style B fill:#0f3460,color:#fff
+    style C fill:#533483,color:#fff
 ```
 
 ### Revenue Per Engagement by Raise Size
@@ -146,29 +149,30 @@ This is critical to understanding the model. Revenue is not recognized at signin
 
 ### The Three Revenue Waves
 
-```
-PHASE 1 — DEPLOY (Days 0-60)
-Action:   Full platform deployment, strategy, materials, LP targeting
-Duration: 30-60 days from signing
-Revenue:  $0 (kickoff payment already collected at signing)
+```mermaid
+graph LR
+    subgraph "PHASE 1 — DEPLOY"
+        D["Days 0-60<br/>Platform deployment<br/>Strategy & materials<br/>LP targeting<br/>Revenue: $0"]
+    end
 
-WAVE 1 — PAYMENT 1 (Day 60-90 from signing)
-Trigger:  Client raises first 10% of round
-Amount:   $500K per $20M engagement (50% of cash fee)
-Timing:   ~30 days after deployment. Landing 1-2 anchor investors triggers this.
-Certainty: ~75% of engagements reach this milestone
+    subgraph "WAVE 1 — PAYMENT 1"
+        W1["Day 60-90<br/>10% of round raised<br/>$500K collected<br/>75% certainty"]
+    end
 
-WAVE 2 — PAYMENT 2 (Day 120-150 from signing)
-Trigger:  Client fully closes the round (sell-out)
-Amount:   $500K per $20M engagement (50% of cash fee)
-Timing:   ~90 days after deployment. Goal: every raise sells out in 90 days.
-Certainty: ~55% of engagements fully close (close rate)
+    subgraph "WAVE 2 — PAYMENT 2"
+        W2["Day 120-150<br/>Full close / sell-out<br/>$500K collected<br/>55% certainty"]
+    end
 
-WAVE 3 — EQUITY BUYOUT (Day 150-210 from signing)
-Trigger:  Client exercises buyout option post-close
-Amount:   $1.5M per $20M engagement (150% of equity grant)
-Timing:   30-60 days after close
-Certainty: ~65% of closes exercise the buyout
+    subgraph "WAVE 3 — BUYOUT"
+        W3["Day 150-210<br/>Equity buyout exercised<br/>$1.5M collected<br/>65% of closes"]
+    end
+
+    D --> W1 --> W2 --> W3
+
+    style D fill:#1a1a2e,color:#fff
+    style W1 fill:#16213e,color:#fff
+    style W2 fill:#0f3460,color:#fff
+    style W3 fill:#533483,color:#fff
 ```
 
 **The InvestOS speed advantage:** Traditional fundraising takes 17.5 months. We deploy in 30-60 days, hit 10% raised in 30 days, and target sell-out in 90 days. A complete engagement cycle — signing to close — in 120-150 days. This is the AI advantage.
@@ -497,30 +501,27 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. A
 
 ## The 10-Year Summary
 
-```
-YEAR 1 ─ PROVE ──────────────────────────────────────────────────
-Ramp: 1/mo → 4/mo │ Engagements: 30 │ Revenue: $20M │ Profit: $15-17M
-Capital advised: $600M │ Portfolio: 30 positions │ Team: 12-15
-
-YEAR 2 ─ BUILD ──────────────────────────────────────────────────
-Run rate: 4-6/mo │ Engagements: 60 │ Revenue: $56.5M │ Profit: $51.5-53M
-Capital advised: $1.2B │ Portfolio: 90 positions │ Team: 12-15
-
-YEAR 3 ─ DEFINE ─────────────────────────────────────────────────
-Run rate: 6-8/mo │ Engagements: 84 │ Revenue: $96M │ Profit: $91-92M
-Capital advised: $1.68B │ Portfolio: 174 positions │ Team: 12-15
-
-YEAR 5 ─ SCALE ──────────────────────────────────────────────────
-Run rate: 10-12/mo │ Engagements: 132 │ Revenue: $151M │ Profit: $145.5-146.5M
-Capital advised: $2.64B │ Portfolio: 390 positions │ Team: 12-15
-
-YEAR 7 ─ INSTITUTIONAL ─────────────────────────────────────────
-Run rate: 14-18/mo │ Engagements: 192 │ Revenue: $220.5M │ Profit: $214.5-215.5M
-Capital advised: $3.84B │ Portfolio: 750+ positions │ Team: 12-15
-
-YEAR 10 ─ THE INSTITUTION ──────────────────────────────────────
-Run rate: 18-24/mo │ Engagements: 252 │ Revenue: $288.5M │ Profit: $281.5-283M
-Capital advised: $5.04B │ Portfolio: 1,200+ positions │ Team: 12-15
+```mermaid
+timeline
+    title InvestOS 10-Year Growth Trajectory (Team: 12-15 permanent)
+    Year 1 — PROVE : 1→4/mo ramp, 30 engagements
+                    : Revenue $20M, Profit $15-17M
+                    : Capital advised $600M, 30 positions
+    Year 2 — BUILD : 4-6/mo, 60 engagements
+                   : Revenue $56.5M, Profit $51.5-53M
+                   : Capital advised $1.2B, 90 positions
+    Year 3 — DEFINE : 6-8/mo, 84 engagements
+                    : Revenue $96M, Profit $91-92M
+                    : Capital advised $1.68B, 174 positions
+    Year 5 — SCALE : 10-12/mo, 132 engagements
+                   : Revenue $151M, Profit $145.5-146.5M
+                   : Capital advised $2.64B, 390 positions
+    Year 7 — INSTITUTIONAL : 14-18/mo, 192 engagements
+                           : Revenue $220.5M, Profit $214.5-215.5M
+                           : Capital advised $3.84B, 750+ positions
+    Year 10 — THE INSTITUTION : 18-24/mo, 252 engagements
+                              : Revenue $288.5M, Profit $281.5-283M
+                              : Capital advised $5.04B, 1200+ positions
 ```
 
 ### Cumulative 10-Year Impact
@@ -622,27 +623,25 @@ Total capital formation fee pool: ~$3B-$6B annually.
 
 ## The Flywheel
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    THE INVESTOS FLYWHEEL                         │
-│                                                                 │
-│    Client succeeds ──→ Case study + referrals ──→ More clients  │
-│         │                                              │        │
-│         ▼                                              ▼        │
-│    Equity appreciates                          Cash fees grow   │
-│         │                                              │        │
-│         ▼                                              ▼        │
-│    Portfolio value grows ──→ InvestOS credibility grows          │
-│         │                           │                           │
-│         ▼                           ▼                           │
-│    Co-investment capacity    Larger mandates accepted            │
-│         │                           │                           │
-│         ▼                           ▼                           │
-│    LP relationships deepen ──→ Better outcomes for clients      │
-│                                      │                          │
-│                                      ▼                          │
-│                              Client succeeds ──→ ...            │
-└─────────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    A["Client Succeeds"] --> B["Case Studies + Referrals"]
+    A --> C["Equity Appreciates"]
+    B --> D["More Clients"]
+    C --> E["Portfolio Value Grows"]
+    D --> F["Cash Fees Grow"]
+    E --> G["InvestOS Credibility Grows"]
+    F --> G
+    G --> H["Larger Mandates Accepted"]
+    E --> I["Co-Investment Capacity"]
+    I --> J["LP Relationships Deepen"]
+    H --> K["Better Outcomes for Clients"]
+    J --> K
+    K --> A
+
+    style A fill:#1a1a2e,color:#fff
+    style G fill:#0f3460,color:#fff
+    style K fill:#533483,color:#fff
 ```
 
 Every closed raise creates:

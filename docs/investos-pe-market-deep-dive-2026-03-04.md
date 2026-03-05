@@ -208,24 +208,35 @@ InvestOS is NOT a SaaS tool. It is an **AI-native strategic capital advisory fir
 
 InvestOS competes in THREE markets simultaneously — and beats all of them:
 
-```
-PLACEMENT AGENTS (1.5-5% fee, introductions only)
-├── Park Hill, Eaton Partners, Monument Group, Hodes Weill
-├── They introduce GPs to LPs. That's it.
-├── No platform. No materials. No compliance. No closing support.
-└── InvestOS: "We do what they do PLUS give you the entire platform."
+```mermaid
+graph TD
+    subgraph PA["PLACEMENT AGENTS (1.5-5%, introductions only)"]
+        PA1["Park Hill, Eaton Partners,<br/>Monument Group, Hodes Weill"]
+        PA2["Introduce GPs to LPs. That's it.<br/>No platform. No materials.<br/>No compliance. No closing support."]
+    end
 
-CAPITAL FORMATION SOFTWARE ($18K-$250K/yr, tools only)
-├── Juniper Square, Allvue, Carta, DealCloud
-├── They give you tools. You still do all the work.
-├── No advisory. No strategy. No one helping you close.
-└── InvestOS: "Our platform is included in the advisory fee. Zero upfront."
+    subgraph SW["CAPITAL FORMATION SOFTWARE ($18K-$250K/yr)"]
+        SW1["Juniper Square, Allvue,<br/>Carta, DealCloud"]
+        SW2["Tools only. You do all the work.<br/>No advisory. No strategy.<br/>No one helping you close."]
+    end
 
-BOUTIQUE INVESTMENT BANKS (5-10% fee, relationship-driven)
-├── Houlihan Lokey, William Blair, Raymond James (fund placement groups)
-├── Expensive, relationship-driven, won't touch sub-$100M raises
-├── Slow, traditional, not technology-enabled
-└── InvestOS: "Same strategic depth, AI-powered speed, accessible to emerging managers."
+    subgraph IB["BOUTIQUE INVESTMENT BANKS (5-10%)"]
+        IB1["Houlihan Lokey, William Blair,<br/>Raymond James"]
+        IB2["Expensive, relationship-driven.<br/>Won't touch sub-$100M raises.<br/>Slow, traditional, no tech."]
+    end
+
+    subgraph IO["INVESTOS (10%, full stack)"]
+        IO1["Everything they do PLUS<br/>AI-powered platform included.<br/>Accessible to emerging managers.<br/>Deploy in 60 days, sell out in 90."]
+    end
+
+    PA --> IO
+    SW --> IO
+    IB --> IO
+
+    style IO1 fill:#2d6a4f,color:#fff
+    style PA2 fill:#533483,color:#fff
+    style SW2 fill:#533483,color:#fff
+    style IB2 fill:#533483,color:#fff
 ```
 
 ### Why 10% Is Justified
@@ -311,13 +322,16 @@ Unlike every competitor, InvestOS requires **no upfront payment**. The first pay
 
 With the 90-day sell-out cycle, all three revenue waves (Payment 1, Payment 2, buyouts) compound within each year:
 
+```mermaid
+xychart-beta
+    title "Revenue Growth (90-Day Sell-Out Cycle)"
+    x-axis ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5"]
+    y-axis "Revenue ($M)" 0 --> 350
+    bar [30, 88, 148, 205, 250]
+    line [15, 56, 96, 130, 151]
 ```
-Year 1:  ████████░░░░░░░░░░░░  $15M-$44M     (all 3 waves flowing by Q3)
-Year 2:  █████████████░░░░░░░  $56M-$120M    (full flywheel from day 1)
-Year 3:  ████████████████░░░░  $96M-$200M    (category definition)
-Year 4:  ██████████████████░░  $130M-$280M   (compounding portfolio)
-Year 5:  ████████████████████  $151M-$350M   (category leader)
-```
+
+*Bar = upper range, Line = conservative estimate. All 3 revenue waves flow within each year.*
 
 ### Capacity Planning
 
@@ -514,12 +528,16 @@ InvestOS holds the equity. The fund/company performs well.
 
 By Year 3, InvestOS holds equity in **~160-275 companies/funds**. This portfolio has compounding properties:
 
+```mermaid
+xychart-beta
+    title "Equity Portfolio Growth"
+    x-axis ["Year 1", "Year 2", "Year 3", "Year 5"]
+    y-axis "Portfolio Value ($M)" 0 --> 200
+    bar [5, 17, 43, 150]
+    line [30, 90, 162, 384]
 ```
-Year 1: 30-60 positions    Portfolio: $3M-$6M      (mostly at cost)
-Year 2: 90-156 positions   Portfolio: $12M-$22M    (Year 1 positions appreciating)
-Year 3: 162-276 positions  Portfolio: $30M-$55M    (compounding appreciation)
-Year 5: 384-636 positions  Portfolio: $100M-$200M+ (mature positions generating exits)
-```
+
+*Bar = portfolio value ($M), Line = cumulative positions. By Year 5, equity portfolio alone could exceed cumulative cash fees.*
 
 **By Year 5, the equity portfolio alone could be worth more than the cumulative cash fees collected.** This is the venture fund inside the advisory firm.
 

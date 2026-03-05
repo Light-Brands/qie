@@ -85,20 +85,21 @@ The investors who take initiative are the right investors. If they respond with 
 
 When they respond, the conversation follows a natural path:
 
-```
-Response received
-    │
-    ├── "Tell me more about this"
-    │   └── Share deeper context. Gauge their situation. Ask what they're working on.
-    │
-    ├── "I'm actually raising / looking to raise"
-    │   └── Introduce ClarityOS. "Let us help you get clear on where you stand."
-    │
-    ├── "I know someone who might be interested"
-    │   └── Referral. "Would you mind introducing us?"
-    │
-    └── "Interesting, let's stay in touch"
-        └── Keep warm. No pressure. They'll come back when timing is right.
+```mermaid
+graph TD
+    R["Response Received"] --> A["'Tell me more about this'"]
+    R --> B["'I'm actually raising'"]
+    R --> C["'I know someone interested'"]
+    R --> D["'Let's stay in touch'"]
+
+    A --> A1["Share deeper context.<br/>Gauge situation. Ask what<br/>they're working on."]
+    B --> B1["Introduce ClarityOS.<br/>'Let us help you get clear<br/>on where you stand.'"]
+    C --> C1["Referral path.<br/>'Would you mind<br/>introducing us?'"]
+    D --> D1["Keep warm. No pressure.<br/>They'll come back when<br/>timing is right."]
+
+    style R fill:#1a1a2e,color:#fff
+    style B1 fill:#0f3460,color:#fff
+    style C1 fill:#533483,color:#fff
 ```
 
 **Step 5: ClarityOS Onboarding**
@@ -113,34 +114,21 @@ Once they express interest, onboard them into ClarityOS (free). This is where th
 
 InvestOS operates as a progressive product stack. Each product builds on the previous one, moving the client from clarity → strategy → execution → amplification.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    THE INVESTOS PRODUCT STACK                    │
-│                                                                 │
-│  ┌──────────────┐                                               │
-│  │  ClarityOS   │  FREE                                         │
-│  │  "Get clear" │  Assessment, preparation, foundation          │
-│  └──────┬───────┘                                               │
-│         │                                                       │
-│         ▼                                                       │
-│  ┌──────────────┐                                               │
-│  │  StrategyOS  │  $10K - $25K                                  │
-│  │  "Get smart" │  Strategic roadmap built on clarity            │
-│  └──────┬───────┘                                               │
-│         │                                                       │
-│         ▼  ── DECISION TO ENGAGE ──                             │
-│         │                                                       │
-│  ┌──────────────┐                                               │
-│  │  InvestOS    │  3% - 5% OF RAISE                             │
-│  │  "Get funded"│  Platform, data room, institutional materials │
-│  └──────┬───────┘                                               │
-│         │                                                       │
-│         ▼                                                       │
-│  ┌──────────────┐                                               │
-│  │  AmplifyOS   │  8% - 12% OF RAISE                           │
-│  │  "Get closed"│  Marketing, ads, follow-up, closing           │
-│  └──────────────┘                                               │
-└─────────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    C["🔍 ClarityOS<br/>FREE<br/>'Get clear'<br/>Assessment, preparation, foundation"]
+    S["📊 StrategyOS<br/>$10K - $25K<br/>'Get smart'<br/>Strategic roadmap built on clarity"]
+    D{"DECISION<br/>TO ENGAGE"}
+    I["🏗️ InvestOS<br/>3% - 5% OF RAISE<br/>'Get funded'<br/>Platform, data room, materials"]
+    A["🚀 AmplifyOS<br/>8% - 12% OF RAISE<br/>'Get closed'<br/>Marketing, ads, closing"]
+
+    C --> S --> D --> I --> A
+
+    style C fill:#2d6a4f,color:#fff
+    style S fill:#1a1a2e,color:#fff
+    style D fill:#b5838d,color:#fff
+    style I fill:#0f3460,color:#fff
+    style A fill:#533483,color:#fff
 ```
 
 ---
@@ -313,18 +301,17 @@ Every engagement begins with a kickoff payment. This is 1% to 10% of the total f
 
 After the kickoff payment, the remaining fee is paid in two tranches:
 
-```
-KICKOFF PAYMENT (upfront)
-│  1% - 10% of total fee based on network tier
-│
-├── TRANCHE 1 (50/50 split)
-│   Amount: Up to 50% of remaining fee
-│   Timing: At 10% raised (~30 days after deployment)
-│   Structure: 50/50 split — half from raise proceeds, half from client
-│
-└── TRANCHE 2 (remaining balance)
-    Amount: Remaining fee balance
-    Timing: At sell-out (~90 days after deployment)
+```mermaid
+graph TD
+    K["KICKOFF PAYMENT<br/>1-10% of total fee<br/>Based on network tier"]
+    T1["TRANCHE 1 (50/50 split)<br/>Up to 50% of remaining fee<br/>At 10% raised (~30 days post-deploy)<br/>Half from raise proceeds, half from client"]
+    T2["TRANCHE 2 (remaining balance)<br/>Remaining fee balance<br/>At sell-out (~90 days post-deploy)"]
+
+    K --> T1 --> T2
+
+    style K fill:#1a1a2e,color:#fff
+    style T1 fill:#0f3460,color:#fff
+    style T2 fill:#533483,color:#fff
 ```
 
 ### Payment Waterfall Example ($20M Raise, Personal Network)
@@ -392,20 +379,31 @@ These five projects define the InvestOS channel and prove the model:
 
 ### How These Projects Build the Channel
 
-```
-Phase 1: CLOSE (Now)
-├── Transformational Epicenter → First full case study
-└── Endless → Revenue flowing, biotech proof point
+```mermaid
+graph LR
+    subgraph "Phase 1: CLOSE (Now)"
+        P1A["Transformational Epicenter<br/>First full case study"]
+        P1B["Endless<br/>Revenue flowing, biotech proof"]
+    end
 
-Phase 2: EXPAND (Months 2-4)
-├── Abundancia → Real estate channel opens
-├── Numa AI → AI + RE case study
-└── Nanora → Digital health case study
+    subgraph "Phase 2: EXPAND (Months 2-4)"
+        P2A["Abundancia<br/>Real estate channel opens"]
+        P2B["Numa AI<br/>AI + RE case study"]
+        P2C["Nanora<br/>Digital health case study"]
+    end
 
-Phase 3: SCALE (Months 4-6)
-├── 5 case studies across 3 sectors
-├── Network partners activating with proven examples
-└── 4/month run rate from combined channels
+    subgraph "Phase 3: SCALE (Months 4-6)"
+        P3A["5 case studies across 3 sectors"]
+        P3B["Network partners activating"]
+        P3C["4/month run rate achieved"]
+    end
+
+    P1A --> P2A
+    P1B --> P2C
+    P2A --> P3A
+    P2B --> P3A
+    P2C --> P3A
+    P3A --> P3B --> P3C
 ```
 
 ### Sector Coverage
@@ -463,24 +461,20 @@ Every team member must be self-sufficient. The training is not optional — it's
 
 Here's how 4 engagements/month happens:
 
-```
-WEEK 1 ────────────────────────────────────────────────
-Network partners send outreach (2-3 messages each, 5 partners)
-= 10-15 conversations started
+```mermaid
+graph TD
+    W1["WEEK 1<br/>Network partners send outreach<br/>2-3 messages each, 5 partners<br/>= 10-15 conversations started"]
+    W2["WEEK 2<br/>Responses come in<br/>Discovery conversations<br/>Prospects onboarded into ClarityOS"]
+    W3["WEEK 3<br/>ClarityOS completions reviewed<br/>StrategyOS proposals sent<br/>New outreach cycle begins"]
+    W4["WEEK 4<br/>StrategyOS engagements signed<br/>Decision-to-engage conversations<br/>4+ new engagements confirmed"]
 
-WEEK 2 ────────────────────────────────────────────────
-Responses come in. Discovery conversations happen.
-Interested prospects onboarded into ClarityOS.
+    W1 --> W2 --> W3 --> W4
+    W4 -.->|"Next month"| W1
 
-WEEK 3 ────────────────────────────────────────────────
-ClarityOS completions reviewed.
-StrategyOS proposals sent to qualified prospects.
-New outreach cycle begins.
-
-WEEK 4 ────────────────────────────────────────────────
-StrategyOS engagements signed.
-Decision-to-engage conversations for InvestOS + AmplifyOS.
-4+ new engagements confirmed for the month.
+    style W1 fill:#1a1a2e,color:#fff
+    style W2 fill:#16213e,color:#fff
+    style W3 fill:#0f3460,color:#fff
+    style W4 fill:#533483,color:#fff
 ```
 
 ### Pipeline Math
@@ -507,54 +501,29 @@ Decision-to-engage conversations for InvestOS + AmplifyOS.
 
 ## Quick Reference: The Complete Client Journey
 
-```
-OUTREACH
-│  Personal message + Transformational Epicenter + Endless
-│
-▼
-RESPONSE
-│  Client reaches back. Discovery conversation.
-│
-▼
-CLARITYOS (Free)
-│  Shared Google Drive. Client fills in everything.
-│  We assess. They prepare. Mutual discovery.
-│  Timeline: 1-2 weeks
-│
-▼
-STRATEGYOS ($10K-$25K)
-│  Full raise strategy built on ClarityOS foundation.
-│  Deliverable: Strategic roadmap, target structure, LP targeting plan.
-│  Timeline: 2-4 weeks
-│
-▼
-DECISION TO ENGAGE
-│  Client sees the strategy. Decides to execute with us.
-│  All-inclusive pricing presented based on raise size.
-│  Kickoff payment collected (1-10% of total fee).
-│
-▼
-DEPLOY (30-60 days)
-│  InvestOS: Platform deployed. Data room built. Documents generated.
-│  Investor portal live. Compliance workflows active.
-│  AmplifyOS: Marketing campaigns launched. LP outreach begins.
-│
-▼
-10% RAISED (~Day 90 from signing)
-│  Tranche 1 collected (50/50 split)
-│  Investor meetings intensifying. Momentum building.
-│
-▼
-SELL-OUT (~Day 150 from signing / 90 days from deployment)
-│  Raise fully closed. Tranche 2 collected.
-│  Equity position granted or buyout negotiated.
-│  Case study created. Referrals requested.
-│
-▼
-ONGOING
-│  Lifetime referral relationship.
-│  Client raises again → repeat engagement.
-│  Portfolio equity compounds.
+```mermaid
+graph TD
+    OUT["OUTREACH<br/>Personal message +<br/>Transformational Epicenter + Endless"]
+    RES["RESPONSE<br/>Client reaches back<br/>Discovery conversation"]
+    CLA["CLARITYOS (Free)<br/>Shared Google Drive<br/>We assess, they prepare<br/>1-2 weeks"]
+    STR["STRATEGYOS ($10K-$25K)<br/>Full raise strategy<br/>Roadmap, structure, LP plan<br/>2-4 weeks"]
+    DEC{"DECISION TO ENGAGE<br/>All-inclusive pricing presented<br/>Kickoff payment collected<br/>1-10% of total fee"}
+    DEP["DEPLOY (30-60 days)<br/>Platform, data room, documents<br/>Investor portal, compliance<br/>Marketing campaigns launched"]
+    TEN["10% RAISED (~Day 90)<br/>Tranche 1 collected (50/50)<br/>Investor meetings intensifying"]
+    SELL["SELL-OUT (~Day 150)<br/>Raise fully closed<br/>Tranche 2 collected<br/>Equity position granted"]
+    ON["ONGOING<br/>Lifetime referral relationship<br/>Client raises again → repeat<br/>Portfolio equity compounds"]
+
+    OUT --> RES --> CLA --> STR --> DEC --> DEP --> TEN --> SELL --> ON
+    ON -.->|"Repeat engagement"| STR
+
+    style OUT fill:#1a1a2e,color:#fff
+    style CLA fill:#2d6a4f,color:#fff
+    style STR fill:#16213e,color:#fff
+    style DEC fill:#b5838d,color:#fff
+    style DEP fill:#0f3460,color:#fff
+    style TEN fill:#0f3460,color:#fff
+    style SELL fill:#533483,color:#fff
+    style ON fill:#1a1a2e,color:#fff
 ```
 
 ---
