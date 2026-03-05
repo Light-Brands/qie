@@ -190,19 +190,20 @@ InvestOS is NOT a SaaS tool. It is an **AI-native strategic capital advisory fir
 | Component | Detail |
 |-----------|--------|
 | **Total fee** | 10% of capital raised |
-| **Payment 1 (50% of fee)** | Paid when first 10% of the raise is closed |
-| **Payment 2 (50% of fee)** | Paid at full round close |
+| **Payment 1** | 50% of cash portion — paid when first 10% of round is closed |
+| **Payment 2** | 50% of cash portion — paid at full round close |
 
 **Revenue per engagement by raise size:**
 
-| Raise Size | Total Fee (10%) | Payment 1 (at 10% raised) | Payment 2 (at close) |
-|-----------|----------------|---------------------------|---------------------|
-| $10M | $1.0M | $500K | $500K |
-| $25M | $2.5M | $1.25M | $1.25M |
-| $50M | $5.0M | $2.5M | $2.5M |
-| $100M | $10.0M | $5.0M | $5.0M |
-| $200M | $20.0M | $10.0M | $10.0M |
-| $500M | $50.0M | $25.0M | $25.0M |
+| Investment Tier | Raise Range | Advisory Fee | Payment 1 | Payment 2 |
+|----------------|-------------|-------------|-----------|-----------|
+| Tier 1 | Up to $1M | $100K | $25K | $25K |
+| Tier 2 | $1M - $5M | $500K | $125K | $125K |
+| Tier 3 | $5M - $10M | $1.0M | $250K | $250K |
+| Tier 4 | $10M - $25M | $2.5M | $625K | $625K |
+| Tier 5 | $25M - $50M | $5.0M | $1.25M | $1.25M |
+| Tier 6 | $50M - $75M | $7.5M | $1.875M | $1.875M |
+| Tier 7 | $75M+ | $15.0M | $3.75M | $3.75M |
 
 ### Competitive Positioning: A New Category
 
@@ -210,7 +211,7 @@ InvestOS competes in THREE markets simultaneously — and beats all of them:
 
 ```mermaid
 graph TD
-    subgraph PA["PLACEMENT AGENTS (1.5-5%, introductions only)"]
+    subgraph PA["PLACEMENT AGENTS ($75K-$2.5M+, introductions only)"]
         PA1["Park Hill, Eaton Partners,<br/>Monument Group, Hodes Weill"]
         PA2["Introduce GPs to LPs. That's it.<br/>No platform. No materials.<br/>No compliance. No closing support."]
     end
@@ -225,7 +226,7 @@ graph TD
         IB2["Expensive, relationship-driven.<br/>Won't touch sub-$100M raises.<br/>Slow, traditional, no tech."]
     end
 
-    subgraph IO["INVESTOS (10%, full stack)"]
+    subgraph IO["INVESTOS (tier-based, full stack)"]
         IO1["Everything they do PLUS<br/>AI-powered platform included.<br/>Accessible to emerging managers.<br/>Deploy in 60 days, sell out in 90."]
     end
 
@@ -239,20 +240,20 @@ graph TD
     style IB2 fill:#533483,color:#fff
 ```
 
-### Why 10% Is Justified
+### Why the Advisory Fee Is Justified
 
-| Value Component | What Placement Agents Charge | What Software Costs | InvestOS Delivers |
-|----------------|-----------------------------|--------------------|-------------------|
-| LP introductions & targeting | 1.5-5% of raise | — | Included |
-| AI-powered platform (portal, data room, docs) | — | $18K-$250K/yr | Included |
-| Financial modeling & valuation | — | $50K-$150K (consultant) | Included |
-| Legal document generation (PPM, LPA, sub docs) | — | $150K-$500K (law firm) | Included |
-| Compliance & regulatory | — | $50K-$200K/yr | Included |
-| Strategic advisory through close | — | $200K-$500K (consultant) | Included |
-| **Total cost if purchased separately** | | | **$500K-$1.5M+** |
-| **InvestOS fee on $25M raise** | | | **$2.5M** |
+| Value Component | What Others Charge Separately | InvestOS Delivers |
+|----------------|------------------------------|-------------------|
+| LP introductions & targeting | $75K-$2.5M+ (placement agent) | Included |
+| AI-powered platform (portal, data room, docs) | $18K-$250K/yr (software) | Included |
+| Financial modeling & valuation | $50K-$150K (consultant) | Included |
+| Legal document generation (PPM, LPA, sub docs) | $150K-$500K (law firm) | Included |
+| Compliance & regulatory | $50K-$200K/yr (consultant) | Included |
+| Strategic advisory through close | $200K-$500K (consultant) | Included |
+| **Total cost if purchased separately** | | **$500K-$1.5M+** |
+| **InvestOS Tier 4 advisory fee** | | **$2.5M** |
 
-The 10% fee on a $25M raise ($2.5M) looks expensive in isolation. But compared to assembling the alternative — placement agent (3% = $750K) + legal ($300K) + software ($50K) + consultants ($200K) + fund admin ($100K) = **$1.4M minimum** — AND you still have to project manage all those vendors yourself.
+A Tier 4 advisory fee ($2.5M) looks significant in isolation. But compared to assembling the alternative — placement agent ($750K) + legal ($300K) + software ($50K) + consultants ($200K) + fund admin ($100K) = **$1.4M minimum** — AND you still have to project manage all those vendors yourself. InvestOS delivers the entire stack with a single fee, a single team, and a 90-day sell-out target.
 
 **The pitch:** "We replace your placement agent, your fund admin software, your document lawyers, and your capital markets consultant. One fee. One team. One platform. And you only pay the full fee when we close."
 
@@ -366,7 +367,7 @@ InvestOS operates in the **capital formation advisory + technology** market. The
 
 ### Market Share by Capital Managed
 
-An alternative (and more compelling) way to measure market share: **what % of capital raised flows through InvestOS?**
+An alternative (and more compelling) way to measure market share: **how much capital raised flows through InvestOS advisory?**
 
 - Total capital raised annually by $10M-$500M managers: **~$80B-$250B**
 - This is the capital denominator for market share
@@ -425,7 +426,7 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 ### Why Now
 
 1. **Capital concentration is creating desperation** among emerging managers — they NEED strategic partners, not just tools
-2. **Fundraising timelines at record 17.5 months** — a partner who compresses this to 90 days is worth 10% of the raise
+2. **Fundraising timelines at record 17.5 months** — a partner who compresses this to 90 days is worth the advisory fee
 3. **AI is the moat** — 88% of PE firms investing in generative AI, but no one has built an AI-native advisory firm. InvestOS is first.
 4. **The distribution drought** means LPs are more selective — GPs need institutional-quality everything to win allocations
 5. **Zero upfront cost eliminates the #1 objection** — emerging managers are cash-poor but capital-rich once they close
@@ -444,7 +445,7 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 
 | Risk | Likelihood | Mitigation |
 |------|-----------|------------|
-| **10% fee resistance** — GPs push back on rate | High | Show total cost comparison: 10% all-in vs. 3% placement + 2% legal + 1% admin + software = 6%+ AND you manage it all yourself |
+| **Fee resistance** — GPs push back on advisory fee | High | Show total cost comparison: single advisory fee vs. placement agent + legal + admin + software purchased separately = comparable cost AND you manage it all yourself |
 | **Cash flow lag** — Revenue doesn't flow until raises close | Medium | 90-day sell-out target compresses lag dramatically. Payment 1 at ~3 months, close at ~5 months, buyout at ~7 months from signing |
 | **Close rate risk** — Some raises fail | Medium | Rigorous intake qualification. Only accept raises with viable thesis, team, and LP pathway. Target 55%+ close rate |
 | **Regulatory scrutiny** — Acting as placement agent may require broker-dealer registration | High | **Critical: consult securities counsel immediately.** If InvestOS is introducing investors to offerings, SEC may require BD registration or RIA status. Structure matters. |
@@ -460,17 +461,17 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 
 | Component | Detail |
 |-----------|--------|
-| **Total fee** | 10% of raise value |
-| **Cash portion (50% of fee)** | 5% of raise, paid per payment schedule |
-| **Equity portion (50% of fee)** | 5% of raise, converted to equity at pre-money valuation |
+| **Advisory fee** | Fixed by investment tier (see tier schedule) |
+| **Cash portion** | 50% of advisory fee, paid per payment schedule |
+| **Equity portion** | 50% of advisory fee, converted to equity at pre-money valuation |
 | **Buyout clause** | Client can repurchase InvestOS's equity at 50% premium after the raise closes |
 
-### How It Works: $50M Raise, $100M Pre-Money Valuation
+### How It Works: Tier 5 ($50M Raise), $100M Pre-Money Valuation
 
 | Step | Detail | Value |
 |------|--------|-------|
-| Total fee (10% of $50M) | | $5.0M |
-| **Cash portion** (50% of fee) | 5% of $50M | $2.5M |
+| Advisory fee (Tier 5) | $25M-$50M raise range | $5.0M |
+| **Cash portion** (50% of fee) | | $2.5M |
 | → Payment 1 (at 10% raised) | 50% of cash portion | $1.25M |
 | → Payment 2 (at close) | 50% of cash portion | $1.25M |
 | **Equity portion** (50% of fee) | $2.5M at pre-money valuation | 2.5% ownership |
@@ -490,7 +491,7 @@ The client repurchases InvestOS's equity at 50% premium after close.
 | Buyout payment received | $3.75M |
 | **Total revenue per engagement** | **$6.25M** |
 | vs. all-cash fee ($5M) | **+25% premium** |
-| Effective fee rate | **12.5% of raise** |
+| Total collected vs. advisory fee | **+25% via buyout premium** |
 
 **Scenario B: Client Does NOT Exercise Buyout — Equity Appreciates**
 
@@ -511,7 +512,7 @@ InvestOS holds the equity. The fund/company performs well.
 | 0.25x ($37.5M) | $625K | $2.5M | $3.125M |
 | Zero (total loss) | $0 | $2.5M | $2.5M |
 
-**Floor:** Even if every equity position goes to zero, InvestOS still collects 5% of raise in cash. The equity is pure upside.
+**Floor:** Even if every equity position goes to zero, InvestOS still collects 50% of the advisory fee in cash. The equity is pure upside.
 
 ### Revenue Model With Hybrid Structure
 
@@ -554,23 +555,23 @@ Most clients will exercise the buyout (paying 50% premium) because:
 
 ### Economic Comparison: Three Fee Models
 
-On a $50M raise ($100M pre-money):
+On a Tier 5 engagement ($50M raise, $100M pre-money):
 
 | Model | Cash Received | Equity Held | Buyout Value | Total Potential |
 |-------|-------------|-------------|--------------|----------------|
-| **All-cash (10%)** | $5.0M | — | — | $5.0M |
-| **Hybrid (5% cash + 5% equity)** | $2.5M | 1.67% post-money | $3.75M buyout | $6.25M (buyout) or $2.5M + equity upside |
+| **All-cash** | $5.0M | — | — | $5.0M |
+| **Hybrid (50% cash + 50% equity)** | $2.5M | 1.67% post-money | $3.75M buyout | $6.25M (buyout) or $2.5M + equity upside |
 | **Hybrid w/ no buyout exercise** | $2.5M | 1.67% post-money | — | $2.5M + unlimited upside |
 
 ### What This Means for Client Acquisition
 
 The hybrid structure is an **even easier sell** than all-cash:
 
-**Old pitch:** "Pay us 10% of your raise."
-**New pitch:** "Pay us 5% cash. Give us 5% in equity. If you want the equity back after closing, buy us out at a 50% premium. If you don't, we stay aligned with your success."
+**Old pitch:** "Here's our advisory fee."
+**New pitch:** "Half the fee in cash. Half in equity — we invest alongside you. If you want the equity back after closing, buy us out at a 50% premium. If you don't, we stay aligned with your success."
 
 **Client psychology:**
-- "I only pay 5% cash" ← feels much cheaper than 10%
+- "I only pay half in cash" ← reduces the cash outlay significantly
 - "They're investing in my success" ← creates alignment narrative
 - "I can buy them out after closing when I have the cash" ← reduces present-moment pain
 - "If I don't buy them out, they're a strategic equity partner" ← feels like winning

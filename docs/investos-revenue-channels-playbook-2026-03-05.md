@@ -119,8 +119,8 @@ graph TD
     C["🔍 ClarityOS<br/>FREE<br/>'Get clear'<br/>Assessment, preparation, foundation"]
     S["📊 StrategyOS<br/>$10K - $25K<br/>'Get smart'<br/>Strategic roadmap built on clarity"]
     D{"DECISION<br/>TO ENGAGE"}
-    I["🏗️ InvestOS<br/>3% - 5% OF RAISE<br/>'Get funded'<br/>Platform, data room, materials"]
-    A["🚀 AmplifyOS<br/>8% - 12% OF RAISE<br/>'Get closed'<br/>Marketing, ads, closing"]
+    I["🏗️ InvestOS<br/>Tier-based fee<br/>'Get funded'<br/>Platform, data room, materials"]
+    A["🚀 AmplifyOS<br/>Tier-based fee<br/>'Get closed'<br/>Marketing, ads, closing"]
 
     C --> S --> D --> I --> A
 
@@ -188,7 +188,7 @@ graph TD
 
 ---
 
-### Product 3: InvestOS (3% - 5% of Raise)
+### Product 3: InvestOS
 
 **The Decision to Engage**
 
@@ -204,19 +204,11 @@ graph TD
 - Investor reporting infrastructure
 - KYC/AML workflow
 
-**Fee: 3% - 5% of total raise**
-
-| Raise Size | Fee at 3% | Fee at 5% |
-|-----------|-----------|-----------|
-| $5M | $150K | $250K |
-| $10M | $300K | $500K |
-| $20M | $600K | $1.0M |
-| $50M | $1.5M | $2.5M |
-| $100M | $3.0M | $5.0M |
+**Fee:** Included in all-inclusive tier pricing (see below).
 
 ---
 
-### Product 4: AmplifyOS (8% - 12% of Raise)
+### Product 4: AmplifyOS
 
 **Purpose:** Active marketing, outreach, and closing support to drive the raise to completion.
 
@@ -229,73 +221,51 @@ graph TD
 - Closing coordination
 - Post-close investor onboarding
 
-**Fee: 8% - 12% of total raise**
-
-| Raise Size | Fee at 8% | Fee at 12% |
-|-----------|-----------|------------|
-| $5M | $400K | $600K |
-| $10M | $800K | $1.2M |
-| $20M | $1.6M | $2.4M |
-| $50M | $4.0M | $6.0M |
-| $100M | $8.0M | $12.0M |
+**Fee:** Included in all-inclusive tier pricing (see below).
 
 ---
 
-### Combined Fee: InvestOS + AmplifyOS
+### Combined: InvestOS + AmplifyOS
 
-When a client engages both (which is the standard path), the total raise fee is **11% - 17%** of the raise. The all-inclusive pricing below simplifies this into fixed tiers.
+When a client engages both (which is the standard path), the advisory fee is determined by the investment tier. Simple, fixed, transparent.
 
 ---
 
 ## Part 4: Payment Terms
 
-### All-Inclusive Pricing (ClarityOS + StrategyOS + InvestOS + AmplifyOS)
+### Investment Tier Pricing (ClarityOS + StrategyOS + InvestOS + AmplifyOS)
 
-For clients engaging the full stack, pricing is simplified into tiers:
+Advisory fees are determined by the investment tier the raise falls within. Fixed, transparent, no ambiguity.
 
-| Raise Size | All-Inclusive Fee |
-|-----------|------------------|
-| $1M | $100K |
-| $5M | $500K |
-| $10M | $1.0M |
-| $25M | $2.5M |
-| $50M | $5.0M |
-| $75M | $7.5M |
-| $150M | $15.0M |
+| Investment Tier | Raise Range | Advisory Fee |
+|----------------|-------------|-------------|
+| **Tier 1** | Up to $1M | $100K |
+| **Tier 2** | $1M - $5M | $500K |
+| **Tier 3** | $5M - $10M | $1.0M |
+| **Tier 4** | $10M - $25M | $2.5M |
+| **Tier 5** | $25M - $50M | $5.0M |
+| **Tier 6** | $50M - $75M | $7.5M |
+| **Tier 7** | $75M+ | $15.0M |
 
-*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the all-inclusive fee.*
-
-### Effective Fee Rate by Tier
-
-| Raise Size | Fee | Effective Rate |
-|-----------|-----|---------------|
-| $1M | $100K | 10.0% |
-| $5M | $500K | 10.0% |
-| $10M | $1.0M | 10.0% |
-| $25M | $2.5M | 10.0% |
-| $50M | $5.0M | 10.0% |
-| $75M | $7.5M | 10.0% |
-| $150M | $15.0M | 10.0% |
-
-*Standard 10% fee across all raise sizes. Simple, transparent, easy to communicate.*
+*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the advisory fee. Fee is split 50% cash / 50% equity.*
 
 ### Kickoff Payment (Upfront)
 
-Every engagement begins with a kickoff payment. This is 1% to 10% of the total fee, based on how the client was sourced:
+Every engagement begins with a kickoff payment based on how the client was sourced:
 
 | Source | Kickoff Fee | Rationale |
 |--------|-----------|-----------|
-| **Personal Network** (Channels 3-7) | 1% - 3% of total fee | Lower risk — we know them, they know us |
-| **Warm Network** (referral from referral) | 4% - 6% of total fee | Medium risk — one degree removed |
-| **Cold Network** (inbound, conference, content) | 7% - 10% of total fee | Higher risk — less relationship equity |
+| **Personal Network** (Channels 3-7) | 1% - 3% of advisory fee | Lower risk — we know them, they know us |
+| **Warm Network** (referral from referral) | 4% - 6% of advisory fee | Medium risk — one degree removed |
+| **Cold Network** (inbound, conference, content) | 7% - 10% of advisory fee | Higher risk — less relationship equity |
 
-**Kickoff payment examples ($20M raise, $2.5M all-inclusive fee):**
+**Kickoff payment examples (Tier 4: $2.5M advisory fee):**
 
-| Source | Kickoff % | Kickoff Amount |
-|--------|----------|---------------|
-| Personal network | 1-3% | $25K - $75K |
-| Warm network | 4-6% | $100K - $150K |
-| Cold network | 7-10% | $175K - $250K |
+| Source | Kickoff Amount |
+|--------|---------------|
+| Personal network | $25K - $75K |
+| Warm network | $100K - $150K |
+| Cold network | $175K - $250K |
 
 ### Fee Payment Schedule
 
@@ -331,22 +301,22 @@ graph TD
 
 | Type | Rate | Structure |
 |------|------|-----------|
-| **Lifetime Referral** | 5% of InvestOS fees | Paid on every fee collected from the referred client, for life |
+| **Lifetime Referral** | 5% of advisory fees | Paid on every fee collected from the referred client, for life |
 
-A single referral that leads to a $20M raise ($2.5M fee) generates **$125K** for the referrer. If that client raises again, the referrer earns again. Lifetime.
+A single referral that leads to a Tier 4 engagement ($2.5M advisory fee) generates **$125K** for the referrer. If that client raises again, the referrer earns again. Lifetime.
 
 ### Account Management Commission
 
 | Type | Rate | Structure |
 |------|------|-----------|
-| **Account Management** | 5% of InvestOS fees | Paid to the person actively managing the client relationship |
+| **Account Management** | 5% of advisory fees | Paid to the person actively managing the client relationship |
 
 ### Ideal Structure: Referral + AM (Same Person)
 
 The ideal scenario is that the person who brings the connection also manages the relationship. In this case, they earn both:
 
-| Role | Rate | On $20M raise ($2.5M fee) |
-|------|------|--------------------------|
+| Role | Rate | On Tier 4 ($2.5M advisory fee) |
+|------|------|-------------------------------|
 | Referral | 5% | $125K |
 | Account Management | 5% | $125K |
 | **Total** | **10%** | **$250K** |

@@ -16,7 +16,7 @@ These firms are not failing because their strategies are bad. They are failing b
 
 The institutional capital formation ecosystem is fragmented across a half-dozen vendors and advisors, each taking their cut, none owning the outcome. A typical emerging manager raising $50M must assemble:
 
-- A placement agent (1.5-5% of raise, introductions only)
+- A placement agent ($75K-$2.5M+, introductions only)
 - A fund formation attorney ($150K-$500K)
 - Fund administration software ($18K-$250K/year)
 - A data room provider ($5K-$20K/year)
@@ -76,7 +76,7 @@ InvestOS does not compete for a slice of this pool. InvestOS replaces the pool.
 | Capability | What It Replaces | How We Deliver |
 |-----------|-----------------|----------------|
 | **Raise Strategy** | Capital markets consultant ($200K-$500K) | AI-driven market intelligence + strategic advisory |
-| **LP Targeting & Introductions** | Placement agent (1.5-5% of raise) | Proprietary LP database + AI matching + advisor relationships |
+| **LP Targeting & Introductions** | Placement agent ($75K-$2.5M+) | Proprietary LP database + AI matching + advisor relationships |
 | **Financial Modeling** | Financial consultant ($50K-$150K) | AI-powered modeling engine |
 | **Legal Documents** | Fund formation attorney ($150K-$500K) | AI document generation (PPM, LPA, sub docs) |
 | **Investor Portal & Data Room** | Software platform ($18K-$250K/yr) | Built into InvestOS platform |
@@ -88,26 +88,34 @@ InvestOS does not compete for a slice of this pool. InvestOS replaces the pool.
 
 ### The Fee Structure
 
-**Total fee: 10% of capital raised.**
+**Tier-based pricing. Fixed fees based on investment tier. Half in cash. Half in equity. Buyout option on the equity.**
 
-Half in cash. Half in equity. Buyout option on the equity.
+| Investment Tier | Raise Range | Advisory Fee |
+|----------------|-------------|-------------|
+| Tier 1 | Up to $1M | $100K |
+| Tier 2 | $1M - $5M | $500K |
+| Tier 3 | $5M - $10M | $1.0M |
+| Tier 4 | $10M - $25M | $2.5M |
+| Tier 5 | $25M - $50M | $5.0M |
+| Tier 6 | $50M - $75M | $7.5M |
+| Tier 7 | $75M+ | $15.0M |
 
 | Component | Detail |
 |-----------|--------|
-| **Total fee** | 10% of raise value |
-| **Cash fee** | 5% of total raise |
-| **Equity fee** | 5% of total raise, converted to equity at pre-money valuation |
-| **Cash Payment 1** | 50% of cash fee — paid when first 10% of raise is closed |
-| **Cash Payment 2** | 50% of cash fee — paid at full close |
+| **Advisory fee** | Fixed by investment tier (see above) |
+| **Cash portion** | 50% of advisory fee |
+| **Equity portion** | 50% of advisory fee, converted to equity at pre-money valuation |
+| **Cash Payment 1** | 50% of cash portion — paid when first 10% of round is closed |
+| **Cash Payment 2** | 50% of cash portion — paid at full close |
 | **Equity buyout option** | Client may repurchase InvestOS equity at 50% premium after close |
 
-### The Math on a Single Engagement ($20M Raise)
+### The Math on a Single Engagement (Tier 4: $20M Raise)
 
 **Pre-money valuation: $60M (3x raise as typical ratio)**
 
 ```mermaid
 graph TD
-    FEE["TOTAL FEE: $2.0M<br/>(10% of $20M)"]
+    FEE["TIER 4 ADVISORY FEE: $2.0M<br/>($10M-$25M raise range)"]
     FEE --> CASH["CASH: $1.0M"]
     FEE --> EQUITY["EQUITY: $1.0M"]
 
@@ -118,7 +126,7 @@ graph TD
     OWN --> POST["1.25% post-money<br/>$80M = $1.0M value"]
     POST --> BUYOUT["Buyout: $1.5M<br/>(50% premium)"]
 
-    BUYOUT --> A["Outcome A: Buyout exercised<br/>$500K + $500K + $1.5M = $2.5M<br/>(effective 12.5%)"]
+    BUYOUT --> A["Outcome A: Buyout exercised<br/>$500K + $500K + $1.5M = $2.5M total"]
     POST --> B["Outcome B: Equity held<br/>$1.0M cash + uncapped upside"]
     P1 --> C["Outcome C: Raise fails<br/>$500K floor<br/>(Payment 1 already collected)"]
 
@@ -132,7 +140,7 @@ graph TD
 
 ### Revenue Per Engagement by Raise Size
 
-| Raise Size | Cash Fee (5%) | Payment 1 | Payment 2 | Equity Buyout (150%) | Total w/ Buyout |
+| Investment Tier | Cash Portion (50%) | Payment 1 | Payment 2 | Equity Buyout (150%) | Total w/ Buyout |
 |-----------|--------------|-----------|-----------|---------------------|-----------------|
 | **$10M** | $500K | $250K | $250K | $750K | **$1.25M** |
 | **$15M** | $750K | $375K | $375K | $1.125M | **$1.875M** |
@@ -333,17 +341,17 @@ This means the 12-15 person team can handle:
 ### All Projections Based On:
 - **$20M average raise size** (constant — we serve the same segment consistently)
 - **12-15 person team** (permanent — AI scales, not headcount)
-- **10% fee** (5% cash + 5% equity)
+- **Tier-based advisory fee** (50% cash + 50% equity)
 - **55% close rate** across all engagements
 - **65% buyout exercise rate** on closed deals
 - **75% of engagements reach Payment 1 milestone** (10% of raise closed)
 
-### Per-Engagement Economics (at $20M)
+### Per-Engagement Economics (Tier 4: $20M Raise)
 
 | Item | Value |
 |------|-------|
-| Total fee | $2.0M |
-| Cash fee | $1.0M |
+| Advisory fee (Tier 4) | $2.0M |
+| Cash portion | $1.0M |
 | Payment 1 (at 10% raised) | $500K |
 | Payment 2 (at close) | $500K |
 | Equity granted | $1.0M at pre-money |
