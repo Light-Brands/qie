@@ -195,14 +195,15 @@ InvestOS is NOT a SaaS tool. It is an **AI-native strategic capital advisory fir
 
 **Revenue per engagement by raise size:**
 
-| Raise Size | Total Fee (10%) | Payment 1 (at 10% raised) | Payment 2 (at close) |
-|-----------|----------------|---------------------------|---------------------|
-| $10M | $1.0M | $500K | $500K |
-| $25M | $2.5M | $1.25M | $1.25M |
-| $50M | $5.0M | $2.5M | $2.5M |
-| $100M | $10.0M | $5.0M | $5.0M |
-| $200M | $20.0M | $10.0M | $10.0M |
-| $500M | $50.0M | $25.0M | $25.0M |
+| Raise Size | Effective Rate | Total Fee | Payment 1 (at 10% raised) | Payment 2 (at close) |
+|-----------|---------------|-----------|---------------------------|---------------------|
+| $1M | 15.0% | $150K | $75K | $75K |
+| $5M | 14.0% | $700K | $350K | $350K |
+| $10M | 13.0% | $1.3M | $650K | $650K |
+| $25M | 12.0% | $3.0M | $1.5M | $1.5M |
+| $50M | 11.0% | $5.5M | $2.75M | $2.75M |
+| $75M | 10.0% | $7.5M | $3.75M | $3.75M |
+| $150M+ | 8.0% | $12.0M | $6.0M | $6.0M |
 
 ### Competitive Positioning: A New Category
 
@@ -446,23 +447,35 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 
 | Component | Detail |
 |-----------|--------|
-| **Total fee** | 10% of raise value |
-| **Cash portion (50% of fee)** | 5% of raise, paid per payment schedule |
-| **Equity portion (50% of fee)** | 5% of raise, converted to equity at pre-money valuation |
+| **Total fee** | 8-15% of raise value (tiered by raise size) |
+| **Cash portion (50% of fee)** | Paid per payment schedule |
+| **Equity portion (50% of fee)** | Converted to equity at pre-money valuation |
 | **Buyout clause** | Client can repurchase InvestOS's equity at 50% premium after the raise closes |
+
+**Tiered Fee Schedule:**
+
+| Raise Size | Effective Rate |
+|-----------|---------------|
+| $1M | 15% |
+| $5M | 14% |
+| $10M | 13% |
+| $25M | 12% |
+| $50M | 11% |
+| $75M | 10% |
+| $150M+ | 8% |
 
 ### How It Works: $50M Raise, $100M Pre-Money Valuation
 
 | Step | Detail | Value |
 |------|--------|-------|
-| Total fee (10% of $50M) | | $5.0M |
-| **Cash portion** (50% of fee) | 5% of $50M | $2.5M |
-| → Payment 1 (at 10% raised) | 50% of cash portion | $1.25M |
-| → Payment 2 (at close) | 50% of cash portion | $1.25M |
-| **Equity portion** (50% of fee) | $2.5M at pre-money valuation | 2.5% ownership |
-| Post-raise dilution | $100M pre + $50M raise = $150M post | ~1.67% post-money |
-| Equity value at post-money | 1.67% × $150M | $2.5M |
-| **Buyout price** (50% premium) | $2.5M × 1.5 | $3.75M |
+| Total fee (11% of $50M) | | $5.5M |
+| **Cash portion** (50% of fee) | | $2.75M |
+| → Payment 1 (at 10% raised) | 50% of cash portion | $1.375M |
+| → Payment 2 (at close) | 50% of cash portion | $1.375M |
+| **Equity portion** (50% of fee) | $2.75M at pre-money valuation | 2.75% ownership |
+| Post-raise dilution | $100M pre + $50M raise = $150M post | ~1.83% post-money |
+| Equity value at post-money | 1.83% × $150M | $2.75M |
+| **Buyout price** (50% premium) | $2.75M × 1.5 | $4.125M |
 
 ### Three Outcome Scenarios
 
@@ -472,11 +485,11 @@ The client repurchases InvestOS's equity at 50% premium after close.
 
 | Component | Amount |
 |-----------|--------|
-| Cash fee collected | $2.5M |
-| Buyout payment received | $3.75M |
-| **Total revenue per engagement** | **$6.25M** |
-| vs. all-cash fee ($5M) | **+25% premium** |
-| Effective fee rate | **12.5% of raise** |
+| Cash fee collected | $2.75M |
+| Buyout payment received | $4.125M |
+| **Total revenue per engagement** | **$6.875M** |
+| vs. all-cash fee ($5.5M) | **+25% premium** |
+| Effective fee rate | **13.75% of raise** |
 
 **Scenario B: Client Does NOT Exercise Buyout — Equity Appreciates**
 
@@ -484,10 +497,10 @@ InvestOS holds the equity. The fund/company performs well.
 
 | If portfolio company reaches... | InvestOS equity value | + Cash fee | Total value |
 |--------------------------------|----------------------|------------|-------------|
-| 2x post-money ($300M) | $5.0M | $2.5M | $7.5M |
-| 3x post-money ($450M) | $7.5M | $2.5M | $10.0M |
-| 5x post-money ($750M) | $12.5M | $2.5M | $15.0M |
-| 10x post-money ($1.5B) | $25.0M | $2.5M | $27.5M |
+| 2x post-money ($300M) | $5.5M | $2.75M | $8.25M |
+| 3x post-money ($450M) | $8.25M | $2.75M | $11.0M |
+| 5x post-money ($750M) | $13.75M | $2.75M | $16.5M |
+| 10x post-money ($1.5B) | $27.5M | $2.75M | $30.25M |
 
 **Scenario C: Fund/Company Underperforms — Equity Worth Less**
 

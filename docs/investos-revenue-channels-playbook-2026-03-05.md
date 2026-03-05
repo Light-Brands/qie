@@ -268,12 +268,12 @@ For clients engaging the full stack, pricing is simplified into tiers:
 | Raise Size | All-Inclusive Fee |
 |-----------|------------------|
 | Up to $1M | $150K |
-| $1M - $5M | $450K |
-| $5M - $10M | $950K |
-| $10M - $25M | $2.5M |
-| $25M - $50M | $5.0M |
+| $1M - $5M | $700K |
+| $5M - $10M | $1.3M |
+| $10M - $25M | $3.0M |
+| $25M - $50M | $5.5M |
 | $50M - $75M | $7.5M |
-| $75M - $150M | $10.0M+ |
+| $75M - $150M | $12.0M |
 
 *ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the all-inclusive fee.*
 
@@ -282,14 +282,14 @@ For clients engaging the full stack, pricing is simplified into tiers:
 | Raise Size | Fee | Effective Rate |
 |-----------|-----|---------------|
 | $1M | $150K | 15.0% |
-| $5M | $450K | 9.0% |
-| $10M | $950K | 9.5% |
-| $25M | $2.5M | 10.0% |
-| $50M | $5.0M | 10.0% |
+| $5M | $700K | 14.0% |
+| $10M | $1.3M | 13.0% |
+| $25M | $3.0M | 12.0% |
+| $50M | $5.5M | 11.0% |
 | $75M | $7.5M | 10.0% |
-| $150M | $10.0M | 6.7% |
+| $150M+ | $12.0M | 8.0% |
 
-*Smaller raises carry higher effective rates (more work per dollar raised). Larger raises benefit from scale efficiency.*
+*Effective rate scales down from 15% to 8% as raise size increases — rewarding larger engagements while maintaining premium positioning.*
 
 ### Kickoff Payment (Upfront)
 
