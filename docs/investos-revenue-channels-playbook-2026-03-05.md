@@ -319,22 +319,22 @@ KICKOFF PAYMENT (upfront)
 │
 ├── TRANCHE 1 (50/50 split)
 │   Amount: Up to 50% of remaining fee
-│   Timing: Paid back as capital comes in, or within 120 days of deployment
+│   Timing: At 10% raised (~30 days after deployment)
 │   Structure: 50/50 split — half from raise proceeds, half from client
 │
 └── TRANCHE 2 (remaining balance)
     Amount: Remaining fee balance
-    Timing: At close of raise, or within 120 days of Tranche 1 close
+    Timing: At sell-out (~90 days after deployment)
 ```
 
 ### Payment Waterfall Example ($20M Raise, Personal Network)
 
 | Step | Event | Amount | Running Total Paid |
 |------|-------|--------|-------------------|
-| Kickoff | Engagement signed (2% of $2.5M) | $50K | $50K |
-| Tranche 1a | First capital in, 50/50 split begins | Up to $612.5K | $662.5K |
-| Tranche 1b | 50% of remaining fee paid (or within 120 days) | Up to $612.5K | $1.275M |
-| Tranche 2 | Close of raise (or 120 days from T1 close) | $1.225M | **$2.5M** |
+| Kickoff | Day 0 — Engagement signed (2% of $2.5M) | $50K | $50K |
+| Deploy | Day 30-60 — Platform live, strategy deployed | $0 | $50K |
+| Tranche 1 | ~Day 90 — 10% raised ($2M), 50/50 split | $1.225M | $1.275M |
+| Tranche 2 | ~Day 150 — Sell-out ($20M closed) | $1.225M | **$2.5M** |
 
 ---
 
@@ -499,8 +499,8 @@ Decision-to-engage conversations for InvestOS + AmplifyOS.
 |--------|----------------|
 | StrategyOS fees ($10-25K × 3-5 clients) | $30K-$125K |
 | Kickoff payments ($25K-$250K × 3-4 engagements) | $75K-$1M |
-| Payment 1 collections (from prior month engagements) | $500K-$2M |
-| Payment 2 + buyout collections (from 12+ month ago engagements) | $500K-$3M |
+| Payment 1 collections (from ~3 months prior engagements) | $500K-$2M |
+| Payment 2 + buyout collections (from ~5-7 months prior engagements) | $500K-$3M |
 | **Monthly revenue range** | **$1.1M-$6.1M** |
 
 ---
@@ -534,23 +534,18 @@ DECISION TO ENGAGE
 │  Kickoff payment collected (1-10% of total fee).
 │
 ▼
-INVESTOS (3-5% of raise)
-│  Platform deployed. Data room built. Documents generated.
+DEPLOY (30-60 days)
+│  InvestOS: Platform deployed. Data room built. Documents generated.
 │  Investor portal live. Compliance workflows active.
-│  Timeline: 2-4 weeks for deployment
+│  AmplifyOS: Marketing campaigns launched. LP outreach begins.
 │
 ▼
-AMPLIFYOS (8-12% of raise)
-│  Marketing campaigns launched. LP outreach begins.
-│  Investor meetings. Follow-up sequences. Closing support.
-│  Timeline: Ongoing through raise (6-18 months)
+10% RAISED (~Day 90 from signing)
+│  Tranche 1 collected (50/50 split)
+│  Investor meetings intensifying. Momentum building.
 │
 ▼
-TRANCHE 1 (at 10% raised or within 120 days)
-│  50/50 split — up to 50% of remaining fee
-│
-▼
-CLOSE
+SELL-OUT (~Day 150 from signing / 90 days from deployment)
 │  Raise fully closed. Tranche 2 collected.
 │  Equity position granted or buyout negotiated.
 │  Case study created. Referrals requested.

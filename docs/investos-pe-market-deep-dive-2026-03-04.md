@@ -48,7 +48,7 @@
 
 **Capital formation behavior:**
 - Raise committed capital funds on 3-5 year cycles
-- Fundraising takes 12-18 months (17.5 months average for VC in 2025)
+- Fundraising takes 12-18 months traditionally (17.5 months average for VC in 2025) — InvestOS targets 90-day sell-out
 - Produce PPMs, LPAs, pitch decks, data rooms
 - Manage LP relationships across institutional allocators
 
@@ -264,9 +264,9 @@ Unlike every competitor, InvestOS requires **no upfront payment**. The first pay
 | Metric | Value |
 |--------|-------|
 | Total fee per engagement | $2.5M |
-| Payment 1 (at 10% raised, ~month 2-4) | $1.25M |
-| Payment 2 (at close, ~month 12-18) | $1.25M |
-| Engagement duration | 12-18 months |
+| Payment 1 (at 10% raised, ~month 3) | $1.25M |
+| Payment 2 (at sell-out, ~month 5) | $1.25M |
+| Engagement duration | 5-7 months (deploy in 30-60 days, sell out in 90 days) |
 | Close rate (engagements that fully close) | 50-65% |
 | Expected value per engagement | $1.56M-$1.88M |
 
@@ -282,20 +282,20 @@ Unlike every competitor, InvestOS requires **no upfront payment**. The first pay
 - Target: 4-8 new engagements/month at steady state (Year 1 ramps to this)
 - Average raise: $25M (conservative — biased toward emerging managers)
 - Close rate: 55% of engagements fully close
-- Time to first payment (10% raised): 2-4 months from engagement
-- Time to full close: 12-18 months from engagement
+- Time to first payment (10% raised): ~3 months from engagement (deploy in 30-60 days, 10% raised in 30 days)
+- Time to sell-out: ~5 months from engagement (90-day raise after deployment)
 
 ### Year 1 Revenue Projection (Ramp Year)
 
-| Quarter | New Engagements | Cumulative Active | Payment 1 Collections | Payment 2 Collections | Quarterly Revenue |
-|---------|----------------|------------------|-----------------------|----------------------|-------------------|
+| Quarter | New Engagements | Cumulative Active | Payment 1 Collections | Payment 2 + Buyout Collections | Quarterly Revenue |
+|---------|----------------|------------------|-----------------------|-------------------------------|-------------------|
 | Q1 | 3-6 | 3-6 | $0 | $0 | $0 |
-| Q2 | 6-12 | 9-18 | $1.25M-$3.75M | $0 | $1.25M-$3.75M |
-| Q3 | 9-18 | 18-36 | $2.5M-$7.5M | $0 | $2.5M-$7.5M |
-| Q4 | 12-24 | 30-60 | $3.75M-$11.25M | $0-$1.25M | $3.75M-$12.5M |
-| **Year 1 Total** | **30-60** | | | | **$7.5M-$24M** |
+| Q2 | 6-12 | 9-18 | $1.25M-$3.75M | $0-$1.25M | $1.25M-$5.0M |
+| Q3 | 9-18 | 18-36 | $2.5M-$7.5M | $2.5M-$7.5M | $5.0M-$15.0M |
+| Q4 | 12-24 | 30-60 | $3.75M-$11.25M | $5.0M-$12.5M | $8.75M-$23.75M |
+| **Year 1 Total** | **30-60** | | | | **$15M-$44M** |
 
-*Note: Payment 2 collections begin late Year 1 / early Year 2 as first engagements close.*
+*With the 90-day sell-out target, Payment 2s and equity buyouts begin flowing in Q2-Q3 of Year 1 — not Year 2.*
 
 ### Year 1-5 Revenue Projection
 
@@ -309,14 +309,14 @@ Unlike every competitor, InvestOS requires **no upfront payment**. The first pay
 
 ### Revenue Recognition Timeline
 
-Because of the payment structure, revenue has a natural lag but then compounds powerfully:
+With the 90-day sell-out cycle, all three revenue waves (Payment 1, Payment 2, buyouts) compound within each year:
 
 ```
-Year 1:  ████░░░░░░░░░░░░░░░░  $7.5M-$24M    (mostly Payment 1s)
-Year 2:  ██████████░░░░░░░░░░  $40M-$80M     (Payment 1s + Year 1 closes)
-Year 3:  ████████████████░░░░  $90M-$180M    (full flywheel spinning)
-Year 4:  ██████████████████░░  $180M-$360M   (compounding portfolio)
-Year 5:  ████████████████████  $350M-$700M   (category leader)
+Year 1:  ████████░░░░░░░░░░░░  $15M-$44M     (all 3 waves flowing by Q3)
+Year 2:  █████████████░░░░░░░  $56M-$120M    (full flywheel from day 1)
+Year 3:  ████████████████░░░░  $96M-$200M    (category definition)
+Year 4:  ██████████████████░░  $130M-$280M   (compounding portfolio)
+Year 5:  ████████████████████  $151M-$350M   (category leader)
 ```
 
 ### Capacity Planning
@@ -411,7 +411,7 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 ### Why Now
 
 1. **Capital concentration is creating desperation** among emerging managers — they NEED strategic partners, not just tools
-2. **Fundraising timelines at record 17.5 months** — a partner who can compress this is worth 10% of the raise
+2. **Fundraising timelines at record 17.5 months** — a partner who compresses this to 90 days is worth 10% of the raise
 3. **AI is the moat** — 88% of PE firms investing in generative AI, but no one has built an AI-native advisory firm. InvestOS is first.
 4. **The distribution drought** means LPs are more selective — GPs need institutional-quality everything to win allocations
 5. **Zero upfront cost eliminates the #1 objection** — emerging managers are cash-poor but capital-rich once they close
@@ -422,7 +422,7 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 1. **Zero upfront cost** — No other advisory firm or software platform offers this. First payment only when capital flows.
 2. **AI-Native Platform** — Not AI bolted onto legacy software. Materials, compliance, modeling, and intelligence built from the ground up.
 3. **Full lifecycle ownership** — From raise strategy through closing. One partner replaces placement agent + lawyer + fund admin + software vendor + consultant.
-4. **Speed** — What takes traditional advisors weeks, InvestOS delivers in days. AI-powered document generation, financial modeling, and LP targeting.
+4. **Speed** — Deploy in 30-60 days, 10% raised in 30 days, sell-out in 90 days. What takes 17.5 months traditionally, InvestOS delivers in 5 months total.
 5. **Aligned incentives** — 50% of fee tied to close means InvestOS is motivated to finish the job, unlike placement agents who collect retainers regardless.
 6. **Scalable economics** — The AI platform scales horizontally. Each new advisor can manage more engagements than traditional placement agents because the platform handles the heavy lifting.
 
@@ -431,7 +431,7 @@ By Year 5, InvestOS would be **comparable in fee revenue to a mid-tier placement
 | Risk | Likelihood | Mitigation |
 |------|-----------|------------|
 | **10% fee resistance** — GPs push back on rate | High | Show total cost comparison: 10% all-in vs. 3% placement + 2% legal + 1% admin + software = 6%+ AND you manage it all yourself |
-| **Cash flow lag** — Revenue doesn't flow until raises close | High | Payment 1 at 10% raised provides early cash flow. Also: require minimum engagement period and build a pipeline buffer |
+| **Cash flow lag** — Revenue doesn't flow until raises close | Medium | 90-day sell-out target compresses lag dramatically. Payment 1 at ~3 months, close at ~5 months, buyout at ~7 months from signing |
 | **Close rate risk** — Some raises fail | Medium | Rigorous intake qualification. Only accept raises with viable thesis, team, and LP pathway. Target 55%+ close rate |
 | **Regulatory scrutiny** — Acting as placement agent may require broker-dealer registration | High | **Critical: consult securities counsel immediately.** If InvestOS is introducing investors to offerings, SEC may require BD registration or RIA status. Structure matters. |
 | **Talent bottleneck** — Need experienced capital markets advisors | Medium | Hire from placement agent firms and PE fund operations. The AI platform makes each advisor 3-5x more productive. |
@@ -572,7 +572,7 @@ The hybrid structure is an **even easier sell** than all-cash:
 - Anti-dilution protection (at minimum, standard weighted-average)
 - Information rights (quarterly financial reporting)
 - Drag-along / tag-along provisions
-- Buyout window: 90-180 days post-close
+- Buyout window: 30-60 days post-close
 - Buyout price: 50% premium on the original equity grant value (NOT post-money value)
 - If buyout not exercised: equity converts to passive with standard minority protections
 
@@ -641,10 +641,10 @@ Unlike SaaS, advisory clients come from trust-based channels. The funnel is narr
 
 | Quarter | New Engagements | Cumulative Active | Key Milestone |
 |---------|----------------|-------------------|---------------|
-| Q1 | 3-6 | 3-6 | First engagements signed. Building proof points. |
-| Q2 | 6-12 | 9-18 | First Payment 1s collected. First case studies. |
-| Q3 | 9-18 | 18-36 | Referral engine starting. Conferences producing pipeline. |
-| Q4 | 12-24 | 30-60 | Steady state of 4-8/month. First full closes. |
+| Q1 | 3-6 | 3-6 | First engagements signed. Platforms deploying. |
+| Q2 | 6-12 | 9-18 | First Payment 1s + first sell-outs. Case studies building. |
+| Q3 | 9-18 | 18-36 | First buyouts. Referral engine starting. All 3 revenue waves flowing. |
+| Q4 | 12-24 | 30-60 | Steady state of 4-8/month. Revenue compounding across waves. |
 
 ---
 

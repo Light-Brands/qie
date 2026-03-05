@@ -61,7 +61,7 @@ InvestOS does not compete for a slice of this pool. InvestOS replaces the pool.
 ### Why Now
 
 1. **Capital concentration is creating desperation.** When the top 10 funds eat half the capital, emerging managers will pay for a strategic partner who can help them win.
-2. **Fundraising timelines at record 17.5 months.** A platform that compresses this to 8-12 months is worth multiples of its fee.
+2. **Fundraising timelines at record 17.5 months.** A platform that compresses this to 90 days is worth multiples of its fee.
 3. **AI changes the cost structure of advisory.** Traditional placement agents need 3-5 senior professionals per mandate. InvestOS's AI platform handles document generation, financial modeling, compliance, LP intelligence, and reporting — a team of 12-15 runs what would require 100+ at a traditional firm.
 4. **The distribution drought is reshuffling LP relationships.** GPs must win new LP relationships. InvestOS's intelligence layer becomes a critical weapon.
 5. **Regulatory burden increasing.** Smaller firms lack infrastructure. InvestOS builds compliance into the platform.
@@ -147,34 +147,42 @@ This is critical to understanding the model. Revenue is not recognized at signin
 ### The Three Revenue Waves
 
 ```
-WAVE 1 — PAYMENT 1 (2-4 months after engagement)
+PHASE 1 — DEPLOY (Days 0-60)
+Action:   Full platform deployment, strategy, materials, LP targeting
+Duration: 30-60 days from signing
+Revenue:  $0 (kickoff payment already collected at signing)
+
+WAVE 1 — PAYMENT 1 (Day 60-90 from signing)
 Trigger:  Client raises first 10% of round
 Amount:   $500K per $20M engagement (50% of cash fee)
-Timing:   Usually 2-4 months. Landing 1-2 anchor investors triggers this.
+Timing:   ~30 days after deployment. Landing 1-2 anchor investors triggers this.
 Certainty: ~75% of engagements reach this milestone
 
-WAVE 2 — PAYMENT 2 (12-18 months after engagement)
-Trigger:  Client fully closes the round
+WAVE 2 — PAYMENT 2 (Day 120-150 from signing)
+Trigger:  Client fully closes the round (sell-out)
 Amount:   $500K per $20M engagement (50% of cash fee)
-Timing:   12-18 months from signing
+Timing:   ~90 days after deployment. Goal: every raise sells out in 90 days.
 Certainty: ~55% of engagements fully close (close rate)
 
-WAVE 3 — EQUITY BUYOUT (13-20 months after engagement)
+WAVE 3 — EQUITY BUYOUT (Day 150-210 from signing)
 Trigger:  Client exercises buyout option post-close
 Amount:   $1.5M per $20M engagement (150% of equity grant)
-Timing:   60-180 days after close
+Timing:   30-60 days after close
 Certainty: ~65% of closes exercise the buyout
 ```
+
+**The InvestOS speed advantage:** Traditional fundraising takes 17.5 months. We deploy in 30-60 days, hit 10% raised in 30 days, and target sell-out in 90 days. A complete engagement cycle — signing to close — in 120-150 days. This is the AI advantage.
 
 ### Revenue from a Single $20M Engagement — Timeline
 
 | Month | Event | Cash Collected |
 |-------|-------|---------------|
-| 0 | Engagement signed | $0 |
+| 0 | Engagement signed, kickoff payment | $0 |
+| 1-2 | Full deployment (platform, strategy, materials) | $0 |
 | 3 | 10% raised ($2M) → **Payment 1** | **$500K** |
-| 14 | Full close ($20M) → **Payment 2** | **$500K** |
-| 17 | Buyout exercised → **Equity buyout** | **$1.5M** |
-| **Total** | | **$2.5M** |
+| 5 | Full close / sell-out ($20M) → **Payment 2** | **$500K** |
+| 6-7 | Buyout exercised → **Equity buyout** | **$1.5M** |
+| **Total** | **Signing to full collection: ~7 months** | **$2.5M** |
 
 ### Revenue from 30 Year 1 Engagements — Full Waterfall
 
@@ -201,39 +209,52 @@ Here is exactly how revenue flows from the 30 engagements signed in Year 1:
 
 | Engagement Month | # Signed | Payment 1 Arrives | # Collecting (75%) | Revenue |
 |-----------------|----------|-------------------|--------------------|---------|
-| Month 1 | 1 | Month 4 | 1 | $500K |
-| Month 2 | 1 | Month 5 | 1 | $500K |
-| Month 3 | 1 | Month 6 | 1 | $500K |
-| Month 4 | 2 | Month 7 | 1-2 | $500K-$1M |
-| Month 5 | 2 | Month 8 | 1-2 | $500K-$1M |
-| Month 6 | 2 | Month 9 | 1-2 | $500K-$1M |
-| Month 7 | 3 | Month 10 | 2-3 | $1M-$1.5M |
-| Month 8 | 3 | Month 11 | 2-3 | $1M-$1.5M |
-| Month 9 | 3 | Month 12 | 2-3 | $1M-$1.5M |
-| Month 10-12 | 12 | Month 13-15 | — | Collected in Year 2 |
-| **YEAR 1 PAYMENT 1 TOTAL** | | | **12-18** | **$6M-$9M** |
+| Month 1 | 1 | Month 3 | 1 | $500K |
+| Month 2 | 1 | Month 4 | 1 | $500K |
+| Month 3 | 1 | Month 5 | 1 | $500K |
+| Month 4 | 2 | Month 6 | 1-2 | $500K-$1M |
+| Month 5 | 2 | Month 7 | 1-2 | $500K-$1M |
+| Month 6 | 2 | Month 8 | 1-2 | $500K-$1M |
+| Month 7 | 3 | Month 9 | 2-3 | $1M-$1.5M |
+| Month 8 | 3 | Month 10 | 2-3 | $1M-$1.5M |
+| Month 9 | 3 | Month 11 | 2-3 | $1M-$1.5M |
+| Month 10 | 4 | Month 12 | 3-4 | $1.5M-$2M |
+| Month 11-12 | 8 | Month 13-14 | — | Collected in Year 2 |
+| **YEAR 1 PAYMENT 1 TOTAL** | | | **16-22** | **$8M-$11M** |
 
-**Payment 2 collections (55% close rate, 12-18 months after signing):**
+**Payment 2 collections (55% close rate, ~5 months after signing with 90-day sell-out):**
 
-Only Month 1-2 engagements can close within Year 1 (at the 12-month mark):
-- 2 engagements × 55% close rate = ~1 close in Year 1
-- Revenue: **$500K**
+With the 90-day sell-out target, rounds close ~5 months after signing (60-day deploy + 90-day raise). This means Month 1-7 engagements can close within Year 1:
 
-**Equity buyouts in Year 1:** $0 (buyouts happen 2-3 months after close, so Year 2)
+| Engagement Month | # Signed | Close Arrives | Closes (55%) | Revenue |
+|-----------------|----------|---------------|-------------|---------|
+| Month 1 | 1 | Month 6 | 1 | $500K |
+| Month 2 | 1 | Month 7 | 1 | $500K |
+| Month 3 | 1 | Month 8 | 0-1 | $0-$500K |
+| Month 4 | 2 | Month 9 | 1 | $500K |
+| Month 5 | 2 | Month 10 | 1 | $500K |
+| Month 6 | 2 | Month 11 | 1 | $500K |
+| Month 7 | 3 | Month 12 | 1-2 | $500K-$1M |
+| **YEAR 1 PAYMENT 2 TOTAL** | | | **6-8** | **$3M-$4M** |
+
+**Equity buyouts (65% of closes exercise, ~1-2 months after close):**
+
+First buyouts arrive Month 7-8 (Month 1 engagement closes Month 6, buyout Month 7-8):
+- ~4-5 buyouts in Year 1 × $1.5M = **$6M-$7.5M**
 
 ### Year 1 Revenue Summary
 
 | Revenue Stream | Amount | Timing |
 |---------------|--------|--------|
-| Payment 1 collections (12-18 engagements) | $6.0M-$9.0M | Months 4-12 |
-| Payment 2 collections (1 close) | $500K | Month 12 |
-| Equity buyouts | $0 | Too early |
-| **Total Year 1 Cash Revenue** | **$6.5M-$9.5M** |  |
+| Payment 1 collections (16-22 engagements) | $8.0M-$11.0M | Months 3-12 |
+| Payment 2 collections (6-8 closes) | $3.0M-$4.0M | Months 6-12 |
+| Equity buyouts (4-5 buyouts) | $6.0M-$7.5M | Months 7-12 |
+| **Total Year 1 Cash Revenue** | **$17.0M-$22.5M** |  |
 | Equity positions accumulated (at cost) | $3M (30 × $100K avg cost basis for positions that triggered) | On balance sheet |
 
-**That's $6.5M-$9.5M in cash revenue from 30 engagements at $20M average raise.**
+**That's $17M-$22.5M in cash revenue from 30 engagements at $20M average raise.**
 
-The number makes sense: ~15 Payment 1s × $500K = $7.5M, plus 1 close = $500K. The model is straightforward once you see the waterfall.
+The 90-day sell-out target transforms the model. Instead of waiting 12-18 months for closes, Payment 2s and buyouts flow within Year 1. ~18 Payment 1s × $500K = $9M, plus ~7 closes × $500K = $3.5M, plus ~5 buyouts × $1.5M = $7.5M. Speed is the multiplier.
 
 ---
 
@@ -338,53 +359,55 @@ This means the 12-15 person team can handle:
 | Month | New | Cumulative | Active Raises | Key Event |
 |-------|-----|-----------|---------------|-----------|
 | 1 | 1 | 1 | 1 | First engagement signed |
-| 2 | 1 | 2 | 2 | Platform deployed |
-| 3 | 1 | 3 | 3 | Content + LinkedIn outreach begins |
-| 4 | 2 | 5 | 5 | **First Payment 1 collected ($500K). Model validated.** |
-| 5 | 2 | 7 | 7 | Second and third Payment 1s |
-| 6 | 2 | 9 | 9 | First conference appearance |
-| 7 | 3 | 12 | 12 | Referrals from early clients beginning |
-| 8 | 3 | 15 | 15 | Multiple Payment 1s per month |
-| 9 | 3 | 18 | 18 | Pipeline self-sustaining |
-| 10 | 4 | 22 | 20-22 | **4/month run rate achieved** |
-| 11 | 4 | 26 | 23-26 | First raise approaching full close |
-| 12 | 4 | 30 | 25-30 | **First full close. First case study.** |
+| 2 | 1 | 2 | 2 | First platform deployed (30-60 day cycle) |
+| 3 | 1 | 3 | 3 | **First Payment 1 collected ($500K). Model validated.** |
+| 4 | 2 | 5 | 5 | Content + LinkedIn outreach scaling |
+| 5 | 2 | 7 | 7 | Multiple Payment 1s flowing |
+| 6 | 2 | 9 | 8 | **First full close / sell-out. First case study.** |
+| 7 | 3 | 12 | 10 | **First equity buyout ($1.5M).** Referrals starting. |
+| 8 | 3 | 15 | 12 | Multiple closes + buyouts per month |
+| 9 | 3 | 18 | 14 | Pipeline self-sustaining |
+| 10 | 4 | 22 | 16 | **4/month run rate achieved** |
+| 11 | 4 | 26 | 18 | Revenue compounding across all 3 waves |
+| 12 | 4 | 30 | 20 | Year 1 complete. Model proven at speed. |
 
 | Metric | Value |
 |--------|-------|
 | Engagements signed | 30 |
 | Capital under advisory | $600M |
 | Total fee committed | $60M |
-| Payment 1s collected (~15 × $500K) | **$7.5M** |
-| Payment 2s collected (~1 close × $500K) | **$500K** |
-| Equity buyouts | $0 (too early) |
-| **Year 1 cash revenue** | **$8.0M** |
+| Payment 1s collected (~18 × $500K) | **$9.0M** |
+| Payment 2s collected (~7 closes × $500K) | **$3.5M** |
+| Equity buyouts (~5 × $1.5M) | **$7.5M** |
+| **Year 1 cash revenue** | **$20.0M** |
 | Equity positions (at cost) | $3.0M (30 positions) |
 | Operating costs | $3.0M-$5.0M |
-| **Year 1 operating profit** | **$3.0M-$5.0M** |
-| **Operating margin** | **38-63%** |
+| **Year 1 operating profit** | **$15.0M-$17.0M** |
+| **Operating margin** | **75-85%** |
 
 ---
 
 ### Year 2: Build the Engine
 
-**Run rate: 4-6/month. 60 new engagements. Year 1 raises closing.**
+**Run rate: 4-6/month. 60 new engagements. Full flywheel spinning.**
+
+With the 90-day sell-out cycle, Year 2 engagements close within the same year. All three revenue waves flow concurrently.
 
 | Metric | Value |
 |--------|-------|
 | New engagements | 60 |
 | Capital under advisory (Year 2 new) | $1.2B |
 | Total fee committed (Year 2) | $120M |
-| Payment 1s collected (Year 2 engagements + remaining Year 1) | **$12.0M** |
-| Payment 2s collected (Year 1 closes: ~16 closes × $500K) | **$8.0M** |
-| Equity buyouts (65% of Year 1 closes × $1.5M: ~10 × $1.5M) | **$15.0M** |
-| **Year 2 cash revenue** | **$35.0M** |
+| Payment 1s collected (Year 2 + remaining Year 1) | **$20.0M** |
+| Payment 2s collected (Year 1 late closes + Year 2 closes: ~25 × $500K) | **$12.5M** |
+| Equity buyouts (~16 × $1.5M) | **$24.0M** |
+| **Year 2 cash revenue** | **$56.5M** |
 | Equity positions (cumulative, at cost) | $9.0M (90 positions) |
 | Operating costs | $3.5M-$5.0M |
-| **Year 2 operating profit** | **$30.0M-$31.5M** |
-| **Operating margin** | **86-90%** |
+| **Year 2 operating profit** | **$51.5M-$53.0M** |
+| **Operating margin** | **91-94%** |
 
-**What happens in Year 2:** The flywheel ignites. Year 1 raises begin closing — which triggers Payment 2s AND buyout payments simultaneously. This is when the model's compounding power becomes visible. $35M revenue on $3.5-5M in costs.
+**What happens in Year 2:** The 90-day sell-out cycle means Year 2 engagements close within Year 2. All three waves — Payment 1s, Payment 2s, and buyouts — flow simultaneously. The model compounds because there's no 12-18 month lag. $56.5M revenue on $3.5-5M in costs.
 
 ---
 
@@ -397,15 +420,15 @@ This means the 12-15 person team can handle:
 | New engagements | 84 |
 | Capital under advisory (Year 3 new) | $1.68B |
 | Cumulative capital under advisory | $3.48B |
-| Payment 1s collected | **$14.0M** |
-| Payment 2s collected (Year 2 closes: ~33 × $500K) | **$16.5M** |
-| Equity buyouts (65% of Year 2 closes: ~21 × $1.5M) | **$31.5M** |
-| **Year 3 cash revenue** | **$62.0M** |
+| Payment 1s collected | **$28.0M** |
+| Payment 2s collected (~46 closes × $500K) | **$23.0M** |
+| Equity buyouts (~30 × $1.5M) | **$45.0M** |
+| **Year 3 cash revenue** | **$96.0M** |
 | Equity positions (cumulative) | 174 positions |
 | Held equity portfolio value (35% not bought out, appreciating) | $8M-$15M |
 | Operating costs | $4.0M-$5.0M |
-| **Year 3 operating profit** | **$57.0M-$58.0M** |
-| **Operating margin** | **92-94%** |
+| **Year 3 operating profit** | **$91.0M-$92.0M** |
+| **Operating margin** | **95-96%** |
 
 ---
 
@@ -418,15 +441,15 @@ This means the 12-15 person team can handle:
 | New engagements | 132 |
 | Capital under advisory (Year 5 new) | $2.64B |
 | Cumulative capital under advisory | $8.4B |
-| Payment 1s collected | **$22.0M** |
-| Payment 2s collected (from Year 3-4 closes) | **$25.0M** |
-| Equity buyouts (from Year 3-4 closes) | **$47.0M** |
-| **Year 5 cash revenue** | **$94.0M** |
+| Payment 1s collected | **$44.0M** |
+| Payment 2s collected (~73 closes × $500K) | **$36.5M** |
+| Equity buyouts (~47 × $1.5M) | **$70.5M** |
+| **Year 5 cash revenue** | **$151.0M** |
 | Equity positions (cumulative) | 390 positions |
 | Held equity portfolio value | $30M-$60M |
 | Operating costs | $4.5M-$5.5M |
-| **Year 5 operating profit** | **$88.5M-$89.5M** |
-| **Operating margin** | **94-95%** |
+| **Year 5 operating profit** | **$145.5M-$146.5M** |
+| **Operating margin** | **96-97%** |
 
 ---
 
@@ -439,15 +462,15 @@ This means the 12-15 person team can handle:
 | New engagements | 192 |
 | Capital under advisory (Year 7 new) | $3.84B |
 | Cumulative capital under advisory | $16.0B |
-| Payment 1s collected | **$32.0M** |
-| Payment 2s collected | **$36.0M** |
-| Equity buyouts | **$68.0M** |
-| **Year 7 cash revenue** | **$136.0M** |
+| Payment 1s collected | **$64.0M** |
+| Payment 2s collected (~106 closes × $500K) | **$53.0M** |
+| Equity buyouts (~69 × $1.5M) | **$103.5M** |
+| **Year 7 cash revenue** | **$220.5M** |
 | Equity positions (cumulative) | 750+ positions |
 | Held equity portfolio value | $80M-$180M |
 | Operating costs | $5.0M-$6.0M |
-| **Year 7 operating profit** | **$130.0M-$131.0M** |
-| **Operating margin** | **96%** |
+| **Year 7 operating profit** | **$214.5M-$215.5M** |
+| **Operating margin** | **97%** |
 
 ---
 
@@ -460,15 +483,15 @@ This means the 12-15 person team can handle:
 | New engagements | 252 |
 | Capital under advisory (Year 10 new) | $5.04B |
 | Cumulative capital under advisory | $28B+ |
-| Payment 1s collected | **$42.0M** |
-| Payment 2s collected | **$47.0M** |
-| Equity buyouts | **$89.0M** |
-| **Year 10 cash revenue** | **$178.0M** |
+| Payment 1s collected | **$84.0M** |
+| Payment 2s collected (~139 closes × $500K) | **$69.5M** |
+| Equity buyouts (~90 × $1.5M) | **$135.0M** |
+| **Year 10 cash revenue** | **$288.5M** |
 | Equity positions (cumulative) | 1,200+ positions |
 | Held equity portfolio value | $150M-$400M |
 | Operating costs | $5.5M-$7.0M |
-| **Year 10 operating profit** | **$171.0M-$172.5M** |
-| **Operating margin** | **96-97%** |
+| **Year 10 operating profit** | **$281.5M-$283.0M** |
+| **Operating margin** | **97-98%** |
 
 ---
 
@@ -476,27 +499,27 @@ This means the 12-15 person team can handle:
 
 ```
 YEAR 1 ─ PROVE ──────────────────────────────────────────────────
-Ramp: 1/mo → 4/mo │ Engagements: 30 │ Revenue: $8M │ Profit: $3-5M
+Ramp: 1/mo → 4/mo │ Engagements: 30 │ Revenue: $20M │ Profit: $15-17M
 Capital advised: $600M │ Portfolio: 30 positions │ Team: 12-15
 
 YEAR 2 ─ BUILD ──────────────────────────────────────────────────
-Run rate: 4-6/mo │ Engagements: 60 │ Revenue: $35M │ Profit: $30-31.5M
+Run rate: 4-6/mo │ Engagements: 60 │ Revenue: $56.5M │ Profit: $51.5-53M
 Capital advised: $1.2B │ Portfolio: 90 positions │ Team: 12-15
 
 YEAR 3 ─ DEFINE ─────────────────────────────────────────────────
-Run rate: 6-8/mo │ Engagements: 84 │ Revenue: $62M │ Profit: $57-58M
+Run rate: 6-8/mo │ Engagements: 84 │ Revenue: $96M │ Profit: $91-92M
 Capital advised: $1.68B │ Portfolio: 174 positions │ Team: 12-15
 
 YEAR 5 ─ SCALE ──────────────────────────────────────────────────
-Run rate: 10-12/mo │ Engagements: 132 │ Revenue: $94M │ Profit: $88-89.5M
+Run rate: 10-12/mo │ Engagements: 132 │ Revenue: $151M │ Profit: $145.5-146.5M
 Capital advised: $2.64B │ Portfolio: 390 positions │ Team: 12-15
 
 YEAR 7 ─ INSTITUTIONAL ─────────────────────────────────────────
-Run rate: 14-18/mo │ Engagements: 192 │ Revenue: $136M │ Profit: $130-131M
+Run rate: 14-18/mo │ Engagements: 192 │ Revenue: $220.5M │ Profit: $214.5-215.5M
 Capital advised: $3.84B │ Portfolio: 750+ positions │ Team: 12-15
 
 YEAR 10 ─ THE INSTITUTION ──────────────────────────────────────
-Run rate: 18-24/mo │ Engagements: 252 │ Revenue: $178M │ Profit: $171-172.5M
+Run rate: 18-24/mo │ Engagements: 252 │ Revenue: $288.5M │ Profit: $281.5-283M
 Capital advised: $5.04B │ Portfolio: 1,200+ positions │ Team: 12-15
 ```
 
@@ -506,10 +529,10 @@ Capital advised: $5.04B │ Portfolio: 1,200+ positions │ Team: 12-15
 |--------|--------------|
 | Total engagements signed | ~1,200 |
 | Total capital raised for clients | $28B+ |
-| Total cash revenue collected | $750M+ |
+| Total cash revenue collected | $1.2B+ |
 | Total equity positions accumulated | 1,200+ |
 | Held equity portfolio value | $150M-$400M |
-| Total value created (cash + portfolio) | **$900M-$1.15B** |
+| Total value created (cash + portfolio) | **$1.35B-$1.6B** |
 
 ---
 
@@ -519,7 +542,7 @@ Capital advised: $5.04B │ Portfolio: 1,200+ positions │ Team: 12-15
 
 Every engagement deposits an equity position into a growing portfolio. Two outcomes:
 
-**65% of positions: Buyout exercised.** Client repurchases equity at 150% of grant value. InvestOS earns a guaranteed 50% return in 12-20 months. This cash flows through the revenue model above.
+**65% of positions: Buyout exercised.** Client repurchases equity at 150% of grant value. InvestOS earns a guaranteed 50% return in 6-7 months from signing. This cash flows through the revenue model above.
 
 **35% of positions: Equity held.** These are positions where the client chose NOT to buy out — meaning the equity is worth more than the buyout price. These are the portfolio's natural winners. InvestOS holds them for long-term appreciation.
 
