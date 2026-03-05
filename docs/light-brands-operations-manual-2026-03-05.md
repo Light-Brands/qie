@@ -26,7 +26,7 @@ Total monthly operating spend is capped at **$50,000**. This includes everything
 
 | Category | Monthly Budget | Notes |
 |----------|---------------|-------|
-| **Partner base salaries** | $20K-$28K | 4 partners at $4K-$8K each (see Part 3) |
+| **Partner base salaries** | $28K-$46K | 7 partners at $4K-$8K each (see Part 3) |
 | **AI tools & infrastructure** | $5K-$10K | Claude, APIs, hosting, platform costs |
 | **Legal & compliance** | $2K-$5K | Ongoing counsel, filings, regulatory |
 | **Marketing & content** | $2K-$5K | Ads, conferences, content production |
@@ -105,12 +105,15 @@ Based on the InvestOS strategic model, the first Payment 1 ($500K) arrives aroun
 
 Every active partner receives a base salary. This is modest by design — the base keeps the lights on personally. The real income comes from the bonus structure.
 
-| Partner | Role | Monthly Base | Annual Base |
-|---------|------|-------------|-------------|
-| Daniel Lawless | Founder / Strategic Lead | $6K-$8K | $72K-$96K |
-| Andreas Demou (Manoracle Studio) | Founder / Technical Lead | $6K-$8K | $72K-$96K |
-| Nicholas Courchesne | Founder / Operations & Partnerships | $6K-$8K | $72K-$96K |
-| Jason Sparks (ADMS LLC) | Partner / Capital & Advisory | $4K-$6K | $48K-$72K |
+| Partner | Role | Equity | Monthly Base | Annual Base |
+|---------|------|--------|-------------|-------------|
+| Daniel Lawless | Founder / Strategic Lead | 25% | $6K-$8K | $72K-$96K |
+| Andreas Demou (Manoracle Studio) | Founder / Technical Lead | 25% | $6K-$8K | $72K-$96K |
+| Nicholas Courchesne | Founder / Operations & Partnerships | 25% | $6K-$8K | $72K-$96K |
+| Jason Sparks (ADMS LLC) | Partner / Capital & Advisory | 10% | $4K-$6K | $48K-$72K |
+| Eyob Mebrahtu | Partner | 5% | $4K-$6K | $48K-$72K |
+| Travis Dahm | Partner | 5% | $4K-$6K | $48K-$72K |
+| Joe McVeen | Partner | 5% | $4K-$6K | $48K-$72K |
 
 *Exact salaries within these ranges to be set by partner consensus based on active contribution and role. Reviewed quarterly.*
 
@@ -141,10 +144,13 @@ graph TD
     POOL --> BONUS
     POOL --> RETAIN
 
-    BONUS --> L["Lawless: 30%"]
-    BONUS --> A["Andreas: 30%"]
-    BONUS --> N["Nicholas: 30%"]
+    BONUS --> L["Lawless: 25%"]
+    BONUS --> A["Andreas: 25%"]
+    BONUS --> N["Nicholas: 25%"]
     BONUS --> J["Jason: 10%"]
+    BONUS --> E["Eyob: 5%"]
+    BONUS --> T["Travis: 5%"]
+    BONUS --> JM["Joe: 5%"]
 
     style REV fill:#1a1a2e,color:#fff
     style POOL fill:#2d6a4f,color:#fff
@@ -163,10 +169,13 @@ graph TD
 
 | Partner | Equity % | Share of Bonus Pool |
 |---------|----------|-------------------|
-| Daniel Lawless | 30% | 30% of bonus pool |
-| Andreas Demou | 30% | 30% of bonus pool |
-| Nicholas Courchesne | 30% | 30% of bonus pool |
+| Daniel Lawless | 25% | 25% of bonus pool |
+| Andreas Demou | 25% | 25% of bonus pool |
+| Nicholas Courchesne | 25% | 25% of bonus pool |
 | Jason Sparks | 10% | 10% of bonus pool |
+| Eyob Mebrahtu | 5% | 5% of bonus pool |
+| Travis Dahm | 5% | 5% of bonus pool |
+| Joe McVeen | 5% | 5% of bonus pool |
 
 #### Bonus Example — First Full Quarter with Revenue
 
@@ -183,12 +192,15 @@ Assume: Quarter collects $1.5M in Payment 1s (3 engagements hitting the 10% mile
 
 | Partner | Share | Bonus |
 |---------|-------|-------|
-| Daniel Lawless | 30% | **$157,500** |
-| Andreas Demou | 30% | **$157,500** |
-| Nicholas Courchesne | 30% | **$157,500** |
+| Daniel Lawless | 25% | **$131,250** |
+| Andreas Demou | 25% | **$131,250** |
+| Nicholas Courchesne | 25% | **$131,250** |
 | Jason Sparks | 10% | **$52,500** |
+| Eyob Mebrahtu | 5% | **$26,250** |
+| Travis Dahm | 5% | **$26,250** |
+| Joe McVeen | 5% | **$26,250** |
 
-*Plus their base salary for the quarter ($18K-$24K each for founding partners). Total quarterly compensation: ~$175K-$180K per founding partner in this scenario.*
+*Plus their base salary for the quarter ($18K-$24K each for founding partners). Total quarterly compensation: ~$149K-$155K per founding partner in this scenario.*
 
 #### Bonus Frequency
 
@@ -209,7 +221,7 @@ These are different mechanisms:
 | **What** | Compensation for work | Return on ownership |
 | **When** | Quarterly, once reserve is funded | After sustained profitability |
 | **Source** | 70% of distributable surplus | Retained earnings + excess reserves |
-| **Split** | Pro rata (30/30/30/10) | Pro rata (30/30/30/10) |
+| **Split** | Pro rata (25/25/25/10/5/5/5) | Pro rata (25/25/25/10/5/5/5) |
 | **Tax treatment** | Ordinary income / self-employment | Depends on entity structure |
 | **Purpose** | Reward current performance | Reward ownership stake |
 
@@ -228,7 +240,7 @@ Once distribution criteria are met:
 
 - **Frequency:** Quarterly, following the bonus calculation
 - **Calculation:** From retained earnings that exceed the reserve target
-- **Split:** Strictly pro rata per the Executive Partner Agreement — 30/30/30/10
+- **Split:** Strictly pro rata per equity — 25/25/25/10/5/5/5
 - **Cap:** Partners may choose to retain earnings for growth rather than distribute. This is decided quarterly by consensus.
 
 ---
@@ -243,9 +255,9 @@ graph TD
     P1["1. OPERATING EXPENSES<br/>Salaries, tools, legal, marketing<br/>$50K/mo cap"]
     P2["2. LOAN REPAYMENT<br/>Nicholas's $15K advance<br/>(until fully repaid)"]
     P3["3. RESERVE FUNDING<br/>Fill to $600K minimum<br/>then to $900K target<br/>then to $1.2M maximum"]
-    P4["4. BONUS POOL (70%)<br/>Of distributable surplus<br/>Split 30/30/30/10"]
+    P4["4. BONUS POOL (70%)<br/>Of distributable surplus<br/>Split 25/25/25/10/5/5/5"]
     P5["5. RETAINED EARNINGS (30%)<br/>Of distributable surplus<br/>Reinvested in the business"]
-    P6["6. DISTRIBUTIONS<br/>From excess retained earnings<br/>Once reserve + profitability criteria met<br/>Split 30/30/30/10"]
+    P6["6. DISTRIBUTIONS<br/>From excess retained earnings<br/>Once reserve + profitability criteria met<br/>Split 25/25/25/10/5/5/5"]
 
     R --> P1 --> P2 --> P3 --> P4 --> P5 --> P6
 
