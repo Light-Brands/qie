@@ -27,7 +27,7 @@ Total monthly operating spend is capped at **$50,000**. This includes everything
 | Category | Monthly Budget | Notes |
 |----------|---------------|-------|
 | **Partner base salaries** | $28K-$46K | 7 partners at $4K-$8K each (see Part 3) |
-| **AI tools & infrastructure** | $5K-$10K | Claude, APIs, hosting, platform costs |
+| **AI tools & infrastructure** | $1K | Claude, APIs, hosting, platform costs |
 | **Legal & compliance** | $2K-$5K | Ongoing counsel, filings, regulatory |
 | **Marketing & content** | $2K-$5K | Ads, conferences, content production |
 | **Operations & admin** | $2K-$5K | Banking, insurance, accounting, misc |
@@ -117,12 +117,28 @@ Every active partner receives a base salary. This is modest by design — the ba
 
 *Exact salaries within these ranges to be set by partner consensus based on active contribution and role. Reviewed quarterly.*
 
+### Salary Solidarity — We Rise and Fall Together
+
+If business conditions require tighter operations, **all partner salaries come down together**. No one takes a cut alone. The tiers:
+
+| Level | Per Partner | Total (7 partners) | When |
+|-------|-----------|-------------------|------|
+| **Standard** | $4K-$8K/mo | $28K-$46K/mo | Normal operations |
+| **Lean** | $3K/mo | $21K/mo | Revenue delayed, reserve under pressure |
+| **Survival** | $2K/mo | $14K/mo | Extended no-revenue period, protecting runway |
+
+**Rules:**
+- Salary reductions apply to **all partners equally** at the same tier. No exceptions, no individual cuts.
+- The decision to move down a tier is made by partner consensus when the financial picture demands it.
+- Moving back up happens as soon as the business can support it — also by consensus.
+- This only happens when **absolutely necessary** for the health of the business. It is not the default.
+
 ### Base Salary Rules
 
 1. **Base salaries are paid monthly**, regardless of revenue. They come from operating funds (seed capital initially, then revenue).
 2. **Base salaries are part of the $50K/mo operating cap.** They are not in addition to it.
 3. **Base salaries are not equity distributions.** They are compensation for active work. They do not reduce or replace a partner's right to pro rata distributions.
-4. **If the business cannot cover base salaries** (extreme scenario — no revenue and seed capital exhausted), partners agree to defer salary. Deferred salary is tracked and repaid before distributions resume.
+4. **If the business cannot cover base salaries** (extreme scenario — no revenue and seed capital exhausted), partners agree to move down salary tiers together. Deferred salary (the difference between standard and reduced tier) is tracked and repaid before distributions resume.
 5. **Base salary adjustments** require partner consensus and must stay within the $50K/mo operating cap.
 
 ### The Bonus Structure — Where the Real Money Is
