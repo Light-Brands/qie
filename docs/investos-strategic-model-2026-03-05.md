@@ -88,15 +88,15 @@ InvestOS does not compete for a slice of this pool. InvestOS replaces the pool.
 
 ### The Fee Structure
 
-**Total fee: 8-15% of capital raised (scaling by raise size).**
+**Total fee: 10% of capital raised.**
 
 Half in cash. Half in equity. Buyout option on the equity.
 
 | Component | Detail |
 |-----------|--------|
-| **Total fee** | 8-15% of raise (15% at $1M, scaling down 1% per tier to 8% at $150M+) |
-| **Cash fee** | 50% of total fee |
-| **Equity fee** | 50% of total fee, converted to equity at pre-money valuation |
+| **Total fee** | 10% of raise value |
+| **Cash fee** | 5% of total raise |
+| **Equity fee** | 5% of total raise, converted to equity at pre-money valuation |
 | **Cash Payment 1** | 50% of cash fee — paid when first 10% of raise is closed |
 | **Cash Payment 2** | 50% of cash fee — paid at full close |
 | **Equity buyout option** | Client may repurchase InvestOS equity at 50% premium after close |
@@ -106,38 +106,37 @@ Half in cash. Half in equity. Buyout option on the equity.
 **Pre-money valuation: $60M (3x raise as typical ratio)**
 
 ```
-TOTAL FEE: $2.4M (12% of $20M — tiered rate)
+TOTAL FEE: $2.0M (10% of $20M)
 
-CASH ($1.2M)
-├── Payment 1:  $600K    ← when client raises first $2M (10% of round)
-└── Payment 2:  $600K    ← when client closes the full $20M
+CASH ($1.0M)
+├── Payment 1:  $500K    ← when client raises first $2M (10% of round)
+└── Payment 2:  $500K    ← when client closes the full $20M
 
-EQUITY ($1.2M)
-├── Ownership:  2.0% at pre-money ($60M)
-├── Post-raise: 1.5% of $80M post-money = $1.2M
-└── Buyout:     $1.8M (50% premium on $1.2M equity grant)
+EQUITY ($1.0M)
+├── Ownership:  1.67% at pre-money ($60M)
+├── Post-raise: 1.25% of $80M post-money = $1.0M
+└── Buyout:     $1.5M (50% premium on $1M equity grant)
 
 OUTCOME A — Client buys out equity:
-  $600K + $600K + $1.8M = $3.0M total    (effective 15% rate)
+  $500K + $500K + $1.5M = $2.5M total    (effective 12.5% rate)
 
 OUTCOME B — Client keeps InvestOS as equity partner:
-  $600K + $600K + equity upside = $1.2M cash + uncapped upside
+  $500K + $500K + equity upside = $1.0M cash + uncapped upside
 
 OUTCOME C — Raise fails, equity worthless:
-  $600K + $0 + $0 = $600K floor    (Payment 1 already collected)
+  $500K + $0 + $0 = $500K floor    (Payment 1 already collected)
 ```
 
 ### Revenue Per Engagement by Raise Size
 
-| Raise Size | Rate | Total Fee | Cash (50%) | Payment 1 | Payment 2 | Equity (50%) | Buyout (150%) | Total w/ Buyout |
-|-----------|------|-----------|-----------|-----------|-----------|-------------|--------------|-----------------|
-| **$1M** | 15% | $150K | $75K | $37.5K | $37.5K | $75K | $112.5K | **$187.5K** |
-| **$5M** | 14% | $700K | $350K | $175K | $175K | $350K | $525K | **$875K** |
-| **$10M** | 13% | $1.3M | $650K | $325K | $325K | $650K | $975K | **$1.625M** |
-| **$25M** | 12% | $3.0M | $1.5M | $750K | $750K | $1.5M | $2.25M | **$3.75M** |
-| **$50M** | 11% | $5.5M | $2.75M | $1.375M | $1.375M | $2.75M | $4.125M | **$6.875M** |
-| **$75M** | 10% | $7.5M | $3.75M | $1.875M | $1.875M | $3.75M | $5.625M | **$9.375M** |
-| **$150M+** | 8% | $12.0M | $6.0M | $3.0M | $3.0M | $6.0M | $9.0M | **$15.0M** |
+| Raise Size | Cash Fee (5%) | Payment 1 | Payment 2 | Equity Buyout (150%) | Total w/ Buyout |
+|-----------|--------------|-----------|-----------|---------------------|-----------------|
+| **$10M** | $500K | $250K | $250K | $750K | **$1.25M** |
+| **$15M** | $750K | $375K | $375K | $1.125M | **$1.875M** |
+| **$20M** | $1.0M | $500K | $500K | $1.5M | **$2.5M** |
+| **$25M** | $1.25M | $625K | $625K | $1.875M | **$3.125M** |
+| **$50M** | $2.5M | $1.25M | $1.25M | $3.75M | **$6.25M** |
+| **$100M** | $5.0M | $2.5M | $2.5M | $7.5M | **$12.5M** |
 
 ---
 
@@ -309,7 +308,7 @@ This means the 12-15 person team can handle:
 ### All Projections Based On:
 - **$20M average raise size** (constant — we serve the same segment consistently)
 - **12-15 person team** (permanent — AI scales, not headcount)
-- **8-15% tiered fee** (50% cash + 50% equity, rate scales down with raise size)
+- **10% fee** (5% cash + 5% equity)
 - **55% close rate** across all engagements
 - **65% buyout exercise rate** on closed deals
 - **75% of engagements reach Payment 1 milestone** (10% of raise closed)
