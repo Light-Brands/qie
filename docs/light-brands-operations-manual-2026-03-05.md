@@ -226,6 +226,54 @@ Assume: Quarter collects $1.5M in Payment 1s (3 engagements hitting the 10% mile
 
 ---
 
+## Part 3B: Independent Contractors
+
+### The Contractor Model
+
+Beyond the founding partners, Light Brands works with **independent contractors** who extend our network and business development reach. Contractors are unpaid — they earn exclusively through performance-based fees on business they bring in and manage.
+
+This is not an employment relationship. Contractors operate independently within their own networks, connecting opportunities to Light Brands. They get paid when deals close. Period.
+
+### Contractor Compensation
+
+| Fee Type | Rate | Description |
+|----------|------|-------------|
+| **Referral Fee** | 5% of InvestOS fees | Paid on every fee collected from a client the contractor connected to us. Lifetime. |
+| **Account Management Fee** | 5% of InvestOS fees | Paid if the contractor actively manages the client relationship through the engagement. |
+| **Combined (if both)** | 10% of InvestOS fees | Contractor who both refers and manages earns the full 10%. |
+
+### Key Terms
+
+- **No base salary. No retainer. No draws.** This is a purely performance-based arrangement.
+- **Paid on collected fees only.** When the client pays, the contractor earns their percentage. Not before.
+- **Referral fees are lifetime.** If a contractor connects us to a client who raises multiple times, the contractor earns on every engagement.
+- **Account management is per-engagement.** The contractor must be actively managing the relationship to earn the AM fee.
+- **Contractor fees are paid from revenue before the bonus pool calculation.** They are an operating expense, not a distribution.
+
+### Contractor Earnings Example ($20M Raise, $2.5M Fee)
+
+| Role | Rate | Earnings |
+|------|------|----------|
+| Referral only | 5% | **$125K** |
+| Account management only | 5% | **$125K** |
+| Referral + AM (same person) | 10% | **$250K** |
+
+### Active Contractors
+
+| Contractor | Network Focus | Status |
+|------------|--------------|--------|
+| Will Yeung | Personal connections in $20M+ space | Active |
+
+*Additional contractors may be added as the network grows. Each contractor relationship is governed by a separate contractor agreement.*
+
+### How Contractors Fit the Model
+
+Contractors are a zero-risk growth lever. They cost nothing until revenue flows. They extend our reach into networks we wouldn't otherwise access. And because they earn on performance, their incentives are perfectly aligned with ours — they only win when the business wins.
+
+The contractor model mirrors the partner referral/AM structure (also 5%/5%) intentionally. Whether you're a partner or a contractor, the deal economics are the same. The difference is that partners also have equity, base salary, and bonus pool participation. Contractors trade those for independence and zero obligation.
+
+---
+
 ## Part 4: Distributions
 
 ### Distributions vs. Bonuses
