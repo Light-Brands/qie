@@ -123,10 +123,12 @@ graph TD
     C["🔍 ClarityOS<br/>FREE<br/>'Get clear'<br/>Assessment, preparation, foundation"]
     S["📊 StrategyOS<br/>$10K - $25K<br/>'Get smart'<br/>Strategic roadmap built on clarity"]
     D{"DECISION<br/>TO ENGAGE"}
-    I["🏗️ InvestOS<br/>Tier-based fee<br/>'Get funded'<br/>Platform, data room, materials"]
-    A["🚀 AmplifyOS (Beta)<br/>Select clients only<br/>'Get closed'<br/>Marketing, ads, closing"]
+    I["🏗️ InvestOS<br/>3-5% fee + $50K kickoff<br/>'Get funded'<br/>Platform, data room, materials"]
+    A["🚀 AmplifyOS (Beta)<br/>8-12% of raise, negotiated<br/>'Get closed'<br/>Marketing, ads, closing"]
 
-    C --> S --> D --> I --> A
+    C --> S --> D --> I
+    D --> A
+    I -.->|"Optional add-on"| A
 
     style C fill:#2d6a4f,color:#fff
     style S fill:#1a1a2e,color:#fff
@@ -134,6 +136,8 @@ graph TD
     style I fill:#0f3460,color:#fff
     style A fill:#533483,color:#fff
 ```
+
+**Important: InvestOS and AmplifyOS are independent products sold separately.** A client can engage InvestOS without AmplifyOS, or both. Each product has its own fee structure, payment terms, and engagement agreement.
 
 ---
 
@@ -208,7 +212,7 @@ graph TD
 - Investor reporting infrastructure
 - KYC/AML workflow
 
-**Fee:** Included in all-inclusive tier pricing (see below).
+**Fee:** 3-5% of raise depending on project scope. $50K kickoff at signing. $250K minimum project. Fee scales with raise size and complexity — larger raises and more complex structures command the higher end of the range. All fees are 100% cash.
 
 ---
 
@@ -229,61 +233,49 @@ AmplifyOS is currently in beta. It is offered on a per-client basis to select en
 - Closing coordination
 - Post-close investor onboarding
 
-**Fee:** Included in all-inclusive tier pricing when offered (see below).
+**Fee:** 8-12% of total raise, negotiated per engagement based on scope and services required. 50% of the marketing fee is paid out 50/50 from the first capital that comes in (half from raise proceeds, half from client). Remaining balance paid at close. All fees are 100% cash.
 
 ---
 
 ### Combined: InvestOS + AmplifyOS
 
-When a client engages both (which is the standard path), the advisory fee is determined by the investment tier. Simple, fixed, transparent.
+InvestOS and AmplifyOS are independent products sold separately. A client can engage InvestOS alone or both products together. When both are engaged, the combined fee creates significantly stronger economics per engagement.
+
+**Example ($20M raise, both products):**
+
+| Product | Fee | Amount |
+|---------|-----|--------|
+| InvestOS (4%) | Platform + data room | $800K |
+| AmplifyOS (10%) | Marketing + closing | $2.0M |
+| **Combined** | | **$2.8M** |
 
 ---
 
 ## Part 4: Payment Terms
 
-### Investment Tier Pricing (ClarityOS + StrategyOS + InvestOS + AmplifyOS)
+### Decoupled Product Pricing
 
-Advisory fees are determined by the investment tier the raise falls within. Fixed, transparent, no ambiguity.
+InvestOS and AmplifyOS are priced and sold independently. Each product has its own fee structure and payment schedule.
 
-| Investment Tier | Raise Range | Advisory Fee |
-|----------------|-------------|-------------|
-| **Tier 1** | Up to $1M | $100K |
-| **Tier 2** | $1M - $5M | $500K |
-| **Tier 3** | $5M - $10M | $1.0M |
-| **Tier 4** | $10M - $25M | $2.5M |
-| **Tier 5** | $25M - $50M | $5.0M |
-| **Tier 6** | $50M - $75M | $7.5M |
-| **Tier 7** | $75M+ | $15.0M |
+*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the InvestOS consulting fee. All fees are 100% cash.*
 
-*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the consulting fee. All fees are 100% cash.*
+---
 
-### Kickoff Payment (Upfront)
+### InvestOS Payment Terms
 
-Every engagement begins with a kickoff payment based on how the client was sourced:
-
-| Source | Kickoff Fee | Rationale |
-|--------|-----------|-----------|
-| **Personal Network** (Channels 3-7) | 1% - 3% of advisory fee | Lower risk — we know them, they know us |
-| **Warm Network** (referral from referral) | 4% - 6% of advisory fee | Medium risk — one degree removed |
-| **Cold Network** (inbound, conference, content) | 7% - 10% of advisory fee | Higher risk — less relationship equity |
-
-**Kickoff payment examples (Tier 4: $2.5M advisory fee):**
-
-| Source | Kickoff Amount |
-|--------|---------------|
-| Personal network | $25K - $75K |
-| Warm network | $100K - $150K |
-| Cold network | $175K - $250K |
-
-### Fee Payment Schedule
-
-After the kickoff payment, the remaining fee is paid in two tranches:
+| Element | Detail |
+|---------|--------|
+| **Fee** | 3-5% of raise (based on scope and complexity) |
+| **Kickoff** | $50K at signing (always) |
+| **Minimum project** | $250K |
+| **Payment 1** | 50% of remaining fee at 10% raised (~30 days post-deploy) |
+| **Payment 2** | Remaining balance at close/sell-out (~90 days post-deploy) |
 
 ```mermaid
 graph TD
-    K["KICKOFF PAYMENT<br/>1-10% of total fee<br/>Based on network tier"]
-    T1["TRANCHE 1 (50/50 split)<br/>Up to 50% of remaining fee<br/>At 10% raised (~30 days post-deploy)<br/>Half from raise proceeds, half from client"]
-    T2["TRANCHE 2 (remaining balance)<br/>Remaining fee balance<br/>At sell-out (~90 days post-deploy)"]
+    K["KICKOFF — $50K<br/>At engagement signing"]
+    T1["PAYMENT 1<br/>50% of remaining fee<br/>At 10% raised (~30 days post-deploy)"]
+    T2["PAYMENT 2<br/>Remaining balance<br/>At close / sell-out (~90 days post-deploy)"]
 
     K --> T1 --> T2
 
@@ -292,14 +284,44 @@ graph TD
     style T2 fill:#533483,color:#fff
 ```
 
-### Payment Waterfall Example ($20M Raise, Personal Network)
+### AmplifyOS Payment Terms
 
-| Step | Event | Amount | Running Total Paid |
-|------|-------|--------|-------------------|
-| Kickoff | Day 0 — Engagement signed (2% of $2.5M) | $50K | $50K |
-| Deploy | Day 30-60 — Platform live, strategy deployed | $0 | $50K |
-| Tranche 1 | ~Day 90 — 10% raised ($2M), 50/50 split | $1.225M | $1.275M |
-| Tranche 2 | ~Day 150 — Sell-out ($20M closed) | $1.225M | **$2.5M** |
+| Element | Detail |
+|---------|--------|
+| **Fee** | 8-12% of raise (negotiated per engagement) |
+| **First payment** | 50% of fee paid 50/50 — half from first raise proceeds, half from client |
+| **Final payment** | Remaining 50% at close/sell-out |
+
+```mermaid
+graph TD
+    A1["FIRST PAYMENT<br/>50% of AmplifyOS fee<br/>Paid 50/50 (raise proceeds + client)<br/>When first capital comes in"]
+    A2["FINAL PAYMENT<br/>Remaining 50%<br/>At close / sell-out"]
+
+    A1 --> A2
+
+    style A1 fill:#533483,color:#fff
+    style A2 fill:#1a1a2e,color:#fff
+```
+
+---
+
+### Combined Payment Waterfall Example ($20M Raise, Both Products)
+
+| Step | Event | InvestOS (4%) | AmplifyOS (10%) | Total |
+|------|-------|--------------|----------------|-------|
+| Kickoff | Day 0 — InvestOS engagement signed | $50K | — | $50K |
+| Deploy | Day 30-60 — Platform live | — | — | $50K |
+| First capital | ~Day 90 — 10% raised ($2M) | $375K (Payment 1) | $1.0M (50/50 split) | $1.425M |
+| Close | ~Day 150 — Sell-out ($20M) | $375K (Payment 2) | $1.0M (final) | **$2.8M** |
+
+### InvestOS-Only Waterfall Example ($20M Raise at 4%)
+
+| Step | Event | Amount | Running Total |
+|------|-------|--------|--------------|
+| Kickoff | Day 0 — Engagement signed | $50K | $50K |
+| Deploy | Day 30-60 — Platform live | — | $50K |
+| Payment 1 | ~Day 90 — 10% raised ($2M) | $375K | $425K |
+| Payment 2 | ~Day 150 — Sell-out ($20M) | $375K | **$800K** |
 
 ---
 
@@ -463,17 +485,19 @@ graph TD
 | Responses received | 5-8 | 50% response rate | Qualified conversations |
 | ClarityOS onboarded | 4-6 | 60-75% of responses | Serious prospects |
 | StrategyOS signed | 3-5 | 70-80% of ClarityOS completions | Paying clients |
-| Full engagement (InvestOS + AmplifyOS) | 3-4 | 80-90% of StrategyOS | **Monthly target hit** |
+| InvestOS engagement | 3-4 | 80-90% of StrategyOS | **Monthly target hit** |
+| AmplifyOS add-on | 1-2 | 30-50% of InvestOS clients | Beta — growing attach rate |
 
 ### Revenue Per Month (at Steady State)
 
 | Source | Monthly Revenue |
 |--------|----------------|
 | StrategyOS fees ($10-25K × 3-5 clients) | $30K-$125K |
-| Kickoff payments ($25K-$250K × 3-4 engagements) | $75K-$1M |
-| Payment 1 collections (from ~3 months prior engagements) | $500K-$2M |
-| Payment 2 collections (from ~5-7 months prior engagements) | $500K-$3M |
-| **Monthly revenue range** | **$1.1M-$6.1M** |
+| InvestOS kickoffs ($50K × 3-4 engagements) | $150K-$200K |
+| InvestOS Payment 1s (from ~3 months prior) | $750K-$1.5M |
+| InvestOS Payment 2s (from ~5-7 months prior) | $750K-$1.5M |
+| AmplifyOS payments (when engaged, beta) | $200K-$1M |
+| **Monthly revenue range** | **$1.9M-$4.3M** |
 
 ---
 
@@ -485,7 +509,7 @@ graph TD
     RES["RESPONSE<br/>Client reaches back<br/>Discovery conversation"]
     CLA["CLARITYOS (Free)<br/>Shared Google Drive<br/>We assess, they prepare<br/>1-2 weeks"]
     STR["STRATEGYOS ($10K-$25K)<br/>Full raise strategy<br/>Roadmap, structure, LP plan<br/>2-4 weeks"]
-    DEC{"DECISION TO ENGAGE<br/>All-inclusive pricing presented<br/>Kickoff payment collected<br/>1-10% of total fee"}
+    DEC{"DECISION TO ENGAGE<br/>InvestOS (3-5%) and/or AmplifyOS (8-12%)<br/>$50K kickoff collected"}
     DEP["DEPLOY (30-60 days)<br/>Platform, data room, documents<br/>Investor portal, compliance<br/>Marketing campaigns launched"]
     TEN["10% RAISED (~Day 90)<br/>Tranche 1 collected (50/50)<br/>Investor meetings intensifying"]
     SELL["SELL-OUT (~Day 150)<br/>Raise fully closed<br/>Tranche 2 collected"]

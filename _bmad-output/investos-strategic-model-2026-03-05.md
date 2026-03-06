@@ -84,84 +84,140 @@ InvestOS does not compete for a slice of this pool. InvestOS replaces the pool.
 | **Investor Communications** | IR consultant ($100K-$200K/yr) | AI-powered updates, reports, campaigns |
 | **Closing & Fund Operations** | Fund administrator ($50K-$200K/yr) | Integrated closing workflow |
 
-**One team. One platform. One fee. No upfront cost.**
+**One team. Two independent products. Each sold separately. Each proving itself.**
 
-### The Fee Structure
+InvestOS is a consulting-first firm. We earn fees for the work we do. Each product exists independently — clients can engage one or both depending on their needs. Equity relationships may evolve naturally with select clients post-raise, but they are not part of the standard engagement and are discussed privately on a case-by-case basis.
 
-**Tier-based consulting fees. Fixed pricing. All cash. Simple and transparent.**
+---
 
-InvestOS is a consulting-first firm. We earn fees for the work we do — strategy, platform deployment, materials, and raise execution support. Equity relationships may evolve naturally with select clients post-raise, but they are not part of the standard engagement and are discussed privately on a case-by-case basis.
+### Product 1: InvestOS — Platform, Strategy & Materials
 
-| Investment Tier | Raise Range | Consulting Fee |
-|----------------|-------------|---------------|
-| Tier 1 | Up to $1M | $100K |
-| Tier 2 | $1M - $5M | $500K |
-| Tier 3 | $5M - $10M | $1.0M |
-| Tier 4 | $10M - $25M | $2.5M |
-| Tier 5 | $25M - $50M | $5.0M |
-| Tier 6 | $50M - $75M | $7.5M |
-| Tier 7 | $75M+ | $15.0M |
+**What it delivers:** Institutional-grade raise infrastructure — strategy, financial models, data room, investor portal, PPM/offering documents, compliance, LP targeting, and investor reporting.
+
+**Fee: 3% - 5% of total raise**, depending on complexity and scope.
 
 | Component | Detail |
 |-----------|--------|
-| **Consulting fee** | Fixed by investment tier (see above). 100% cash. |
-| **Payment 1** | 50% of fee — paid when first 10% of round is closed |
-| **Payment 2** | 50% of fee — paid at full close / sell-out |
+| **Kickoff fee** | $50K — paid at engagement signing. Always. Non-refundable. |
+| **Minimum project** | $250K total fee (kickoff + remaining balance) |
+| **Fee range** | 3% - 5% of raise, scaling with complexity |
+| **Payment 1** | 50% of remaining fee (after kickoff) — paid when first 10% of round is closed |
+| **Payment 2** | 50% of remaining fee — paid at full close / sell-out |
 
-### The Math on a Single Engagement (Tier 4: $20M Raise)
+**InvestOS Fee by Raise Size:**
+
+| Raise Size | Fee at 3% | Fee at 5% | Kickoff | Payment 1 | Payment 2 |
+|-----------|-----------|-----------|---------|-----------|-----------|
+| **$5M** | $250K (min) | $250K (min) | $50K | $100K | $100K |
+| **$10M** | $300K | $500K | $50K | $125K-$225K | $125K-$225K |
+| **$20M** | $600K | $1.0M | $50K | $275K-$475K | $275K-$475K |
+| **$50M** | $1.5M | $2.5M | $50K | $725K-$1.225M | $725K-$1.225M |
+| **$100M** | $3.0M | $5.0M | $50K | $1.475M-$2.475M | $1.475M-$2.475M |
+
+---
+
+### Product 2: AmplifyOS (Beta) — Marketing, Outreach & Closing
+
+**What it delivers:** Active investor marketing — digital campaigns, LP outreach, roadshow support, investor communications, meeting coordination, and closing support.
+
+**Status:** Beta — offered to select clients on a per-engagement basis.
+
+**Fee: 8% - 12% of total raise**, strategically negotiated based on scope of marketing and outreach.
+
+| Component | Detail |
+|-----------|--------|
+| **Fee range** | 8% - 12% of raise, negotiated per engagement |
+| **Payment 1** | 50% of total marketing fee — paid 50/50 from first capital raised (half from raise proceeds, half from client) |
+| **Payment 2** | Remaining 50% of marketing fee — paid at full close / sell-out |
+
+**AmplifyOS Fee by Raise Size:**
+
+| Raise Size | Fee at 8% | Fee at 12% | Payment 1 (50%) | Payment 2 (50%) |
+|-----------|-----------|------------|-----------------|-----------------|
+| **$5M** | $400K | $600K | $200K-$300K | $200K-$300K |
+| **$10M** | $800K | $1.2M | $400K-$600K | $400K-$600K |
+| **$20M** | $1.6M | $2.4M | $800K-$1.2M | $800K-$1.2M |
+| **$50M** | $4.0M | $6.0M | $2.0M-$3.0M | $2.0M-$3.0M |
+| **$100M** | $8.0M | $12.0M | $4.0M-$6.0M | $4.0M-$6.0M |
+
+---
+
+### Combined: InvestOS + AmplifyOS
+
+When a client engages both products, total fees range from **11% - 17%** of the raise. Each product is contracted and invoiced independently.
+
+| Raise Size | InvestOS (3-5%) | AmplifyOS (8-12%) | Combined | Effective Rate |
+|-----------|----------------|-------------------|----------|---------------|
+| **$10M** | $300K-$500K | $800K-$1.2M | $1.1M-$1.7M | 11-17% |
+| **$20M** | $600K-$1.0M | $1.6M-$2.4M | $2.2M-$3.4M | 11-17% |
+| **$50M** | $1.5M-$2.5M | $4.0M-$6.0M | $5.5M-$8.5M | 11-17% |
+
+---
+
+### The Math on a Single Engagement ($20M Raise, Both Products)
 
 ```mermaid
 graph TD
-    FEE["TIER 4 CONSULTING FEE: $2.0M<br/>($10M-$25M raise range)"]
-    FEE --> P1["Payment 1: $1.0M<br/>When 10% raised ($2M)"]
-    FEE --> P2["Payment 2: $1.0M<br/>When round closes ($20M)"]
+    subgraph "INVESTOS (4% = $800K)"
+        IK["Kickoff: $50K<br/>Day 0"]
+        IP1["Payment 1: $375K<br/>When 10% raised"]
+        IP2["Payment 2: $375K<br/>At full close"]
+    end
 
-    P1 --> A["Outcome A: Full close<br/>$1.0M + $1.0M = $2.0M total"]
-    P1 --> B["Outcome B: Raise stalls after 10%<br/>$1.0M collected<br/>(Payment 1 already in hand)"]
+    subgraph "AMPLIFYOS (10% = $2.0M)"
+        AP1["Payment 1: $1.0M<br/>50/50 from first capital<br/>raised"]
+        AP2["Payment 2: $1.0M<br/>At full close"]
+    end
 
-    style FEE fill:#1a1a2e,color:#fff
-    style P1 fill:#16213e,color:#fff
-    style P2 fill:#16213e,color:#fff
-    style A fill:#0f3460,color:#fff
-    style B fill:#533483,color:#fff
+    IK --> IP1 --> IP2
+    AP1 --> AP2
+
+    style IK fill:#1a1a2e,color:#fff
+    style IP1 fill:#16213e,color:#fff
+    style IP2 fill:#16213e,color:#fff
+    style AP1 fill:#0f3460,color:#fff
+    style AP2 fill:#0f3460,color:#fff
 ```
 
-### Revenue Per Engagement by Investment Tier
+**Total collected on $20M raise (both products): $2.8M**
 
-| Investment Tier | Consulting Fee | Payment 1 (50%) | Payment 2 (50%) |
-|----------------|---------------|-----------------|-----------------|
-| **Tier 1** ($1M) | $100K | $50K | $50K |
-| **Tier 2** ($5M) | $500K | $250K | $250K |
-| **Tier 3** ($10M) | $1.0M | $500K | $500K |
-| **Tier 4** ($20M) | $2.0M | $1.0M | $1.0M |
-| **Tier 5** ($50M) | $5.0M | $2.5M | $2.5M |
-| **Tier 6** ($75M) | $7.5M | $3.75M | $3.75M |
-| **Tier 7** ($150M) | $15.0M | $7.5M | $7.5M |
+### Revenue Per Engagement — InvestOS Only ($20M Raise at 4%)
+
+| Step | Event | Amount | Running Total |
+|------|-------|--------|--------------|
+| Kickoff | Day 0 — Engagement signed | $50K | $50K |
+| Payment 1 | ~Day 90 — 10% raised ($2M) | $375K | $425K |
+| Payment 2 | ~Day 150 — Sell-out ($20M) | $375K | **$800K** |
 
 ---
 
 ## How Revenue Flows: The Fee Waterfall
 
-This is critical to understanding the model. Revenue is not recognized at signing — it flows in two waves based on milestones.
+Revenue flows independently for each product. InvestOS has three collection points (kickoff + two milestone payments). AmplifyOS has two.
 
-### The Two Revenue Waves
+### InvestOS Revenue Waves
 
 ```mermaid
 graph LR
+    subgraph "KICKOFF"
+        K["Day 0<br/>$50K collected<br/>100% certainty"]
+    end
+
     subgraph "PHASE 1 — DEPLOY"
-        D["Days 0-60<br/>Platform deployment<br/>Strategy & materials<br/>LP targeting<br/>Revenue: $0"]
+        D["Days 0-60<br/>Platform deployment<br/>Strategy & materials<br/>LP targeting"]
     end
 
     subgraph "WAVE 1 — PAYMENT 1"
-        W1["Day 60-90<br/>10% of round raised<br/>$1.0M collected<br/>75% certainty"]
+        W1["Day 60-90<br/>10% of round raised<br/>50% of remaining fee<br/>75% certainty"]
     end
 
     subgraph "WAVE 2 — PAYMENT 2"
-        W2["Day 120-150<br/>Full close / sell-out<br/>$1.0M collected<br/>55% certainty"]
+        W2["Day 120-150<br/>Full close / sell-out<br/>50% of remaining fee<br/>55% certainty"]
     end
 
-    D --> W1 --> W2
+    K --> D --> W1 --> W2
 
+    style K fill:#2d6a4f,color:#fff
     style D fill:#1a1a2e,color:#fff
     style W1 fill:#16213e,color:#fff
     style W2 fill:#0f3460,color:#fff
@@ -169,15 +225,25 @@ graph LR
 
 **The InvestOS speed advantage:** Traditional fundraising takes 17.5 months. We deploy in 30-60 days, hit 10% raised in 30 days, and target sell-out in 90 days. A complete engagement cycle — signing to close — in 120-150 days. This is the AI advantage.
 
-### Revenue from a Single $20M Engagement — Timeline
+### Revenue from a Single $20M Engagement — InvestOS Only (4% = $800K)
 
 | Month | Event | Cash Collected |
 |-------|-------|---------------|
-| 0 | Engagement signed, kickoff payment | $0 |
+| 0 | Engagement signed → **Kickoff** | **$50K** |
 | 1-2 | Full deployment (platform, strategy, materials) | $0 |
-| 3 | 10% raised ($2M) → **Payment 1** | **$1.0M** |
-| 5 | Full close / sell-out ($20M) → **Payment 2** | **$1.0M** |
-| **Total** | **Signing to full collection: ~5 months** | **$2.0M** |
+| 3 | 10% raised ($2M) → **Payment 1** | **$375K** |
+| 5 | Full close / sell-out ($20M) → **Payment 2** | **$375K** |
+| **Total** | **Signing to full collection: ~5 months** | **$800K** |
+
+### Revenue from a Single $20M Engagement — Both Products (InvestOS 4% + AmplifyOS 10%)
+
+| Month | Event | InvestOS | AmplifyOS | Total |
+|-------|-------|----------|-----------|-------|
+| 0 | Kickoff | $50K | $0 | $50K |
+| 1-2 | Deploy | $0 | $0 | $0 |
+| 3 | 10% raised | $375K | $1.0M | $1.375M |
+| 5 | Full close | $375K | $1.0M | $1.375M |
+| **Total** | | **$800K** | **$2.0M** | **$2.8M** |
 
 ### Revenue from 30 Year 1 Engagements — Full Waterfall
 
@@ -200,22 +266,28 @@ Here is exactly how revenue flows from the 30 engagements signed in Year 1:
 | 11 | 4 | 26 |
 | 12 | 4 | 30 |
 
+*All projections below use InvestOS at 4% average fee ($800K on a $20M raise). Kickoff = $50K, Payment 1 = $375K, Payment 2 = $375K. AmplifyOS revenue shown separately as upside.*
+
+**Kickoff collections (100% of engagements, collected at signing):**
+
+30 engagements × $50K = **$1.5M** (collected throughout Year 1 as engagements sign)
+
 **Payment 1 collections (75% of engagements hit 10% raised, ~3 months after signing):**
 
 | Engagement Month | # Signed | Payment 1 Arrives | # Collecting (75%) | Revenue |
 |-----------------|----------|-------------------|--------------------|---------|
-| Month 1 | 1 | Month 3 | 1 | $1.0M |
-| Month 2 | 1 | Month 4 | 1 | $1.0M |
-| Month 3 | 1 | Month 5 | 1 | $1.0M |
-| Month 4 | 2 | Month 6 | 1-2 | $1.0M-$2.0M |
-| Month 5 | 2 | Month 7 | 1-2 | $1.0M-$2.0M |
-| Month 6 | 2 | Month 8 | 1-2 | $1.0M-$2.0M |
-| Month 7 | 3 | Month 9 | 2-3 | $2.0M-$3.0M |
-| Month 8 | 3 | Month 10 | 2-3 | $2.0M-$3.0M |
-| Month 9 | 3 | Month 11 | 2-3 | $2.0M-$3.0M |
-| Month 10 | 4 | Month 12 | 3-4 | $3.0M-$4.0M |
+| Month 1 | 1 | Month 3 | 1 | $375K |
+| Month 2 | 1 | Month 4 | 1 | $375K |
+| Month 3 | 1 | Month 5 | 1 | $375K |
+| Month 4 | 2 | Month 6 | 1-2 | $375K-$750K |
+| Month 5 | 2 | Month 7 | 1-2 | $375K-$750K |
+| Month 6 | 2 | Month 8 | 1-2 | $375K-$750K |
+| Month 7 | 3 | Month 9 | 2-3 | $750K-$1.125M |
+| Month 8 | 3 | Month 10 | 2-3 | $750K-$1.125M |
+| Month 9 | 3 | Month 11 | 2-3 | $750K-$1.125M |
+| Month 10 | 4 | Month 12 | 3-4 | $1.125M-$1.5M |
 | Month 11-12 | 8 | Month 13-14 | — | Collected in Year 2 |
-| **YEAR 1 PAYMENT 1 TOTAL** | | | **16-22** | **$16M-$22M** |
+| **YEAR 1 PAYMENT 1 TOTAL** | | | **16-22** | **$6M-$8.25M** |
 
 **Payment 2 collections (55% close rate, ~5 months after signing with 90-day sell-out):**
 
@@ -223,26 +295,37 @@ With the 90-day sell-out target, rounds close ~5 months after signing (60-day de
 
 | Engagement Month | # Signed | Close Arrives | Closes (55%) | Revenue |
 |-----------------|----------|---------------|-------------|---------|
-| Month 1 | 1 | Month 6 | 1 | $1.0M |
-| Month 2 | 1 | Month 7 | 1 | $1.0M |
-| Month 3 | 1 | Month 8 | 0-1 | $0-$1.0M |
-| Month 4 | 2 | Month 9 | 1 | $1.0M |
-| Month 5 | 2 | Month 10 | 1 | $1.0M |
-| Month 6 | 2 | Month 11 | 1 | $1.0M |
-| Month 7 | 3 | Month 12 | 1-2 | $1.0M-$2.0M |
-| **YEAR 1 PAYMENT 2 TOTAL** | | | **6-8** | **$6M-$8M** |
+| Month 1 | 1 | Month 6 | 1 | $375K |
+| Month 2 | 1 | Month 7 | 1 | $375K |
+| Month 3 | 1 | Month 8 | 0-1 | $0-$375K |
+| Month 4 | 2 | Month 9 | 1 | $375K |
+| Month 5 | 2 | Month 10 | 1 | $375K |
+| Month 6 | 2 | Month 11 | 1 | $375K |
+| Month 7 | 3 | Month 12 | 1-2 | $375K-$750K |
+| **YEAR 1 PAYMENT 2 TOTAL** | | | **6-8** | **$2.25M-$3.0M** |
 
-### Year 1 Revenue Summary
+### Year 1 Revenue Summary — InvestOS Only
 
 | Revenue Stream | Amount | Timing |
 |---------------|--------|--------|
-| Payment 1 collections (16-22 engagements) | $16.0M-$22.0M | Months 3-12 |
-| Payment 2 collections (6-8 closes) | $6.0M-$8.0M | Months 6-12 |
-| **Total Year 1 Cash Revenue** | **$22.0M-$30.0M** |  |
+| Kickoff fees (30 engagements × $50K) | $1.5M | Throughout Year 1 |
+| Payment 1 collections (16-22 engagements) | $6.0M-$8.25M | Months 3-12 |
+| Payment 2 collections (6-8 closes) | $2.25M-$3.0M | Months 6-12 |
+| **Total Year 1 InvestOS Revenue** | **$9.75M-$12.75M** |  |
 
-**That's $22M-$30M in cash consulting revenue from 30 engagements at $20M average raise.**
+### Year 1 Revenue Summary — With AmplifyOS Upside
 
-The 90-day sell-out target transforms the model. Instead of waiting 12-18 months for closes, Payment 2s flow within Year 1. ~18 Payment 1s × $1.0M = $18M, plus ~7 closes × $1.0M = $7M. Speed is the multiplier.
+If 30-50% of InvestOS clients also engage AmplifyOS (10% avg on $20M = $2.0M per engagement):
+
+| Revenue Stream | Amount |
+|---------------|--------|
+| InvestOS revenue (above) | $9.75M-$12.75M |
+| AmplifyOS revenue (9-15 engagements, partial collections in Year 1) | $5M-$10M |
+| **Total Year 1 Combined Revenue** | **$14.75M-$22.75M** |
+
+**The InvestOS model alone generates ~$10-13M in Year 1. AmplifyOS is pure upside.**
+
+The 90-day sell-out target transforms the model. Speed is the multiplier.
 
 ---
 
@@ -317,22 +400,34 @@ This means the 12-15 person team can handle:
 ### All Projections Based On:
 - **$20M average raise size** (constant — we serve the same segment consistently)
 - **12-15 person team** (permanent — AI scales, not headcount)
-- **Tier-based consulting fee** (100% cash)
+- **InvestOS at 4% average fee** ($800K per engagement, 100% cash)
+- **$50K kickoff per engagement** (collected at signing)
 - **55% close rate** across all engagements
 - **75% of engagements reach Payment 1 milestone** (10% of raise closed)
+- **AmplifyOS shown as upside** (beta, not included in base projections)
 
-### Per-Engagement Economics (Tier 4: $20M Raise)
+### Per-Engagement Economics — InvestOS Only ($20M Raise at 4%)
 
 | Item | Value |
 |------|-------|
-| Consulting fee (Tier 4) | $2.0M |
-| Payment 1 (at 10% raised) | $1.0M |
-| Payment 2 (at close) | $1.0M |
-| **Expected cash per engagement** | **$1.3M** |
+| InvestOS fee (4%) | $800K |
+| Kickoff (at signing) | $50K |
+| Payment 1 (at 10% raised) | $375K |
+| Payment 2 (at close) | $375K |
+| **Expected cash per engagement** | **$535K** |
 
-*Expected cash = (75% × $1.0M Payment 1) + (55% × $1.0M Payment 2) = $750K + $550K = $1.3M.*
+*Expected cash = $50K kickoff + (75% × $375K Payment 1) + (55% × $375K Payment 2) = $50K + $281K + $206K = $537K.*
 
-*Simplified: for every engagement signed, InvestOS expects ~$1.3M in eventual cash collections.*
+### Per-Engagement Economics — Both Products ($20M Raise, InvestOS 4% + AmplifyOS 10%)
+
+| Item | Value |
+|------|-------|
+| InvestOS fee | $800K |
+| AmplifyOS fee | $2.0M |
+| Combined fee | $2.8M |
+| **Expected cash per engagement** | **$1.8M** |
+
+*When both products are engaged, the economics are significantly stronger. AmplifyOS is the margin multiplier — but it must be earned, not assumed.*
 
 ---
 
@@ -359,13 +454,16 @@ This means the 12-15 person team can handle:
 |--------|-------|
 | Engagements signed | 30 |
 | Capital under advisory | $600M |
-| Total fee committed | $60M |
-| Payment 1s collected (~18 × $1.0M) | **$18.0M** |
-| Payment 2s collected (~7 closes × $1.0M) | **$7.0M** |
-| **Year 1 cash revenue** | **$25.0M** |
+| InvestOS fee committed (4% avg) | $24M |
+| Kickoffs collected (30 × $50K) | **$1.5M** |
+| Payment 1s collected (~18 × $375K) | **$6.75M** |
+| Payment 2s collected (~7 closes × $375K) | **$2.625M** |
+| **Year 1 InvestOS revenue** | **$10.9M** |
+| AmplifyOS upside (if 30-50% also engage) | $5M-$10M |
+| **Year 1 combined revenue** | **$10.9M-$20.9M** |
 | Operating costs | $3.0M-$5.0M |
-| **Year 1 operating profit** | **$20.0M-$22.0M** |
-| **Operating margin** | **80-88%** |
+| **Year 1 operating profit (InvestOS only)** | **$5.9M-$7.9M** |
+| **Operating margin** | **54-72%** |
 
 ---
 
@@ -379,15 +477,18 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 |--------|-------|
 | New engagements | 60 |
 | Capital under advisory (Year 2 new) | $1.2B |
-| Total fee committed (Year 2) | $120M |
-| Payment 1s collected (Year 2 + remaining Year 1) | **$40.0M** |
-| Payment 2s collected (Year 1 late closes + Year 2 closes: ~25 × $1.0M) | **$25.0M** |
-| **Year 2 cash revenue** | **$65.0M** |
+| InvestOS fee committed (Year 2) | $48M |
+| Kickoffs (60 × $50K) | **$3.0M** |
+| Payment 1s collected (Year 2 + remaining Year 1) | **$15.0M** |
+| Payment 2s collected (~25 closes × $375K) | **$9.375M** |
+| **Year 2 InvestOS revenue** | **$27.4M** |
+| AmplifyOS upside | $12M-$24M |
+| **Year 2 combined revenue** | **$27.4M-$51.4M** |
 | Operating costs | $3.5M-$5.0M |
-| **Year 2 operating profit** | **$60.0M-$61.5M** |
-| **Operating margin** | **92-95%** |
+| **Year 2 operating profit (InvestOS only)** | **$22.4M-$23.9M** |
+| **Operating margin** | **82-87%** |
 
-**What happens in Year 2:** The 90-day sell-out cycle means Year 2 engagements close within Year 2. Both waves — Payment 1s and Payment 2s — flow simultaneously. The model compounds because there's no 12-18 month lag. $65M revenue on $3.5-5M in costs.
+**What happens in Year 2:** The 90-day sell-out cycle means Year 2 engagements close within Year 2. Both waves flow simultaneously. The model compounds because there's no 12-18 month lag. Plus, AmplifyOS beta graduates to a proven offering — more clients engage both products.
 
 ---
 
@@ -400,12 +501,12 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 | New engagements | 84 |
 | Capital under advisory (Year 3 new) | $1.68B |
 | Cumulative capital under advisory | $3.48B |
-| Payment 1s collected | **$56.0M** |
-| Payment 2s collected (~46 closes × $1.0M) | **$46.0M** |
-| **Year 3 cash revenue** | **$102.0M** |
+| **Year 3 InvestOS revenue** | **$38.0M** |
+| AmplifyOS revenue (maturing, 40-60% attach) | $20M-$40M |
+| **Year 3 combined revenue** | **$58.0M-$78.0M** |
 | Operating costs | $4.0M-$5.0M |
-| **Year 3 operating profit** | **$97.0M-$98.0M** |
-| **Operating margin** | **95-96%** |
+| **Year 3 operating profit (combined)** | **$53.0M-$74.0M** |
+| **Operating margin** | **91-95%** |
 
 ---
 
@@ -418,12 +519,12 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 | New engagements | 132 |
 | Capital under advisory (Year 5 new) | $2.64B |
 | Cumulative capital under advisory | $8.4B |
-| Payment 1s collected | **$88.0M** |
-| Payment 2s collected (~73 closes × $1.0M) | **$73.0M** |
-| **Year 5 cash revenue** | **$161.0M** |
+| **Year 5 InvestOS revenue** | **$60.0M** |
+| AmplifyOS revenue (proven, 50-70% attach) | $50M-$80M |
+| **Year 5 combined revenue** | **$110.0M-$140.0M** |
 | Operating costs | $4.5M-$5.5M |
-| **Year 5 operating profit** | **$155.5M-$156.5M** |
-| **Operating margin** | **96-97%** |
+| **Year 5 operating profit (combined)** | **$104.5M-$135.5M** |
+| **Operating margin** | **95-97%** |
 
 ---
 
@@ -436,12 +537,12 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 | New engagements | 192 |
 | Capital under advisory (Year 7 new) | $3.84B |
 | Cumulative capital under advisory | $16.0B |
-| Payment 1s collected | **$128.0M** |
-| Payment 2s collected (~106 closes × $1.0M) | **$106.0M** |
-| **Year 7 cash revenue** | **$234.0M** |
+| **Year 7 InvestOS revenue** | **$87.0M** |
+| AmplifyOS revenue (60-70% attach) | $80M-$110M |
+| **Year 7 combined revenue** | **$167.0M-$197.0M** |
 | Operating costs | $5.0M-$6.0M |
-| **Year 7 operating profit** | **$228.0M-$229.0M** |
-| **Operating margin** | **97-98%** |
+| **Year 7 operating profit (combined)** | **$161.0M-$192.0M** |
+| **Operating margin** | **96-97%** |
 
 ---
 
@@ -454,11 +555,11 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 | New engagements | 252 |
 | Capital under advisory (Year 10 new) | $5.04B |
 | Cumulative capital under advisory | $28B+ |
-| Payment 1s collected | **$168.0M** |
-| Payment 2s collected (~139 closes × $1.0M) | **$139.0M** |
-| **Year 10 cash revenue** | **$307.0M** |
+| **Year 10 InvestOS revenue** | **$114.0M** |
+| AmplifyOS revenue (65-75% attach) | $110M-$150M |
+| **Year 10 combined revenue** | **$224.0M-$264.0M** |
 | Operating costs | $5.5M-$7.0M |
-| **Year 10 operating profit** | **$300.0M-$301.5M** |
+| **Year 10 operating profit (combined)** | **$217.0M-$259.0M** |
 | **Operating margin** | **97-98%** |
 
 ---
@@ -467,24 +568,24 @@ With the 90-day sell-out cycle, Year 2 engagements close within the same year. B
 
 ```mermaid
 timeline
-    title InvestOS 10-Year Growth Trajectory (Team: 12-15 permanent)
+    title InvestOS + AmplifyOS 10-Year Growth (Team: 12-15 permanent)
     Year 1 — PROVE : 1→4/mo ramp, 30 engagements
-                    : Revenue $25M, Profit $20-22M
+                    : InvestOS $10.9M + AmplifyOS upside
                     : Capital advised $600M
     Year 2 — BUILD : 4-6/mo, 60 engagements
-                   : Revenue $65M, Profit $60-61.5M
+                   : Combined $27-51M
                    : Capital advised $1.2B
     Year 3 — DEFINE : 6-8/mo, 84 engagements
-                    : Revenue $102M, Profit $97-98M
+                    : Combined $58-78M
                     : Capital advised $1.68B
     Year 5 — SCALE : 10-12/mo, 132 engagements
-                   : Revenue $161M, Profit $155.5-156.5M
+                   : Combined $110-140M
                    : Capital advised $2.64B
     Year 7 — INSTITUTIONAL : 14-18/mo, 192 engagements
-                           : Revenue $234M, Profit $228-229M
+                           : Combined $167-197M
                            : Capital advised $3.84B
     Year 10 — THE INSTITUTION : 18-24/mo, 252 engagements
-                              : Revenue $307M, Profit $300-301.5M
+                              : Combined $224-264M
                               : Capital advised $5.04B
 ```
 
@@ -494,7 +595,9 @@ timeline
 |--------|--------------|
 | Total engagements signed | ~1,200 |
 | Total capital raised for clients | $28B+ |
-| Total cash revenue collected | **$1.4B+** |
+| InvestOS revenue (base) | **$500M+** |
+| AmplifyOS revenue (as it matures) | **$400M-$700M** |
+| **Total combined revenue** | **$900M-$1.2B** |
 
 ---
 
@@ -516,13 +619,13 @@ Annual capital raised by $10M-$500M managers: ~$80B-$250B.
 
 Total capital formation fee pool: ~$3B-$6B annually.
 
-| Year | Revenue | Fee Pool Share |
+| Year | Revenue (InvestOS + AmplifyOS) | Fee Pool Share |
 |------|---------|---------------|
-| Year 1 | $8M | 0.1-0.3% |
-| Year 3 | $62M | 1.0-2.1% |
-| Year 5 | $94M | 1.6-3.1% |
-| Year 7 | $136M | 2.3-4.5% |
-| Year 10 | $178M | 3.0-5.9% |
+| Year 1 | $10.9M (base) — $20.9M (combined) | 0.2-0.7% |
+| Year 3 | $58M-$78M | 1.0-2.6% |
+| Year 5 | $110M-$140M | 1.8-4.7% |
+| Year 7 | $167M-$197M | 2.8-6.6% |
+| Year 10 | $224M-$264M | 3.7-8.8% |
 
 ### Capture Rate
 
@@ -540,13 +643,13 @@ Total capital formation fee pool: ~$3B-$6B annually.
 
 ## Enterprise Value
 
-| Year | Cash Revenue | Consulting Value (5-10x) | **Enterprise Value** |
+| Year | Combined Revenue | Consulting Value (5-10x) | **Enterprise Value** |
 |------|-------------|------------------------|---------------------|
-| Year 1 | $25M | $125M-$250M | **$125M-$250M** |
-| Year 3 | $102M | $510M-$1.02B | **$510M-$1.02B** |
-| Year 5 | $161M | $805M-$1.61B | **$805M-$1.61B** |
-| Year 7 | $234M | $1.17B-$2.34B | **$1.17B-$2.34B** |
-| Year 10 | $307M | $1.54B-$3.07B | **$1.54B-$3.07B** |
+| Year 1 | $10.9M (InvestOS base) | $55M-$109M | **$55M-$109M** |
+| Year 3 | $68M (midpoint) | $340M-$680M | **$340M-$680M** |
+| Year 5 | $125M (midpoint) | $625M-$1.25B | **$625M-$1.25B** |
+| Year 7 | $182M (midpoint) | $910M-$1.82B | **$910M-$1.82B** |
+| Year 10 | $244M (midpoint) | $1.22B-$2.44B | **$1.22B-$2.44B** |
 
 ---
 
@@ -596,7 +699,7 @@ No placement agent, no software platform, and no consultant has this dataset. It
 
 ## Why This Works
 
-1. **AI is the margin.** A 12-15 person team doing what requires 100+ at a traditional firm. Operating costs stay flat at $3-5M while revenue scales to $307M. By Year 3, margins exceed 95%.
+1. **AI is the margin.** A 12-15 person team doing what requires 100+ at a traditional firm. Operating costs stay flat at $3-5M while combined revenue scales to $224-264M. By Year 3, margins exceed 91%.
 
 2. **Zero upfront cost opens the entire market.** The #1 reason emerging managers don't hire advisors is cash. InvestOS removes this entirely. First payment only when capital flows.
 
