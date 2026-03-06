@@ -124,7 +124,7 @@ graph TD
     S["📊 StrategyOS<br/>$10K - $25K<br/>'Get smart'<br/>Strategic roadmap built on clarity"]
     D{"DECISION<br/>TO ENGAGE"}
     I["🏗️ InvestOS<br/>Tier-based fee<br/>'Get funded'<br/>Platform, data room, materials"]
-    A["🚀 AmplifyOS<br/>Tier-based fee<br/>'Get closed'<br/>Marketing, ads, closing"]
+    A["🚀 AmplifyOS (Beta)<br/>Select clients only<br/>'Get closed'<br/>Marketing, ads, closing"]
 
     C --> S --> D --> I --> A
 
@@ -212,11 +212,15 @@ graph TD
 
 ---
 
-### Product 4: AmplifyOS
+### Product 4: AmplifyOS (Beta)
+
+**Status: Beta — Select Clients Only**
+
+AmplifyOS is currently in beta. It is offered on a per-client basis to select engagements where the scope aligns with our current capabilities. Not every client will receive AmplifyOS services. As we validate what works and build confidence in delivery, AmplifyOS will expand to a standard offering. Until then, inclusion is at our discretion based on fit and capacity.
 
 **Purpose:** Active marketing, outreach, and closing support to drive the raise to completion.
 
-**What we deliver:**
+**What we deliver (when included):**
 - Investor marketing campaigns (digital ads, email sequences, social)
 - LP outreach and warm introductions
 - Investor meeting preparation and follow-up
@@ -225,7 +229,7 @@ graph TD
 - Closing coordination
 - Post-close investor onboarding
 
-**Fee:** Included in all-inclusive tier pricing (see below).
+**Fee:** Included in all-inclusive tier pricing when offered (see below).
 
 ---
 
