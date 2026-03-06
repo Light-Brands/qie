@@ -29,7 +29,7 @@ This document is the companion to the InvestOS Strategic Model. That document co
 
 **Channels 1-2 (Direct deals)** are the proof points. Transformational Epicenter and Endless demonstrate the full InvestOS model in action. Every close becomes a case study that unlocks the referral networks.
 
-**Channels 3-7 (Personal networks)** are the growth engine. Partners and contractors activate their top 2-3 connections — investors and founders seeking $20M+ in health and wellness optimization, biotech, and regenerative real estate. That's 10-15 warm introductions across 5 networks. Note: Channels 3-6 are equity partners; Channel 7 (Will) is an independent contractor earning referral and account management fees on closed business (see Operations Manual, Part 3B).
+**Channels 3-7 (Personal networks)** are the growth engine. Partners and contractors activate their top 2-3 connections — investors and founders seeking $20M+ in health and wellness optimization, biotech, and regenerative real estate. That's 10-15 warm introductions across 5 networks. Note: Channels 3-6 are partners; Channel 7 (Will) is an independent contractor earning referral and account management fees on closed business (see Operations Manual, Part 3B).
 
 **Channel 8 (Inbound Ads)** is the scale layer. Targeted digital advertising — LinkedIn, Meta, Google — driving qualified inbound leads from founders and fund managers actively raising capital. This channel supplements the network-driven pipeline and becomes increasingly important as case studies and brand credibility build. Low spend initially ($2K-$5K/mo), scaling with proven ROI.
 
@@ -255,7 +255,7 @@ Advisory fees are determined by the investment tier the raise falls within. Fixe
 | **Tier 6** | $50M - $75M | $7.5M |
 | **Tier 7** | $75M+ | $15.0M |
 
-*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the advisory fee. Fee is split 50% cash / 50% equity.*
+*ClarityOS remains free. StrategyOS fee ($10K-$25K) is credited toward the consulting fee. All fees are 100% cash.*
 
 ### Kickoff Payment (Upfront)
 
@@ -472,7 +472,7 @@ graph TD
 | StrategyOS fees ($10-25K × 3-5 clients) | $30K-$125K |
 | Kickoff payments ($25K-$250K × 3-4 engagements) | $75K-$1M |
 | Payment 1 collections (from ~3 months prior engagements) | $500K-$2M |
-| Payment 2 + buyout collections (from ~5-7 months prior engagements) | $500K-$3M |
+| Payment 2 collections (from ~5-7 months prior engagements) | $500K-$3M |
 | **Monthly revenue range** | **$1.1M-$6.1M** |
 
 ---
@@ -488,8 +488,8 @@ graph TD
     DEC{"DECISION TO ENGAGE<br/>All-inclusive pricing presented<br/>Kickoff payment collected<br/>1-10% of total fee"}
     DEP["DEPLOY (30-60 days)<br/>Platform, data room, documents<br/>Investor portal, compliance<br/>Marketing campaigns launched"]
     TEN["10% RAISED (~Day 90)<br/>Tranche 1 collected (50/50)<br/>Investor meetings intensifying"]
-    SELL["SELL-OUT (~Day 150)<br/>Raise fully closed<br/>Tranche 2 collected<br/>Equity position granted"]
-    ON["ONGOING<br/>Lifetime referral relationship<br/>Client raises again → repeat<br/>Portfolio equity compounds"]
+    SELL["SELL-OUT (~Day 150)<br/>Raise fully closed<br/>Tranche 2 collected"]
+    ON["ONGOING<br/>Lifetime referral relationship<br/>Client raises again → repeat"]
 
     OUT --> RES --> CLA --> STR --> DEC --> DEP --> TEN --> SELL --> ON
     ON -.->|"Repeat engagement"| STR
