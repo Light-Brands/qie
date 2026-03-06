@@ -123,8 +123,8 @@ graph TD
     C["🔍 ClarityOS<br/>FREE<br/>'Get clear'<br/>Assessment, preparation, foundation"]
     S["📊 StrategyOS<br/>$10K - $25K<br/>'Get smart'<br/>Strategic roadmap built on clarity"]
     D{"DECISION<br/>TO ENGAGE"}
-    I["🏗️ InvestOS<br/>3-5% fee + $50K kickoff<br/>'Get funded'<br/>Platform, data room, materials"]
-    A["🚀 AmplifyOS (Beta)<br/>8-12% of raise, negotiated<br/>'Get closed'<br/>Marketing, ads, closing"]
+    I["🏗️ InvestOS<br/>Fixed tier fee + $50K kickoff<br/>'Get funded'<br/>Platform, data room, materials"]
+    A["🚀 AmplifyOS (Beta)<br/>Fixed tier fee, negotiated<br/>'Get closed'<br/>Marketing, ads, closing"]
 
     C --> S --> D --> I
     D --> A
@@ -212,7 +212,15 @@ graph TD
 - Investor reporting infrastructure
 - KYC/AML workflow
 
-**Fee:** 3-5% of raise depending on project scope. $50K kickoff at signing. $250K minimum project. Fee scales with raise size and complexity — larger raises and more complex structures command the higher end of the range. All fees are 100% cash.
+**Fee:** Fixed consulting fee based on engagement tier (see tier table below). $50K kickoff at signing. $250K minimum project. Fee is set by raise size and complexity — larger raises and more complex structures command the higher end of the tier range. All fees are 100% cash.
+
+| Tier | Raise Range | Consulting Fee |
+|------|------------|---------------|
+| Tier 1 | $5M - $10M | $250K - $500K |
+| Tier 2 | $10M - $25M | $600K - $1.0M |
+| Tier 3 | $25M - $50M | $1.25M - $2.0M |
+| Tier 4 | $50M - $100M | $2.5M - $4.0M |
+| Tier 5 | $100M+ | $4.0M+ |
 
 ---
 
@@ -233,7 +241,15 @@ AmplifyOS is currently in beta. It is offered on a per-client basis to select en
 - Closing coordination
 - Post-close investor onboarding
 
-**Fee:** 8-12% of total raise, negotiated per engagement based on scope and services required. 50% of the marketing fee is paid out 50/50 from the first capital that comes in (half from raise proceeds, half from client). Remaining balance paid at close. All fees are 100% cash.
+**Fee:** Fixed marketing fee based on engagement tier (see tier table below), negotiated per engagement based on scope and services required. 50% of the marketing fee is paid out 50/50 from the first capital that comes in (half from raise proceeds, half from client). Remaining balance paid at close. All fees are 100% cash.
+
+| Tier | Raise Range | Marketing Fee |
+|------|------------|--------------|
+| Tier 1 | $5M - $10M | $500K - $1.0M |
+| Tier 2 | $10M - $25M | $1.5M - $2.5M |
+| Tier 3 | $25M - $50M | $3.0M - $5.0M |
+| Tier 4 | $50M - $100M | $5.0M - $8.0M |
+| Tier 5 | $100M+ | $8.0M+ |
 
 ---
 
@@ -245,8 +261,8 @@ InvestOS and AmplifyOS are independent products sold separately. A client can en
 
 | Product | Fee | Amount |
 |---------|-----|--------|
-| InvestOS (4%) | Platform + data room | $800K |
-| AmplifyOS (10%) | Marketing + closing | $2.0M |
+| InvestOS (Tier 2) | Platform + data room | $800K |
+| AmplifyOS (Tier 2) | Marketing + closing | $2.0M |
 | **Combined** | | **$2.8M** |
 
 ---
@@ -265,7 +281,7 @@ InvestOS and AmplifyOS are priced and sold independently. Each product has its o
 
 | Element | Detail |
 |---------|--------|
-| **Fee** | 3-5% of raise (based on scope and complexity) |
+| **Fee** | Fixed by tier ($250K - $4.0M+ based on raise size and complexity) |
 | **Kickoff** | $50K at signing (always) |
 | **Minimum project** | $250K |
 | **Payment 1** | 50% of remaining fee at 10% raised (~30 days post-deploy) |
@@ -288,7 +304,7 @@ graph TD
 
 | Element | Detail |
 |---------|--------|
-| **Fee** | 8-12% of raise (negotiated per engagement) |
+| **Fee** | Fixed by tier ($500K - $8.0M+ based on raise size and marketing scope) |
 | **First payment** | 50% of fee paid 50/50 — half from first raise proceeds, half from client |
 | **Final payment** | Remaining 50% at close/sell-out |
 
@@ -307,14 +323,14 @@ graph TD
 
 ### Combined Payment Waterfall Example ($20M Raise, Both Products)
 
-| Step | Event | InvestOS (4%) | AmplifyOS (10%) | Total |
+| Step | Event | InvestOS (Tier 2) | AmplifyOS (Tier 2) | Total |
 |------|-------|--------------|----------------|-------|
 | Kickoff | Day 0 — InvestOS engagement signed | $50K | — | $50K |
 | Deploy | Day 30-60 — Platform live | — | — | $50K |
 | First capital | ~Day 90 — 10% raised ($2M) | $375K (Payment 1) | $1.0M (50/50 split) | $1.425M |
 | Close | ~Day 150 — Sell-out ($20M) | $375K (Payment 2) | $1.0M (final) | **$2.8M** |
 
-### InvestOS-Only Waterfall Example ($20M Raise at 4%)
+### InvestOS-Only Waterfall Example ($20M Raise, Tier 2: $800K)
 
 | Step | Event | Amount | Running Total |
 |------|-------|--------|--------------|
@@ -509,7 +525,7 @@ graph TD
     RES["RESPONSE<br/>Client reaches back<br/>Discovery conversation"]
     CLA["CLARITYOS (Free)<br/>Shared Google Drive<br/>We assess, they prepare<br/>1-2 weeks"]
     STR["STRATEGYOS ($10K-$25K)<br/>Full raise strategy<br/>Roadmap, structure, LP plan<br/>2-4 weeks"]
-    DEC{"DECISION TO ENGAGE<br/>InvestOS (3-5%) and/or AmplifyOS (8-12%)<br/>$50K kickoff collected"}
+    DEC{"DECISION TO ENGAGE<br/>InvestOS and/or AmplifyOS<br/>Tier-based fee + $50K kickoff"}
     DEP["DEPLOY (30-60 days)<br/>Platform, data room, documents<br/>Investor portal, compliance<br/>Marketing campaigns launched"]
     TEN["10% RAISED (~Day 90)<br/>Tranche 1 collected (50/50)<br/>Investor meetings intensifying"]
     SELL["SELL-OUT (~Day 150)<br/>Raise fully closed<br/>Tranche 2 collected"]

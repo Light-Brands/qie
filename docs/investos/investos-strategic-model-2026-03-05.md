@@ -94,25 +94,27 @@ InvestOS is a consulting-first firm. We earn fees for the work we do. Each produ
 
 **What it delivers:** Institutional-grade raise infrastructure — strategy, financial models, data room, investor portal, PPM/offering documents, compliance, LP targeting, and investor reporting.
 
-**Fee: 3% - 5% of total raise**, depending on complexity and scope.
+**Fee: Fixed consulting fee based on engagement tier.**
 
 | Component | Detail |
 |-----------|--------|
 | **Kickoff fee** | $50K — paid at engagement signing. Always. Non-refundable. |
 | **Minimum project** | $250K total fee (kickoff + remaining balance) |
-| **Fee range** | 3% - 5% of raise, scaling with complexity |
+| **Fee** | Fixed by tier — determined by raise size and engagement complexity |
 | **Payment 1** | 50% of remaining fee (after kickoff) — paid when first 10% of round is closed |
 | **Payment 2** | 50% of remaining fee — paid at full close / sell-out |
 
-**InvestOS Fee by Raise Size:**
+**InvestOS Consulting Fee by Tier:**
 
-| Raise Size | Fee at 3% | Fee at 5% | Kickoff | Payment 1 | Payment 2 |
-|-----------|-----------|-----------|---------|-----------|-----------|
-| **$5M** | $250K (min) | $250K (min) | $50K | $100K | $100K |
-| **$10M** | $300K | $500K | $50K | $125K-$225K | $125K-$225K |
-| **$20M** | $600K | $1.0M | $50K | $275K-$475K | $275K-$475K |
-| **$50M** | $1.5M | $2.5M | $50K | $725K-$1.225M | $725K-$1.225M |
-| **$100M** | $3.0M | $5.0M | $50K | $1.475M-$2.475M | $1.475M-$2.475M |
+| Tier | Raise Range | Consulting Fee | Kickoff | Payment 1 | Payment 2 |
+|------|------------|---------------|---------|-----------|-----------|
+| **Tier 1** | $5M - $10M | $250K - $500K | $50K | $100K-$225K | $100K-$225K |
+| **Tier 2** | $10M - $25M | $600K - $1.0M | $50K | $275K-$475K | $275K-$475K |
+| **Tier 3** | $25M - $50M | $1.25M - $2.0M | $50K | $600K-$975K | $600K-$975K |
+| **Tier 4** | $50M - $100M | $2.5M - $4.0M | $50K | $1.225M-$1.975M | $1.225M-$1.975M |
+| **Tier 5** | $100M+ | $4.0M+ | $50K | Custom | Custom |
+
+*Fee is set at engagement signing based on raise size, complexity, and scope. Pricing within each tier is determined by the specific engagement — larger raises and more complex structures command the higher end of the range.*
 
 ---
 
@@ -122,35 +124,39 @@ InvestOS is a consulting-first firm. We earn fees for the work we do. Each produ
 
 **Status:** Beta — offered to select clients on a per-engagement basis.
 
-**Fee: 8% - 12% of total raise**, strategically negotiated based on scope of marketing and outreach.
+**Fee: Fixed marketing fee based on engagement tier**, strategically negotiated based on scope of marketing and outreach.
 
 | Component | Detail |
 |-----------|--------|
-| **Fee range** | 8% - 12% of raise, negotiated per engagement |
+| **Fee** | Fixed by tier — determined by raise size and marketing scope |
 | **Payment 1** | 50% of total marketing fee — paid 50/50 from first capital raised (half from raise proceeds, half from client) |
 | **Payment 2** | Remaining 50% of marketing fee — paid at full close / sell-out |
 
-**AmplifyOS Fee by Raise Size:**
+**AmplifyOS Marketing Fee by Tier:**
 
-| Raise Size | Fee at 8% | Fee at 12% | Payment 1 (50%) | Payment 2 (50%) |
-|-----------|-----------|------------|-----------------|-----------------|
-| **$5M** | $400K | $600K | $200K-$300K | $200K-$300K |
-| **$10M** | $800K | $1.2M | $400K-$600K | $400K-$600K |
-| **$20M** | $1.6M | $2.4M | $800K-$1.2M | $800K-$1.2M |
-| **$50M** | $4.0M | $6.0M | $2.0M-$3.0M | $2.0M-$3.0M |
-| **$100M** | $8.0M | $12.0M | $4.0M-$6.0M | $4.0M-$6.0M |
+| Tier | Raise Range | Marketing Fee | Payment 1 (50%) | Payment 2 (50%) |
+|------|------------|--------------|-----------------|-----------------|
+| **Tier 1** | $5M - $10M | $500K - $1.0M | $250K-$500K | $250K-$500K |
+| **Tier 2** | $10M - $25M | $1.5M - $2.5M | $750K-$1.25M | $750K-$1.25M |
+| **Tier 3** | $25M - $50M | $3.0M - $5.0M | $1.5M-$2.5M | $1.5M-$2.5M |
+| **Tier 4** | $50M - $100M | $5.0M - $8.0M | $2.5M-$4.0M | $2.5M-$4.0M |
+| **Tier 5** | $100M+ | $8.0M+ | Custom | Custom |
+
+*Fee is negotiated per engagement based on raise size, marketing scope, and outreach requirements. Pricing within each tier reflects the specific services engaged.*
 
 ---
 
 ### Combined: InvestOS + AmplifyOS
 
-When a client engages both products, total fees range from **11% - 17%** of the raise. Each product is contracted and invoiced independently.
+When a client engages both products, combined fees are determined by each product's tier. Each product is contracted and invoiced independently.
 
-| Raise Size | InvestOS (3-5%) | AmplifyOS (8-12%) | Combined | Effective Rate |
-|-----------|----------------|-------------------|----------|---------------|
-| **$10M** | $300K-$500K | $800K-$1.2M | $1.1M-$1.7M | 11-17% |
-| **$20M** | $600K-$1.0M | $1.6M-$2.4M | $2.2M-$3.4M | 11-17% |
-| **$50M** | $1.5M-$2.5M | $4.0M-$6.0M | $5.5M-$8.5M | 11-17% |
+| Tier | Raise Range | InvestOS Fee | AmplifyOS Fee | Combined Fee |
+|------|------------|-------------|--------------|-------------|
+| **Tier 1** | $5M - $10M | $250K-$500K | $500K-$1.0M | $750K-$1.5M |
+| **Tier 2** | $10M - $25M | $600K-$1.0M | $1.5M-$2.5M | $2.1M-$3.5M |
+| **Tier 3** | $25M - $50M | $1.25M-$2.0M | $3.0M-$5.0M | $4.25M-$7.0M |
+| **Tier 4** | $50M - $100M | $2.5M-$4.0M | $5.0M-$8.0M | $7.5M-$12.0M |
+| **Tier 5** | $100M+ | $4.0M+ | $8.0M+ | $12.0M+ |
 
 ---
 
@@ -158,13 +164,13 @@ When a client engages both products, total fees range from **11% - 17%** of the 
 
 ```mermaid
 graph TD
-    subgraph "INVESTOS (4% = $800K)"
+    subgraph "INVESTOS (Tier 2: $800K)"
         IK["Kickoff: $50K<br/>Day 0"]
         IP1["Payment 1: $375K<br/>When 10% raised"]
         IP2["Payment 2: $375K<br/>At full close"]
     end
 
-    subgraph "AMPLIFYOS (10% = $2.0M)"
+    subgraph "AMPLIFYOS (Tier 2: $2.0M)"
         AP1["Payment 1: $1.0M<br/>50/50 from first capital<br/>raised"]
         AP2["Payment 2: $1.0M<br/>At full close"]
     end
@@ -181,7 +187,7 @@ graph TD
 
 **Total collected on $20M raise (both products): $2.8M**
 
-### Revenue Per Engagement — InvestOS Only ($20M Raise at 4%)
+### Revenue Per Engagement — InvestOS Only ($20M Raise, Tier 2: $800K)
 
 | Step | Event | Amount | Running Total |
 |------|-------|--------|--------------|
@@ -225,7 +231,7 @@ graph LR
 
 **The InvestOS speed advantage:** Traditional fundraising takes 17.5 months. We deploy in 30-60 days, hit 10% raised in 30 days, and target sell-out in 90 days. A complete engagement cycle — signing to close — in 120-150 days. This is the AI advantage.
 
-### Revenue from a Single $20M Engagement — InvestOS Only (4% = $800K)
+### Revenue from a Single $20M Engagement — InvestOS Only (Tier 2: $800K)
 
 | Month | Event | Cash Collected |
 |-------|-------|---------------|
@@ -235,7 +241,7 @@ graph LR
 | 5 | Full close / sell-out ($20M) → **Payment 2** | **$375K** |
 | **Total** | **Signing to full collection: ~5 months** | **$800K** |
 
-### Revenue from a Single $20M Engagement — Both Products (InvestOS 4% + AmplifyOS 10%)
+### Revenue from a Single $20M Engagement — Both Products (InvestOS $800K + AmplifyOS $2.0M)
 
 | Month | Event | InvestOS | AmplifyOS | Total |
 |-------|-------|----------|-----------|-------|
@@ -266,7 +272,7 @@ Here is exactly how revenue flows from the 30 engagements signed in Year 1:
 | 11 | 4 | 26 |
 | 12 | 4 | 30 |
 
-*All projections below use InvestOS at 4% average fee ($800K on a $20M raise). Kickoff = $50K, Payment 1 = $375K, Payment 2 = $375K. AmplifyOS revenue shown separately as upside.*
+*All projections below use InvestOS Tier 2 pricing ($800K on a $20M raise). Kickoff = $50K, Payment 1 = $375K, Payment 2 = $375K. AmplifyOS revenue shown separately as upside.*
 
 **Kickoff collections (100% of engagements, collected at signing):**
 
@@ -315,7 +321,7 @@ With the 90-day sell-out target, rounds close ~5 months after signing (60-day de
 
 ### Year 1 Revenue Summary — With AmplifyOS Upside
 
-If 30-50% of InvestOS clients also engage AmplifyOS (10% avg on $20M = $2.0M per engagement):
+If 30-50% of InvestOS clients also engage AmplifyOS (Tier 2 avg: $2.0M per engagement on a $20M raise):
 
 | Revenue Stream | Amount |
 |---------------|--------|
@@ -400,17 +406,17 @@ This means the 12-15 person team can handle:
 ### All Projections Based On:
 - **$20M average raise size** (constant — we serve the same segment consistently)
 - **12-15 person team** (permanent — AI scales, not headcount)
-- **InvestOS at 4% average fee** ($800K per engagement, 100% cash)
+- **InvestOS Tier 2 average fee** ($800K per engagement on $20M raise, 100% cash)
 - **$50K kickoff per engagement** (collected at signing)
 - **55% close rate** across all engagements
 - **75% of engagements reach Payment 1 milestone** (10% of raise closed)
 - **AmplifyOS shown as upside** (beta, not included in base projections)
 
-### Per-Engagement Economics — InvestOS Only ($20M Raise at 4%)
+### Per-Engagement Economics — InvestOS Only ($20M Raise, Tier 2)
 
 | Item | Value |
 |------|-------|
-| InvestOS fee (4%) | $800K |
+| InvestOS fee (Tier 2) | $800K |
 | Kickoff (at signing) | $50K |
 | Payment 1 (at 10% raised) | $375K |
 | Payment 2 (at close) | $375K |
@@ -418,7 +424,7 @@ This means the 12-15 person team can handle:
 
 *Expected cash = $50K kickoff + (75% × $375K Payment 1) + (55% × $375K Payment 2) = $50K + $281K + $206K = $537K.*
 
-### Per-Engagement Economics — Both Products ($20M Raise, InvestOS 4% + AmplifyOS 10%)
+### Per-Engagement Economics — Both Products ($20M Raise, Tier 2)
 
 | Item | Value |
 |------|-------|
@@ -454,7 +460,7 @@ This means the 12-15 person team can handle:
 |--------|-------|
 | Engagements signed | 30 |
 | Capital under advisory | $600M |
-| InvestOS fee committed (4% avg) | $24M |
+| InvestOS fee committed (Tier 2 avg) | $24M |
 | Kickoffs collected (30 × $50K) | **$1.5M** |
 | Payment 1s collected (~18 × $375K) | **$6.75M** |
 | Payment 2s collected (~7 closes × $375K) | **$2.625M** |
