@@ -24,15 +24,17 @@ We have a diamond in our hands. It's called InvestOS. We visualized it, co-creat
 
 Three tiers. One pipeline. All cash. No equity.
 
-### ClarityOS — Free to $1,000
+### ClarityOS — Free to $1,000 (Fully Automated)
 
-The front door. Every founder who comes to us starts here. ClarityOS is the qualifier — a process that helps founders see where they stand, whether they're ready for what comes next, and whether we're the right fit. Some founders just need clarity, and that's a gift we give freely or for a nominal fee. But every founder who touches ClarityOS either self-selects out or moves deeper into the pipeline.
+The front door. Every founder who comes to us starts here. ClarityOS is the qualifier — a fully automated process that helps founders see where they stand, whether they're ready for what comes next, and whether we're the right fit. Some founders just need clarity, and that's a gift we give freely or for a nominal fee. But every founder who touches ClarityOS either self-selects out or moves deeper into the pipeline.
 
-ClarityOS is how we build volume without burning energy on unqualified leads.
+ClarityOS delivery is 100% automated — the system produces the output. But Eyob runs the human side: the conversations, the relationship, the guidance through the process. The automation handles the heavy lifting so Eyob can focus on the founder, not the deliverable. This is how we build volume without burning energy.
 
-### StrategyOS — $5,000 to $15,000
+### StrategyOS — $5,000 to $15,000 (Fully Automated)
 
 For founders who have clarity and need the strategic architecture — the roadmap, the positioning, the narrative foundation. This tier serves a wide market because anyone building something serious needs strategy, not just founders raising capital.
+
+Like ClarityOS, StrategyOS delivery is 100% automated — the system produces the strategic output. Eyob runs the human side: selling the engagement, guiding the founder through the process, and ensuring they get real value from the output. No custom dev work. No handoff to the build team. This keeps the dev team focused entirely on InvestOS delivery and automation engineering.
 
 **Terms:** 50% deposit before work begins. 50% on delivery. No exceptions.
 
@@ -94,11 +96,13 @@ This is not punishment. This is alignment. When everyone's compensation is tied 
 
 ### The Pipeline
 
-**Eyob — ClarityOS & StrategyOS**
+**Eyob — ClarityOS & StrategyOS (Automated Delivery)**
 
-Eyob owns the front two tiers of the pipeline. Every founder starts with Eyob. He runs them through ClarityOS, qualifies them, and for those who are ready, he sells and delivers StrategyOS engagements. Eyob is the volume engine — he's catching founders at scale, filtering fast, closing ClarityOS and StrategyOS deals, and identifying which founders are ready for the InvestOS conversation.
+Eyob owns the front two tiers of the pipeline. Every founder starts with Eyob. He runs them through ClarityOS, qualifies them, and for those who are ready, he sells and guides them through StrategyOS engagements. The delivery of both tiers is fully automated — the system produces the output — but Eyob runs the human side. He's the relationship, the conversation, the guide. The automation handles the heavy lifting so Eyob can focus on founders, not deliverables. No dev team involvement required.
 
-Eyob doesn't just qualify — he *converts*. ClarityOS and StrategyOS are his to own, sell, and deliver. The stronger his pipeline, the more qualified founders flow into InvestOS.
+Eyob doesn't just qualify — he *converts*. ClarityOS and StrategyOS are his to own, sell, and deliver at volume. The stronger his pipeline, the more qualified founders flow into InvestOS.
+
+**The Handoff:** When a founder completes ClarityOS or StrategyOS and decides to move forward with InvestOS, Eyob introduces them to Travis for the InvestOS sale. Once InvestOS is sold and the agreement is signed, the founder is introduced to Jennifer. At that point, **Eyob lets go.** The client relationship transfers cleanly to Jennifer. Eyob goes back to filling the funnel. No overlap, no confusion, no two points of contact.
 
 *Eyob's success metric: ClarityOS and StrategyOS revenue, and the volume of qualified founders passed to Travis for InvestOS.*
 
@@ -118,17 +122,23 @@ Nicholas does not sit in the day-to-day pipeline. He is the transformational epi
 
 ### The Engagement
 
-**Jennifer — Operations & Account Management**
+**Jennifer — Executive Account Manager**
 
-The moment an engagement closes, Jennifer becomes the client's primary point of contact. She is the conduit between the client and the development team — managing expectations, timelines, deliverables, and communication flow. Nothing falls through the cracks between what was promised and what gets built.
+Jennifer is the gateway to InvestOS. The moment the InvestOS agreement is signed and the deposit lands, Travis introduces the founder to Jennifer. From that point forward, **Jennifer is the client's sole point of contact.** She manages all communication between the founder and the development team.
 
-*Jennifer's success metric: client satisfaction, on-time delivery, and smooth handoff from sales to build.*
+Jennifer is the firewall. She protects the dev team from direct client access so Dan and Andreas can focus on building and automating without interruption. She translates client needs into clear development briefs. She manages expectations, timelines, and deliverables. She ensures nothing falls through the cracks between what was promised and what gets built.
+
+No founder talks directly to development. Everything flows through Jennifer. This is how we maintain quality, protect focus, and deliver at scale.
+
+**The Handoff Boundary:** When InvestOS is sold, Eyob lets go. The client relationship transfers to Jennifer completely. Eyob returns to the funnel. Travis moves to the next deal. Jennifer owns the client from onboarding through delivery and beyond.
+
+*Jennifer's success metric: client satisfaction, on-time delivery, dev team protection, and clean communication flow.*
 
 ### The Build
 
-The dev team has a dual mandate: **deliver for today's clients** and **automate for tomorrow's scale.**
+The dev team has a dual mandate: **deliver InvestOS for today's clients** and **automate everything for tomorrow's scale.**
 
-Every engagement the team delivers is also an opportunity to systematize. The goal is not to manually build every ClarityOS, StrategyOS, and InvestOS engagement forever — it's to build the systems that automate the delivery of these services so the team can pump them at volume. Each engagement makes the next one faster, more consistent, and more scalable. The dev team is building the factory, not just the product.
+ClarityOS and StrategyOS are already fully automated — they don't touch the dev team. The dev team's focus is on two things: (1) delivering InvestOS engagements that come through Jennifer, and (2) continuously automating and optimizing every system so delivery gets faster, more consistent, and more scalable with each engagement. The dev team is building the factory, not just the product.
 
 **Dan — Development Director & Strategy**
 
@@ -153,13 +163,16 @@ Joe lives in the conversations — the calls, the demos, the client-facing momen
 ## VI. The Flow
 
 ```
-PIPELINE
+PIPELINE (Automated Tiers)
 ────────────────────────────────────────────────────────
   Eyob (ClarityOS + StrategyOS)
     → Catches all inbound founders
-    → Sells and delivers ClarityOS and StrategyOS
+    → Sells ClarityOS and StrategyOS (automated delivery)
+    → Eyob runs the human side — system handles the output
     → Qualifies InvestOS-ready founders → passes to Travis
 
+PIPELINE (InvestOS Sales)
+────────────────────────────────────────────────────────
   Travis (InvestOS Sales)
     → Sells InvestOS ($50K + success fee)
     → Packages case studies and proof points
@@ -168,18 +181,27 @@ PIPELINE
   Nicholas (Strategic Closer)
     → Deployed on big deals when horsepower is needed
     → Closes when closing matters
-    → Engagement signed → handoff to Jennifer
 
-ENGAGEMENT
+═══════════════ THE HANDOFF ═══════════════════════════
+  InvestOS sold + agreement signed + deposit received
+    → Travis introduces founder to Jennifer
+    → Eyob lets go — returns to the funnel
+    → Travis lets go — moves to next deal
+    → Jennifer takes full ownership of the client
+═══════════════════════════════════════════════════════
+
+ENGAGEMENT (Jennifer's Domain)
 ────────────────────────────────────────────────────────
-  Jennifer (Operations + Account Management)
-    → Onboards client
-    → Manages communication between client and build team
-    → Ensures deliverables land on time
+  Jennifer (Executive Account Manager)
+    → Sole point of contact for the founder
+    → Translates client needs into dev briefs
+    → Protects dev team from direct client access
+    → Manages expectations, timelines, deliverables
 
-BUILD + AUTOMATE
+BUILD + AUTOMATE (Dev Team — InvestOS Only)
 ────────────────────────────────────────────────────────
   Dan (Development Director)
+    → Receives briefs from Jennifer (not from clients)
     → Translates strategy into execution plan
     → Directs the build team
     → Owns automation roadmap for delivery at scale
