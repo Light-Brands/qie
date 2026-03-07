@@ -94,23 +94,27 @@ This is not punishment. This is alignment. When everyone's compensation is tied 
 
 ### The Pipeline
 
-**Eyob — Front Door / ClarityOS Sales**
+**Eyob — ClarityOS & StrategyOS**
 
-Eyob is the first touch. Every inbound conversation, every new founder — Eyob catches it. He runs founders through ClarityOS, qualifies them, and determines whether they move deeper into the pipeline or respectfully move on. He is the volume engine at the top of the funnel — warm, sharp, and filtering fast so the rest of the team only touches qualified opportunities.
+Eyob owns the front two tiers of the pipeline. Every founder starts with Eyob. He runs them through ClarityOS, qualifies them, and for those who are ready, he sells and delivers StrategyOS engagements. Eyob is the volume engine — he's catching founders at scale, filtering fast, closing ClarityOS and StrategyOS deals, and identifying which founders are ready for the InvestOS conversation.
 
-*Eyob's success metric: qualified founders entering StrategyOS and InvestOS.*
+Eyob doesn't just qualify — he *converts*. ClarityOS and StrategyOS are his to own, sell, and deliver. The stronger his pipeline, the more qualified founders flow into InvestOS.
 
-**Travis — Inbound Strategy & Success Storytelling**
+*Eyob's success metric: ClarityOS and StrategyOS revenue, and the volume of qualified founders passed to Travis for InvestOS.*
 
-Travis handles inbound leads and owns the success narrative. He is the one packaging case studies, testimonials, and proof points that make the pipeline convert. When a founder asks "who have you done this for?" — Travis has the answer ready, compelling, and backed by real results.
+**Travis — InvestOS Sales**
 
-*Travis's success metric: conversion rate from inbound to engagement, and the strength of the case study library.*
+Travis sells InvestOS. He takes the qualified founders that come through Eyob's pipeline — the ones who have clarity, have strategy, and are ready to raise institutional capital — and he sells them the $50K engagement. Travis owns the InvestOS sales conversation, builds the case for why the system is worth the investment, and drives the deal to close.
+
+Travis also owns the success narrative. He packages case studies, testimonials, and proof points from completed InvestOS engagements. Every closed deal feeds his next pitch. When a founder asks "who have you done this for?" — Travis has the answer ready.
+
+*Travis's success metric: InvestOS deals closed, revenue generated, and strength of the case study library.*
 
 **Nicholas — Strategic Closer & Transformational Presence**
 
-Nicholas does not sit in the day-to-day pipeline. He is the transformational epicenter — deployed when we need horsepower on bigger calls, high-stakes conversations, and founders who need to feel the depth and conviction behind what we've built. Nicholas closes when closing matters. His time is protected and used surgically on the deals that move the needle most.
+Nicholas does not sit in the day-to-day pipeline. He is the transformational epicenter — deployed when Travis needs horsepower on bigger calls, high-stakes conversations, and founders who need to feel the depth and conviction behind what we've built. Nicholas closes when closing matters. His time is protected and used surgically on the deals that move the needle most.
 
-*Nicholas's success metric: close rate on high-value InvestOS engagements.*
+*Nicholas's success metric: close rate on high-value InvestOS engagements where he's brought in.*
 
 ### The Engagement
 
@@ -122,17 +126,21 @@ The moment an engagement closes, Jennifer becomes the client's primary point of 
 
 ### The Build
 
+The dev team has a dual mandate: **deliver for today's clients** and **automate for tomorrow's scale.**
+
+Every engagement the team delivers is also an opportunity to systematize. The goal is not to manually build every ClarityOS, StrategyOS, and InvestOS engagement forever — it's to build the systems that automate the delivery of these services so the team can pump them at volume. Each engagement makes the next one faster, more consistent, and more scalable. The dev team is building the factory, not just the product.
+
 **Dan — Development Director & Strategy**
 
-Dan directs the development team and owns the strategic execution of every engagement. He translates what was sold into what gets built — ensuring the output matches the promise and exceeds the expectation. Dan is the bridge between client-facing strategy and technical delivery.
+Dan directs the development team and owns the strategic execution of every engagement. He translates what was sold into what gets built — ensuring the output matches the promise and exceeds the expectation. Dan is the bridge between client-facing strategy and technical delivery. He also owns the automation roadmap — identifying which parts of delivery can be systematized and prioritizing that work alongside client engagements.
 
-*Dan's success metric: quality and strategic integrity of every deliverable.*
+*Dan's success metric: quality of deliverables, speed of delivery, and progress toward automated delivery at scale.*
 
 **Andreas — Head of Development**
 
-Andreas sits at the head of development and builds it out. Dan directs, Andreas executes. He owns the technical architecture, the build quality, and the delivery of every system we produce — ClarityOS, StrategyOS, InvestOS, and AmplifyOS.
+Andreas sits at the head of development and builds it out. Dan directs, Andreas executes. He owns the technical architecture, the build quality, and the delivery of every system we produce — ClarityOS, StrategyOS, InvestOS, and AmplifyOS. As the automation layer grows, Andreas is the one engineering the systems that turn manual delivery into repeatable, scalable processes.
 
-*Andreas's success metric: build quality, delivery speed, and system reliability.*
+*Andreas's success metric: build quality, delivery speed, system reliability, and automation coverage.*
 
 **Joe McVeen — Meeting Specialist / AmplifyOS Development**
 
@@ -147,16 +155,19 @@ Joe lives in the conversations — the calls, the demos, the client-facing momen
 ```
 PIPELINE
 ────────────────────────────────────────────────────────
-  Eyob (ClarityOS)
-    → Qualifies founders
-    → Passes qualified leads to Travis
+  Eyob (ClarityOS + StrategyOS)
+    → Catches all inbound founders
+    → Sells and delivers ClarityOS and StrategyOS
+    → Qualifies InvestOS-ready founders → passes to Travis
 
-  Travis (Inbound + Proof)
-    → Nurtures with case studies and success narrative
-    → Tees up high-value calls for Nicholas
+  Travis (InvestOS Sales)
+    → Sells InvestOS ($50K + success fee)
+    → Packages case studies and proof points
+    → Brings in Nicholas on high-value closes
 
   Nicholas (Strategic Closer)
-    → Closes big deals when horsepower is needed
+    → Deployed on big deals when horsepower is needed
+    → Closes when closing matters
     → Engagement signed → handoff to Jennifer
 
 ENGAGEMENT
@@ -166,15 +177,18 @@ ENGAGEMENT
     → Manages communication between client and build team
     → Ensures deliverables land on time
 
-BUILD
+BUILD + AUTOMATE
 ────────────────────────────────────────────────────────
   Dan (Development Director)
     → Translates strategy into execution plan
     → Directs the build team
+    → Owns automation roadmap for delivery at scale
 
   Andreas (Head of Development)
     → Executes the build
     → Owns technical quality and architecture
+    → Engineers systems that turn manual delivery into
+      repeatable, scalable processes
 
   Joe (AmplifyOS + Field Intelligence)
     → Refines AmplifyOS from real meetings and demos
@@ -183,7 +197,9 @@ BUILD
 FLYWHEEL
 ────────────────────────────────────────────────────────
   Completed engagements → case studies → Travis packages
-  → Eyob uses to qualify next round → cycle accelerates
+  → Eyob uses proof to convert next round
+  → Dev team automates what was delivered manually
+  → Each cycle gets faster, more consistent, more scalable
 ```
 
 ---
@@ -200,14 +216,15 @@ Without that foundation, everything else is premature.
 
 The flywheel is simple:
 
-1. Eyob fills the top of the funnel with ClarityOS.
-2. Travis converts and nurtures with proof.
-3. Nicholas closes the ones that matter.
+1. Eyob fills the funnel — sells and delivers ClarityOS and StrategyOS at volume.
+2. Qualified founders flow to Travis — he sells InvestOS.
+3. Nicholas closes the big ones when horsepower is needed.
 4. Jennifer manages the engagement with excellence.
-5. Dan and Andreas build and deliver.
-6. Joe refines the amplification engine.
+5. Dan and Andreas build, deliver, and *automate* — every engagement makes the next one faster.
+6. Joe refines AmplifyOS from the field.
 7. Every completed engagement becomes the next case study.
 8. Every case study makes the next sale easier.
+9. Every delivery the dev team automates means more volume with the same team.
 
 Stay focused on the diamond. Serve founders with excellence. Build real results. Everything else will come in its right time.
 
