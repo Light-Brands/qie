@@ -48,6 +48,14 @@ The diamond. The Institutional Capital-Ready AI Operating System. We build the c
 
 No equity. All cash. We are the builders.
 
+### AmplifyOS — Beta / Invite-Only (Bundled with InvestOS)
+
+The amplification layer. Once InvestOS deploys the platform — the financial model, data room, investor narrative, compliance structure, pitch materials — AmplifyOS is what sells the fund out. It's the marketing and distribution mechanism for the raise: getting the fund in front of the right investors and driving capital commitments.
+
+AmplifyOS is not sold separately. It's developed alongside InvestOS and deployed as part of the engagement. Currently in beta — built and refined from real raise dynamics with live InvestOS clients.
+
+InvestOS builds the machine. AmplifyOS runs it.
+
 ---
 
 ## III. The Opportunity Filter
@@ -148,15 +156,19 @@ Dan directs the development team and owns the strategic execution of every engag
 
 **Andreas — Head of Development**
 
-Andreas sits at the head of development and builds it out. Dan directs, Andreas executes. He owns the technical architecture, the build quality, and the delivery of every system we produce — ClarityOS, StrategyOS, InvestOS, and AmplifyOS. As the automation layer grows, Andreas is the one engineering the systems that turn manual delivery into repeatable, scalable processes.
+Andreas sits at the head of development and builds it out. Dan directs, Andreas executes. He owns the technical architecture, the build quality, and the delivery of every system we produce — InvestOS and AmplifyOS. As the automation layer grows, Andreas is the one engineering the systems that turn manual delivery into repeatable, scalable processes.
 
 *Andreas's success metric: build quality, delivery speed, system reliability, and automation coverage.*
 
-**Joe McVeen — Meeting Specialist / AmplifyOS Development**
+**Joe McVeen — AmplifyOS Development**
 
-Joe lives in the conversations — the calls, the demos, the client-facing moments. His role is to help develop and refine AmplifyOS from the inside out, turning real meeting patterns, client interactions, and field intelligence into system improvements. Joe is where the rubber meets the road on amplification.
+Joe builds AmplifyOS — the delivery mechanism that amplifies the capital raise. Once InvestOS deploys the platform (financial model, data room, investor narrative, compliance, pitch materials), AmplifyOS is what sells the fund out. It's the marketing and distribution layer of the raise — the system that gets the fund in front of the right investors and drives capital commitments.
 
-*Joe's success metric: AmplifyOS refinement and the quality of meeting-driven insights feeding back into the system.*
+AmplifyOS is currently in **beta / invite-only** — developed hand-in-hand with InvestOS engagements. Every founder who goes through InvestOS becomes a live testing ground for AmplifyOS. Joe develops and refines the platform from the inside out, turning real raise dynamics, investor interactions, and field intelligence into system capabilities.
+
+AmplifyOS is the natural extension of InvestOS. InvestOS builds the machine. AmplifyOS runs it.
+
+*Joe's success metric: AmplifyOS platform development, raise amplification effectiveness, and the quality of field intelligence feeding back into the system.*
 
 ---
 
@@ -198,7 +210,7 @@ ENGAGEMENT (Jennifer's Domain)
     → Protects dev team from direct client access
     → Manages expectations, timelines, deliverables
 
-BUILD + AUTOMATE (Dev Team — InvestOS Only)
+BUILD + AUTOMATE (Dev Team — InvestOS + AmplifyOS)
 ────────────────────────────────────────────────────────
   Dan (Development Director)
     → Receives briefs from Jennifer (not from clients)
@@ -212,9 +224,11 @@ BUILD + AUTOMATE (Dev Team — InvestOS Only)
     → Engineers systems that turn manual delivery into
       repeatable, scalable processes
 
-  Joe (AmplifyOS + Field Intelligence)
-    → Refines AmplifyOS from real meetings and demos
-    → Feeds field insights back into the system
+  Joe (AmplifyOS — Raise Amplification Platform)
+    → Builds the marketing/distribution layer of the raise
+    → InvestOS builds the machine, AmplifyOS runs it
+    → Beta / invite-only — developed alongside InvestOS
+    → Turns real raise dynamics into system capabilities
 
 FLYWHEEL
 ────────────────────────────────────────────────────────
